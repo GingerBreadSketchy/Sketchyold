@@ -13,17 +13,17 @@
         },
         "_plugin": {
             "INSTALL_DESC": "Install external plugins.",
-            "NEED_URL": "Please enter a URL! Example:",
-            "INVALID_URL": "```Please enter a valid url!```",
-            "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
-            "INSTALLED": "*✅ Plugin has been successfully installed!*",
-            "PLUGIN_DESC": "Shows the plugins you have installed.",
-            "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
-            "NO_PLUGIN": "*You have not installed any external plugins!*",
-            "REMOVE_DESC": "Removes the plugin.",
-            "NEED_PLUGIN": "```Please enter a Plugin! Example: .plugin __test```",
-            "NOT_FOUND_PLUGIN": "```Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.```",
-            "DELETED": "*✅ Module successfully deleted!*"
+            "NEED_URL": "කරුණාකර URL එකක් ඇතුළත් කරන්න! උදාහරණයක්:",
+            "INVALID_URL": "```වලංගු URL එක ඇතුලත් කරන්න!```",
+            "INVALID_PLUGIN": "*❌ ඔබගේ plugin අවලංගුය!*\n*දෝෂය:*",
+            "INSTALLED": "*✅ Plugin සාර්ථකව install කර ඇත!*",
+            "PLUGIN_DESC": "ඔබ install කර ඇති plugin පෙන්වයි.",
+            "INSTALLED_FROM_REMOTE": "*ඔබ බාහිරව install කරන plugins:*\n",
+            "NO_PLUGIN": "*ඔබ කිසිදු බාහිර plugin install කර නැත!*",
+            "REMOVE_DESC": "Plugin ඉවත් කරයි.",
+            "NEED_PLUGIN": "```කරුණාකර plugin name ඇතුළත් කරන්න! Example: .plugin __test```",
+            "NOT_FOUND_PLUGIN": "```සමහර විට ඔබ එවැනි plugin install කර නැත. නමුත් එය දැන් නොමැත.```",
+            "DELETED": "*✅ Plugin සාර්ථකව මකා දමන ලදි!*"
         },
         "admin": {
             "BAN_DESC": "කණ්ඩායමේ කෙනෙකු ඉවත් කරන්න. පණිවිඩයට පිළිතුරු දෙන්න හෝ විධානය භාවිතා කිරීමට පුද්ගලයෙකු ටැග් කරන්න.",
@@ -74,9 +74,9 @@
         },
         "heroku": {
             "RESTART_DESC": "Queen Amdi නැවත ආරම්භ කරන්න",
-            "RESTART_MSG": "```Restarting...```",
-            "SHUTDOWN_DESC": "Shutdown",
-            "SHUTDOWN_MSG": "```Shutting down ⛔```",
+            "RESTART_MSG": "```නැවත ආරම්භ කිරීම...```",
+            "SHUTDOWN_DESC": "Bot වසා දැමීමට",
+            "SHUTDOWN_MSG": "```වසා දමයි ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -206,15 +206,15 @@
             "ADMİN": "*මම මෙම කණ්ඩායමේ admin නොවේ!*"
         },
         "updater": {
-            "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
-            "UPDATE_NOW_DESC": "It makes updates.",
+            "UPDATER_DESC": "Updates පරීක්ෂා කරයි.",
+            "UPDATE": "*ඔබේ bot සම්පූර්ණයෙන්ම යාවත්කාලීනයි!*",
+            "NEW_UPDATE": "*Bot සඳහා නව updates කිරීම් තිබේ!*\n\nවෙනස්කම්:\n```",
+            "UPDATE_NOW_DESC": "එය යාවත්කාලීන කරයි.",
             "UPDATING": "_Updating..._",
-            "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*✅ Successfully Updated!*",
-            "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 Queen amdi Restarting Automatically!*"
+            "INVALID_HEROKU": "*❌ ඔබේ HEROKU_API_KEY තොරතුරු වැරදිය!*",
+            "UPDATED": "*✅ සාර්ථකව update කරන ලදි!*",
+            "UPDATED_LOCAL": "*✅ සාර්ථකව update කරන ලදි!*",
+            "AFTER_UPDATE": "*💬 Queen amdi ස්වයංක්‍රීයව නැවත ආරම්භ කිරීම!*"
         },
         "weather": {
             "WEATHER_DESC": "කාලගුණය පෙන්වයි.",
@@ -415,7 +415,7 @@
         },
         "github": {
             "GİTHUB_DESC": "දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.\n⌨️ Example: .github BlackAmda",
-            "REPLY": "```You Need To Type Any Username!```",
+            "REPLY": "```ඔබට ඕනෑම username ටයිප් කිරීමට අවශ්‍යයි!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
             "NAME": "Name:",
