@@ -1,7 +1,7 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/BlackAmda/QueenAmdi /root/QueenAmdi
-WORKDIR /root/QueenAmdi/
+RUN git clone https://github.com/agentnox/8gh32jk565 /root/8gh32jk565
+WORKDIR /root/8gh32jk565/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
