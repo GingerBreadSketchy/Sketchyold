@@ -16,8 +16,8 @@ const request = require('request');
 const got = require("got");
 
 // Sentances
-const QR_DESC = "It Converts Text To Qr Code"
-const NEED_TEXT = "*Must Enter Some Words*"
+const QR_DESC = "එය text Qr කේතයට පරිවර්තනය කරයි"
+const NEED_TEXT = "*වචන ඇතුළත් කළ යුතුය*"
 
 Asena.addCommand({pattern: 'qr ?(.*)', fromMe: false, desc: QR_DESC}, (async (message, match) => {
 
