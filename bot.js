@@ -10,6 +10,7 @@ const fs = require("fs");
 const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
+const axios = require('axios');
 const config = require('./config');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
