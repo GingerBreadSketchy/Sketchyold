@@ -11,7 +11,7 @@ const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
 const axios = require('axios');
-const config = require('./config');
+const config = require('./config.js');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./whatsasena/');
@@ -259,7 +259,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
 
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
             // see you message
-            var blogo = await axios.get (Config.BYE_LOGO, {responseType: 'arraybuffer'})
+            var blogo = await axios.get(Config.BYE_LOGO, {responseType: 'arraybuffer'})
             var gb = await getMessage(msg.key.remoteJid, 'goodbye')
             
             if (gb !== false) {
@@ -268,7 +268,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
             // Welcome message
-            var wlogo = await axios.get (Config.WELCOME_LOGO, {responseType: 'arraybuffer'})
+            var wlogo = await axios.get(Config.WELCOME_LOGO, {responseType: 'arraybuffer'})
             var gb = await getMessage(msg.key.remoteJid)
             
             if (gb !== false) {
