@@ -14,7 +14,7 @@ const FROM = " From the group with ID, "
 const MSG = "Message: \n\n"
 const SUC = "*Message Successfully Saved to LOG! ✅️*"
 
-Asena.addCommand({ pattern: 'log', fromMe: true, desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
+Asena.addCommand({ pattern: 'log', fromMe: true, desc: LOG, warn: ANIM, onlyGroup: true}, (async (message, match) => { 
 
     const meta = await message.client.groupMetadata(message.jid)
     const usmeta = message.client.isOnWhatsApp(message.jid)

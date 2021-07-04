@@ -9,7 +9,7 @@ const SPDF_DESC = "Converts a Site into PDF"
 const SPDF_PROC = "```Converting Site into PDF```"
 const SPDF_LINK = "*Must Enter a URL*"
 
-Asena.addCommand({pattern: 'spdf ?(.*)', desc: SPDF_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(SPDF_LINK);
 

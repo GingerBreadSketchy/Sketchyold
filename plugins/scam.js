@@ -9,7 +9,7 @@ const {MessageType, MessageOptions, Mimetype, Presence} = require('@adiwajshing/
 const Language = require('../language');
 const Lang = Language.getString('scam');
 
-Asena.addCommand({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC}, (async (message, match) => {
 
     if (match[1] === '') {
 

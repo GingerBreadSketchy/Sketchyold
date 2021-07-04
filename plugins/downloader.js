@@ -11,7 +11,7 @@ const LOADING = "වීඩියෝ බාගත කිරීම..."
 const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
 const CAPTION = "Caption"
 
-Asena.addCommand({ pattern: 'ig ?(.*)', desc: IG_DESC}, async (message, match) => {
+Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
 
     const userName = match[1]
 
