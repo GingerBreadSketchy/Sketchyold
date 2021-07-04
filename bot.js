@@ -80,6 +80,23 @@ async function whatsAsena () {
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2,2121,7]
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+        await axios.get('https://gist.githubusercontent.com/BlackAmda/c3877acdcdc041d77907d590d4ac1a2d/raw/').then(async (ann) => {
+            const { infoen, infosi} = ann.data.announcements          
+            if (infoen !== '' && config.LANG == 'EN') {
+                while (getGMTh == 21 && getGMTm == 31) { 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔Queen Amdi Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                }
+            }
+            else if (infosi !== '' && config.LANG == 'EN') {
+                while (getGMTh == 21 && getGMTm == 31) { 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔Queen Amdi නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                }
+            }
+        })
+    }, 50000);
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
