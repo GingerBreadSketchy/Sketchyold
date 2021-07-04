@@ -59,7 +59,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    Asena.addCommand({pattern: 'ocr ?(.*)', desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
