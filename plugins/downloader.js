@@ -11,79 +11,38 @@ const LOADING = "වීඩියෝ බාගත කිරීම..."
 const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
 const CAPTION = "Caption"
 
-if (Config.WORKTYPE == 'private') {
+Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
 
-  Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC}, async (message, match) => {
+    const userName = match[1]
 
-      const userName = match[1]
+    if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
 
-      if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+    await message.sendMessage(infoMessage("Post බාගත කිරීම..."))
 
-     await message.sendMessage(infoMessage("Post බාගත කිරීම..."))
-
-      await axios
-        .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
-        .then(async (response) => {
-          const {
-           url,
-           type,
-          } = response.data.result[0]
+    await axios
+      .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
+      .then(async (response) => {
+        const {
+          url,
+          type,
+        } = response.data.result[0]
 
         const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
 
         const msg = `${type}`
 
-	      if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
-        caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+	 if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
+          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })}
 		 	 
-	      if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-        caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+	if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })}
 	
         
-        })
-        .catch(
-          async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
-        )
-    },
-  );
-}
-else if (Config.WORKTYPE == 'public') {
-  
-  Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
-
-      const userName = match[1]
-
-      if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
-
-     await message.sendMessage(infoMessage("Post බාගත කිරීම..."))
-
-      await axios
-        .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
-        .then(async (response) => {
-          const {
-           url,
-           type,
-          } = response.data.result[0]
-
-        const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
-
-        const msg = `${type}`
-
-	      if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
-        caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
-        })}
-		 	 
-	      if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-        caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
-        })}
-	
-        
-        })
-        .catch(
-          async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
-        )
-    },
-  );
-}
+      })
+      .catch(
+        async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
+      )
+  },
+)
