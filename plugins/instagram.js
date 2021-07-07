@@ -48,13 +48,14 @@ if (cn.WORKTYPE == 'private') {
           .get(`https://api.zeks.xyz/api/igstalk?apikey=fHZpP3j61LgH80BzanBm92jch1Q&username=${userName}`)
           .then(async (response) => {
             const {
-              profile_pic,
-              username,
-              bio,
-              follower,
-              following,
-              full_name,
-              is_private,
+            username,
+            fullname,
+            follower,
+            following,
+            post_count,
+            highlight_count,
+            profile_pic,
+            bio,
             } = response.data.result
 
             const profileBuffer = await axios.get(profile_pic, {
@@ -62,12 +63,13 @@ if (cn.WORKTYPE == 'private') {
             })
 
             const msg = `
-            *${Lang.NAME}*: ${full_name}
+            *${Lang.NAME}*: ${fullname}
             *${Lang.USERNAME}*: ${username}
             *${Lang.BIO}*: ${bio}
             *${Lang.FOLLOWERS}*: ${follower}
             *${Lang.FOLLOWS}*: ${following}
-            *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+            *${Lang.POST_COUNT}*: ${post_count}
+            *${Lang.HL_COUNT}*: ${highlight_count}`
 
             await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
               caption: msg,
@@ -81,52 +83,54 @@ if (cn.WORKTYPE == 'private') {
 }
 else if (cn.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+    if (message.jid === '905524317852-1612300121@g.us') {
 
-            return;
-        }
+        return;
+    }
 
 
-        const userName = match[1]
+    const userName = match[1]
 
-        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
+    if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.sendMessage(infoMessage(Lang.LOADING))
+    await message.sendMessage(infoMessage(Lang.LOADING))
 
-        await axios
-          .get(`https://api.zeks.xyz/api/igstalk?apikey=fHZpP3j61LgH80BzanBm92jch1Q&username=${userName}`)
-          .then(async (response) => {
-            const {
-              profile_pic,
-              username,
-              bio,
-              follower,
-              following,
-              full_name,
-              is_private,
-            } = response.data.result
+    await axios
+      .get(`https://api.zeks.xyz/api/igstalk?apikey=fHZpP3j61LgH80BzanBm92jch1Q&username=${userName}`)
+      .then(async (response) => {
+        const {
+        username,
+        fullname,
+        follower,
+        following,
+        post_count,
+        highlight_count,
+        profile_pic,
+        bio,
+        } = response.data.result
 
-            const profileBuffer = await axios.get(profile_pic, {
-              responseType: 'arraybuffer',
-            })
+        const profileBuffer = await axios.get(profile_pic, {
+          responseType: 'arraybuffer',
+        })
 
-            const msg = `
-            *${Lang.NAME}*: ${full_name}
-            *${Lang.USERNAME}*: ${username}
-            *${Lang.BIO}*: ${bio}
-            *${Lang.FOLLOWERS}*: ${follower}
-            *${Lang.FOLLOWS}*: ${following}
-            *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+        const msg = `
+        *${Lang.NAME}*: ${fullname}
+        *${Lang.USERNAME}*: ${username}
+        *${Lang.BIO}*: ${bio}
+        *${Lang.FOLLOWERS}*: ${follower}
+        *${Lang.FOLLOWS}*: ${following}
+        *${Lang.POST_COUNT}*: ${post_count}
+        *${Lang.HL_COUNT}*: ${highlight_count}`
 
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-              caption: msg,
-            })
-          })
-          .catch(
-            async (err) => await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName)),
-          )
-      },
-    )
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+          caption: msg,
+        })
+      })
+      .catch(
+        async (err) => await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName)),
+      )
+  },
+  )
 }

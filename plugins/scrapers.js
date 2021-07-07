@@ -64,7 +64,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -328,7 +328,7 @@ else if (config.WORKTYPE == 'public') {
         }
     }));
 
-    Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
+    Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
