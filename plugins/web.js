@@ -29,7 +29,7 @@ function speedText(speed) {
     return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
 }
 
-Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
     var msg = await message.reply(Lang.SPEEDTESTING);
     var st = await speedTest({acceptLicense: true, acceptGdpr: true});
     
@@ -43,7 +43,7 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC,
     await msg.delete();
 }));
 
-Asena.addCommand({pattern: 'ping', fromMe: false, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
   var msg = await message.reply('```Ping!```');
   var end = new Date().getTime();
@@ -53,22 +53,7 @@ Asena.addCommand({pattern: 'ping', fromMe: false, deleteCommand: false, desc: La
     message.jid,'*Pong!*\n```' + (end - start) + 'ms```', MessageType.text);
 }));
 
-if (Config.WORKTYPE == 'private') {
-  Asena.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async (message, match) => {
-
-      if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
-
-      TinyURL.shorten(`${match[1]}`, async(res, err) => {
-        if (err)
-          await message.client.sendMessage(message.jid, '*#### Error! ####*\n\n' + '```' + err + '```', MessageType.text);
-
-          await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
-      });
-  }));
-}
-
-else if (Config.WORKTYPE == 'public') {
-  Asena.addCommand({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
+Asena.addCommand({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -79,4 +64,3 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
     });
 }));
-}
