@@ -32,7 +32,7 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC, don
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🆕 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n ' + commit.description + ' <' + "BlackAmda" + '>\n\n';
+                degisiklikler += '🆕 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "BlackAmda" + '>\n\n';
             }
         );
         
