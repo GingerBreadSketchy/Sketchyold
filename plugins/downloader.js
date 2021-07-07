@@ -12,6 +12,7 @@ const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
 const CAPTION = "Caption"
 
 if (Config.WORKTYPE == 'private') {
+
   Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC}, async (message, match) => {
 
       const userName = match[1]
@@ -46,10 +47,10 @@ if (Config.WORKTYPE == 'private') {
           async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
         )
     },
-  )
+  );
 }
-
 else if (Config.WORKTYPE == 'public') {
+  
   Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
 
       const userName = match[1]
@@ -84,5 +85,5 @@ else if (Config.WORKTYPE == 'public') {
           async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
         )
     },
-  )
+  );
 }
