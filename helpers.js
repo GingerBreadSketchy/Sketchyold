@@ -23,7 +23,7 @@ function errorMessage(msg) {
     return "🛑 *QueenAmdi*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *QueenAmdi*:  ```" + msg + "```"
+    return "ℹ️ *QueenAmdi*:  ```" + msg + "```"
 }
 
 

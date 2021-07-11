@@ -18,7 +18,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'mp4audio', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'imagesticker', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -72,7 +72,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'mp4audio', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -98,7 +98,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'imagesticker', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }

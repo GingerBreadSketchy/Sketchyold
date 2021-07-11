@@ -15,7 +15,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -33,7 +33,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'carbon ?(.*)', fromMe: false, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }

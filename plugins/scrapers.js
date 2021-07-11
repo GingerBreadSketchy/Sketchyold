@@ -11,6 +11,24 @@ const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
 const axios = require('axios')
+const { errorMessage, infoMessage } = require('../helpers');
+const IG_DESC = "Instagram වෙතින් රූපය / වීඩියෝ බාගන්න"
+const NEED_WORD = "Must Enter a link"
+const QUOTE_DESC = "It Sends Random Quote"
+const NEED_LOCATIONA = "*Invalid Request*"
+const QUOTE = "Quote :"
+const AUTHOR = "Author :"
+const NOT_FOUNDA = "```Sorry,I could not find a quote. 😖```"
+const SPDF_DESC = "Converts a Site into PDF"
+const SPDF_PROC = "```Converting Site into PDF```"
+const SPDF_LINK = "*Must Enter a URL*"
+const WAME_DESC = "Get a link to the user chat."
+const WAME = "```Chat link from```@{}: https://wa.me/{}"
+const NEED_UWONG = "*Give me a user!*"
+const FBDESC = "ෆේස්බුක් වෙතින් වීඩියෝ බාගත කරයි"
+const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
+const CAPTION = "Caption"
+const LOADING = "🔄 ඔබගේ වීඩියෝව download කරමින් පවති..."
 
 //============================== CURRENCY =============================================
 const { exchangeRates } = require('exchange-rates-api');
@@ -43,6 +61,69 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
+    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC}, (async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+
+        await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
+
+        await axios
+          .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
+          .then(async (response) => {
+            const {
+              url,
+              type,
+            } = response.data.result[0]
+
+            const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+
+            const msg = `${type}`
+
+      if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
+              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+            })}
+          
+      if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+            })}
+      
+            
+          })
+          .catch(
+            async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
+          )
+      }));
+
+    Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC}, (async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+
+        await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
+
+        await axios
+          .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=e1ee2b3d3b00e58f2511ad95&url=${userName}`)
+          .then(async (response) => {
+            const {
+              result,
+              status,
+            } = response.data
+
+            const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.sendMessage(infoMessage(NOT_FOUNDFB))}
+          
+      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+            })}
+          })
+    }));
+
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
@@ -62,6 +143,18 @@ if (config.WORKTYPE == 'private') {
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
         }
+    }));
+
+    Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(SPDF_LINK);
+    
+        var webimage = await axios.get(`https://api.html2pdf.app/v1/generate?url=${match[1]}&apiKey=begC4dFAup1b8LyRXxAfjetfqDg2uYx8PWmh9YJ59tTZXiUyh2Vs72HdYQB68vyc`, { responseType: 'arraybuffer' })
+    
+        await message.sendMessage(SPDF_PROC);
+    
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.document, {mimetype: Mimetype.pdf})
+    
     }));
 
     Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
@@ -254,6 +347,36 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
+    Asena.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: QUOTE_DESC}, async (message, match) => {
+        if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
+        const url = `https://api.quotable.io/random`;
+        try {
+            const response = await got(url);
+            const json = JSON.parse(response.body);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + QUOTE +'* ```' + json.content + '```\n\n' +
+            '*✒️' + AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+        } catch {
+            return await message.client.sendMessage(message.jid, NOT_FOUNDA, MessageType.text);
+        }
+    });
+
+    Asena.addCommand({pattern: 'wame ?(.*)', fromMe: true, desc: WAME_DESC}, (async (message, match) => {    
+        if (message.reply_message !== false) {
+            await message.client.sendMessage(message.jid, WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
+            });
+        } else if (message.mention !== false) {
+            message.mention.map(async user => {
+                await message.client.sendMessage(message.jid, WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                    contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
+                }); 
+            });
+        } else {
+            await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text);
+        }
+    }));
+
+
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
@@ -307,6 +430,69 @@ if (config.WORKTYPE == 'private') {
 }
 else if (config.WORKTYPE == 'public') {
 
+    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, (async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+
+        await message.sendMessage(infoMessage("Post බාගත කිරීම..."))
+
+        await axios
+          .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
+          .then(async (response) => {
+            const {
+              url,
+              type,
+            } = response.data.result[0]
+
+            const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+
+            const msg = `${type}`
+
+      if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
+              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+            })}
+          
+      if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+            })}
+      
+            
+          })
+          .catch(
+            async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
+          )
+      }));
+
+      Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC}, (async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+
+        await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
+
+        await axios
+          .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=e1ee2b3d3b00e58f2511ad95&url=${userName}`)
+          .then(async (response) => {
+            const {
+              result,
+              status,
+            } = response.data
+
+            const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.sendMessage(infoMessage(NOT_FOUNDFB))}
+          
+      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+            })}
+          })
+    }));
+
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
@@ -327,6 +513,31 @@ else if (config.WORKTYPE == 'public') {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
         }
     }));
+
+    Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(SPDF_LINK);
+    
+        var webimage = await axios.get(`https://api.html2pdf.app/v1/generate?url=${match[1]}&apiKey=begC4dFAup1b8LyRXxAfjetfqDg2uYx8PWmh9YJ59tTZXiUyh2Vs72HdYQB68vyc`, { responseType: 'arraybuffer' })
+    
+        await message.sendMessage(SPDF_PROC);
+    
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.document, {mimetype: Mimetype.pdf})
+    
+    }));
+
+    Asena.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: QUOTE_DESC}, async (message, match) => {
+        if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
+        const url = `https://api.quotable.io/random`;
+        try {
+            const response = await got(url);
+            const json = JSON.parse(response.body);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + QUOTE +'* ```' + json.content + '```\n\n' +
+            '*✒️' + AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+        } catch {
+            return await message.client.sendMessage(message.jid, NOT_FOUNDA, MessageType.text);
+        }
+    });
 
     Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
 
@@ -471,7 +682,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*' + video.title + '* - ' + video.url + '\n'
+            mesaj += '▶️ *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
@@ -517,6 +728,23 @@ else if (config.WORKTYPE == 'public') {
             message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
         });
     }));
+
+    Asena.addCommand({pattern: 'wame ?(.*)', fromMe: false, desc: WAME_DESC}, (async (message, match) => {    
+        if (message.reply_message !== false) {
+            await message.client.sendMessage(message.jid, WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
+            });
+        } else if (message.mention !== false) {
+            message.mention.map(async user => {
+                await message.client.sendMessage(message.jid, WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                    contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
+                }); 
+            });
+        } else {
+            await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text);
+        }
+    }));
+
 
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
