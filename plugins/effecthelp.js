@@ -53,7 +53,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'effectimg', fromMe: true, desc: EFFECT_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'effectimg', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n\n` + 

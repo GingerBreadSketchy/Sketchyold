@@ -1,3 +1,4 @@
+/*
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
@@ -21,3 +22,4 @@ Asena.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: QUOTE_DESC}, asyn
 		return await message.client.sendMessage(message.jid, NOT_FOUNDA, MessageType.text);
 	}
 });
+*/

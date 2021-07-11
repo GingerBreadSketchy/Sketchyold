@@ -1,3 +1,4 @@
+/*
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
@@ -22,3 +23,4 @@ const NEED_UWONG = "*Give me a user!*"
             await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text);
         }
     }));
+*/

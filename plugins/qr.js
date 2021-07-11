@@ -6,7 +6,7 @@ Licensed under the  GPL-3.0 License;
 
 you may not use this file except in compliance with the License.
 WhatsAsenaPublic - TOXIC DEVIL
-*/
+
 
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
@@ -28,3 +28,4 @@ Asena.addCommand({pattern: 'qr ?(.*)', fromMe: false, desc: QR_DESC}, (async (me
     await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"})
 
 }));
+*/
