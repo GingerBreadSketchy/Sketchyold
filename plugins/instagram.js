@@ -16,8 +16,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-*/
-
 const Asena = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
 const axios = require('axios')
@@ -134,3 +132,4 @@ else if (cn.WORKTYPE == 'public') {
   },
   )
 }
+*/
