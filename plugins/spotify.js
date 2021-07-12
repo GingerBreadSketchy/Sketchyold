@@ -1,6 +1,9 @@
-/*
-Queen Amdi Project - Sinhala WA bot
-CODED BY : BlackAmda 
+/* Copyright (C) 2021 Queen Amdi.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Queen Amdi - Black Amda
 */
 
 const Asena = require('../events');
@@ -22,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text)
     
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=e1ee2b3d3b00e58f2511ad95&url=${link}`)
+          .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=queenamdi5652&url=${link}`)
           .then(async (response) => {
             const {
               link,
@@ -47,7 +50,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text, {quoted: message.data})
     
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=e1ee2b3d3b00e58f2511ad95&url=${link}`)
+          .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=queenamdi5652&url=${link}`)
           .then(async (response) => {
             const {
               link,

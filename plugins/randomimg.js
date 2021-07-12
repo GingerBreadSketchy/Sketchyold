@@ -1,3 +1,11 @@
+/* Copyright (C) 2021 Queen Amdi.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Queen Amdi - Black Amda
+*/
+
 const Asena = require('../events');
 const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
@@ -13,7 +21,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'bts ?(.*)', fromMe: true, desc: BTS_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/bts?apikey=e1ee2b3d3b00e58f2511ad95`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/bts?apikey=queenamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
 
@@ -21,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'exo ?(.*)', fromMe: true, desc: EXO_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/exo?apikey=e1ee2b3d3b00e58f2511ad95`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/exo?apikey=queenamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
 
@@ -29,7 +37,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: true, desc: BP_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/blackpink?apikey=e1ee2b3d3b00e58f2511ad95`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/blackpink?apikey=queenamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
 
@@ -39,7 +47,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'bts ?(.*)', fromMe: false, desc: BTS_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/bts?apikey=e1ee2b3d3b00e58f2511ad95`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/bts?apikey=queenamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
 
@@ -47,7 +55,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'exo ?(.*)', fromMe: false, desc: EXO_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/exo?apikey=e1ee2b3d3b00e58f2511ad95`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/exo?apikey=queenamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
 
@@ -55,7 +63,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: false, desc: BP_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/blackpink?apikey=e1ee2b3d3b00e58f2511ad95`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/random/blackpink?apikey=queenamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
 

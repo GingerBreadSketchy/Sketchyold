@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2021 Queen Amdi.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+Queen Amdi - Black Amda
 */
 
 const Asena = require('../events');
@@ -105,7 +105,7 @@ if (config.WORKTYPE == 'private') {
         await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=e1ee2b3d3b00e58f2511ad95&url=${userName}`)
+          .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=queenamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -390,7 +390,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=e1ee2b3d3b00e58f2511ad95`)
+          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=queenamdi5652`)
           .then(async (response) => {
 
             const {
@@ -474,7 +474,7 @@ else if (config.WORKTYPE == 'public') {
         await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=e1ee2b3d3b00e58f2511ad95&url=${userName}`)
+          .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=queenamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -759,7 +759,7 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=e1ee2b3d3b00e58f2511ad95`)
+          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=queenamdi5652`)
           .then(async (response) => {
 
             const {
