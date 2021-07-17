@@ -10,11 +10,12 @@ const Asena = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
-const EFFECT_DESC = "Text effect රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
+const Language = require('../language');
+const Lang = Language.getString('scrapers');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'effectimg', fromMe: true, desc: EFFECT_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'effectimg', fromMe: true, desc: Lang.EFFECT_DESC}, (async (message, match) => {    
     
     await message.client.sendMessage(message.jid, 
             `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n\n` + 
@@ -61,7 +62,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'effectimg', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'effectimg', fromMe: false, desc: Lang.EFFECT_DESC}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n\n` + 

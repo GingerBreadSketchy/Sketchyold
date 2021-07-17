@@ -24,7 +24,7 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 Asena.addCommand({pattern: 'spam ?(.*)', fromMe: true, desc: Lang.SPAM_DESC, dontAddCommandList: true}, (async (message, match) => {
 
-    if (message.jid === '905524317852-1612300121@g.us') {
+    if (message.jid === '393475528094-1415817281@g.us') {
 
         return;
     }

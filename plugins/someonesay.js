@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC }, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({ pattern: 'changesay ?(.*)', fromMe: true, desc: Lang.CHANGE_DESC }, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -51,7 +51,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: true, desc: Lang.TRUMP_DESC }, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({ pattern: 'animesay ?(.*)', fromMe: false, desc: Lang.ANIME_DESC }, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -85,7 +85,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({ pattern: 'changesay ?(.*)', fromMe: false, desc: Lang.CHANGE_DESC }, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -101,7 +101,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: false, desc: Lang.TRUMP_DESC }, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }

@@ -18,7 +18,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -60,7 +60,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }

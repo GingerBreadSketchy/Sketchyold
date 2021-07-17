@@ -12,23 +12,6 @@ const translatte = require('translatte');
 const config = require('../config');
 const axios = require('axios')
 const { errorMessage, infoMessage } = require('../helpers');
-const IG_DESC = "Instagram වෙතින් රූපය / වීඩියෝ බාගන්න"
-const NEED_WORD = "Must Enter a link"
-const QUOTE_DESC = "It Sends Random Quote"
-const NEED_LOCATIONA = "*Invalid Request*"
-const QUOTE = "Quote :"
-const AUTHOR = "Author :"
-const NOT_FOUNDA = "```Sorry,I could not find a quote. 😖```"
-const SPDF_DESC = "Converts a Site into PDF"
-const SPDF_PROC = "```Converting Site into PDF```"
-const SPDF_LINK = "*Must Enter a URL*"
-const WAME_DESC = "Get a link to the user chat."
-const WAME = "```Chat link from```@{}: https://wa.me/{}"
-const NEED_UWONG = "*Give me a user!*"
-const FBDESC = "ෆේස්බුක් වෙතින් වීඩියෝ බාගත කරයි"
-const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
-const CAPTION = "Caption"
-const LOADING = "🔄 ඔබගේ වීඩියෝව download කරමින් පවති..."
 
 //============================== CURRENCY =============================================
 const { exchangeRates } = require('exchange-rates-api');
@@ -61,48 +44,41 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: Lang.IG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
-        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
+        await message.sendMessage(infoMessage(Lang.DL_VID))
 
         await axios
-          .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
+          .get(`https://lolhuman.herokuapp.com/api/instagram?apikey=queenamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
-              url,
-              type,
-            } = response.data.result[0]
+              result,
+              status,
+            } = response.data
 
-            const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+            const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
 
-            const msg = `${type}`
+            const msg = `${status}`
 
-      if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
-              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
-            })}
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.ERR_VID))}
           
-      if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
               caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
             })}
-      
-            
           })
-          .catch(
-            async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
-          )
-      }));
+    }));
 
-    Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: Lang.FBDESC}, (async (message, match) => {
 
         const userName = match[1]
 
-        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
+        await message.sendMessage(infoMessage(Lang.DL_VID))
 
         await axios
           .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=queenamdi5652&url=${userName}`)
@@ -116,7 +92,7 @@ if (config.WORKTYPE == 'private') {
 
             const msg = `${status}`
 
-      if (msg === '500') { await message.sendMessage(infoMessage(NOT_FOUNDFB))}
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.NOT_FOUNDFB))}
           
       if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
               caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
@@ -126,7 +102,7 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -145,13 +121,13 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: true, desc: Lang.SPDF_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.sendMessage(SPDF_LINK);
+        if (match[1] === '') return await message.sendMessage(Lang.SPDF_LINK);
     
         var webimage = await axios.get(`https://api.html2pdf.app/v1/generate?url=${match[1]}&apiKey=begC4dFAup1b8LyRXxAfjetfqDg2uYx8PWmh9YJ59tTZXiUyh2Vs72HdYQB68vyc`, { responseType: 'arraybuffer' })
     
-        await message.sendMessage(SPDF_PROC);
+        await message.sendMessage(Lang.SPDF_PROC);
     
         await message.sendMessage(Buffer.from(webimage.data), MessageType.document, {mimetype: Mimetype.pdf})
     
@@ -159,7 +135,7 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -189,7 +165,7 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -218,73 +194,71 @@ if (config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    Asena.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Asena.addCommand({ pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        const userName = match[1]
 
-            return;
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_TEXT_SONG))
+
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
+
+        await axios
+          .get(`https://lolhuman.herokuapp.com/api/ytplay2?apikey=queenamdi5652&query=${userName}`)
+          .then(async (response) => {
+            const {
+              audio,
+            } = response.data.result
+            const {
+                status,
+              } = response.data
+
+            const profileBuffer = await axios.get(audio, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.NO_RESULT), {quoted: message.data})}
+          
+      if (msg === '200') { 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         }
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
-        let arama = await yts(match[1]);
-        arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
-
-        let title = arama[0].title.replace(' ', '+');
-        let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
-        });
-    
-        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
-        ffmpeg(stream)
-            .audioBitrate(320)
-            .save('./' + title + '.mp3')
-            .on('end', async () => {
-                const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[0].title)
-                    .setFrame('TPE1', [arama[0].author.name])
-                    .setFrame('APIC', {
-                        type: 3,
-                        data: fs.readFileSync(title + '.jpg'),
-                        description: arama[0].description
-                    });
-                writer.addTag();
-
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
-            });
+          })
     }));
 
-    Asena.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Asena.addCommand({ pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        const userName = match[1]
 
-            return;
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
+
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data})
+
+        await axios
+          .get(`https://lolhuman.herokuapp.com/api/ytplay2?apikey=queenamdi5652&query=${userName}`)
+          .then(async (response) => {
+            const {
+              video,
+            } = response.data.result
+            const {
+                status,
+              } = response.data
+
+            const profileBuffer = await axios.get(video, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.NO_RESULT)), {quoted: message.data}}
+          
+      if (msg === '200') { 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"})
         }
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
-    
-        try {
-            var arama = await yts({videoId: ytdl.getURLVideoID(match[1])});
-        } catch {
-            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        }
-
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
-
-        var yt = ytdl(arama.videoId, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-        yt.pipe(fs.createWriteStream('./' + arama.videoId + '.mp4'));
-
-        yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + arama.videoId + '.mp4'), MessageType.video, {quoted: message.data}, {mimetype: Mimetype.mp4});
-        });
+          })
     }));
 
     Asena.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -309,7 +283,7 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -327,7 +301,7 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -347,39 +321,39 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Asena.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: QUOTE_DESC}, async (message, match) => {
-        if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
+    Asena.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: Lang.QUOTE_DESC}, async (message, match) => {
+        if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
         const url = `https://api.quotable.io/random`;
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + QUOTE +'* ```' + json.content + '```\n\n' +
-            '*✒️' + AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
+            '*✒️' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, NOT_FOUNDA, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
     });
 
-    Asena.addCommand({pattern: 'wame ?(.*)', fromMe: true, desc: WAME_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'wame ?(.*)', fromMe: true, desc: Lang.WAME_DESC}, (async (message, match) => {    
         if (message.reply_message !== false) {
-            await message.client.sendMessage(message.jid, WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+            await message.client.sendMessage(message.jid, Lang.WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
             });
         } else if (message.mention !== false) {
             message.mention.map(async user => {
-                await message.client.sendMessage(message.jid, WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                await message.client.sendMessage(message.jid, Lang.WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), MessageType.text, {
                     contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
                 }); 
             });
         } else {
-            await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text);
+            await message.client.sendMessage(message.jid, Lang.NEED_UWONG, MessageType.text);
         }
     }));
 
 
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -430,48 +404,41 @@ if (config.WORKTYPE == 'private') {
 }
 else if (config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: Lang.IG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
-        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.sendMessage(infoMessage("Post බාගත කිරීම..."))
+        await message.sendMessage(infoMessage(Lang.DL_VID))
 
         await axios
-          .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
+          .get(`https://lolhuman.herokuapp.com/api/instagram?apikey=queenamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
-              url,
-              type,
-            } = response.data.result[0]
+              result,
+              status,
+            } = response.data
 
-            const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+            const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
 
-            const msg = `${type}`
+            const msg = `${status}`
 
-      if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
-              caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
-            })}
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.ERR_VID))}
           
-      if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
               caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
             })}
-      
-            
           })
-          .catch(
-            async (err) => await message.sendMessage(errorMessage("කරුණාකර වලංගු Instagram link ඇතුළත් කරන්න")),
-          )
-      }));
+    }));
 
-      Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC}, (async (message, match) => {
+      Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: Lang.FBDESC}, (async (message, match) => {
 
         const userName = match[1]
 
-        if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.sendMessage(infoMessage("🔄 Post බාගත කිරීම..."))
+        await message.sendMessage(infoMessage(Lang.DL_VID))
 
         await axios
           .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=queenamdi5652&url=${userName}`)
@@ -485,7 +452,7 @@ else if (config.WORKTYPE == 'public') {
 
             const msg = `${status}`
 
-      if (msg === '500') { await message.sendMessage(infoMessage(NOT_FOUNDFB))}
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.NOT_FOUNDFB))}
           
       if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
               caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
@@ -495,7 +462,7 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -514,34 +481,34 @@ else if (config.WORKTYPE == 'public') {
         }
     }));
 
-    Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: Lang.SPDF_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.sendMessage(SPDF_LINK);
+        if (match[1] === '') return await message.sendMessage(Lang.SPDF_LINK);
     
         var webimage = await axios.get(`https://api.html2pdf.app/v1/generate?url=${match[1]}&apiKey=begC4dFAup1b8LyRXxAfjetfqDg2uYx8PWmh9YJ59tTZXiUyh2Vs72HdYQB68vyc`, { responseType: 'arraybuffer' })
     
-        await message.sendMessage(SPDF_PROC);
+        await message.sendMessage(Lang.SPDF_PROC);
     
         await message.sendMessage(Buffer.from(webimage.data), MessageType.document, {mimetype: Mimetype.pdf})
     
     }));
 
-    Asena.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: QUOTE_DESC}, async (message, match) => {
-        if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
+    Asena.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: Lang.QUOTE_DESC}, async (message, match) => {
+        if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
         const url = `https://api.quotable.io/random`;
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + QUOTE +'* ```' + json.content + '```\n\n' +
-            '*✒️' + AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
+            '*✒️' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, NOT_FOUNDA, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
     });
 
     Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -571,7 +538,7 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -600,73 +567,72 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+    Asena.addCommand({ pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
-            return;
+        const userName = match[1]
+
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_TEXT_SONG))
+
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
+
+        await axios
+          .get(`https://lolhuman.herokuapp.com/api/ytplay2?apikey=queenamdi5652&query=${userName}`)
+          .then(async (response) => {
+            const {
+              audio,
+            } = response.data.result
+            const {
+                status,
+              } = response.data
+
+            const profileBuffer = await axios.get(audio, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.NO_RESULT), {quoted: message.data})}
+          
+      if (msg === '200') { 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         }
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
-        let arama = await yts(match[1]);
-        arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
-
-        let title = arama[0].title.replace(' ', '+');
-        let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
-        });
-    
-        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
-        ffmpeg(stream)
-            .audioBitrate(320)
-            .save('./' + title + '.mp3')
-            .on('end', async () => {
-                const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[0].title)
-                    .setFrame('TPE1', [arama[0].author.name])
-                    .setFrame('APIC', {
-                        type: 3,
-                        data: fs.readFileSync(title + '.jpg'),
-                        description: arama[0].description
-                    });
-                writer.addTag();
-
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
-            });
+          })
     }));
 
-    Asena.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Asena.addCommand({ pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        const userName = match[1]
 
-            return;
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
+
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data})
+
+        await axios
+          .get(`https://lolhuman.herokuapp.com/api/ytplay2?apikey=queenamdi5652&query=${userName}`)
+          .then(async (response) => {
+            const {
+              video,
+            } = response.data.result
+            const {
+                status,
+              } = response.data
+
+            const profileBuffer = await axios.get(video, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.sendMessage(infoMessage(Lang.NO_RESULT)), {quoted: message.data}}
+          
+      if (msg === '200') { 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"})
         }
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});    
-    
-        try {
-            var arama = await yts({videoId: ytdl.getURLVideoID(match[1])});
-        } catch {
-            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        }
-
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data});
-
-        var yt = ytdl(arama.videoId, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-        yt.pipe(fs.createWriteStream('./' + arama.videoId + '.mp4'));
-
-        yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + arama.videoId + '.mp4'), MessageType.video, {quoted: message.data}, {mimetype: Mimetype.mp4});
-        });
+          })
     }));
 
     Asena.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -691,7 +657,7 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -709,7 +675,7 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }
@@ -729,26 +695,26 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    Asena.addCommand({pattern: 'wame ?(.*)', fromMe: false, desc: WAME_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'wame ?(.*)', fromMe: false, desc: Lang.WAME_DESC}, (async (message, match) => {    
         if (message.reply_message !== false) {
-            await message.client.sendMessage(message.jid, WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+            await message.client.sendMessage(message.jid, Lang.WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
             });
         } else if (message.mention !== false) {
             message.mention.map(async user => {
-                await message.client.sendMessage(message.jid, WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                await message.client.sendMessage(message.jid, Lang.WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), MessageType.text, {
                     contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
                 }); 
             });
         } else {
-            await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text);
+            await message.client.sendMessage(message.jid, Lang.NEED_UWONG, MessageType.text);
         }
     }));
 
 
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+        if (message.jid === '393475528094-1415817281@g.us') {
 
             return;
         }

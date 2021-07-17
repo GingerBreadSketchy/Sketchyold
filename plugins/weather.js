@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: true}, async (message, match) => {
 
-            if (message.jid === '905524317852-1612300121@g.us') {
+            if (message.jid === '393475528094-1415817281@g.us') {
 
                 return;
             }
@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: false}, async (message, match) => {
 
-            if (message.jid === '905524317852-1612300121@g.us') {
+            if (message.jid === '393475528094-1415817281@g.us') {
 
                 return;
             }
