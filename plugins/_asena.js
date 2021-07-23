@@ -12,6 +12,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('_asena');
+const fs = require("fs")
 const amdi = fs.readFileSync('./media/amdibot.mp3')  
 
 if (Config.WORKTYPE == 'private') {
