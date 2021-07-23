@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
@@ -19,7 +19,7 @@ const LOADING = "වීඩියෝ බාගත කිරීම..."
 const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
 const CAPTION = "Caption"
 
-Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
+Amdi.applyCMD({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
 
     const userName = match[1]
 
@@ -40,11 +40,11 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
         const msg = `${type}`
 
 	 if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
-          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+          caption: "Copyright © 2021 | Queen Amdi "
         })}
 		 	 
 	if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
+          caption: "Copyright © 2021 | Queen Amdi "
         })}
 	
         

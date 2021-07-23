@@ -19,15 +19,16 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'Queen Amdi 2.6v - Public Stable',
+    VERSION: 'Queen Amdi 2.7v - Public Stable',
     SESSION: process.env.AMDI_SESSION === undefined ? '' : process.env.AMDI_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
+    ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/r3wmpwr/LOGO.jpg' : process.env.ALIVE_LOGO,
-    WELCOME_LOGO: process.env.WELCOME_LOGO === undefined ? 'https://tinyurl.com/queenamdi-welcome' : process.env.WELCOME_LOGO,
+    WELCOME_LOGO: process.env.WELCOME_LOGO === undefined ? 'https://www.mboxdrive.com/1413772033.mp4' : process.env.WELCOME_LOGO,
     BYE_LOGO: process.env.BYE_LOGO === undefined ? 'https://tinyurl.com/queenamdi-goodbye' : process.env.BYE_LOGO,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,

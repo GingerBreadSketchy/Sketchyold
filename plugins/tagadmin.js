@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
@@ -14,7 +14,7 @@ const Language = require('../language');
 const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';

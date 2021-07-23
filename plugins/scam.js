@@ -6,13 +6,13 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype, Presence} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('scam');
 
-Asena.addCommand({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') {
 

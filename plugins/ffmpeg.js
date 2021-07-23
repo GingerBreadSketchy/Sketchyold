@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -19,7 +19,7 @@ const Lang = Language.getString('ffmpeg');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Queen Amdi '});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -63,7 +63,7 @@ if (Config.WORKTYPE == 'private') {
                 .videoFilters(`${match[1]}`)
                 .save('output.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -89,7 +89,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ffmpeg ?(.*)', fromMe: false, desc: Lang.FF_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ffmpeg ?(.*)', fromMe: false, desc: Lang.FF_DESC}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -114,7 +114,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Queen Amdi '});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -133,7 +133,7 @@ else if (Config.WORKTYPE == 'public') {
                 .videoFilters(`${match[1]}`)
                 .save('output.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }

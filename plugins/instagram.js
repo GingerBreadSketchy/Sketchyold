@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 
 
-const Asena = require('../events')
+const Amdi = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
 const axios = require('axios')
 const cn = require('../config');
@@ -18,7 +18,7 @@ const Lang = Language.getString('instagram')
 
 if (cn.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'readig ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -71,7 +71,7 @@ if (cn.WORKTYPE == 'private') {
 }
 else if (cn.WORKTYPE == 'public') {
 
-  Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  Amdi.applyCMD({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     if (message.jid === '393475528094-1415817281@g.us') {
 

@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const dil = require('axios');
 const fs = require('fs');
@@ -22,7 +22,7 @@ const FROM = " From the group with ID, "
 const MSG = "Message: \n\n"
 const SUC = "*Message Successfully Saved to LOG! ✅️*"
 
-Asena.addCommand({ pattern: 'log', fromMe: true, desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
+Amdi.applyCMD({ pattern: 'log', fromMe: true, desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
 
     const meta = await message.client.groupMetadata(message.jid)
     const usmeta = message.client.isOnWhatsApp(message.jid)

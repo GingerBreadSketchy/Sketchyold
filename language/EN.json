@@ -229,7 +229,9 @@
         },
         "system_stats": {
             "ALIVE_DESC": "බොට් වැඩ කරන්නේ නැද්ද යන්න පරීක්ෂා කිරීමට?",
-            "SYSD_DESC": "System properties පෙන්වයි."
+            "SYSD_DESC": "System properties පෙන්වයි.",
+            "BOT_V": "ඔබ දැනට install කර තිබෙන bot version එක පෙන්වීම.",
+            "version": "2.7 - Public Release"
         },
         "tagall": {
             "TAGALL_DESC": "කණ්ඩායමේ සිටින සියල්ලන් ටැග් කරයි.",
@@ -494,6 +496,23 @@
             "BTS_DESC": "BTS සංගීත කණ්ඩායමේ පින්තුර ලබා දෙයි.",
             "EXO_DESC" : "EXO සංගීත කණ්ඩායමේ පින්තුර ලබා දෙයි.",
             "BP_DESC": "Black pink සංගීත කණ්ඩායමේ පින්තුර ලබා දෙයි."
+        },
+        "tiktok":{
+            "TK_DESC": "දී ඇති usrname යෙන් tiktok තොරතුරු රැස් කරයි.\n⌨️ Example: .tk _black.amda_",
+            "REPLY": "```ඔබට ඕනෑම username ටයිප් කිරීමට අවශ්‍යයි!```",
+            "USERNAME": "Username :",
+            "NAME": "Nickname :",
+            "BIO": "Bio :",
+            "FOLLOWERS": "Followers :",
+            "FOLLOWING": "Followings :",
+            "LIKES": "Likes :",
+            "VIDEOS": "Videos :",
+            "NOT": "```User not found!```"
+        },
+        "lyric":{
+            "LY_DESC": "සිංදු වල lyrics ලබා දෙයි.",
+            "NEED_WORD": "*ඔබ සිංදු නම ඇතුළත් කළ යුතුය*",
+            "NO_RESULT": "*මට සිංදුව සොයාගත නොහැකි විය :(*"
         }
     }
 }

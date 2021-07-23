@@ -1,4 +1,4 @@
-/* const Asena = require('../events');
+/* const Amdi = require('../events');
 const ffmpeg = require('fluent-ffmpeg');
 const fs = require('fs');
 const { MessageType } = require('@adiwajshing/baileys');
@@ -38,7 +38,7 @@ const convertToWav = file => {
 
 if (conf.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -82,7 +82,7 @@ if (conf.WORKTYPE == 'private') {
 }
 if (conf.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

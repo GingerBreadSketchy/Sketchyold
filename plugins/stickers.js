@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -18,7 +18,7 @@ const Language = require('../language');
 const Lang = Language.getString('sticker');
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'sticker$', fromMe: true, desc: Lang.STICKER_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'sticker$', fromMe: true, desc: Lang.STICKER_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);
@@ -54,7 +54,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'sticker$', fromMe: false, desc: Lang.STICKER_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'sticker$', fromMe: false, desc: Lang.STICKER_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);

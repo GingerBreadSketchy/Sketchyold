@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Heroku = require('heroku-client');
 const got = require('got');
@@ -23,7 +23,7 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 if (Config.CHAT_BOT == 'true') {
 	if (Config.WORKTYPE == 'private') {
-		Asena.addCommand({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -37,7 +37,7 @@ if (Config.CHAT_BOT == 'true') {
 	}
 	
 	else if (Config.WORKTYPE == 'public') {
-		Asena.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -53,7 +53,7 @@ if (Config.CHAT_BOT == 'true') {
 
 else if (Config.CHAT_BOT == 'false') {
 	if (Config.WORKTYPE == 'private') {
-		Asena.addCommand({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -67,7 +67,7 @@ else if (Config.CHAT_BOT == 'false') {
 	}
 	
 	else if (Config.WORKTYPE == 'public') {
-		Asena.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -81,7 +81,7 @@ else if (Config.CHAT_BOT == 'false') {
 	}
 }
 
-Asena.addCommand({pattern: 'switch ?(.*)', fromMe: true, desc: Lang.SWITCH_DESC}, (async(message, match) => {
+Amdi.applyCMD({pattern: 'switch ?(.*)', fromMe: true, desc: Lang.SWITCH_DESC}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.SWITCH_MISSING, MessageType.text);
     if ((varKey = match[1].split(':')[0]) && (varValue = match[1].split(':')[1])) {

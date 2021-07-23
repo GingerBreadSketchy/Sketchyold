@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const tesseract = require("node-tesseract-ocr")
@@ -16,7 +16,7 @@ const Lang = Language.getString('ocr');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -58,7 +58,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

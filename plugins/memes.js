@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const memeMaker = require('meme-maker')
 const fs = require('fs')
@@ -17,7 +17,7 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
+    Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -54,14 +54,14 @@ if (Config.WORKTYPE == 'private') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi '});
             await info.delete();    
         });
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -98,7 +98,7 @@ else if (Config.WORKTYPE == 'public') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi '});
             await info.delete();    
         });
     }));

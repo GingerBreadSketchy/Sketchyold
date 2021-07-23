@@ -9,13 +9,13 @@ Queen Amdi - Black Amda
 const fs = require('fs/promises')
 const path = require('path')
 const { MessageType } = require('@adiwajshing/baileys')
-const Asena = require('../events');
+const Amdi = require('../events');
 const { successfullMessage, errorMessage, infoMessage } = require('../helpers');
 const NotesDB = require('./sql/notes');
 const Language = require('../language')
 const Lang = Language.getString('notes')
 
-Asena.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
+Amdi.applyCMD({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
     const _notes = await NotesDB.getNotes()
@@ -44,7 +44,7 @@ Asena.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, asy
 
 
 
-Asena.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
+Amdi.applyCMD({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
 
     const userNote = match[1]
 
@@ -92,7 +92,7 @@ Asena.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE },
     }
 })
 
-Asena.addCommand({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
+Amdi.applyCMD({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
 
     await NotesDB.deleteAllNotes()
 

@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -16,7 +16,7 @@ const Lang = Language.getString('anime');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ranime ?(.*)', fromMe: true, desc: Lang.AN}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ranime ?(.*)', fromMe: true, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -104,13 +104,13 @@ if (Config.WORKTYPE == 'private') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi '})
 
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ranime ?(.*)', fromMe: false, desc: Lang.AN}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ranime ?(.*)', fromMe: false, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -198,7 +198,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi '})
 
     }));
 }

@@ -10,7 +10,7 @@ WhatsAsena - Yusuf Usta
 var config = require('./config');
 var Commands = [];
 
-function addCommand(info, func) {
+function applyCMD(info, func) {
     // Basit bir fonksiyon, komut eklemek için.
     var types = ['photo', 'image', 'text', 'message'];
 
@@ -45,6 +45,6 @@ function addCommand(info, func) {
 }
 
 module.exports = {
-    addCommand: addCommand,
+    applyCMD: applyCMD,
     commands: Commands
 }

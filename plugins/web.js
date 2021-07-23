@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const speedTest = require('@lh2020/speedtest-net');
 const TinyURL = require('tinyurl');
@@ -29,7 +29,7 @@ function speedText(speed) {
     return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
 }
 
-Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
     var msg = await message.reply(Lang.SPEEDTESTING);
     var st = await speedTest({acceptLicense: true, acceptGdpr: true});
     
@@ -43,7 +43,7 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}
     await msg.delete();
 }));
 
-Asena.addCommand({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
   var msg = await message.reply('```Ping!```');
   var end = new Date().getTime();
@@ -53,7 +53,7 @@ Asena.addCommand({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lan
     message.jid,'*Pong!*\n```' + (end - start) + 'ms```', MessageType.text);
 }));
 
-Asena.addCommand({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 

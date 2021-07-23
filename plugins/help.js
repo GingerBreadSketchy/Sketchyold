@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
@@ -31,7 +31,7 @@ const sudoEN = "SUDO, Shares your bot to the user you choose with all its powers
 
 if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
     
-    Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, desc: h_Des}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'help ?(.*)', fromMe: true, desc: h_Des}, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(
@@ -79,7 +79,7 @@ if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
 }
 else {
     
-    Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, desc: h_DedEN}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'help ?(.*)', fromMe: true, desc: h_DedEN}, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(

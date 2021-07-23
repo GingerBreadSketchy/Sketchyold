@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -19,7 +19,7 @@ const Lang = Language.getString('info');
 const adm = Language.getString('admin');
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({ pattern: 'info', fromMe: true, desc: Lang.INFO_DESC}, async (message, match) => { 
+    Amdi.applyCMD({ pattern: 'info', fromMe: true, desc: Lang.INFO_DESC}, async (message, match) => { 
 
         if (message.jid.includes('-')) {
 
@@ -57,7 +57,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({ pattern: 'info', fromMe: false, desc: Lang.INFO_DESC}, async (message, match) => { 
+    Amdi.applyCMD({ pattern: 'info', fromMe: false, desc: Lang.INFO_DESC}, async (message, match) => { 
         
         if (message.jid.includes('-')) {
 
