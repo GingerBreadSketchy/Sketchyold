@@ -29,7 +29,7 @@ if (read.WORKTYPE == 'private') {
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*Song name :* ' + match[1] + '\n\n' + json.result, MessageType.text);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*You searched name :* ' + match[1] + '\n\n' + json.result, MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
         }
@@ -43,7 +43,7 @@ else if (read.WORKTYPE == 'public') {
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*Song name :* ' + match[1] + '\n\n' + json.result, MessageType.text);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*You searched name :* ' + match[1] + '\n\n' + json.result, MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
         }

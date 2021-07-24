@@ -222,7 +222,7 @@ if (config.WORKTYPE == 'private') {
           
       if (msg === '200') { 
         await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: Mimetype.mp4Audio})
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
         }
           })
     }));
@@ -634,7 +634,7 @@ else if (config.WORKTYPE == 'public') {
           
       if (msg === '200') { 
         await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: Mimetype.mp4Audio})
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
         }
           })
     }));
