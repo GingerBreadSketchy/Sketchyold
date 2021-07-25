@@ -376,9 +376,10 @@
             "STOP_SPAM": "✅ *Spam successfully stopped! Please wait a moment.*"
         },
         "carbon": {
-            "CARBON_DESC": "Text to image සඳහා carbon.sh භාවිතා කරයි",
+            "CARBON_DESC": "ඔබ mention කරන text එක carbon.sh මඟින් carbon image කරයි.",
             "CARBON_NEEDWORD": "*Not enough arguments to translate Text-to-Image!*\nExample: ```.carbon test```\nExample: ```.carbon making#test```",
-            "CARBON_WARN": "කරුණාකර english අක්ෂර පමණක් ටයිප් කරන්න!"
+            "CARBON_WARN": "කරුණාකර english අක්ෂර පමණක් ටයිප් කරන්න!",
+            "NEED_WORD": "*ඔබ වචනයක් ඇතුළත් කළ යුතුය*"
         },
         "scam": {
             "SCAM_DESC": "මිනිත්තු 5 ක ව්‍යාජ ක්‍රියා නිර්මාණය කරයි.",
