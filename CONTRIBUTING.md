@@ -95,7 +95,7 @@ It is your responsibility to use these codes. We are not responsible for any bad
 
 ##
 
-##### Sharing WhatsAsena on Social Medias
+##### Sharing QueenAmdi on Social Medias
 
 > Users Allowed 
 

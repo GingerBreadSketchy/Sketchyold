@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 Black Amda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+QueenAmdi - Black Amda
 */
 
 const fs = require("fs");
@@ -14,7 +14,7 @@ const axios = require('axios');
 const config = require('./config');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./whatsasena/');
+const {Message, StringSession, Image, Video} = require('./queenamdi');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
@@ -27,7 +27,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('WhatsAsenaDuplicated', {
+const QueenAmdiDB = config.DATABASE.define('QueenAmdi', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -69,9 +69,9 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function whatsAsena () {
+async function queenAmdi () {
     await config.DATABASE.sync();
-    var StrSes_Db = await WhatsAsenaDB.findAll({
+    var StrSes_Db = await QueenAmdiDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -115,7 +115,7 @@ async function whatsAsena () {
 
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await QueenAmdiDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -419,4 +419,4 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
     }
 }
 
-whatsAsena();
+queenAmdi();

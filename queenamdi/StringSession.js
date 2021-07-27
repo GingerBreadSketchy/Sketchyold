@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 Black Amda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+QueenAmdi - Black Amda
 */
 
 const fs = require('fs');
@@ -28,7 +28,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'ASENA;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'AMDI;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 

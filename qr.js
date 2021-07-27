@@ -9,10 +9,10 @@ Queen Amdi - Black Amda
 
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./whatsasena/');
+const {StringSession} = require('./queenamdi/');
 const fs = require('fs');
 
-async function whatsAsena () {
+async function queenAmdi () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.logger.level = 'warn';
@@ -45,4 +45,4 @@ ${chalk.blue.italic('ℹ️  Whatsapp වෙත සම්බන්ධ වෙම�
     await conn.connect();
 }
 
-whatsAsena()
+queenAmdi()

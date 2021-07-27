@@ -2,9 +2,9 @@
     "__ASENAJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "BlackAmda",
     "STRINGS": {
-        "_asena": {
+        "_amdi": {
             "COMMAND": "විධානය",
             "DESC": "විස්තරය",
             "EXAMPLE": "උදාහරණයක්",
@@ -422,7 +422,7 @@
             "SAVE_USAGE": "පණිවිඩයකට mention දී ටයිප් කරන්න .save හෝ භාවිතා කරන්න .save <ඔබේ සටහන>",
             "REPLY": "කරුණාකර සටහනක් හෝ පණිවිඩයකට mention දෙන්න.",
             "SUCCESSFULLY_ADDED": "Successfully added new note, check your notes with .notes.",
-            "UNSUCCESSFUL": "Could not add note, please try again later or contact WhatsAsena developers.",
+            "UNSUCCESSFUL": "Could not add note, please try again later or contact QueenAmdi developers.",
             "DELETE_USAGE": "ඔබගේ සුරකින ලද සටහන් *සියල්ල* මකා දමයි.",
             "SUCCESSFULLY_DELETED": "Successfully deleted all your notes."
         },
