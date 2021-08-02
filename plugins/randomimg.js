@@ -18,25 +18,25 @@ const Lang = Language.getString('random_pic');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'bts ?(.*)', fromMe: true, desc: Lang.BTS_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'bts ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BTS_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=queenamdibot`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
-
-    }));
-
-    Amdi.applyCMD({pattern: 'exo ?(.*)', fromMe: true, desc: Lang.EXO_DESC}, (async (message, match) => {
-
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=queenamdibot`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=qamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
     }));
 
-    Amdi.applyCMD({pattern: 'blackpink ?(.*)', fromMe: true, desc: Lang.BP_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'exo ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.EXO_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=queenamdibot`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=qamdi5652`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+
+    }));
+
+    Amdi.applyCMD({pattern: 'blackpink ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BP_DESC}, (async (message, match) => {
+
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=qamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
     Amdi.applyCMD({pattern: 'bts ?(.*)', fromMe: false, desc: Lang.BTS_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=queenamdibot`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=qamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -54,7 +54,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Amdi.applyCMD({pattern: 'exo ?(.*)', fromMe: false, desc: Lang.EXO_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=queenamdibot`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=qamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -62,7 +62,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Amdi.applyCMD({pattern: 'blackpink ?(.*)', fromMe: false, desc: Lang.BP_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=queenamdibot`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=qamdi5652`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 

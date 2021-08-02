@@ -16,16 +16,14 @@ const Lang = Language.getString('spotify');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({ pattern: 'spotify ?(.*)', fromMe: true, desc: Lang.SPO_DESC}, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'spotify ?(.*)', fromMe: true, desc: Lang.SPO_DESC,  deleteCommand: false}, async (message, match) => {
 
         const link = match[1]
     
         if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text)
-
-        await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text)
     
         await axios
-          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdibot&url=${link}`)
+          .get(`https://api.lolhuman.xyz/api/spotify?apikey=qamdi5652&url=${link}`)
           .then(async (response) => {
             const {
               link,
@@ -36,6 +34,9 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,Lang.SPO_UP,MessageType.text);
             await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         })
+        .catch(
+          async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+        )
       },
     )
 }
@@ -47,10 +48,8 @@ else if (Config.WORKTYPE == 'public') {
     
         if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text, {quoted: message.data})
     
-        await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text, {quoted: message.data})
-    
         await axios
-          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdibot&url=${link}`)
+          .get(`https://api.lolhuman.xyz/api/spotify?apikey=qamdi5652&url=${link}`)
           .then(async (response) => {
             const {
               link,
@@ -61,6 +60,9 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,Lang.SPO_UP,MessageType.text, {quoted: message.data});
             await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         })
+        .catch(
+          async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+        )
       },
     )
 }

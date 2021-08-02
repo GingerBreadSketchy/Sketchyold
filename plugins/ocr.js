@@ -16,7 +16,7 @@ const Lang = Language.getString('ocr');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'ocr ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

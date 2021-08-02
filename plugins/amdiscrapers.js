@@ -45,16 +45,14 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({ pattern: 'ig ?(.*)', fromMe: true, desc: Lang.IG_DESC}, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'ig ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.IG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
-        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/instagram?apikey=queenamdibot&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/instagram?apikey=qamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -67,22 +65,25 @@ if (config.WORKTYPE == 'private') {
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text)}
           
-      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-              caption: "Copyright © 2021 | Queen Amdi "
-            })}
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
-    Amdi.applyCMD({ pattern: 'fb ?(.*)', fromMe: true, desc: Lang.FBDESC}, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'fb ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.FBDESC}, (async (message, match) => {
 
         const userName = match[1]
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
-        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/facebook2?apikey=queenamdibot&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook2?apikey=qamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -95,10 +96,15 @@ if (config.WORKTYPE == 'private') {
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NOT_FOUNDFB,MessageType.text)}
           
-      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-              caption: "Copyright © 2021 | Queen Amdi "
-            })}
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
     Amdi.applyCMD({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
@@ -122,7 +128,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    Amdi.applyCMD({pattern: 'spdf ?(.*)', fromMe: true, desc: Lang.SPDF_DESC }, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'spdf ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.SPDF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.SPDF_LINK);
     
@@ -134,7 +140,7 @@ if (config.WORKTYPE == 'private') {
     
     }));
 
-    Amdi.applyCMD({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true,  deleteCommand: false, desc: Lang.CURRENCY_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -164,7 +170,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    Amdi.applyCMD({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'tts (.*)', fromMe: true,  deleteCommand: false, desc: Lang.TTS_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -195,70 +201,81 @@ if (config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    Amdi.applyCMD({ pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'song ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data})
 
-        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=queenamdibot&query=${userName}`)
-          .then(async (response) => {
+          .get(`https://api.lolhuman.xyz/api/ytplay?apikey=qamdi5652&query=${userName}`)
+          .then
+          (async (response) => {
             const {
-              audio,
-              title,
-            } = response.data.result
+              link,
+            } = response.data.result.audio
             const {
                 status,
               } = response.data
+            const {
+              title,
+              } = response.data.result.info
 
-            const profileBuffer = await axios.get(audio, {responseType: 'arraybuffer'})
+            const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
 
             const msg = `${status}`
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
           
-      if (msg === '200') { 
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data}); 
         await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
         }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
-    Amdi.applyCMD({ pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'video ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.VIDEO_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
-        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data})
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=queenamdibot&query=${userName}`)
-          .then(async (response) => {
+          .get(`https://api.lolhuman.xyz/api/ytplay?apikey=qamdi5652&query=${userName}`)
+          .then
+          (async (response) => {
             const {
-              video,
-            } = response.data.result
+              link,
+            } = response.data.result.video
             const {
                 status,
               } = response.data
+            const {
+              title,
+              } = response.data.result.info
 
-            const profileBuffer = await axios.get(video, {responseType: 'arraybuffer'})
+            const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
 
             const msg = `${status}`
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
           
-      if (msg === '200') { 
-        await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi "})
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data}); 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
         }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
-    Amdi.applyCMD({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'yt ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -283,7 +300,7 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
-    Amdi.applyCMD({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'wiki ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -301,7 +318,7 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
-    Amdi.applyCMD({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'img ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -323,7 +340,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Amdi.applyCMD({pattern: 'quote ?(.*)', fromMe: true, desc: Lang.QUOTE_DESC}, async (message, match) => {
+    Amdi.applyCMD({pattern: 'quote ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.QUOTE_DESC}, async (message, match) => {
         if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
         const url = `https://api.quotable.io/random`;
         try {
@@ -336,7 +353,7 @@ if (config.WORKTYPE == 'private') {
         }
     });
 
-    Amdi.applyCMD({pattern: 'wame ?(.*)', fromMe: true, desc: Lang.WAME_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'wame ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.WAME_DESC}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, Lang.WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -353,7 +370,7 @@ if (config.WORKTYPE == 'private') {
     }));
 
 
-    Amdi.applyCMD({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'github ?(.*)', fromMe: true,  deleteCommand: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -366,7 +383,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=queenamdibot`)
+          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=qamdi5652`)
           .then(async (response) => {
 
             const {
@@ -404,42 +421,42 @@ if (config.WORKTYPE == 'private') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tk ?(.*)', fromMe: true, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tk ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
-        const userName = match[1]
-  
-         if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
+       const userName = match[1]
  
-         await axios
-           .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=queenamdibot`)
-           .then(async (response) => {
- 
-             const {
-               username,
-               nickname,
-               bio,
-               followers,
-               followings, 
-               likes, 
-               video,
-               user_picture,
-             } = response.data.result
- 
-             const tkscrap = await axios.get(user_picture, 
-               {responseType: 'arraybuffer',
-             })
- 
-             const msg = `*${TKlang.USERNAME}* ${username} \n\n*${TKlang.NAME}* ${nickname} \n\n*${TKlang.BIO}*\n${bio} \n\n*${TKlang.FOLLOWERS}* ${followers} \n\n*${TKlang.FOLLOWING}* ${followings} \n\n*${TKlang.LIKES}* ${likes} \n\n*${TKlang.VIDEOS}* ${video} \n\n`
- 
-             await message.sendMessage(Buffer.from(tkscrap.data), MessageType.image, { 
-               caption: msg,
-             })
-           })
-           .catch(
-             async (err) => await message.client.sendMessage(message.jid, TKlang.NOT, MessageType.text),
-           )
-       },
-     )
+        if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
+
+        await axios
+          .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=qamdi5652`)
+          .then(async (response) => {
+
+            const {
+              username,
+              nickname,
+              bio,
+              followers,
+              followings, 
+              likes, 
+              video,
+              user_picture,
+            } = response.data.result
+
+            const tkscrap = await axios.get(user_picture, 
+              {responseType: 'arraybuffer',
+            })
+
+            const msg = `*${TKlang.USERNAME}* ${username} \n\n*${TKlang.NAME}* ${nickname} \n\n*${TKlang.BIO}*\n${bio} \n\n*${TKlang.FOLLOWERS}* ${followers} \n\n*${TKlang.FOLLOWING}* ${followings} \n\n*${TKlang.LIKES}* ${likes} \n\n*${TKlang.VIDEOS}* ${video} \n\n`
+
+            await message.sendMessage(Buffer.from(tkscrap.data), MessageType.image, { 
+              caption: msg,
+            })
+          })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid, TKlang.NOT, MessageType.text),
+          )
+      },
+    )
 }
 else if (config.WORKTYPE == 'public') {
 
@@ -449,10 +466,8 @@ else if (config.WORKTYPE == 'public') {
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
-        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/instagram?apikey=queenamdibot&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/instagram?apikey=qamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -465,10 +480,15 @@ else if (config.WORKTYPE == 'public') {
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text)}
           
-      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-              caption: "Copyright © 2021 | Queen Amdi "
-            })}
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
       Amdi.applyCMD({ pattern: 'fb ?(.*)', fromMe: false, desc: Lang.FBDESC}, (async (message, match) => {
@@ -477,10 +497,8 @@ else if (config.WORKTYPE == 'public') {
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
-        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/facebook2?apikey=queenamdibot&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook2?apikey=qamdi5652&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -493,10 +511,15 @@ else if (config.WORKTYPE == 'public') {
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NOT_FOUNDFB,MessageType.text)}
           
-      if (msg === '200') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-              caption: "Copyright © 2021 | Queen Amdi "
-            })}
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
     Amdi.applyCMD({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
@@ -613,30 +636,35 @@ else if (config.WORKTYPE == 'public') {
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data})
 
-        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=queenamdibot&query=${userName}`)
-          .then(async (response) => {
+          .get(`https://api.lolhuman.xyz/api/ytplay?apikey=qamdi5652&query=${userName}`)
+          .then
+          (async (response) => {
             const {
-              audio,
-              title,
-            } = response.data.result
+              link,
+            } = response.data.result.audio
             const {
                 status,
               } = response.data
+            const {
+              title,
+              } = response.data.result.info
 
-            const profileBuffer = await axios.get(audio, {responseType: 'arraybuffer'})
+            const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
 
             const msg = `${status}`
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
           
-      if (msg === '200') { 
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data}); 
         await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
         }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
     Amdi.applyCMD({ pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => {
@@ -645,29 +673,35 @@ else if (config.WORKTYPE == 'public') {
 
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
-        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data})
-
         await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=queenamdibot&query=${userName}`)
-          .then(async (response) => {
+          .get(`https://api.lolhuman.xyz/api/ytplay?apikey=qamdi5652&query=${userName}`)
+          .then
+          (async (response) => {
             const {
-              video,
-            } = response.data.result
+              link,
+            } = response.data.result.video
             const {
                 status,
               } = response.data
+            const {
+              title,
+              } = response.data.result.info
 
-            const profileBuffer = await axios.get(video, {responseType: 'arraybuffer'})
+            const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
 
             const msg = `${status}`
 
       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
           
-      if (msg === '200') { 
-        await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi "})
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data}); 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
         }
           })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
     Amdi.applyCMD({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
@@ -765,7 +799,7 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=queenamdibot`)
+          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=qamdi5652`)
           .then(async (response) => {
 
             const {
@@ -810,7 +844,7 @@ else if (config.WORKTYPE == 'public') {
          if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
  
          await axios
-           .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=queenamdibot`)
+           .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=qamdi5652`)
            .then(async (response) => {
  
              const {

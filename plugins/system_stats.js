@@ -19,7 +19,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'alive', fromMe: true,  deleteCommand: false,  desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
@@ -36,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
      }
     }));
 
-    Amdi.applyCMD({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'sysd', fromMe: true,  deleteCommand: false,  desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
         );
     }));
 
-    Amdi.applyCMD({pattern: 'version', fromMe: true, desc: Lang.BOT_V}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'version', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
                 `*🧬 Queen Amdi Version 🧬*\n\n` + 
@@ -79,7 +79,7 @@ else if (Config.WORKTYPE == 'public') {
      }
     }));
 
-    Amdi.applyCMD({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'sysd', fromMe: true,  deleteCommand: false,  desc: Lang.SYSD_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

@@ -19,7 +19,7 @@ const UA_DESC = "Converts sound recording to an audio File."
 const UA_NEEDREPLY = "*Must Reply to a sound recording*"
 const UA_PROC = "```Converting Sound recording To an Audio File```"
 
-    Amdi.applyCMD({pattern: 'unaudio', fromMe: true, desc: UA_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'unaudio', fromMe: true,  deleteCommand: false,  desc: UA_DESC}, (async (message, match) => {    
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

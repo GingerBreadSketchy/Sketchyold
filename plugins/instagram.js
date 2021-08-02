@@ -18,7 +18,7 @@ const Lang = Language.getString('instagram')
 
 if (cn.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({ pattern: 'readig ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'readig ?(.*)', fromMe: true,  deleteCommand: false,  usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

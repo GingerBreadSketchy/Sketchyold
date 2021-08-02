@@ -16,7 +16,7 @@ const Lang = Language.getString('wallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'wallpaper', fromMe: true,  deleteCommand: false,  desc: Lang.WP}, (async (message, match) => {
 
         var r_text = new Array ();
 

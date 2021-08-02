@@ -20,7 +20,7 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 const Language = require('../language');
 const Lang = Language.getString('evaluators');
 
-Amdi.applyCMD({pattern: 'term ?(.*)', fromMe: true, desc: Lang.TERM_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'term ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.TERM_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var user = os.userInfo().username;
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.GIVE_ME_CODE,MessageType.text);
 

@@ -20,7 +20,7 @@ const Lang = Language.getString('unvoice'); // Language support
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'unvoice', fromMe: true,  deleteCommand: false,  desc: Lang.UV_DESC}, (async (message, match) => {    
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

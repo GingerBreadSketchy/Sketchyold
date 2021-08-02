@@ -25,16 +25,14 @@ const INVALID_TK = "*මට කිසිවක් සොයාගත නොහ�
 
 if (read.WORKTYPE == 'private') {
 
-  Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, desc: TIKTOK_DESC}, (async (message, match) => {
+  Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, desc: TIKTOK_DESC,  deleteCommand: false}, (async (message, match) => {
     
      const tkurl = match[1]
     
       if (!tkurl) return await message.client.sendMessage(message.jid,NEED_WORD);
     
-        await message.client.sendMessage(message.jid,DLOAD_TK,MessageType.text, {quoted: message.data})
-    
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=queenamdibot&url=${tkurl}`)
+          .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=qamdi5652&url=${tkurl}`)
           .then(async (response) => {
               const {
                 result,
@@ -49,8 +47,11 @@ if (read.WORKTYPE == 'private') {
               
         if (msg === '200') { 
           await message.client.sendMessage(message.jid,UPLOADING_TK,MessageType.text, {quoted: message.data});
-          await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi "})
+          await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi"})
           }})
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
   }))
 }
 
@@ -62,10 +63,8 @@ else if (read.WORKTYPE == 'public') {
    
      if (!tkurl) return await message.client.sendMessage(message.jid,NEED_WORD);
    
-       await message.client.sendMessage(message.jid,DLOAD_TK,MessageType.text, {quoted: message.data})
-   
        await axios
-         .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=queenamdibot&url=${tkurl}`)
+         .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=qamdi5652&url=${tkurl}`)
          .then(async (response) => {
              const {
                result,
@@ -80,7 +79,10 @@ else if (read.WORKTYPE == 'public') {
              
        if (msg === '200') { 
          await message.client.sendMessage(message.jid,UPLOADING_TK,MessageType.text, {quoted: message.data});
-         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi "})
+         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi"})
          }})
+         .catch(
+          async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+        )
  }))
 }

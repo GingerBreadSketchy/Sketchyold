@@ -17,7 +17,7 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
+    Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.MEMES_DESC}, (async (message, match) => {   
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

@@ -13,7 +13,7 @@ const Language = require('../language');
 const Lang = Language.getString('locate'); // Language supp. 😉
 
 
-    Amdi.applyCMD({pattern: 'locate', fromMe: true, desc: Lang.L_DESC, warn: Lang.L_WARN, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'locate', fromMe: true,  deleteCommand: false,  desc: Lang.L_DESC, warn: Lang.L_WARN, dontAddCommandList: true}, (async (message, match) => {
 
         var r_text = new Array ();
         r_text[0] = "degreesLatitude: 24.121231, degreesLongitude: 55.1121221"; // Actually, I don't know where is this place..

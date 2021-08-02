@@ -16,7 +16,7 @@ const Lang = Language.getString('anime');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'ranime ?(.*)', fromMe: true, desc: Lang.AN}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ranime ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 

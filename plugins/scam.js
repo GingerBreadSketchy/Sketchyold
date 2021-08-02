@@ -12,7 +12,7 @@ const {MessageType, MessageOptions, Mimetype, Presence} = require('@adiwajshing/
 const Language = require('../language');
 const Lang = Language.getString('scam');
 
-Amdi.applyCMD({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'scam ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SCAM_DESC, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') {
 

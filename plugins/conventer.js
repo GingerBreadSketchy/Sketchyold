@@ -19,7 +19,7 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'mp4audio', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'mp4audio', fromMe: true,  deleteCommand: false,  desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Amdi.applyCMD({pattern: 'imagesticker', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    Amdi.applyCMD({pattern: 'imagesticker', fromMe: true,  deleteCommand: false,  desc: Lang.STİCKER_DESC}, (async (message, match) => {   
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

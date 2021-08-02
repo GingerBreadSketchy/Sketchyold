@@ -17,7 +17,7 @@ const Lang = Language.getString('ttp');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC }, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'animesay ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.ANIME_DESC }, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Amdi.applyCMD({ pattern: 'changesay ?(.*)', fromMe: true, desc: Lang.CHANGE_DESC }, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'changesay ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.CHANGE_DESC }, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Amdi.applyCMD({ pattern: 'trumpsay ?(.*)', fromMe: true, desc: Lang.TRUMP_DESC }, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'trumpsay ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.TRUMP_DESC }, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

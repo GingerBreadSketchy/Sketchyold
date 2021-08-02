@@ -84,7 +84,7 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
     }
 }));
 
-Amdi.applyCMD({on: 'text', fromMe: true, deleteCommand: false}, (async (message, match) => {
+Amdi.applyCMD({on: 'text', fromMe: true,  deleteCommand: false,  deleteCommand: false}, (async (message, match) => {
     if (AFK.isAfk && !message.id.startsWith('3EB0')) {
         AFK.lastseen = 0;
         AFK.reason = false;
@@ -94,7 +94,7 @@ Amdi.applyCMD({on: 'text', fromMe: true, deleteCommand: false}, (async (message,
     }
 }));
 
-Amdi.applyCMD({pattern: 'afk ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.AFK_DESC, dontAddCommandList: true}, (async (message, match) => {     
+Amdi.applyCMD({pattern: 'afk ?(.*)', fromMe: true,  deleteCommand: false,  deleteCommand: false, desc: Lang.AFK_DESC, dontAddCommandList: true}, (async (message, match) => {     
     if (!AFK.isAfk) {
         AFK.lastseen = Math.round((new Date()).getTime() / 1000);
         if (match[1] !== '') { AFK.reason = match[1]; }

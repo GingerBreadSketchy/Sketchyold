@@ -23,12 +23,12 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Amdi.applyCMD({pattern: 'admin', desc: Lang.ADMINDESC, fromMe: true, dontAddCommandList: false}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'admin', desc: Lang.ADMINDESC, fromMe: true,  deleteCommand: false,  dontAddCommandList: false}, (async (message, match) => {    
 
-    await message.sendMessage('💠🔑 ●QUEEN AMDI ADMIN PANEL● 🔑💠\n\n⚙️විධානය: *.ban*\nℹ️විස්තරය: කණ්ඩායමේ කෙනෙකු ඉවත් කරන්න. පණිවිඩයට mention දෙන්න හෝ විධානය භාවිතා කිරීමට පුද්ගලයෙකු ටැග් කරන්න.\n\n⚙️විධානය: *.add*\nℹ️විස්තරය: කණ්ඩායමට යමෙකු එකතු කරයි. \n\n⚙️විධානය: *.mute*\nℹ️විස්තරය: කණ්ඩායම් chat නිශ්ශබ්ද කරන්න. පණිවිඩ යැවිය හැක්කේ admin පමණි.\n\n⚙️විධානය: *.unmute*\nℹ️විස්තරය: කණ්ඩායම් chat නිශ්ශබ්ද කිරීම ඉවත් කිරීම. ඕනෑම කෙනෙකුට පණිවිඩයක් යැවිය හැකිය.\n\n⚙️විධානය: *.clear*\nℹ️විස්තරය: Clearing chat.\n\n⚙️විධානය: *.subject*\nℹ️විස්තරය: කණ්ඩායම් නම වෙනස් කිරිම.\n\n⚙️විධානය: *.promote*\nℹ️විස්තරය: සාමාජිකයන් admin කරයි.\n\n⚙️විධානය: *.demote*\nℹ️විස්තරය: admin සාමාජිකයෙකු බවට පත් කරන්න.\n\n⚙️විධානය: *.search*\nℹ️විස්තරය: දැනට Queen Amdi වෙතින් තිබෙන plugin ලැයිස්තුව බලාගැනීම සඳහා.\n\n⚙️විධානය: *.subject*\nℹ️විස්තරය: ඔබගේ groupහි නම වෙනස් කිරිම සඳහා.\n\n⚙️විධානය: *.plugin*\nℹ️විස්තරය: බාහිර plugins ස්ථාපනය කරන්න.\n\n⚙️විධානය: *.remove*\nℹ️විස්තරය: Plugin ඉවත් කරයි.\n\n⚙️විධානය: *.invite*\nℹ️විස්තරය: කණ්ඩායමේ ආරාධනා link සපයයි.\n\n⚙️විධානය: *.afk*\nℹ️විස්තරය: එය bot AFK බවට පත් කරයි - Away From Keyboard.\n\n⚙️විධානය: *.restart*\nℹ️විස්තරය: Restart the bot.\n\n⚙️විධානය: *.shutdown*\nℹ️විස්තරය: Shutdown the Bot.\n\n⚙️විධානය: *.setvar*\nℹ️විස්තරය: Heroku config vars සකසන්න.\n\n⚙️විධානය: *.getvar*\nℹ️විස්තරය: Heroku config var ලබා ගන්න.\n\n⚙️විධානය: *.speedtest*\nℹ️විස්තරය: Download කිරීම සහ Upload කිරීමේ වේගය මැනීම.\n\n⚙️විධානය: *.filter*\nℹ️විස්තරය: එය filters එක් කරයි. කවුරුහරි ඔබේ filter word ලියන්නේ නම්, එය පිළිතුර යවයි. ඔබ .filter ලිවුවහොත් එය ඔබගේ filters ලැයිස්තුව පෙන්වනු ඇත.\n\n⚙️විධානය: *.stop*\nℹ️විස්තරය: ඔබ කලින් එකතු කළ filters නවත්වයි.\n\n⚙️විධානය: *.welcome*\nℹ️විස්තරය: එය පිළිගැනීමේ පණිවිඩය සකසයි.\n\n⚙️විධානය: *.goodbye*\nℹ️විස්තරය: සමුගැනීමේ පණිවිඩය සකසයි.\n\n⚙️විධානය: *.kickme*\nℹ️විස්තරය: එය විධානය ලබා දී ඇති කණ්ඩායමෙන් bot ඉවත් කරයි.\n\n⚙️විධානය: *.pp*\nℹ️විස්තරය: ඔබ mention සපයන ඡායාරූපය, bot profile ඡායාරූපය කරයි.\n\n⚙️විධානය: *.block*\nℹ️විස්තරය: Block tagged user.\n\n⚙️විධානය: *.unblock*\nℹ️විස්තරය: Unblock tagged user.\n\n⚙️විධානය: *.jid*\nℹ️විස්තරය: පරිශීලකයාගේ JID ලබා දෙයි.\n\n⚙️විධානය *.tagall*\nℹ️විස්තරය: කණ්ඩායමේ සිටින සියල්ලන් ටැග් කරයි.\n\n⚙️විධානය: *.update*\nℹ️විස්තරය: Updates පරීක්ෂා කරයි.\n\n⚙️විධානය: *.update now*\nℹ️විස්තරය: එය බොට් update කරයි.\n\n⚙️විධානය: *.dyno*\nℹ️විස්තරය: Showing heroku dyno hours.\n\n⚙️විධානය: *.sysd*\nℹ️විස්තරය: පද්ධති සංඛ්යාලේඛන පෙන්වීම.\n\n⚙️විධානය: *.scam*\nℹ️විස්තරය: මිනිත්තු 5 ක ව්යාජ ක්රියා නිර්මාණය කරයි.\n\n*⚠️ඉහත විධාන Admin, Bot සහ SUDO අංක සඳහා පමණක් වැඩ කරයි.*');
+    await message.sendMessage(Lang.AD_DESC);
 }));
 
-Amdi.applyCMD({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.BAN_DESC, dontAddCommandList: true}, (async (message, match) => {  
+Amdi.applyCMD({pattern: 'ban ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.BAN_DESC, dontAddCommandList: true}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -66,7 +66,7 @@ Amdi.applyCMD({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.B
     }
 }));
 
-Amdi.applyCMD({pattern: 'add(?: |$)(.*)', fromMe: true, onlyGroup: true, desc: Lang.ADD_DESC, dontAddCommandList: true}, (async (message, match) => {  
+Amdi.applyCMD({pattern: 'add(?: |$)(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.ADD_DESC, dontAddCommandList: true}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -100,7 +100,7 @@ Amdi.applyCMD({pattern: 'add(?: |$)(.*)', fromMe: true, onlyGroup: true, desc: L
     }
 }));
 
-Amdi.applyCMD({pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.PROMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'promote ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.PROMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -158,7 +158,7 @@ Amdi.applyCMD({pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc: La
     }
 }));
 
-Amdi.applyCMD({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'demote ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.DEMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN);
 
@@ -216,7 +216,7 @@ Amdi.applyCMD({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
     }
 }));
 
-Amdi.applyCMD({pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'mute ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.MUTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1572,7 +1572,7 @@ Amdi.applyCMD({pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.
     }
 }));
 
-Amdi.applyCMD({pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.UNMUTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'unmute ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.UNMUTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1586,14 +1586,14 @@ Amdi.applyCMD({pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
     }
 }));
 
-Amdi.applyCMD({pattern: 'clear', fromMe: true, desc: Lang.END, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'clear', fromMe: true,  deleteCommand: false,  desc: Lang.END, dontAddCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('```Chat clearing...```');
     await message.client.modifyChat (message.jid, ChatModification.delete);
     await message.sendMessage('```🚮 Chat cleared```');
 }));
 
-Amdi.applyCMD({pattern: 'subject ?(.*)', onlyGroup: true, fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'subject ?(.*)', onlyGroup: true, fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1604,14 +1604,14 @@ Amdi.applyCMD({pattern: 'subject ?(.*)', onlyGroup: true, fromMe: true, dontAddC
     }
 ));
 
-Amdi.applyCMD({pattern: 'invite ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.INVITE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'invite ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.INVITE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
 
-Amdi.applyCMD({pattern: 'search ?(.*)', fromMe: true, desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
+Amdi.applyCMD({pattern: 'search ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
     const url = `https://gist.githubusercontent.com/BlackAmda/a2b3e417d2ca059f4a6f64e6800dc41c/raw/`;
         const response = await got(url);
         const json = JSON.parse(response.body);

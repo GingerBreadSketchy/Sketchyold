@@ -15,7 +15,7 @@ const NotesDB = require('./sql/notes');
 const Language = require('../language')
 const Lang = Language.getString('notes')
 
-Amdi.applyCMD({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
+Amdi.applyCMD({ pattern: 'notes', fromMe: true,  deleteCommand: false,  desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
     const _notes = await NotesDB.getNotes()
@@ -44,7 +44,7 @@ Amdi.applyCMD({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async 
 
 
 
-Amdi.applyCMD({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
+Amdi.applyCMD({ pattern: 'save ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SAVE_USAGE }, async (message, match) => {
 
     const userNote = match[1]
 
@@ -92,7 +92,7 @@ Amdi.applyCMD({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, as
     }
 })
 
-Amdi.applyCMD({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
+Amdi.applyCMD({ pattern: 'deleteNotes', fromMe: true,  deleteCommand: false,  desc: Lang.DELETE_USAGE }, async (message, match) => {
 
     await NotesDB.deleteAllNotes()
 

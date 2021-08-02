@@ -19,7 +19,7 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'tblend ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.T_DESC}, (async (message, match) => {    
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

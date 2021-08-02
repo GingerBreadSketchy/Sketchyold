@@ -22,7 +22,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 
-Amdi.applyCMD({pattern: 'spam ?(.*)', fromMe: true, desc: Lang.SPAM_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'spam ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SPAM_DESC, dontAddCommandList: true}, (async (message, match) => {
 
     if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -78,7 +78,7 @@ Amdi.applyCMD({pattern: 'spam ?(.*)', fromMe: true, desc: Lang.SPAM_DESC, dontAd
 
 }));
 
-Amdi.applyCMD({pattern: 'killspam', fromMe: true, desc: Lang.STOP_SPAMDESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'killspam', fromMe: true,  deleteCommand: false,  desc: Lang.STOP_SPAMDESC, dontAddCommandList: true}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, Lang.STOP_SPAM, MessageType.text);
 

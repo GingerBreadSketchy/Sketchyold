@@ -19,7 +19,7 @@ const Lang = Language.getString('ffmpeg');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ffmpeg ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.FF_DESC}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 

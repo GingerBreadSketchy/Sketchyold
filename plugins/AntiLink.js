@@ -37,7 +37,7 @@ var l_dsc = ''
         succ_off = 'Antilink Closed Successfully!'
     }
 
-    Amdi.applyCMD({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off', dontAddCommandList: true }, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'antilink ?(.*)', fromMe: true,  deleteCommand: false,  desc: l_dsc, usage: '.antilink on / off', dontAddCommandList: true }, (async (message, match) => {
         const anti_status = `${config.ANTILINK}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {

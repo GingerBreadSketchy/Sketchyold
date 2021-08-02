@@ -19,7 +19,7 @@ const Lang = Language.getString('info');
 const adm = Language.getString('admin');
 
 if (Config.WORKTYPE == 'private') {
-    Amdi.applyCMD({ pattern: 'info', fromMe: true, desc: Lang.INFO_DESC}, async (message, match) => { 
+    Amdi.applyCMD({ pattern: 'info', fromMe: true,  deleteCommand: false,  desc: Lang.INFO_DESC}, async (message, match) => { 
 
         if (message.jid.includes('-')) {
 

@@ -14,7 +14,7 @@ const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('profile');
 
-Amdi.applyCMD({pattern: 'kickme', fromMe: true, desc: Lang.KICKME_DESC, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'kickme', fromMe: true,  deleteCommand: false,  desc: Lang.KICKME_DESC, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => {
     if (Config.KICKMEMSG == 'default') { 
         await message.client.sendMessage(message.jid,Lang.KICKME,MessageType.text);
         await message.client.groupLeave(message.jid);
@@ -25,7 +25,7 @@ Amdi.applyCMD({pattern: 'kickme', fromMe: true, desc: Lang.KICKME_DESC, onlyGrou
     }
 }));
 
-Amdi.applyCMD({pattern: 'pp', fromMe: true, desc: Lang.PP_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'pp', fromMe: true,  deleteCommand: false,  desc: Lang.PP_DESC, dontAddCommandList: true}, (async (message, match) => {    
     if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid,Lang.NEED_PHOTO);
     
     var load = await message.client.sendMessage(message.jid,Lang.PPING,MessageType.text);
@@ -41,7 +41,7 @@ Amdi.applyCMD({pattern: 'pp', fromMe: true, desc: Lang.PP_DESC, dontAddCommandLi
     await load.delete();
 }));
 
-Amdi.applyCMD({pattern: 'block ?(.*)', fromMe: true, desc: Lang.BLOCK_DESC, dontAddCommandList: true}, (async (message, match) => {   
+Amdi.applyCMD({pattern: 'block ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BLOCK_DESC, dontAddCommandList: true}, (async (message, match) => {   
     if (Config.BLOCKMSG == 'default') {  
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + '```, ' + Lang.BLOCKED + '!```', MessageType.text, {
@@ -84,7 +84,7 @@ Amdi.applyCMD({pattern: 'block ?(.*)', fromMe: true, desc: Lang.BLOCK_DESC, dont
     }
 }));
 
-Amdi.applyCMD({pattern: 'unblock ?(.*)', fromMe: true, desc: Lang.UNBLOCK_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'unblock ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.UNBLOCK_DESC, dontAddCommandList: true}, (async (message, match) => {    
     if (message.reply_message !== false) {
         await message.client.blockUser(message.reply_message.jid, "remove");
         await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + '```, ' + Lang.UNBLOCKED + '!```', MessageType.text, {
@@ -107,7 +107,7 @@ Amdi.applyCMD({pattern: 'unblock ?(.*)', fromMe: true, desc: Lang.UNBLOCK_DESC, 
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'jid ?(.*)', fromMe: true, desc: Lang.JID_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'jid ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.JID_DESC}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, Lang.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -125,7 +125,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'jid ?(.*)', fromMe: true, desc: Lang.JID_DESC, dontAddCommandList: true}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'jid ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.JID_DESC, dontAddCommandList: true}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, Lang.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}

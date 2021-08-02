@@ -13,7 +13,7 @@ const fs = require('fs')
 const Language = require('../language');
 /*const Lang = Language.getString('up_down');
 
-Amdi.applyCMD({pattern: 'download ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, usage: 'meme top;bottom'}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'download ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.MEMES_DESC, usage: 'meme top;bottom'}, (async (message, match) => {    
     if (message.reply_message === false) return await message.sendMessage(Lang.NEED_REPLY);
 
 }));*/

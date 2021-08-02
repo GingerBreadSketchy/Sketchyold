@@ -23,7 +23,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Amdi.applyCMD({pattern: 'restart', fromMe: true, desc: Lang.RESTART_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'restart', fromMe: true,  deleteCommand: false,  desc: Lang.RESTART_DESC, dontAddCommandList: true}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -32,7 +32,7 @@ Amdi.applyCMD({pattern: 'restart', fromMe: true, desc: Lang.RESTART_DESC, dontAd
     });
 }));
 
-Amdi.applyCMD({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DESC, dontAddCommandList: true}, (async(message, match) => {
+Amdi.applyCMD({pattern: 'shutdown', fromMe: true,  deleteCommand: false,  desc: Lang.SHUTDOWN_DESC, dontAddCommandList: true}, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -50,7 +50,7 @@ Amdi.applyCMD({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DESC, dont
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'dyno', fromMe: true,  deleteCommand: false,  desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -83,7 +83,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'dyno', fromMe: true,  deleteCommand: false,  desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -115,7 +115,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
 
-Amdi.applyCMD({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, dontAddCommandList: true}, (async(message, match) => {
+Amdi.applyCMD({pattern: 'setvar ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SETVAR_DESC, dontAddCommandList: true}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     if ((varKey = match[1].split('=')[0]) && (varValue = match[1].split('=')[1])) {
@@ -132,7 +132,7 @@ Amdi.applyCMD({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, do
 }));
 
 
-Amdi.applyCMD({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'delvar ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.DELVAR_DESC, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -154,7 +154,7 @@ Amdi.applyCMD({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC, do
 
 }));
 
-Amdi.applyCMD({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'getvar ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.GETVAR_DESC, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
