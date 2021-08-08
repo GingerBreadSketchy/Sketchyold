@@ -128,12 +128,12 @@ if (/\[(\W*)\]/.test(config.HANDLERS)) {
         await axios.get('https://gist.githubusercontent.com/BlackAmda/c3877acdcdc041d77907d590d4ac1a2d/raw/').then(async (ann) => {
             const { verify} = ann.data.announcements          
             if (verify !== '' && config.LANG == 'EN') {
-                while (getGMTh == 20 && getGMTm == 55) { 
+                while (getGMTh == 21 && getGMTm == 41) { 
                     return conn.sendMessage(conn.user.jid, HANDLER + verify.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (verify !== '' && config.LANG == 'SI') {
-                while (getGMTh == 20 && getGMTm == 55) { 
+                while (getGMTh == 21 && getGMTm == 41) { 
                     return conn.sendMessage(conn.user.jid, HANDLER + verify.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
@@ -146,12 +146,12 @@ if (/\[(\W*)\]/.test(config.HANDLERS)) {
         await axios.get('https://gist.githubusercontent.com/BlackAmda/c3877acdcdc041d77907d590d4ac1a2d/raw/').then(async (ann) => {
             const { verify} = ann.data.announcements          
             if (verify !== '' && config.LANG == 'EN') {
-                while (getGMTh == 04 && getGMTm == 55) { 
+                while (getGMTh == 05 && getGMTm == 41) { 
                     return conn.sendMessage(conn.user.jid, HANDLER + verify.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (verify !== '' && config.LANG == 'SI') {
-                while (getGMTh == 04 && getGMTm == 55) { 
+                while (getGMTh == 05 && getGMTm == 41) { 
                     return conn.sendMessage(conn.user.jid, HANDLER + verify.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
@@ -164,12 +164,12 @@ if (/\[(\W*)\]/.test(config.HANDLERS)) {
         await axios.get('https://gist.githubusercontent.com/BlackAmda/c3877acdcdc041d77907d590d4ac1a2d/raw/').then(async (ann) => {
             const { verify} = ann.data.announcements          
             if (verify !== '' && config.LANG == 'EN') {
-                while (getGMTh == 12 && getGMTm == 55) { 
+                while (getGMTh == 13 && getGMTm == 41) { 
                     return conn.sendMessage(conn.user.jid, HANDLER + verify.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (verify !== '' && config.LANG == 'SI') {
-                while (getGMTh == 12 && getGMTm == 55) { 
+                while (getGMTh == 13 && getGMTm == 41) { 
                     return conn.sendMessage(conn.user.jid, HANDLER + verify.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
