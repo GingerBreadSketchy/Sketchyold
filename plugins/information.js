@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
       const url = `https://coronavirus-19-api.herokuapp.com/countries/${match[1]}`;
             const response = await got(url);
             const jsun = JSON.parse(response.body);
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/gent87895652/media/gif/earth.mp4"), MessageType.video, {mimetype: Mimetype.gif, caption: LANG.COUNTRY + jsun.country + '\n\n' + LANG.CASES + jsun.cases + '\n' + LANG.TCASES + jsun.todayCases + '\n' + LANG.DEATHS + jsun.deaths + '\n' + LANG.TDEATHS + jsun.todayDeaths + '\n' + LANG.RECO + jsun.recovered + '\n' + LANG.CRIT + jsun.critical + '\n' + LANG.TEST + jsun.totalTests });
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/8gh32jk565/media/gif/earth.mp4"), MessageType.video, {mimetype: Mimetype.gif, caption: LANG.COUNTRY + jsun.country + '\n\n' + LANG.CASES + jsun.cases + '\n' + LANG.TCASES + jsun.todayCases + '\n' + LANG.DEATHS + jsun.deaths + '\n' + LANG.TDEATHS + jsun.todayDeaths + '\n' + LANG.RECO + jsun.recovered + '\n' + LANG.CRIT + jsun.critical + '\n' + LANG.TEST + jsun.totalTests });
   });
 }
 
@@ -43,6 +43,6 @@ else if (Config.WORKTYPE == 'public') {
       const url = `https://coronavirus-19-api.herokuapp.com/countries/${match[1]}`;
             const response = await got(url);
             const jsun = JSON.parse(response.body);
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/gent87895652/media/gif/earth.mp4"), MessageType.video, {mimetype: Mimetype.gif, caption: LANG.COUNTRY + jsun.country + '\n\n' + LANG.CASES + jsun.cases + '\n' + LANG.TCASES + jsun.todayCases + '\n' + LANG.DEATHS + jsun.deaths + '\n' + LANG.TDEATHS + jsun.todayDeaths + '\n' + LANG.RECO + jsun.recovered + '\n' + LANG.CRIT + jsun.critical + '\n' + LANG.TEST + jsun.totalTests });
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/8gh32jk565/media/gif/earth.mp4"), MessageType.video, {mimetype: Mimetype.gif, caption: LANG.COUNTRY + jsun.country + '\n\n' + LANG.CASES + jsun.cases + '\n' + LANG.TCASES + jsun.todayCases + '\n' + LANG.DEATHS + jsun.deaths + '\n' + LANG.TDEATHS + jsun.todayDeaths + '\n' + LANG.RECO + jsun.recovered + '\n' + LANG.CRIT + jsun.critical + '\n' + LANG.TEST + jsun.totalTests });
   });
 }
