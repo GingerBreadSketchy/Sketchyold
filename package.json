@@ -1,6 +1,6 @@
 {
   "name": "queen_amdi",
-  "version": "2.8v",
+  "version": "2.9v",
   "description": "Queen Amdi Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./QueenAmdi/bot.js",
   "scripts": {
@@ -24,14 +24,14 @@
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
     "browser-id3-writer": "^4.4.0",
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.2",
     "coffeehouse": "^2.0.0",
     "cwebp": "^2.0.5",
     "deepai": "^1.0.17",
     "cwebp-bin": "^6.1.1",
     "tinyurl": "^1.1.7",
     "dotenv": "^8.2.0",
-    "exchange-rates-api": "^1.0.2",
+    "exchange-rates-api": "^1.1.0",
     "fluent-ffmpeg": "^2.1.2",
     "axios": "^0.21.1",
     "form-data": "^4.0.0",
@@ -39,8 +39,8 @@
     "google-translate-tts": "^0.3.0",
     "got": "^11.8.2",
     "heroku-client": "^3.1.0",
-    "jimp": "^0.16.0",
-    "js-ffmpeg": "0.0.26",
+    "jimp": "^0.16.1",
+    "js-ffmpeg": "0.0.29",
     "jsdom": "^16.5.1",
     "langs": "^2.0.0",
     "meme-maker": "^2.1.2",
@@ -52,8 +52,8 @@
     "spotify-web-api-node": "^5.0.0",
     "sqlite3": "5.0.0",
     "translatte": "^3.0.0",
-    "wikijs": "^6.0.1",
+    "wikijs": "^6.2.3",
     "yt-search": "^2.7.4",
-    "ytdl-core": "^4.8.3"
+    "ytdl-core": "^4.9.1"
   }
 }

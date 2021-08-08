@@ -19,13 +19,14 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './queenamdi.db' : proce
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'Queen Amdi 2.8v - Public Stable',
+    VERSION: 'Queen Amdi 2.9v - Public Stable',
     SESSION: process.env.AMDI_SESSION === undefined ? '' : process.env.AMDI_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    MENU: process.env.MENU === undefined ? 'panel' : process.env.MENU,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/r3wmpwr/LOGO.jpg' : process.env.ALIVE_LOGO,
     WELCOME_LOGO: process.env.WELCOME_LOGO === undefined ? 'https://www.mboxdrive.com/1413772033.mp4' : process.env.WELCOME_LOGO,

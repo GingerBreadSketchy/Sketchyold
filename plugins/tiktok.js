@@ -16,37 +16,34 @@ const axios = require('axios');
 const read = require('../config');
 
 // Strings
-const TIKTOK_DESC = "Tiktok වෙතින් watermark නොමැති වීඩියෝ බාගන්න"
-const NEED_WORD = "Must Enter a tiktok link!"
-const DLOAD_TK = "```🔄 ඔබේ tiktok download කරමින් පවති...```"
-const UPLOADING_TK = "```🔂 ඔබේ tiktok upload කරමින් පවති...```"
-const INVALID_TK = "*මට කිසිවක් සොයාගත නොහැකි විය :(*"
-
+const Language = require('../language');
+const Lang = Language.getString('tiktok');
 
 if (read.WORKTYPE == 'private') {
 
-  Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, desc: TIKTOK_DESC,  deleteCommand: false}, (async (message, match) => {
+  Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Lang.TIKTOK_DESC,  deleteCommand: false}, (async (message, match) => {
     
      const tkurl = match[1]
     
-      if (!tkurl) return await message.client.sendMessage(message.jid,NEED_WORD);
+      if (!tkurl) return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=qamdi5652&url=${tkurl}`)
+          .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=queenamdipublic&url=${tkurl}`)
           .then(async (response) => {
               const {
                 result,
                 status,
               } = response.data
     
+              await message.client.sendMessage(message.jid,Lang.DLOAD_TK,MessageType.text, {quoted: message.data});
               const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
     
               const msg = `${status}`
     
-        if (msg === '500') { await message.client.sendMessage(message.jid,INVALID_TK,MessageType.text, {quoted: message.data})}
+        if (msg === '500') { await message.client.sendMessage(message.jid,Lang.INVALID_TK,MessageType.text, {quoted: message.data})}
               
-        if (msg === '200') { 
-          await message.client.sendMessage(message.jid,UPLOADING_TK,MessageType.text, {quoted: message.data});
+        if (msg === '200') {
+          await message.client.sendMessage(message.jid,Lang.UPLOADING_TK,MessageType.text, {quoted: message.data});
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi"})
           }})
           .catch(
@@ -57,28 +54,29 @@ if (read.WORKTYPE == 'private') {
 
 else if (read.WORKTYPE == 'public') {
 
-  Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: false, desc: TIKTOK_DESC}, (async (message, match) => {
+  Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Lang.TIKTOK_DESC}, (async (message, match) => {
     
     const tkurl = match[1]
    
-     if (!tkurl) return await message.client.sendMessage(message.jid,NEED_WORD);
+     if (!tkurl) return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
    
        await axios
-         .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=qamdi5652&url=${tkurl}`)
+         .get(`https://lolhuman.herokuapp.com/api/tiktok3?apikey=queenamdipublic&url=${tkurl}`)
          .then(async (response) => {
              const {
                result,
                status,
              } = response.data
    
+             await message.client.sendMessage(message.jid,Lang.DLOAD_TK,MessageType.text, {quoted: message.data});
              const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
    
              const msg = `${status}`
    
-       if (msg === '500') { await message.client.sendMessage(message.jid,INVALID_TK,MessageType.text, {quoted: message.data})}
+       if (msg === '500') { await message.client.sendMessage(message.jid,Lang.INVALID_TK,MessageType.text, {quoted: message.data})}
              
        if (msg === '200') { 
-         await message.client.sendMessage(message.jid,UPLOADING_TK,MessageType.text, {quoted: message.data});
+         await message.client.sendMessage(message.jid,Lang.UPLOADING_TK,MessageType.text, {quoted: message.data});
          await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi"})
          }})
          .catch(

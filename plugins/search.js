@@ -24,40 +24,40 @@ const Lang = Language.getString('search')
 
 
 if (cn.WORKTYPE == 'private') {
-  Amdi.applyCMD({ pattern: 'mod ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'mod ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
-    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+      var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`)
-                    get_result = get_result.result
-                    ini_txt = ""
-                    for (var x of get_result) {
-                        ini_txt += `Name : ${x.name}\n`
-                        ini_txt += `Link : ${x.link}\n\n`
-                    }
+      get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
+                      get_result = get_result.result
+                      ini_txt = ""
+                      for (var x of get_result) {
+                          ini_txt += `Name : ${x.name}\n`
+                          ini_txt += `Link : ${x.link}\n\n`
+                      }
 
-    await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
-    await reply.delete();
-  })
+      await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
+      await reply.delete();
+    })
 
-  Amdi.applyCMD({ pattern: 'spo ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'getspo ?(.*)', fromMe: true, desc: Lang.SPO_USAGE,  deleteCommand: false }, async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
-    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+      var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-    get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=qamdi5652&query=${match[1]}`)
-                    get_result = get_result.result
-                    ini_txt = ""
-                    for (var x of get_result) {
-                        ini_txt += `Title : ${x.title}\n`
-                        ini_txt += `Artists : ${x.artists}\n`
-                        ini_txt += `Link : ${x.link}\n\n`
-                    }
+      get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/spotifysearch?apikey=queenamdipublic&query=${match[1]}`)
+                      get_result = get_result.result
+                      ini_txt = ""
+                      for (var x of get_result) {
+                          ini_txt += `Title : ${x.title}\n`
+                          ini_txt += `Artists : ${x.artists}\n`
+                          ini_txt += `Link : ${x.link}\n\n`
+                      }
 
-    await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
-    await reply.delete();
-  })
+      await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
+      await reply.delete();
+    })
 }
 else if (cn.WORKTYPE == 'public') {
   Amdi.applyCMD({ pattern: 'mod ?(.*)', fromMe: false, desc: Lang.USAGE }, async (message, match) => {
@@ -65,7 +65,7 @@ else if (cn.WORKTYPE == 'public') {
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`)
+    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -77,12 +77,12 @@ else if (cn.WORKTYPE == 'public') {
     await reply.delete();
   })
 
-  Amdi.applyCMD({ pattern: 'spo ?(.*)', fromMe: false, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+  Amdi.applyCMD({ pattern: 'getspo ?(.*)', fromMe: false, desc: Lang.SPO_USAGE,  deleteCommand: false }, async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-    get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=qamdi5652&query=${match[1]}`)
+    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/spotifysearch?apikey=queenamdipublic&query=${match[1]}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {

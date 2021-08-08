@@ -17,6 +17,8 @@ const sin = `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n\n` +
 `⚙️විධානය: *.glitch*\nℹ️විස්තර: Text සිට Tiktok glitch effect.\n_(Ex: .glitch Queen/Amdi)_\n\n` + 
 `⚙️විධානය: *.pemoji*\nℹ️විස්තර: Emoji සිට පින්තූරයට.\n\n` + 
 `⚙️විධානය: *.hacker*\nℹ️විස්තර: ඔබේ නම සමඟ hacker wallpaper සෑදීම.\n\n` + 
+`⚙️විධානය: *.matrix*\nℹ️විස්තර: ඔබේ නම සමඟ matrix wallpaper සෑදීම.\n\n` + 
+`⚙️විධානය: *.hbd*\nℹ️විස්තර: ඔබේ නම සමඟ උපන්දින කේක් එකක් සෑදීම.\n\n` + 
 `⚙️විධානය: *.gaming*\nℹ️විස්තර: ඔබේ නම සමඟ gaming logo සෑදීම.\n\n` + 
 `⚙️විධානය: *.fpslogo*\nℹ️විස්තර: ඔබේ නම සමඟ fps gaming logo සෑදීම.\n\n` + 
 `⚙️විධානය: *.sand*\nℹ️විස්තර: ඔබේ text සමඟ sand summer effect wallpaper සෑදීම.\n\n` + 
@@ -26,6 +28,8 @@ const sin = `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n\n` +
 `⚙️විධානය: *.cup*\nℹ️විස්තර: ඔබට ඔබේ text කෝප්පයක් මත ටයිප් කළ හැකිය.\n\n` + 
 `⚙️විධානය: *.sad*\nℹ️විස්තර: ඔබට ඔබේ text glass මත ටයිප් කළ හැකිය.\n\n` + 
 `⚙️විධානය: *.wolfm*\nℹ️විස්තර: ලෝහමය වෘක බැනරයකින් ඔබේ text ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.wflogo*\nℹ️විස්තර: වෘක logo ඔබේ text ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.naruto*\nℹ️විස්තර: Naruto themed බැනරයකින් ඔබේ text ටයිප් කළ හැකිය.\n\n` + 
 `⚙️විධානය: *.fflogo*\nℹ️විස්තර: ඔබේ නම සමඟ Free Fire logo සෑදීම.\n\n` + 
 `⚙️විධානය: *.flame*\nℹ️විස්තර: ඔබට ඔබේ text ගිනිදැල් බවට පත් කළ හැකිය.\n\n` + 
 `⚙️විධානය: *.avenger*\nℹ️විස්තර: ඔබේ නම සමඟ Avengers logo සෑදීම.\n_(Ex: .avenger Queen/Amdi)_\n\n` + 
@@ -42,6 +46,7 @@ const sin = `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n\n` +
 `⚙️විධානය: *.vintage*\nℹ️විස්තර: එය සපයා ඇති textයේ buld display රූපයක් යවයි. \n_(Ex: .vintage Queen/Amdi_\n\n` + 
 `⚙️විධානය: *.bplogo*\nℹ️විස්තර: එය සපයා ඇති textයේ black pink logo යවයි.\n\n` + 
 `⚙️විධානය: *.blood*\nℹ️විස්තර: එය සපයා ඇති textයේ රුධිර රූපයක් යවයි.\n\n` + 
+`⚙️විධානය: *.silk*\nℹ️විස්තර: එය සපයා ඇති textයේ silk cloth රූපයක් යවයි.\n\n` + 
 `⚙️විධානය: *.thunder*\nℹ️විස්තර: එය සපයා ඇති textයේ අකුණු සහිත රූපයක් යවයි.\n\n` + 
 `⚙️විධානය: *.snow*\nℹ️විස්තර: එය සපයා ඇති textයේ හිම රූපයක් යවයි.\n\n` + 
 `⚙️විධානය: *.light*\nℹ️විස්තර: එය සපයා ඇති textයේ light effect යවයි.\n\n` + 
@@ -59,6 +64,8 @@ const eng = `💠📃 ● *Text to effect images List* ● 📃💠\n\n` +
 `⚙️Command: *.glitch*\nℹ️Description: Text to Tiktok glitch effect.\n_(Ex: .glitch Queen/Amdi)_\n\n` + 
 `⚙️Command: *.pemoji*\nℹ️Description: Emoji to PNG.\n\n` + 
 `⚙️Command: *.hacker*\nℹ️Description: Text to Hacker wallpaper.\n\n` + 
+`⚙️Command: *.matrix*\nℹ️Description: Text to matrix wallpaper\n\n` + 
+`⚙️Command: *.hbd*\nℹ️Description: Making birthday cake with a name.\n\n` + 
 `⚙️Command: *.gaming*\nℹ️Description: Text to Gaming logo.\n\n` + 
 `⚙️Command: *.fpslogo*\nℹ️Description: Text to FPS Gaming logo.\n\n` + 
 `⚙️Command: *.sand*\nℹ️Description: Text to Sand summer themed wallpaper.\n\n` + 
@@ -68,6 +75,8 @@ const eng = `💠📃 ● *Text to effect images List* ● 📃💠\n\n` +
 `⚙️Command: *.cup*\nℹ️Description: Cup themed image.\n\n` + 
 `⚙️Command: *.sad*\nℹ️Description: Text to wet glass effect.\n\n` + 
 `⚙️Command: *.wolfm*\nℹ️Description: Text to metal wolf badge.\n\n` + 
+`⚙️Command: *.wflogo*\nℹ️Description: Wolf logo with your text.\n\n` + 
+`⚙️Command: *.naruto*\nℹ️Description: Text to naruto themed banner.\n\n` + 
 `⚙️Command: *.fflogo*\nℹ️Description: Text to FreeFire logo\n\n` + 
 `⚙️Command: *.flame*\nℹ️Description: Text to fire effect.\n\n` + 
 `⚙️Command: *.avenger*\nℹ️Description: Text to avenger logo\n_(Ex: .avenger Queen/Amdi)_\n\n` + 
@@ -84,6 +93,7 @@ const eng = `💠📃 ● *Text to effect images List* ● 📃💠\n\n` +
 `⚙️Command: *.vintage*\nℹ️Description: Text to bulb display unit. \n_(Ex: .vintage Queen/Amdi_\n\n` + 
 `⚙️Command: *.bplogo*\nℹ️Description: Text to Black Pink themed logo.\n\n` + 
 `⚙️Command: *.blood*\nℹ️Description: Text to Blood themed.\n\n` + 
+`⚙️Command: *.silk*\nℹ️Description: Text to silk cloth.\n\n` + 
 `⚙️Command: *.thunder*\nℹ️Description: Text to thunder effect wallpaper.\n\n` + 
 `⚙️Command: *.snow*\nℹ️Description: Text to Snow theme.\n\n` + 
 `⚙️Command: *.light*\nℹ️Description: Text to light theme banner.\n\n` + 

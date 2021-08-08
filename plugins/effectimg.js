@@ -19,7 +19,7 @@ const Lang = Language.getString('effects');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'glitch ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'glitch ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
@@ -30,13 +30,13 @@ if (Config.WORKTYPE == 'private') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/tiktok?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/tiktok?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'pemoji ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'pemoji ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
         
@@ -44,102 +44,122 @@ if (Config.WORKTYPE == 'private') {
     
     var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=fHZpP3j61LgH80BzanBm92jch1Q&emoji=' + uri, { responseType: 'arraybuffer' })
     
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi ' })
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi' })
 
     }));
 
 
-    Amdi.applyCMD({pattern: 'fflogo ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'fflogo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'qr ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.QR_DESC}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'qr ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.QR_DESC}, (async (message, match) => {
 
       if (match[1] === '') return await message.sendMessage(Lang.NEED_TEXT);
   
       var webimage = await axios.get(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${match[1].replace(/#/g, '\n')} `, { responseType: 'arraybuffer' })
   
-      await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Queen Amdi "})
+      await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Queen Amdi"})
   
     }));
 
-    Amdi.applyCMD({pattern: 'shadow ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'shadow ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/shadow?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/shadow?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
-    Amdi.applyCMD({pattern: 'cup ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'cup ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/cup?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/cup?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
-    Amdi.applyCMD({pattern: 'gneon ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'silk ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/greenneon?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/silktext?apikey=apivinz&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
-    Amdi.applyCMD({pattern: 'wolfm ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'naruto ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+        var webimage = await axios.get(`https://api.zeks.xyz/api/naruto?apikey=apivinz&text=${match[1]}`, { responseType: 'arraybuffer' })
+    
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+    
+    }));
+
+    Amdi.applyCMD({pattern: 'gneon ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+    
+    }));
+
+    Amdi.applyCMD({pattern: 'wolfm ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/wolfmetal?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/wolfmetal?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
   }));
 
-  Amdi.applyCMD({pattern: 'ml ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'ml ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/mlwall?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-  Amdi.applyCMD({pattern: 'hacker ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'hacker ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-  Amdi.applyCMD({pattern: 'flame ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'flame ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/flamming?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/flamming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
   }));
 
-    Amdi.applyCMD({pattern: 'avenger ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'avenger ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
@@ -148,15 +168,32 @@ if (Config.WORKTYPE == 'private') {
         var split = match[1].split('/');
         bottomText = split[1];
         topText = split[0];
-}
+  }
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/logoaveng?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
-    }));
+  }));
 
-    Amdi.applyCMD({pattern: 'vintage ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'wflogo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+  
+    var topText, bottomText;
+      if (match[1].includes('/')) {
+          var split = match[1].split('/');
+          bottomText = split[1];
+          topText = split[0];
+    }
+
+    var webimage = await axios.get(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+
+  }));
+
+  Amdi.applyCMD({pattern: 'vintage ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
@@ -167,43 +204,43 @@ if (Config.WORKTYPE == 'private') {
           topText = split[0];
   }
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/realvintage?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/realvintage?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
-    Amdi.applyCMD({pattern: 'v3d ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'v3d ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'holo ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'holo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/holographic?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/holographic?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
     
-    Amdi.applyCMD({pattern: 'sand ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'sand ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/sandsummer?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/sandsummer?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
-    Amdi.applyCMD({pattern: 'valorant ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'valorant ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
@@ -214,123 +251,143 @@ if (Config.WORKTYPE == 'private') {
           midText = split[1];
           topText = split[0];
   }
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto3/valorantbanner?apikey=qamdi5652&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto3/valorantbanner?apikey=queenamdipublic&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
-    Amdi.applyCMD({pattern: 'thunder ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'thunder ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.zeks.xyz/api/thundertext?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/thunder?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'light ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'light ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/tlight?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'metal ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'metal ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/metallogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'royal ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'royal ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/glossychrome?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/glossychrome?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
-
-    Amdi.applyCMD({pattern: 'sad ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    
+    Amdi.applyCMD({pattern: 'matrix ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/matrix?apikey=apivinz&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
-    Amdi.applyCMD({pattern: 'candy ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'sad ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+    
+    }));
+
+    Amdi.applyCMD({pattern: 'candy ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'dota ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
-
-      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
-  
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatardota?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
-  
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
-  
-    }));
-
-    Amdi.applyCMD({pattern: 'lol ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
-
-      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
-  
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
-  
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
-  
-    }));
-
-    Amdi.applyCMD({pattern: 'aov ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
-
-      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
-  
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/aovwall?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
-  
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
-  
-    }));
-
-    Amdi.applyCMD({pattern: 'grafiti ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
-
-      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
-  
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/cutegravity?apikey=qamdi5652&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
-  
-     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
-  
-      }));
-
-    Amdi.applyCMD({pattern: 'harrypotter ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'hbd ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/harrypotter?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/birthdaycake?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'sparkling ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'dota ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+  
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatardota?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+  
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+  
+    }));
+
+    Amdi.applyCMD({pattern: 'lol ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+  
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+  
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+  
+    }));
+
+    Amdi.applyCMD({pattern: 'aov ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+  
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/aovwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+  
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+  
+    }));
+
+    Amdi.applyCMD({pattern: 'grafiti ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+  
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/cutegravity?apikey=queenamdipublic&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
+  
+     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+  
+      }));
+
+    Amdi.applyCMD({pattern: 'harrypotter ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/harrypotter?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+
+    }));
+
+    Amdi.applyCMD({pattern: 'sparkling ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
@@ -341,63 +398,63 @@ if (Config.WORKTYPE == 'private') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/arcade8bit?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/arcade8bit?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'watercolour ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'watercolour ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/watercolor?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/watercolor?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'ninjalogo ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ninjalogo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'neonlight ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'neonlight ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/futureneon?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/futureneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'sandwriting ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'sandwriting ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/sandw?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'cloud ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'cloud ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/cloud?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/cloud?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'pornhub ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'pornhub ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
@@ -410,21 +467,21 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'snow ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'snow ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/snow3d?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/snow3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'lionlogo ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'lionlogo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
@@ -434,69 +491,69 @@ if (Config.WORKTYPE == 'private') {
         bottomText = split[1];
         topText = split[0];
 }
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome2/lionlogo?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'gaming ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'gaming ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/logogaming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'fpslogo ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'fpslogo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'lovemsg ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'lovemsg ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'blood ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'blood ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/bloodfrosted?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/bloodfrosted?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: 'bplogo ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'bplogo ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
-    Amdi.applyCMD({pattern: '3dtext ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: '3dtext ?(.*)', fromMe: true,  deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/box3d?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/box3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 }
@@ -513,9 +570,9 @@ else if (Config.WORKTYPE == 'public') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/tiktok?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/tiktok?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -527,7 +584,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=fHZpP3j61LgH80BzanBm92jch1Q&emoji=' + uri, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi ' })
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi' })
 
     }));
 
@@ -538,7 +595,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -546,9 +603,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/shadow?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/shadow?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
@@ -558,7 +615,7 @@ else if (Config.WORKTYPE == 'public') {
     
         var webimage = await axios.get(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${match[1].replace(/#/g, '\n')} `, { responseType: 'arraybuffer' })
     
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Queen Amdi "})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Queen Amdi"})
     
     }));
 
@@ -566,9 +623,9 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/cup?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/cup?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
@@ -576,9 +633,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/wolfmetal?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/wolfmetal?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
     }));
 
@@ -595,7 +652,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/logoaveng?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -605,17 +662,27 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
+    }));
+
+    Amdi.applyCMD({pattern: 'naruto ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+        var webimage = await axios.get(`https://api.zeks.xyz/api/naruto?apikey=apivinz&text=${match[1]}`, { responseType: 'arraybuffer' })
+    
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+    
     }));
 
     Amdi.applyCMD({pattern: 'thunder ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.zeks.xyz/api/thundertext?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/thunder?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -625,7 +692,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/tlight?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -633,9 +700,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/metallogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -645,7 +712,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -653,9 +720,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/flamming?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/flamming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
     }));
 
@@ -663,9 +730,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatardota?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatardota?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
     }));
 
@@ -673,9 +740,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/harrypotter?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/harrypotter?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -690,9 +757,9 @@ else if (Config.WORKTYPE == 'public') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/arcade8bit?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/arcade8bit?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -700,10 +767,30 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/watercolor?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/watercolor?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
+    }));
+
+    Amdi.applyCMD({pattern: 'hbd ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/birthdaycake?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+
+    }));
+
+    Amdi.applyCMD({pattern: 'matrix ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+        var webimage = await axios.get(`https://api.zeks.xyz/api/matrix?apikey=apivinz&text=${match[1]}`, { responseType: 'arraybuffer' })
+    
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+    
     }));
 
     Amdi.applyCMD({pattern: 'ninjalogo ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
@@ -712,7 +799,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -720,9 +807,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
     }));
 
@@ -730,19 +817,36 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/futureneon?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/futureneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
+    }));
+
+    Amdi.applyCMD({pattern: 'wflogo ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+      if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+      var topText, bottomText;
+        if (match[1].includes('/')) {
+            var split = match[1].split('/');
+            bottomText = split[1];
+            topText = split[0];
+      }
+  
+      var webimage = await axios.get(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+  
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+  
     }));
 
     Amdi.applyCMD({pattern: 'hacker ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
@@ -752,7 +856,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/sandw?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -760,9 +864,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
   }));
 
@@ -770,9 +874,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/cloud?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/cloud?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -789,7 +893,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -797,9 +901,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/snow3d?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/snow3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -807,9 +911,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/cutegravity?apikey=qamdi5652&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/cutegravity?apikey=queenamdipublic&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
   
-     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
@@ -823,9 +927,9 @@ else if (Config.WORKTYPE == 'public') {
         bottomText = split[1];
         topText = split[0];
 }
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome2/lionlogo?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -840,9 +944,9 @@ else if (Config.WORKTYPE == 'public') {
           topText = split[0];
   }
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/realvintage?apikey=qamdi5652&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/realvintage?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
@@ -857,9 +961,9 @@ else if (Config.WORKTYPE == 'public') {
           midText = split[1];
           topText = split[0];
   }
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto3/valorantbanner?apikey=qamdi5652&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto3/valorantbanner?apikey=queenamdipublic&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
@@ -867,9 +971,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/logogaming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -877,9 +981,9 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/greenneon?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
@@ -887,9 +991,9 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/sandsummer?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/sandsummer?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
@@ -897,9 +1001,19 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/glossychrome?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/glossychrome?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
+    
+    }));
+
+    Amdi.applyCMD({pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+    
+        var webimage = await axios.get(`https://api.zeks.xyz/api/silktext?apikey=apivinz&text=${match[1]}`, { responseType: 'arraybuffer' })
+    
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
@@ -907,9 +1021,9 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/holographic?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/holographic?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
-        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+        await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
     }));
 
@@ -917,9 +1031,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -929,7 +1043,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -937,9 +1051,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/bloodfrosted?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/bloodfrosted?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -947,9 +1061,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/mlwall?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
       }));
 
@@ -957,9 +1071,9 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/aovwall?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/aovwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
-      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
     }));
 
@@ -969,7 +1083,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 
@@ -977,9 +1091,9 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/box3d?apikey=qamdi5652&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/box3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
     }));
 }

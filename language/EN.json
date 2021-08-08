@@ -8,8 +8,8 @@
             "COMMAND": "Command",
             "DESC": "Description",
             "EXAMPLE": "Example",
-            "NOT_FOUND": "* I could not find a command like this😔 *",
-            "WARN": "Warning !!"
+            "NOT_FOUND": "*I could not find a command like this😔*",
+            "WARN": "Warning!!"
         },
         "_plugin": {
             "INSTALL_DESC": "Install external plugins.",
@@ -187,7 +187,7 @@
             "TTS_ERROR": "```Error, you can't voice message in your sentence!```",
             "SONG_DESC": "Uploading the songs.",
             "NEED_TEXT_SONG": "*Please give me song name!*\n*Example:* ```.song build a bitch```",
-            "NO_RESULT": "*I could not find anything. _Error:500_ :(*",
+            "NO_RESULT": "*I could not find anything. :(*",
             "DOWNLOADING_SONG": "```🔄 Downloading your song...```",
             "UPLOADING_SONG": "```🔂 Uploading your song...```",
             "VIDEO_DESC": "Downloading videos from YouTube",
@@ -198,7 +198,7 @@
             "NEED_WORDS": "```Need words to search!```",
             "GETTING_VIDEOS": "```🔎 Please wait, the video is being searched...```",
             "NOT_FOUND": "*I could not find anything :(*",
-            "SEARCHING": "* 🔎 Searching...*",
+            "SEARCHING": "*🔎 Searching...*",
             "WIKI_DESC": "Search Wikipedia.",
             "IMG_DESC": "Downloading google images.",
             "IMG": "🔄 Uploading images ```{}``` numbers ```{} ```...",
@@ -227,13 +227,16 @@
         "sticker": {
             "STICKER_DESC": "Make stickers to your images. Reply to an image.",
             "NEED_REPLY": "*Please reply an image!*",
-            "DOWNLOADING": "```🔄 Downloading media and making sticker...```"
+            "DOWNLOADING": "```🔄 Downloading media and making sticker...```",
+            "ANI_STICK": "Converts animated stickers to video.",
+            "ANI_REPLY": "*Please reply an animated sticker*",
+            "ANIMATE": "```🔄 Converting Animated Sticker To Video..```"
         },
         "system_stats": {
             "ALIVE_DESC": "Check bot online or not",
             "SYSD_DESC": "System properties.",
             "BOT_V": "Check version of bot.",
-            "version": "2.8v - Public Edition"
+            "version": "2.9 - Public Release"
         },
         "tagall": {
             "TAGALL_DESC": "Tag everyone in the group.",
@@ -249,7 +252,12 @@
             "INVALID_HEROKU": "*❌ Your HEROKU_API_KEY wrong! Visit https://dashboard.heroku.com/account . Scroll down to API key. Click reveal buttong. Copy that API key and paste it in HEROKU_API_KEY config vars.*",
             "UPDATED": "*✅ Successfully updated!*",
             "UPDATED_LOCAL": "*✅ Successfully updated!*",
-            "AFTER_UPDATE": "*💬 Queen Amdi automatically restarting!*"
+            "AFTER_UPDATE": "*💬 Queen Amdi automatically restarting!*",
+            "VERIFY_DESC": "Verify your bot officially.",
+            "VERIFY": "*Your bot is verified!✅*",
+            "VERIFIED": "*✅ Successfully verified!*",
+            "VERIFIED_LOCAL": "*✅ Successfully verified!*",
+            "VERIFYING": "_🎲 Verifying..._"
         },
         "weather": {
             "WEATHER_DESC": "Check weather.",
@@ -510,7 +518,12 @@
             "FOLLOWING": "Followings :",
             "LIKES": "Likes :",
             "VIDEOS": "Videos :",
-            "NOT": "```User not found!```"
+            "NOT": "```User not found!```",
+            "TIKTOK_DESC": "Download without watermark videos from Tiktok",
+            "NEED_WORD": "Must Enter a tiktok link!",
+            "DLOAD_TK": "```🔄 Your tiktok is downloading...```",
+            "UPLOADING_TK": "```🔂 Your tiktok is uploading...```",
+            "INVALID_TK": "*I could not find anything :(*"
         },
         "lyric":{
             "LY_DESC": "Song lyrics.",
@@ -521,7 +534,31 @@
             "USAGE": "Search modded apk in Moddroid site.",
             "NEED_WORDS": "```Need words to search!```",
             "GET_MODD": "```🔎 Please wait..```",
-            "NOT_FOUND": "*I could not find this😔*"
+            "NOT_FOUND": "*I could not find this😔*",
+            "SPO_USAGE": "Search songs from spotify."
+        },
+        "information":{
+            "COVID_DESC": "Check information about Covid-19 of countries.\nExample : .covid Sri Lanka",
+            "NEED_CON": "Please enter a country name.",
+            "NO_RESULT": "*I could not find that country :(*",
+            "COUNTRY": "🌏 *Country* : ",
+            "CASES": "📢 *Covid patients* : ",
+            "TCASES": "🔎 *Today* : ",
+            "DEATHS": "⚰️ *Deaths* : ",
+            "TDEATHS": "⚰️ *Today Deaths* : ",
+            "RECO": "⚕️ *Recovered* : ",
+            "CRIT": "😵 *Critical* : ",
+            "TEST": "🔬 *Total Tests* : "
+        },
+        "report":{
+            "REPORT": "Report someone in the group to admins.",
+            "R_WORD": "╔═➤═ *Group Report* ═➤\n║\n",
+            "ID_WORD": "║ _Report ID :_ ",
+            "USER": "║ _User :_ ",
+            "REASON": "║ _Reason :_ ",
+            "END": "╚═➤ *✘👸🏻♥️𝚀𝚞𝚎𝚎𝚗 𝙰𝚖𝚍𝚒 𝙿𝚞𝚋𝚕𝚒𝚌♥️👸🏻✘* ═➤",
+            "REPLY": "Please reply to a message",
+            "BR": "║"
         }
     }
 }
