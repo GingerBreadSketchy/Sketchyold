@@ -29,7 +29,7 @@ if (cn.WORKTYPE == 'private') {
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
       var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-      get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
+      get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
                       get_result = get_result.result
                       ini_txt = ""
                       for (var x of get_result) {
@@ -46,7 +46,7 @@ if (cn.WORKTYPE == 'private') {
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
       var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-      get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/spotifysearch?apikey=queenamdipublic&query=${match[1]}`)
+      get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=queenamdipublic&query=${match[1]}`)
                       get_result = get_result.result
                       ini_txt = ""
                       for (var x of get_result) {
@@ -65,7 +65,7 @@ else if (cn.WORKTYPE == 'public') {
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -82,7 +82,7 @@ else if (cn.WORKTYPE == 'public') {
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
 
-    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/spotifysearch?apikey=queenamdipublic&query=${match[1]}`)
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=queenamdipublic&query=${match[1]}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {

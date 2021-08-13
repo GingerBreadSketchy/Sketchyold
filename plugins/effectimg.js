@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'private') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/tiktok?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/tiktok?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -73,7 +73,7 @@ if (Config.WORKTYPE == 'private') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/shadow?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/shadow?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -83,7 +83,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/cup?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/cup?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -113,7 +113,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/greenneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -123,7 +123,7 @@ if (Config.WORKTYPE == 'private') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/wolfmetal?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/wolfmetal?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -133,7 +133,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/mlwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -143,7 +143,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -153,7 +153,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/flamming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/flamming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -204,7 +204,7 @@ if (Config.WORKTYPE == 'private') {
           topText = split[0];
   }
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/realvintage?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/realvintage?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -224,7 +224,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/holographic?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/holographic?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -234,7 +234,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/sandsummer?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/sandsummer?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -251,7 +251,7 @@ if (Config.WORKTYPE == 'private') {
           midText = split[1];
           topText = split[0];
   }
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto3/valorantbanner?apikey=queenamdipublic&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto3/valorantbanner?apikey=queenamdipublic&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -261,7 +261,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/thunder?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/thunder?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -281,7 +281,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/metallogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -291,7 +291,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/glossychrome?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/glossychrome?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -311,7 +311,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -331,7 +331,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/birthdaycake?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/birthdaycake?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -341,7 +341,7 @@ if (Config.WORKTYPE == 'private') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatardota?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatardota?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -351,7 +351,7 @@ if (Config.WORKTYPE == 'private') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -361,7 +361,7 @@ if (Config.WORKTYPE == 'private') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/aovwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/aovwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -371,7 +371,7 @@ if (Config.WORKTYPE == 'private') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/cutegravity?apikey=queenamdipublic&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/cutegravity?apikey=queenamdipublic&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
   
      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -381,7 +381,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/harrypotter?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/harrypotter?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -398,7 +398,7 @@ if (Config.WORKTYPE == 'private') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/arcade8bit?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/arcade8bit?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -408,7 +408,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/watercolor?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/watercolor?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -428,7 +428,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/futureneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/futureneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -448,7 +448,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/cloud?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/cloud?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -475,7 +475,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/snow3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/snow3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -491,7 +491,7 @@ if (Config.WORKTYPE == 'private') {
         bottomText = split[1];
         topText = split[0];
 }
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome2/lionlogo?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -501,7 +501,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/logogaming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -511,7 +511,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -531,7 +531,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/bloodfrosted?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/bloodfrosted?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -551,7 +551,7 @@ if (Config.WORKTYPE == 'private') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/box3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/box3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -570,7 +570,7 @@ else if (Config.WORKTYPE == 'public') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/tiktok?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/tiktok?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -603,7 +603,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/shadow?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/shadow?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -623,7 +623,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/cup?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/cup?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -633,7 +633,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/wolfmetal?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/wolfmetal?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -680,7 +680,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/thunder?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/thunder?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -700,7 +700,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/metallogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -720,7 +720,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/flamming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/flamming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -730,7 +730,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatardota?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatardota?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -740,7 +740,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy1/harrypotter?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy1/harrypotter?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -757,7 +757,7 @@ else if (Config.WORKTYPE == 'public') {
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/photooxy2/arcade8bit?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/photooxy2/arcade8bit?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -767,7 +767,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/watercolor?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/watercolor?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -777,7 +777,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/birthdaycake?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/birthdaycake?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -807,7 +807,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -817,7 +817,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/futureneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/futureneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -844,7 +844,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -864,7 +864,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -874,7 +874,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/cloud?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/cloud?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -901,7 +901,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/snow3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/snow3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -911,7 +911,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/cutegravity?apikey=queenamdipublic&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/cutegravity?apikey=queenamdipublic&text1=${match[1]}&text2=QueenAmda`, { responseType: 'arraybuffer' })
   
      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -927,7 +927,7 @@ else if (Config.WORKTYPE == 'public') {
         bottomText = split[1];
         topText = split[0];
 }
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome2/lionlogo?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -944,7 +944,7 @@ else if (Config.WORKTYPE == 'public') {
           topText = split[0];
   }
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto2/realvintage?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto2/realvintage?apikey=queenamdipublic&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -961,7 +961,7 @@ else if (Config.WORKTYPE == 'public') {
           midText = split[1];
           topText = split[0];
   }
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto3/valorantbanner?apikey=queenamdipublic&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto3/valorantbanner?apikey=queenamdipublic&text1=${topText}&text2=${midText}&text3=${bottomText}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -971,7 +971,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/logogaming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -981,7 +981,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/greenneon?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -991,7 +991,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/sandsummer?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/sandsummer?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -1001,7 +1001,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/glossychrome?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/glossychrome?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -1021,7 +1021,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
-        var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/holographic?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/holographic?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
     
         await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
     
@@ -1031,7 +1031,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -1051,7 +1051,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/bloodfrosted?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/bloodfrosted?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 
@@ -1061,7 +1061,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/mlwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
      await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -1071,7 +1071,7 @@ else if (Config.WORKTYPE == 'public') {
 
       if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
   
-      var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/aovwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+      var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/aovwall?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
   
@@ -1091,7 +1091,7 @@ else if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://lolhuman.herokuapp.com/api/textprome/box3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/textprome/box3d?apikey=queenamdipublic&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi'})
 

@@ -112,7 +112,7 @@ if (config.WORKTYPE == 'private') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/instagram?apikey=queenamdipublic&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/instagram?apikey=queenamdipublic&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -143,7 +143,7 @@ if (config.WORKTYPE == 'private') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/facebook?apikey=queenamdipublic&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook?apikey=queenamdipublic&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -369,7 +369,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=queenamdipublic`)
+          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=queenamdipublic`)
           .then(async (response) => {
 
             const {
@@ -414,7 +414,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/stalktiktok/${userName}?apikey=queenamdipublic`)
+          .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=queenamdipublic`)
           .then(async (response) => {
 
             const {
@@ -513,7 +513,7 @@ else if (config.WORKTYPE == 'public') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/instagram?apikey=queenamdipublic&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/instagram?apikey=queenamdipublic&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -544,7 +544,7 @@ else if (config.WORKTYPE == 'public') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/facebook?apikey=queenamdipublic&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook?apikey=queenamdipublic&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -770,7 +770,7 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=queenamdipublic`)
+          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=queenamdipublic`)
           .then(async (response) => {
 
             const {
@@ -815,7 +815,7 @@ else if (config.WORKTYPE == 'public') {
          if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
  
          await axios
-           .get(`https://lolhuman.herokuapp.com/api/stalktiktok/${userName}?apikey=queenamdipublic`)
+           .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=queenamdipublic`)
            .then(async (response) => {
  
              const {
