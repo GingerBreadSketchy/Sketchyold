@@ -28,7 +28,7 @@ if (read.WORKTYPE == 'private') {
       if (!tkurl) return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
         await axios
-          .get(`https://api.lolhuman.xyz/api/tiktok3?apikey=queenamdipublic&url=${tkurl}`)
+          .get(`https://api.lolhuman.xyz/api/tiktok3?apikey=${read.ZONE}&url=${tkurl}`)
           .then(async (response) => {
               const {
                 result,
@@ -61,7 +61,7 @@ else if (read.WORKTYPE == 'public') {
      if (!tkurl) return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
    
        await axios
-         .get(`https://api.lolhuman.xyz/api/tiktok3?apikey=queenamdipublic&url=${tkurl}`)
+         .get(`https://api.lolhuman.xyz/api/tiktok3?apikey=${read.ZONE}&url=${tkurl}`)
          .then(async (response) => {
              const {
                result,

@@ -25,7 +25,7 @@ if (read.WORKTYPE == 'private') {
     
 	Amdi.applyCMD({pattern: 'lyric ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.LY_DESC}, async (message, match) => {
         if (match[1] === 'xx') return await message.reply(Lang.NEED_WORD);
-        const url = `https://api.lolhuman.xyz/api/lirik?apikey=queenamdipublic&query=${match[1]}`;
+        const url = `https://api.lolhuman.xyz/api/lirik?apikey=${read.ZONE}&query=${match[1]}`;
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
@@ -39,7 +39,7 @@ if (read.WORKTYPE == 'private') {
 else if (read.WORKTYPE == 'public') {
     Amdi.applyCMD({pattern: 'lyric ?(.*)', fromMe: false, desc: Lang.LY_DESC}, async (message, match) => {
         if (match[1] === 'xx') return await message.reply(Lang.NEED_WORD);
-        const url = `https://api.lolhuman.xyz/api/lirik?apikey=queenamdipublic&query=${match[1]}`;
+        const url = `https://api.lolhuman.xyz/api/lirik?apikey=${read.ZONE}&query=${match[1]}`;
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);

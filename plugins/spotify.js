@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
         if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text)
     
         await axios
-          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdipublic&url=${link}`)
+          .get(`https://api.lolhuman.xyz/api/spotify?apikey=${Config.ZONE}&url=${link}`)
           .then(async (response) => {
             const {
               link,
@@ -51,7 +51,7 @@ else if (Config.WORKTYPE == 'public') {
         if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text, {quoted: message.data})
     
         await axios
-          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdipublic&url=${link}`)
+          .get(`https://api.lolhuman.xyz/api/spotify?apikey=${Config.ZONE}&url=${link}`)
           .then(async (response) => {
             const {
               link,

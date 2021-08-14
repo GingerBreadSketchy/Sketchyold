@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
     Amdi.applyCMD({pattern: 'bts ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BTS_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=${Config.ZONE}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
 
     Amdi.applyCMD({pattern: 'exo ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.EXO_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=${Config.ZONE}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -36,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
 
     Amdi.applyCMD({pattern: 'blackpink ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BP_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=${Config.ZONE}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
     Amdi.applyCMD({pattern: 'bts ?(.*)', fromMe: false, desc: Lang.BTS_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=${Config.ZONE}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -54,7 +54,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Amdi.applyCMD({pattern: 'exo ?(.*)', fromMe: false, desc: Lang.EXO_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=${Config.ZONE}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
@@ -62,7 +62,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Amdi.applyCMD({pattern: 'blackpink ?(.*)', fromMe: false, desc: Lang.BP_DESC}, (async (message, match) => {
 
-    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=${Config.ZONE}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '})
 
