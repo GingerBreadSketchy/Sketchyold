@@ -143,7 +143,7 @@ if (config.WORKTYPE == 'private') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${config.ZONE}&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook?apikey=${config.ZONE}&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -544,7 +544,7 @@ else if (config.WORKTYPE == 'public') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${config.ZONE}&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook?apikey=${config.ZONE}&url=${userName}`)
           .then(async (response) => {
             const {
               result,
