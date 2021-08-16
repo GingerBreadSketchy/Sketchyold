@@ -115,7 +115,7 @@ async function queenAmdi () {
             }
         })
     }, 50000);
-
+/*
 // --------------Queen Amdi verify system--------------
 if (/\[(\W*)\]/.test(config.HANDLERS)) {
     HANDLER = config.HANDLERS.match(/\[(\W*)\]/)[1][0];
@@ -177,7 +177,7 @@ if (/\[(\W*)\]/.test(config.HANDLERS)) {
     }, 50000);
 
 // --------------End of verify system coding--------------
-    
+*/    
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
 
