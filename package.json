@@ -2,13 +2,13 @@
   "name": "queen_amdi",
   "version": "2.9v",
   "description": "Queen Amdi Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./QueenAmdi/bot.js",
+  "main": "./T-REX/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlackAmda/QueenAmdi.git"
+    "url": "git+https://github.com/Dark-Knight-Hiruwa/T-REX.git"
   },
   "keywords": [
     "whatsapp"
