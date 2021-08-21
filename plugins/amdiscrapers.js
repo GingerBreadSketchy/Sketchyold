@@ -45,7 +45,7 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
-    Amdi.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Amdi.applyCMD({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -445,7 +445,7 @@ if (config.WORKTYPE == 'private') {
     )
 }
 else if (config.WORKTYPE == 'public') {
-
+    
     Amdi.applyCMD({ pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
