@@ -74,7 +74,7 @@ if (config.WORKTYPE == 'private') {
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'});
             });
     }));
   
@@ -105,7 +105,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Amdi.applyCMD({ pattern: 'ig ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.IG_DESC}, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'insta ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.IG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
@@ -279,7 +279,7 @@ if (config.WORKTYPE == 'private') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '▶️ *' + video.title + '* - ' + video.url + '\n\n'
+            mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
@@ -407,7 +407,7 @@ if (config.WORKTYPE == 'private') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tk ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
        const userName = match[1]
  
@@ -693,7 +693,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '▶️ *' + video.title + '* - ' + video.url + '\n\n'
+            mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
@@ -808,7 +808,7 @@ else if (config.WORKTYPE == 'public') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tk ?(.*)', fromMe: false, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
         const userName = match[1]
   
