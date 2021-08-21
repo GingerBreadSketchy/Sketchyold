@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Black Amda.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-QueenAmdi - Black Amda
-*/
-
 const fs = require('fs');
 
 class StringSession {
@@ -13,7 +5,7 @@ class StringSession {
     }
 
     deCrypt(string = undefined) {
-        if ('AMDI_SESSION' in process.env && string === undefined) {
+        if ('TREX_SESSION' in process.env && string === undefined) {
             string = process.env.STRING_SESSION;
         } else if (string !== undefined) {
             if (fs.existsSync(string)) {
@@ -28,7 +20,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'AMDI;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'TREX;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
