@@ -1,11 +1,3 @@
-/* Copyright (C) 2021 Queen Amdi.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Queen Amdi - Black Amda
-*/
-
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
@@ -20,7 +12,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'Queen Amdi 2.9v - Public Stable',
-    SESSION: process.env.AMDI_SESSION === undefined ? '' : process.env.AMDI_SESSION,
+    SESSION: process.env.TREX_SESSION === undefined ? '' : process.env.TREX_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
