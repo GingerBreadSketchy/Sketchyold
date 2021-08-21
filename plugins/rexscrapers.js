@@ -1,11 +1,3 @@
-/* Copyright (C) 2021 Queen Amdi.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Queen Amdi - Black Amda
-*/
-
 const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
@@ -101,7 +93,7 @@ if (config.WORKTYPE == 'private') {
   
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4}, {caption: "Copyright © 2021 | Queen Amdi "});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
         });
     }));
 
@@ -128,7 +120,7 @@ if (config.WORKTYPE == 'private') {
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
         }
           })
           .catch(
@@ -159,7 +151,7 @@ if (config.WORKTYPE == 'private') {
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
         }
           })
           .catch(
@@ -180,8 +172,8 @@ if (config.WORKTYPE == 'private') {
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
-            return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            return await message.reply('*🍁 ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
+            + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
@@ -318,7 +310,7 @@ if (config.WORKTYPE == 'private') {
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image);
+                    await message.client.sendMessage(message.jid,image, MessageType.image , Caption:'❰🍁🔱  T Rex BOT  🔱🍁❱');
                 });
             }
 
@@ -332,8 +324,8 @@ if (config.WORKTYPE == 'private') {
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*✒️' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*➢  ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
+            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
@@ -407,7 +399,7 @@ if (config.WORKTYPE == 'private') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tiktokp ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
        const userName = match[1]
  
@@ -502,11 +494,11 @@ else if (config.WORKTYPE == 'public') {
   
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4}, {caption: "Copyright © 2021 | Queen Amdi "});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
         });
     }));
 
-    Amdi.applyCMD({ pattern: 'ig ?(.*)', fromMe: false, desc: Lang.IG_DESC}, (async (message, match) => {
+    Amdi.applyCMD({ pattern: 'insta ?(.*)', fromMe: false, desc: Lang.IG_DESC}, (async (message, match) => {
 
         const userName = match[1]
 
@@ -529,7 +521,7 @@ else if (config.WORKTYPE == 'public') {
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
         }
           })
           .catch(
@@ -560,7 +552,7 @@ else if (config.WORKTYPE == 'public') {
       if (msg === '200') {
         await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
         await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "Copyright © 2021 | Queen Amdi"}) 
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
         }
           })
           .catch(
@@ -581,8 +573,8 @@ else if (config.WORKTYPE == 'public') {
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
-            return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            return await message.reply('*➢  ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
+            + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
@@ -607,8 +599,8 @@ else if (config.WORKTYPE == 'public') {
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*✒️' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🔱 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
+            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
@@ -732,7 +724,7 @@ else if (config.WORKTYPE == 'public') {
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image);
+                    await message.client.sendMessage(message.jid,image, MessageType.image , Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱');
                 });
             }
 
@@ -808,7 +800,7 @@ else if (config.WORKTYPE == 'public') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: false, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tiktokp ?(.*)', fromMe: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
         const userName = match[1]
   
