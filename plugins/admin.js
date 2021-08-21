@@ -1588,12 +1588,12 @@ Amdi.applyCMD({pattern: 'unmute ?(.*)', fromMe: true,  deleteCommand: false,  on
 
 Amdi.applyCMD({pattern: 'clear', fromMe: true,  deleteCommand: false,  desc: Lang.END, dontAddCommandList: true}, (async (message, match) => {
 
-    await message.sendMessage('```Chat clearing...```');
+    await message.sendMessage('```🍁 ➢ Chat clearing...```');
     await message.client.modifyChat (message.jid, ChatModification.delete);
-    await message.sendMessage('```🚮 Chat cleared```');
+    await message.sendMessage('```🍁 ➢ All Chat cleared```');
 }));
 
-Amdi.applyCMD({pattern: 'subject ?(.*)', onlyGroup: true, fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'name ?(.*)', onlyGroup: true, fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1612,7 +1612,7 @@ Amdi.applyCMD({pattern: 'invite ?(.*)', fromMe: true,  deleteCommand: false,  on
 }));
 
 Amdi.applyCMD({pattern: 'search ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
-    const url = `https://gist.githubusercontent.com/BlackAmda/a2b3e417d2ca059f4a6f64e6800dc41c/raw/`;
+    const url = `https://gist.github.com/DARKCRIME1/e59aa70790d6238bf88a2aed62357ff9/raw`;
         const response = await got(url);
         const json = JSON.parse(response.body);
         if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*💠Queen Amdi supported plugins💠*\n\nYou can install these plugins by *.install _<plugin_link>_*\nExample : .install https://gist.github.com/BlackAmda/a06509cf406c3eb172e5173900d0ef87\n\n' + json.sinhala, MessageType.text);
