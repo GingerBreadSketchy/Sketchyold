@@ -33,7 +33,7 @@ ${chalk.blue.italic('ℹ️  Whatsapp වෙත සම්බන්ධ වෙම�
         );
         
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `AMDI_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `TREX_SESSION="${st}"`);
         }
 
         console.log(
