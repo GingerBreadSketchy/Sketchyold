@@ -13,7 +13,6 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('_amdi');
 const fs = require("fs")
-const amdi = fs.readFileSync('./media/amdibot.mp3')  
 
 if (Config.WORKTYPE == 'private') {
 
@@ -50,7 +49,6 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
         
-            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
             await message.client.sendMessage(message.jid, '⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍\n' + ' ```⚕️⛨ QUEEN AMDI PANEL ⛨⚕️```\n' + '⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});  
         } else {
 
@@ -126,7 +124,6 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
         
-            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
             await message.client.sendMessage(message.jid, '⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍\n' + ' ```⚕️⛨ QUEEN AMDI PANEL ⛨⚕️```\n' + '⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});   
         } else {
 
