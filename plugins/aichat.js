@@ -23,7 +23,7 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 if (Config.CHAT_BOT == 'true') {
 	if (Config.WORKTYPE == 'private') {
-		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'rex ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -37,7 +37,7 @@ if (Config.CHAT_BOT == 'true') {
 	}
 	
 	else if (Config.WORKTYPE == 'public') {
-		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'rex ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -53,7 +53,7 @@ if (Config.CHAT_BOT == 'true') {
 
 else if (Config.CHAT_BOT == 'false') {
 	if (Config.WORKTYPE == 'private') {
-		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'rex ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -67,7 +67,7 @@ else if (Config.CHAT_BOT == 'false') {
 	}
 	
 	else if (Config.WORKTYPE == 'public') {
-		Amdi.applyCMD({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+		Amdi.applyCMD({pattern: 'rex ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
