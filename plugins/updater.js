@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Amdi.applyCMD({pattern: 'update$', fromMe: true,  deleteCommand: false,  desc: Lang.UPDATER_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'up$', fromMe: true,  deleteCommand: false,  desc: Lang.UPDATER_DESC, dontAddCommandList: true}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -32,7 +32,7 @@ Amdi.applyCMD({pattern: 'update$', fromMe: true,  deleteCommand: false,  desc: L
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🆕 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "BlackAmda" + '>\n\n';
+                degisiklikler += '🍁 ➢ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "Hiruwa" + '>\n\n';
             }
         );
         
@@ -43,7 +43,7 @@ Amdi.applyCMD({pattern: 'update$', fromMe: true,  deleteCommand: false,  desc: L
     }
 }));
 
-Amdi.applyCMD({pattern: 'update now$', fromMe: true,  deleteCommand: false,  desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'uptrex$', fromMe: true,  deleteCommand: false,  desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
