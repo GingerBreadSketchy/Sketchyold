@@ -42,9 +42,9 @@ if (Config.WORKTYPE == 'private') {
             ffmpeg(location)
                 .videoFilters(`${match[1]}`)
                 .format('mp4')
-                .save('output.mp4')
+                .save('Trex.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Queen Amdi '});
+                    await message.sendMessage(fs.readFileSync('Trex.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -61,9 +61,9 @@ if (Config.WORKTYPE == 'private') {
 
             ffmpeg(location)
                 .videoFilters(`${match[1]}`)
-                .save('output.jpg')
+                .save('Trex.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '});
+                    await message.sendMessage(fs.readFileSync('Trex.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -79,9 +79,9 @@ if (Config.WORKTYPE == 'private') {
 
             ffmpeg(location)
                 .audioFilters(`${match[1]}`)
-                .save('output.mp3')
+                .save('Trex.mp3')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
+                    await message.sendMessage(fs.readFileSync('Trex.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -112,9 +112,9 @@ else if (Config.WORKTYPE == 'public') {
             ffmpeg(location)
                 .videoFilters(`${match[1]}`)
                 .format('mp4')
-                .save('output.mp4')
+                .save('Trex.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Queen Amdi '});
+                    await message.sendMessage(fs.readFileSync('Trex.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -131,9 +131,9 @@ else if (Config.WORKTYPE == 'public') {
 
             ffmpeg(location)
                 .videoFilters(`${match[1]}`)
-                .save('output.jpg')
+                .save('Trex.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Queen Amdi '});
+                    await message.sendMessage(fs.readFileSync('Trex.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱ '});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -149,9 +149,9 @@ else if (Config.WORKTYPE == 'public') {
 
             ffmpeg(location)
                 .audioFilters(`${match[1]}`)
-                .save('output.mp3')
+                .save('Trex.mp3')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
+                    await message.sendMessage(fs.readFileSync('Trex.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
