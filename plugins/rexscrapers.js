@@ -719,7 +719,7 @@ else if (config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
+            for (var i = 0; i < (result.length < 6 ? result.length : 6); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -728,7 +728,7 @@ else if (config.WORKTYPE == 'public') {
                 });
             }
 
-            message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
+            message.reply(Lang.IMG.format((result.length < 6 ? result.length : 6), match[1]));
         });
     }));
 
