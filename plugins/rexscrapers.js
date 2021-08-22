@@ -305,7 +305,7 @@ if (config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
+            for (var i = 0; i < (result.length < 10 ? result.length : 10); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -314,7 +314,7 @@ if (config.WORKTYPE == 'private') {
                 });
             }
 
-            message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
+            message.reply(Lang.IMG.format((result.length < 10 ? result.length : 10), match[1]));
         });
     }));
 
@@ -399,7 +399,7 @@ if (config.WORKTYPE == 'private') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tiktokp ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tk ?(.*)', fromMe: true,  deleteCommand: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
        const userName = match[1]
  
@@ -800,7 +800,7 @@ else if (config.WORKTYPE == 'public') {
       },
     )
 
-    Amdi.applyCMD({ pattern: 'tiktokp ?(.*)', fromMe: false, desc: TKlang.TK_DESC }, async (message, match) => {
+    Amdi.applyCMD({ pattern: 'tk ?(.*)', fromMe: false, desc: TKlang.TK_DESC }, async (message, match) => {
 
         const userName = match[1]
   
