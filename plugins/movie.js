@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'private') {
 		msg += 'BoxOffice  : ' + json.BoxOffice + '\n\n';
 		msg += 'Production : ' + json.Production + '\n\n';
 		msg += 'imdbRating : ' + json.imdbRating + '\n\n';
-		msg += 'imdbVotes  : ' + json.imdbVotes + '```';
+		msg += 'imdbVotes  : ' + json.imdbVotes + '```\n\n❰🍁🔱  T Rex BOT  🔱🍁❱';
 		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 	}));
 }
