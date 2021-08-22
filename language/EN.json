@@ -21,7 +21,7 @@
             "INSTALLED_FROM_REMOTE": "*Plugins that you install externally:*\n",
             "NO_PLUGIN": "*You have not installed any external plugin!*",
             "REMOVE_DESC": "Removing the plugin.",
-            "NEED_PLUGIN": "```Please enter a plugin name! Example: .plugin __test```",
+            "NEED_PLUGIN": "```Please enter a plugin name! Example: .un plug __test```",
             "NOT_FOUND_PLUGIN": "```You may not have such a plugin installed. But it is not there now.```",
             "DELETED": "*✅ Plugin successfully deleted!*"
         },
