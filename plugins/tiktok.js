@@ -28,7 +28,7 @@ if (read.WORKTYPE == 'private') {
       if (!tkurl) return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
     
         await axios
-          .get(`https://api.lolhuman.xyz/api/tiktokwm?apikey=d3be4b65ca9dab633c773d66&url=${tkurl}`)
+          .get(`https://api.xteam.xyz/dl/tiktok?url=${tkurl}&APIKEY=5bd33b276d41d6b4`)
           .then(async (response) => {
               const {
                 result,
