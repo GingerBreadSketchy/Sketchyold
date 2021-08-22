@@ -37,10 +37,7 @@ if (Config.WORKTYPE == 'private') {
 		msg += '🍁 BoxOffice   ' + '➢ '+json.BoxOffice + '\n\n';
 		msg += '🍁 Production  ' + '➢ '+json.Production + '\n\n';
 		msg += '🍁 imdbRating  ' + '➢ '+json.imdbRating + '\n\n';
-		msg += '🍁 imdbVotes   ' + '➢ '+json.imdbVotes + '```\n\n❰🍁🔱  T Rex BOT  🔱🍁❱';
-		var ttinullimage = await axios.get(`https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg`, { responseType: 'arraybuffer' }) 
-		await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱ Movies }):
-											   
+		msg += '🍁 imdbVotes   ' + '➢ '+json.imdbVotes + '```\n\n❰🍁🔱  T Rex BOT  🔱🍁❱';											   
 		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 	}));
 }
