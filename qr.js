@@ -18,9 +18,9 @@ async function queenAmdi () {
     conn.logger.level = 'warn';
     conn.regenerateQRIntervalMs = 40000;
     
-    conn.on('🔄 connecting', async () => {
-        console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold(' Amdi')}
-${chalk.white.italic('Queen Amdi Sting session')}
+    conn.on('🍁➢ connecting', async () => {
+        console.log(`${chalk.green.bold('T')}${chalk.blue.bold('-REX')}
+${chalk.white.italic('T-REX Sting session')}
 
 ${chalk.blue.italic('ℹ️  Whatsapp වෙත සම්බන්ධ වෙමින්... කරුණාකර රැඳී සිටින්න.')}`);
     });
@@ -29,7 +29,7 @@ ${chalk.blue.italic('ℹ️  Whatsapp වෙත සම්බන්ධ වෙම�
     conn.on('open', () => {
         var st = Session.createStringSession(conn.base64EncodedAuthInfo());
         console.log(
-            chalk.green.bold('Queen Amdi session: '), Session.createStringSession(conn.base64EncodedAuthInfo())
+            chalk.green.bold('T-REX session: '), Session.createStringSession(conn.base64EncodedAuthInfo())
         );
         
         if (!fs.existsSync('config.env')) {
