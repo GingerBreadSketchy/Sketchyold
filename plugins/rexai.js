@@ -47,9 +47,9 @@ const convertToWav = file => {
 }
 
 QueenSew.newcmdaddtosew({on: 'text', fromMe: wk, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
-    if (message.message.startsWith('Sew') && Config.FULLSEW !== 'true') {        
+    if (message.message.startsWith('Rex') && Config.FULLSEW !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
-        var finm = message.message.replace('Sew', '').replace(' ', '')   
+        var finm = message.message.replace('Rex', '').replace(' ', '')   
         var ldet = lngDetector.detect(finm)
         var trmsg = finm
 
@@ -68,7 +68,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: wk, dontAdCommandList: true, delown
 }));
 
 
-QueenSew.newcmdaddtosew({ pattern: 'fullsew ?(.*)', desc: fulleva_dsc, fromMe: true, usage: '.fullsew on / off' }, (async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'fullrex ?(.*)', desc: fulleva_dsc, fromMe: true, usage: '.fullrex on / off' }, (async (message, match) => {
     var eva_status = `${conf.FULLEVA}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
