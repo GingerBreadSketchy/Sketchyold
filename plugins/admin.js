@@ -1610,13 +1610,13 @@ Amdi.applyCMD({pattern: 'invite ?(.*)', fromMe: true,  deleteCommand: false,  on
     var invite = await message.client.groupInviteCode(message.jid);
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
-
+/*
 Amdi.applyCMD({pattern: 'search ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
     const url = `https://gist.github.com/DARKCRIME1/e59aa70790d6238bf88a2aed62357ff9/raw`;
         const response = await got(url);
         const json = JSON.parse(response.body);
-        if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*💠Queen Amdi supported plugins💠*\n\nYou can install these plugins by *.install _<plugin_link>_*\nExample : .install https://gist.github.com/BlackAmda/a06509cf406c3eb172e5173900d0ef87\n\n' + json.sinhala, MessageType.text);
-});
+        if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🍁 T Rex BOT supported plugins 🍁*\n\nYou can install these plugins by *.plug _<plugin_link>_*\nExample : .plug https://gist.github.com/BlackAmda/a06509cf406c3eb172e5173900d0ef87\n\n' + json.sinhala, MessageType.text);
+});*/
 
 module.exports = {
     checkImAdmin: checkImAdmin
