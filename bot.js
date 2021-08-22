@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Black Amda.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-QueenAmdi - Black Amda
-*/
-
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
@@ -83,16 +75,16 @@ async function queenAmdi () {
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        await axios.get('https://gist.githubusercontent.com/BlackAmda/c3877acdcdc041d77907d590d4ac1a2d/raw/').then(async (ann) => {
+        await axios.get('https://gist.githubusercontent.com/DARKCRIME1/32d4402fd4a370aa29ce8c24f51ce7f9/raw/').then(async (ann) => {
             const { infoen, infosi} = ann.data.announcements          
             if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 08 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔Queen Amdi Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🍁🔱  T Rex BOT  🔱🍁❱ Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infosi !== '' && config.LANG == 'SI') {
                 while (getGMTh == 08 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔Queen Amdi නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🍁🔱  T Rex BOT  🔱🍁❱ නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
         })
@@ -101,16 +93,16 @@ async function queenAmdi () {
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        await axios.get('https://gist.githubusercontent.com/BlackAmda/c3877acdcdc041d77907d590d4ac1a2d/raw/').then(async (ann) => {
+        await axios.get('https://gist.githubusercontent.com/DARKCRIME1/32d4402fd4a370aa29ce8c24f51ce7f9/raw/').then(async (ann) => {
             const { infoen, infosi} = ann.data.announcements          
             if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 18 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔Queen Amdi Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🍁🔱  T Rex BOT  🔱🍁❱ Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infosi !== '' && config.LANG == 'SI') {
                 while (getGMTh == 18 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔Queen Amdi නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🍁🔱  T Rex BOT  🔱🍁❱ නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
         })
@@ -218,7 +210,7 @@ else if (config.LANG == 'SI') {
 
 if (config.LANG == 'EN') {
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Amdi')}
+        console.log(`${chalk.green.bold('T')}${chalk.blue.bold('-Rex')}
     ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
     ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait...')}`);
@@ -226,7 +218,7 @@ if (config.LANG == 'EN') {
 }
 else if (config.LANG == 'SI') {
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Amdi')}
+        console.log(`${chalk.green.bold('T')}${chalk.blue.bold('Rex')}
     ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
     ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙමින් පවතී... කරුණාකර රැඳී සිටින්න.')}`);
@@ -288,7 +280,7 @@ if (config.LANG == 'EN') {
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '*Queen Amdi started in Public Mode👸*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.panel* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.setvar WORK_TYPE=private``` _command._\n\n*Comment here to request new features:*\nhttps://tinyurl.com/Queen-Amdi-Ideas\n\n*Updates:* https://gist.github.com/BlackAmda/890b6b31fcb8d376d6a68afcb7359324\n\n *Thank you for using Queen Amdi 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Public Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.setvar WORK_TYPE=private``` _command._\n\n🍁Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱ *', MessageType.text);
                 }
 
             }
@@ -313,7 +305,7 @@ if (config.LANG == 'EN') {
                 }
                 else {
 
-                    await conn.sendMessage(conn.user.jid, '*Queen Amdi started in Private Mode👸*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.panel* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.setvar WORK_TYPE=public``` _command._\n\n*Comment here to request new features:*\nhttps://tinyurl.com/Queen-Amdi-Ideas\n\n*Updates:* https://gist.github.com/BlackAmda/890b6b31fcb8d376d6a68afcb7359324\n\n *Thank you for using Queen Amdi 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Private Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.setvar WORK_TYPE=public``` _command._\n\n🍁 Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱*', MessageType.text);
                 }
             }
         
@@ -379,7 +371,7 @@ else if (config.LANG == 'SI') {
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '*Queen ඇම්ඩි public ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.👸*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.panel* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.setvar WORK_TYPE=private``` _විධානය භාවිතා කරන්න._\n\n*Queen Amdi සඳහා එකතු කළ හැකි නව අදහස් මෙහි comment කරන්න:*\nhttps://tinyurl.com/Queen-Amdi-Ideas\n\n*Updates:* https://gist.github.com/BlackAmda/890b6b31fcb8d376d6a68afcb7359324\n\n *Queen ඇම්ඩි භාවිතා කිරීම ගැන ස්තූතියි 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ public ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.setvar WORK_TYPE=private``` _විධානය භාවිතා කරන්න._\n\n*🍁 Developer : Hiruwa* \n\n *❰🍁🔱  T Rex BOT  🔱🍁❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
                 }
             }
         
@@ -403,7 +395,7 @@ else if (config.LANG == 'SI') {
                 }
                 else {
 
-                await conn.sendMessage(conn.user.jid, '*Queen ඇම්ඩි private ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.👸*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.panel* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot private ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.setvar WORK_TYPE=public``` _විධානය භාවිතා කරන්න._\n\n*Queen Amdi සඳහා එකතු කළ හැකි නව අදහස් මෙහි comment කරන්න:*\nhttps://tinyurl.com/Queen-Amdi-Ideas\n\n*Updates:* https://gist.github.com/BlackAmda/890b6b31fcb8d376d6a68afcb7359324\n\n *Queen ඇම්ඩි භාවිතා කිරීම ගැන ස්තූතියි 💌*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ private ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot private ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.setvar WORK_TYPE=public``` _විධානය භාවිතා කරන්න._\n\n🍁 Developer : Hiruwa\n\n *❰🍁🔱  T Rex BOT  🔱🍁❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
                 }
             }
         
@@ -525,18 +517,17 @@ else if (config.LANG == 'SI') {
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'SI') {
-                                await conn.sendMessage(conn.user.jid, '*-- දෝෂ වාර්තාව [QUEEN AMDI] --*' + 
-                                    '\n\n*Queen Amdi Bot දෝෂයක් සිදුවී ඇත!*'+
+                                await conn.sendMessage(conn.user.jid, '*-- දෝෂ වාර්තාව [❰🍁🔱  T Rex BOT  🔱🍁❱] --*' + 
+                                    '\n\n*❰🍁🔱  T Rex BOT  🔱🍁❱ Bot දෝෂයක් සිදුවී ඇත!*'+
                                     '\n\n_මෙම දෝෂ logs ඔබගේ අංකය හෝ ප්‍රති පාර්ශ්වයේ අංකය අඩංගු විය හැකිය. කරුණාකර එය සමග සැලකිලිමත් වන්න!_' +
                                     '\n\n_උදව් සඳහා ඔබට අපගේ whatsapp support කණ්ඩායමට ලිවිය හැකිය_' +
-                                    '\n_Support Group 01:_ https://chat.whatsapp.com/Hkm79J2sapyLGD0rvRTfkq' +
-                                    '\n_Support Group 02:_ https://chat.whatsapp.com/LN48JV7pYGS6NGwNDeiTUF' +
+                                    '\n_Support Group 01:_ https://chat.whatsapp.com/GT5V8RakkftB7DAKWMeQML' +
                                     '\n\n_මෙම පණිවිඩය ඔබගේ අංකයට ගොස් තිබිය යුතුය (සුරකින ලද පණිවිඩ)._\n\n' +
                                     '*සිදු වූ දෝෂය:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _මාධ්‍යන් සකසා ගත නොහැකි වීම._' +
                                         '\n\n\n*හේතුව:* _LOG අංකය තුළ මාධ්‍ය මෙවලම් (xmedia, sticker..) භාවිතය._' +
@@ -545,7 +536,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Split සොයා ගත නොහැක_' +
                                         '\n\n*හේතුව:* _කණ්ඩායම් admin භාවිතා කළ හැකි විධානයන් සමහර විට split ක්‍රියාවලිය නොදකි._ ' +
@@ -554,7 +545,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Ookla Server Connection_' +
                                         '\n\n*හේතුව:* _සේවාදායකයට වේගවත්ම දත්ත සම්ප්‍රේෂණය කළ නොහැක._' +
@@ -563,7 +554,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Audio Params වැරදි වීම._' +
                                         '\n\n*හේතුව:* _හෝඩියේ පිටත TTS විධානය භාවිතා කිරීම._' +
@@ -572,7 +563,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```දෝෂ නිරාකරණය කර ඇත``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _එවැනි folders නැත_' +
                                         '\n\n*හේතුව:* _Pluginයේ වැරදි කේතීකරණය._' +
@@ -581,7 +572,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Error 404 HTTPS_' +
                                         '\n\n*හේතුව:* _Heroku plugins යටතේ ඇති විධානයන් භාවිතා කිරීම හේතුවෙන් සේවාදායකයා සමඟ සන්නිවේදනය කිරීමට නොහැකි වීම._' +
@@ -590,7 +581,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Reply.delete function නොමැති වීම සහ දෙවරක් පිළිතුරු දීම_' +
                                         '\n\n*හේතුව:* _IMG හෝ Wiki විධානයන් භාවිතා කිරීම. (Official වට්ස්ඇප් භාවිතය.)_' +
@@ -599,7 +590,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
                                         '\n\n*හේතුව:* _IMG හෝ Wiki විධානයන් භාවිතා කිරීම. (Official වට්ස්ඇප් භාවිතය.)_' +
@@ -608,7 +599,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Bailyes Action Error_ ' +
                                         '\n\n*හේතුව:* _නිශ්චිත හේතුව නොදනී. විකල්ප එකකට වඩා මෙම දෝෂය ඇති වීමට හේතු විය හැක._' +
@@ -617,7 +608,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Text හෝ මාධ්‍ය විකේතනය කළ නොහැක_' +
                                         '\n\n*හේතුව:* _වැරදි ලෙස භාවිතා කිරීම._' +
@@ -626,7 +617,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('500')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Media downloading error_' +
                                         '\n\n*හේතුව:* _වෙබ් අඩවිය අතර සම්බන්ධතාවය විසන්ධි විය._' +
@@ -635,7 +626,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('503')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Media downloading error_' +
                                         '\n\n*හේතුව:* _වෙබ් අඩවිය අතර සම්බන්ධතාවය විසන්ධි විය._' +
@@ -644,7 +635,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _වචන භාවිතය_' +
                                         '\n\n*හේතුව:* _English හෝඩියේ පිටත TTP, ATTP වැනි විධානයන් භාවිතා කිරීම._' +
@@ -653,24 +644,23 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි, මට මෙම දෝෂය කියවිය නොහැක! 🙇🏻*' +
+                                    return await conn.sendMessage(conn.user.jid, '🏻🍁➢ කණගාටුයි, මට මෙම දෝෂය කියවිය නොහැක!🏻🍁➢  *' +
                                         '\n_වැඩිදුර උදව් සඳහා ඔබට අපගේ support කණ්ඩායම් වෙත ලිවිය හැකිය._'
                                         , MessageType.text
                                     );
                                 }
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [QUEEN AMDI] --*' + 
-                                    '\n\n*Queen Amdi an error has occurred!*'+
+                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [❰🍁🔱  T Rex BOT  🔱🍁❱] --*' + 
+                                    '\n\n*❰🍁🔱  T Rex BOT  🔱🍁❱ an error has occurred!*'+
                                     '\n\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
                                     '\n\n_Aslo you can join our support group:_' +
-                                    '\n_Support Group 01:_ https://chat.whatsapp.com/Hkm79J2sapyLGD0rvRTfkq' +
-                                    '\n_Support Group 02:_ https://chat.whatsapp.com/LN48JV7pYGS6NGwNDeiTUF' +
+                                    '\n_Support Group 01:_ https://chat.whatsapp.com/GT5V8RakkftB7DAKWMeQML' +
                                     '\n\n_This message should have gone to your number (saved messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Only Absolutely URLs Supported_' +
                                         '\n\n*Reason:* _The usage of media tools (xmedia, sticker..) in the LOG number._' +
@@ -679,7 +669,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Split of Undefined_' +
                                         '\n\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
@@ -688,7 +678,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Ookla Server Connection_' +
                                         '\n\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
@@ -697,7 +687,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Requested Audio Params_' +
                                         '\n\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
@@ -706,7 +696,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved``` ==========' +
                                         '\n\n*Main Error:* _No Such File or Directory_' +
                                         '\n\n*Reason:* _Incorrect coding of the plugin._' +
@@ -715,7 +705,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Error 404 HTTPS_' +
                                         '\n\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
@@ -724,7 +714,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function. And Double replying_' +
                                         '\n\n*Reason:* _Using IMG or Wiki commands. (May be using official Whatsapp)_' +
@@ -733,7 +723,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱I] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n\n*Reason:* _Using IMG or Wiki commands._' +
@@ -742,7 +732,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Bailyes Action Error_ ' +
                                         '\n\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
@@ -751,7 +741,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Cannot Decode Text or Media_' +
                                         '\n\n*Reason:* _Incorrect use of the plug._' +
@@ -760,7 +750,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('500')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Media downloading error_' +
                                         '\n\n*Reason:* _Connection between site disconnected._' +
@@ -769,7 +759,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('503')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Media downloading error_' +
                                         '\n\n*Reason:* _Connection between site disconnected._' +
@@ -778,7 +768,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [QUEEN AMDI] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🍁🔱  T Rex BOT  🔱🍁❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Word Character Usage_' +
                                         '\n\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
@@ -787,7 +777,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 Sorry, I Couldnt Read This Error! 🙇🏻*' +
+                                    return await conn.sendMessage(conn.user.jid, '🏻🍁➢ Sorry, I Couldnt Read This Error!🏻🍁➢ *' +
                                         '\n_You can write to our support groups for more help._'
                                         , MessageType.text
                                     );
