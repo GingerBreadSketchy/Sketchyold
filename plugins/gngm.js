@@ -17,7 +17,7 @@ const Ln = "  *SEND GN GM Wish With Image* "
 
     }));
   
-  Asena.addCommand({ pattern: 'gn', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'gn', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
