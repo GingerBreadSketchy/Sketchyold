@@ -1,7 +1,7 @@
 {
-  "name": "queen_amdi",
-  "version": "2.9v",
-  "description": "Queen Amdi Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "name": "t-rex",
+  "version": "V1.0",
+  "description": "❰🍁🔱  T Rex BOT  🔱🍁❱ Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./T-REX/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -13,13 +13,13 @@
   "keywords": [
     "whatsapp"
   ],
-  "author": "Black Amda",
-  "developer": "AN Tech",
+  "author": "Hirusha Rukshan",
+  "developer": "Hiruwa",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/BlackAmda/QueenAmdi#readme",
+  "homepage": "https://github.com/Dark-Knight-Hiruwa/T-REX#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
