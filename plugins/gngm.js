@@ -47,7 +47,7 @@ const Ln = "  *SEND GN GM Wish With Image* "
 
     }));
    }
-else (Config.WORKTYPE == 'private') {
+else if (Config.WORKTYPE == 'private') {
  
  Asena.addCommand({ pattern: 'gn', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
