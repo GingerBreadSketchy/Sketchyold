@@ -23,16 +23,16 @@ if (Config.WORKTYPE == 'private') {
 
         if (Config.ALIVEMSG == 'default') {
             
-            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Developer:* ```Black Amda```\n\n*WhatsApp :* wa.me/94757405652\n\n*Youtube channel :* https://www.youtube.com/channel/UCZx8U1EU95-Wn9mH4dn15vQ\n\n```Thank You For Using Queen Amdi💞```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```Hey There! I'm Online now. 🍁```\n\n🍁 My name : ❰🍁🔱  T Rex BOT  🔱🍁❱\n\n🍁 Developer: HIRUWA\n\n🍁Thank You For Using ❰🍁🔱  T Rex BOT  🔱🍁❱"})
 
     }
     else {
             
-            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | Queen Amdi*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🍁🔱  T Rex BOT  🔱🍁❱*' })
      }
     }));
 
@@ -52,10 +52,10 @@ if (Config.WORKTYPE == 'private') {
     Amdi.applyCMD({pattern: 'version', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
-                `*🧬 Queen Amdi Version 🧬*\n\n` + 
+                `*❰🍁🔱  T Rex BOT  🔱🍁❱*\n\n` + 
                 '```Installed version :```\n' +
                 Lang.version + 
-                `\n\nCheck github for bot:  https://github.com/BlackAmda/QueenAmdi`
+                `\n\n🍁 Check github for bot: https://github.com/Dark-Knight-Hiruwa/T-REX`
            , MessageType.text);
             
         }));
@@ -66,16 +66,16 @@ else if (Config.WORKTYPE == 'public') {
 
         if (Config.ALIVEMSG == 'default') {
             
-            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Developer:* ```Black Amda```\n\n*WhatsApp :* wa.me/94757405652\n\n*Youtube channel :* https://www.youtube.com/channel/UCZx8U1EU95-Wn9mH4dn15vQ\n\n```Thank You For Using Queen Amdi💞```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```🍁 Hey There! I'm Online now. 😘```\n\n🍁 Developer: Hiruwa\n\nThank You For Using ❰🍁🔱  T Rex BOT  🔱🍁❱"})
 
     }
     else {
             
-            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | Queen Amdi*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🍁🔱  T Rex BOT  🔱🍁❱*'})
      }
     }));
 
@@ -95,10 +95,10 @@ else if (Config.WORKTYPE == 'public') {
     Amdi.applyCMD({pattern: 'version', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
-                `*🧬 Queen Amdi Version 🧬*\n\n` + 
+                `*❰🍁🔱  T Rex BOT  🔱🍁❱*\n\n` + 
                 '```Installed version :```\n' +
                 Lang.version + 
-                `\n\nCheck github for bot:  https://github.com/BlackAmda/QueenAmdi`
+                `\n\n🍁 Check github for bot:  https://github.com/Dark-Knight-Hiruwa/T-REX`
            , MessageType.text);
             
         }));
