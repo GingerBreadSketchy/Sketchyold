@@ -19,8 +19,8 @@ const ANIM = "Does not support animated stickers!"
 const HEAD = "```===== [LOGGED MESSAGE] =====```\n\n"
 const USER = " From User Number \n"
 const FROM = " From the group with ID, "
-const MSG = "Message: \n\n"
-const SUC = "*Message Successfully Saved to LOG! ✅️*"
+const MSG = "පණිවිඩය : \n\n"
+const SUC = "*පණිවිඩය ලොග් වෙත සාර්තකව එක් කරන ලදී. ✅️*"
 
 Amdi.applyCMD({ pattern: 'log', fromMe: true,  deleteCommand: false,  desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
 
