@@ -19,7 +19,7 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'mp4audio', fromMe: true,  deleteCommand: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'mp3', fromMe: true,  deleteCommand: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -38,14 +38,14 @@ if (Config.WORKTYPE == 'private') {
 
         ffmpeg(location)
             .withNoVideo()
-            .save('output.mp3')
+            .save('Trex.mp3')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
+                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Amdi.applyCMD({pattern: 'imagesticker', fromMe: true,  deleteCommand: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    Amdi.applyCMD({pattern: 'photo', fromMe: true,  deleteCommand: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -64,16 +64,16 @@ if (Config.WORKTYPE == 'private') {
 
         ffmpeg(location)
             .fromFormat('webp_pipe')
-            .save('output.jpg')
+            .save('Trex.jpg')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.jpg'), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.jpg});
+                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.jpg'), MessageType.image, Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱' , {quoted: message.data}, {mimetype: Mimetype.jpg});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'mp4audio', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'mp3', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -92,14 +92,14 @@ else if (Config.WORKTYPE == 'public') {
 
         ffmpeg(location)
             .withNoVideo()
-            .save('output.mp3')
+            .save('Trex.mp3')
             .on('end', async () => {
                 await message.client.sendMessage(message.jid, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Amdi.applyCMD({pattern: 'imagesticker', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
+    Amdi.applyCMD({pattern: 'photo', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -118,9 +118,9 @@ else if (Config.WORKTYPE == 'public') {
 
         ffmpeg(location)
             .fromFormat('webp_pipe')
-            .save('output.jpg')
+            .save('Trex.jpg')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.jpg'), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.jpg});
+                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.jpg'), MessageType.image, Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱' , {quoted: message.data}, {mimetype: Mimetype.jpg});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
