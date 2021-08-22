@@ -310,7 +310,7 @@ if (config.WORKTYPE == 'private') {
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image , Caption:'❰🍁🔱  T Rex BOT  🔱🍁❱');
+                    await message.client.sendMessage(message.jid,image, MessageType.image , { Caption:'❰🍁🔱  T Rex BOT  🔱🍁❱'});
                 });
             }
 
@@ -724,7 +724,7 @@ else if (config.WORKTYPE == 'public') {
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image , Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱');
+                    await message.client.sendMessage(message.jid,image, MessageType.image , { Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱'});
                 });
             }
 
