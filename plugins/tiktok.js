@@ -10,7 +10,7 @@ const read = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('tiktok');
 
-if (Config.WORKTYPE == 'private') {
+if (read.WORKTYPE == 'private') {
 
   Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, dontAddCommandList: true}, async (message, match) => {
 
@@ -42,7 +42,7 @@ if (Config.WORKTYPE == 'private') {
     )
 }
 
-else if (Config.WORKTYPE == 'public') {
+else if (read.WORKTYPE == 'public') {
 
   Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, dontAddCommandList: true}, async (message, match) => {
 
