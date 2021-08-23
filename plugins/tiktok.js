@@ -10,7 +10,7 @@ const read = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('tiktok');
 
-if (read.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'private') {
 
   Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, dontAddCommandList: true}, async (message, match) => {
 
@@ -42,7 +42,7 @@ if (read.WORKTYPE == 'private') {
     )
 }
 
-else if (read.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
   Amdi.applyCMD({ pattern: 'tiktok ?(.*)', fromMe: true, dontAddCommandList: true}, async (message, match) => {
 
@@ -53,7 +53,7 @@ else if (read.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Lang.DLOAD_TK, MessageType.text,{quoted: message.data})
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/tiktokwm?apikey=d3be4b65ca9dab633c773d66&url=${userName}`)
+          .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=5bd33b276d41d6b4}`)
           .then(async (response) => {
             const {
               server_1,
