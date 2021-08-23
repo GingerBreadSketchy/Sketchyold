@@ -53,7 +53,7 @@ else if (read.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Lang.DLOAD_TK, MessageType.text,{quoted: message.data})
 
         await axios
-          .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=5bd33b276d41d6b4`)
+          .get(`https://api.lolhuman.xyz/api/tiktokwm?apikey=d3be4b65ca9dab633c773d66&url=${userName}`)
           .then(async (response) => {
             const {
               server_1,
