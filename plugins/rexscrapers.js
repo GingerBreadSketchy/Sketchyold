@@ -406,7 +406,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=${config.ZONE}`)
+          .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=d3be4b65ca9dab633c773d66`)
           .then(async (response) => {
 
             const {
@@ -807,7 +807,7 @@ else if (config.WORKTYPE == 'public') {
          if (userName === '') return await message.client.sendMessage(message.jid, TKlang.REPLY, MessageType.text)
  
          await axios
-           .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=${config.ZONE}`)
+           .get(`https://api.lolhuman.xyz/api/stalktiktok/${userName}?apikey=d3be4b65ca9dab633c773d66`)
            .then(async (response) => {
  
              const {
