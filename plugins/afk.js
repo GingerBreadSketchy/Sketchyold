@@ -98,3 +98,64 @@ Amdi.applyCMD({pattern: 'afk ?(.*)', fromMe: true,  deleteCommand: false,  delet
 
 module.exports = { secondsToHms };
 */
+
+const RAVANA = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
+const Config = require('../config');
+
+
+if (Config.WORKTYPE == 'private') {
+RAVANA.addCommand({pattern: 'trex', fromMe: true, deleteCommand: false,}, (async (message, match) => {
+
+	        var r_text = new Array ();
+
+        r_text[1] = "https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[2] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[3] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[4] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[5] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        
+var i = Math.floor(06*Math.random())
+var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption:  " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "  })
+    }));
+}
+else if (Config.WORKTYPE == 'public') {
+	
+	RAVANA.addCommand({pattern: 'trex', fromMe: false, deleteCommand: false,}, (async (message, match) => {
+
+	        var r_text = new Array ();
+
+        r_text[1] = "https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[2] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[3] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[4] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[5] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        
+var i = Math.floor(06*Math.random())
+var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption:  " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ " })
+    }));
+}
+
+
+
+
+RAVANA.applyCMD({pattern: 'trex', fromMe: true, deleteCommand: false,}, (async (message, match) => {
+
+	        var r_text = new Array ();
+
+        r_text[1] = "https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[2] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[3] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[4] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[5] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        
+var i = Math.floor(06*Math.random())
+var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption:  '❰🍁🔱 T Rex BOT MENU 🔱🍁❱' })
+    }));
+
+
+
