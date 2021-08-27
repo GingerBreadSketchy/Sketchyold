@@ -106,7 +106,7 @@ const Config = require('../config');
 
 
 if (Config.WORKTYPE == 'private') {
-RAVANA.addCommand({pattern: 'trex', fromMe: true, deleteCommand: false,}, (async (message, match) => {
+RAVANA.applyCMD({pattern: 'trex', fromMe: true, deleteCommand: false,}, (async (message, match) => {
 
 	        var r_text = new Array ();
 
@@ -123,7 +123,7 @@ await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), Mess
 }
 else if (Config.WORKTYPE == 'public') {
 	
-	RAVANA.addCommand({pattern: 'trex', fromMe: false, deleteCommand: false,}, (async (message, match) => {
+	RAVANA.applyCMD({pattern: 'trex', fromMe: false, deleteCommand: false,}, (async (message, match) => {
 
 	        var r_text = new Array ();
 
