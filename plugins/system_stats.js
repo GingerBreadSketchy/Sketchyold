@@ -102,10 +102,4 @@ else if (Config.WORKTYPE == 'public') {
            , MessageType.text);
             
         }));
-    Amdi.applyCMD({pattern: 'trex', fromMe: false }, (async (message, match) => {
-        
-        var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'})
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱  T Rex BOT MENU 🔱🍁❱ "})
-        
-        }));
 }
