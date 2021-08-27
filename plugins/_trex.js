@@ -16,10 +16,20 @@ const fs = require("fs")
 
 if (Config.WORKTYPE == 'private') {
     
-    Amdi.applyCMD({pattern: 'trex', fromMe: true }, (async (message, match) => { 
-        var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) 
-   }));
+    Amdi.applyCMD({pattern: 'trex', fromMe: true, deleteCommand: false,}, (async (message, match) => {
+
+	        var r_text = new Array ();
+
+        r_text[1] = "https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[2] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[3] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[4] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[5] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        
+var i = Math.floor(06*Math.random())
+var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption:  "╔═══ ❰🍁🔱 T Rex BOT 🔱🍁❱ ═══╗"  })
+    }));
 
     Amdi.applyCMD({pattern: 'trex ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
 
@@ -96,10 +106,21 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: 'trex', fromMe: false }, (async (message, match) => { 
-        var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) }));
+    Amdi.applyCMD({pattern: 'trex', fromMe: true, deleteCommand: false,}, (async (message, match) => {
 
+	        var r_text = new Array ();
+
+        r_text[1] = "https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[2] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[3] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[4] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        r_text[5] ="https://telegra.ph/file/72caf817d141c24cab7cb.jpg";
+        
+var i = Math.floor(06*Math.random())
+var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption:  "╔═══ ❰🍁🔱 T Rex BOT 🔱🍁❱ ═══╗"  })
+    }));
+    
     Amdi.applyCMD({pattern: 'trex ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
