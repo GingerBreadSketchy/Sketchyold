@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
         
-            await message.client.sendMessage(message.jid, '╔═════════════════════╗\n' + '  ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═════════════════════════\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});  
+            await message.client.sendMessage(message.jid, '╔═════════════════════╗\n' + '  ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═══════════════════════\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});  
         } else {
 
             if (message.jid === '393475528094-1415817281@g.us') {
@@ -84,7 +84,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'╔═══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═════════════════════════\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'╔═══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═══════════════════════\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
@@ -124,7 +124,7 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
         
-            await message.client.sendMessage(message.jid, '╔═══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═══════════════════════════\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});   
+            await message.client.sendMessage(message.jid, '╔═══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═════════════════════════\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});   
         } else {
 
             if (message.jid === '393475528094-1415817281@g.us') {
@@ -159,7 +159,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'╔══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '════════════════════════════\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'╔══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '══════════════════════════\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
