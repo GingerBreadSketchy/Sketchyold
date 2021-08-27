@@ -16,8 +16,9 @@ const fs = require("fs")
 
 if (Config.WORKTYPE == 'private') {
     
-    Amdi.applyCMD({pattern: 'trex', fromMe: true }, (async (message, match) => { var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
-    await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) 
+    Amdi.applyCMD({pattern: 'trex', fromMe: true }, (async (message, match) => { 
+        var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) 
    }));
 
     Amdi.applyCMD({pattern: 'trex ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
@@ -95,8 +96,9 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: 'trex', fromMe: false }, (async (message, match) => { var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
-    await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) }));
+    Amdi.applyCMD({pattern: 'trex', fromMe: false }, (async (message, match) => { 
+        var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) }));
 
     Amdi.applyCMD({pattern: 'trex ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
