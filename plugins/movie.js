@@ -37,7 +37,9 @@ if (Config.WORKTYPE == 'private') {
 		msg += '🍁 BoxOffice   ' + '➢ '+json.BoxOffice + '\n\n';
 		msg += '🍁 Production  ' + '➢ '+json.Production + '\n\n';
 		msg += '🍁 imdbRating  ' + '➢ '+json.imdbRating + '\n\n';
-		msg += '🍁 imdbVotes   ' + '➢ '+json.imdbVotes + '```\n\n❰🍁🔱  T Rex BOT  🔱🍁❱';											   
+		msg += '🍁 imdbVotes   ' + '➢ '+json.imdbVotes + '```\n\n❰🍁🔱  T Rex BOT  🔱🍁❱';
+		var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
+		await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "❰🍁🔱 T Rex BOT MOVIE 🔱🍁❱ "}) }));
 		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 	}));
 }
@@ -67,6 +69,8 @@ else if (Config.WORKTYPE == 'public') {
 		msg += '🍁 Production  ' + '➢ '+json.Production + '\n\n';
 		msg += '🍁 imdbRating  ' + '➢ '+json.imdbRating + '\n\n';
 		msg += '🍁 imdbVotes   ' + '➢ '+json.imdbVotes + '```\n\n❰🍁🔱  T Rex BOT  🔱🍁❱';
+		var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'}) 
+		await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: " ❰🍁🔱 T Rex BOT MENU 🔱🍁❱ "}) }));
 		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 	}));
 }
