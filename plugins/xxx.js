@@ -82,7 +82,7 @@ if (Config.WORKTYPE == 'public') {
 
         await axios
 
-          .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=aca83a4354ac`)
+          .get(`https://api.lolhuman.xyz/api/xnxx?apikey=d3be4b65ca9dab633c773d66&url=${link}`)
 
           .then(async (response) => {
 
