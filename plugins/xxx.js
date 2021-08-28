@@ -70,7 +70,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-   Asena.applyCMD({ pattern: 'xxx ?(.*)', fromMe: true, desc: XN_DESC}, async (message, match) => {
+   Asena.applyCMD({ pattern: 'xxx ?(.*)', fromMe: false, desc: XN_DESC}, async (message, match) => {
 
         const link = match[1]
 
