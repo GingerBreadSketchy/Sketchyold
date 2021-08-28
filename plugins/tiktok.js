@@ -101,4 +101,50 @@ else if (read.WORKTYPE == 'public') {
           )
       },
     )
+  
+  Amdi.applyCMD({ pattern: 'ph ?(.*)', fromMe: false, dontAddCommandList: true}, async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text)
+
+        await message.client.sendMessage(message.jid, Lang.DLOAD_TK, MessageType.text,{quoted: message.data})
+
+        await axios
+
+          .get(`https://api.lolhuman.xyz/api/pornhub?apikey=d3be4b65ca9dab633c773d66&url=${userName}`)
+
+          .then(async (response) => {
+
+            const {
+
+              server_1,
+
+            } = response.data
+
+            const profileBuffer = await axios.get(server_1, {
+
+              responseType:  arraybuffer ,
+
+            })
+
+            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
+
+              caption: '❰🍁🔱  T Rex BOT  🔱🍁❱',
+
+            })
+
+          })
+
+          .catch(
+
+            async (err) => await message.client.sendMessage(message.jid, Lang.NO_RESULT + userName, MessageType.text),
+
+          )
+
+      },
+
+    )
+
+
 }
