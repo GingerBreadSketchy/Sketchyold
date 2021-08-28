@@ -1,14 +1,14 @@
-const Asena = require( ../events );
+const Asena = require('../events');
 
-const {MessageType, MessageOptions, Mimetype} = require( @adiwajshing/baileys );
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 
-const axios = require( axios );
+const axios = require('axios');
 
-const { errorMessage, infoMessage } = require( ../helpers );
+const { errorMessage, infoMessage } = require('../helpers');
 
-const Config = require( ../config );
+const Config = require('../config');
 
-const Language = require( ../language );
+const Language = require('../language');
 
 const XN_DESC = "xnxx අඩවියේ සෙක්ස් වීඩියෝ බාගත කරයි අව්නර් සදහා පමණයි..Download sex videos on xnxx site"
 
