@@ -88,7 +88,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     }));
 
-}
+
  
   Asena.applyCMD({ pattern: 'sjjananajan', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
