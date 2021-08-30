@@ -5,7 +5,7 @@ const axios = require('axios');
 const Config = require('../config');
 const Ln = "  *TREX MENU* "
 
-if (Config.LANG == 'EN') {
+if (Config.LANG == 'si') {
  if (Config.WORKTYPE == 'public') {
   
   Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
