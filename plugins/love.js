@@ -62,7 +62,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     }));
   
-  Asena.applyCMD({pattern: 'love you', fromMe: true }, (async (message, match) => {
+  Asena.applyCMD({pattern: 'love you', fromMe: wk }, (async (message, match) => {
 
     var r_text = new Array ();
 
