@@ -5,6 +5,7 @@ const axios = require('axios');
 const Config = require('../config');
 const Ln = "  *TREX MENU* "
 
+if (Config.LANG == 'EN') {
  if (Config.WORKTYPE == 'public') {
   
   Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
@@ -295,6 +296,7 @@ AI chat bot අක්‍රිය කිරීමට, .switch CHAT_BOT:false ව
 
     }));
    }
+ 
 else if (Config.WORKTYPE == 'private') {
  
  Asena.applyCMD({ pattern: 'trex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
@@ -587,3 +589,4 @@ AI chat bot අක්‍රිය කිරීමට, .switch CHAT_BOT:false ව
 
     }));
  }
+}
