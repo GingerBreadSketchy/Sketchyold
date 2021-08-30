@@ -16,7 +16,7 @@ const fs = require("fs")
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'trex ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'hsjsbwhsbsbsusnsbs ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -91,7 +91,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: 'trex ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'jajnainnnajatuaohaban ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
