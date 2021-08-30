@@ -7,7 +7,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
  if (Config.WORKTYPE == 'public') {
   
-  Asena.applyCMD({ pattern: 'love', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'lovepack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -80,7 +80,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     r_text[6] = "https://telegra.ph/file/0e96fae15204751https://telegra.ph/file/72ba4b1a8caf38604c18c.jpg24d275.jpg";
 
-    var i = Math.floor(7*Math.random())
+    var i = Math.floor(8*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})
 
