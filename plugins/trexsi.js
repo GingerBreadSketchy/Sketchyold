@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'si') {
 if (Config.NEOY == 'xyz') {
 
-    Asena.applyCMD({pattern: 'rex', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.applyCMD({pattern: 'rex', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
             
             var image = await axios.get (`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, {responseType: 'arraybuffer'})
        
