@@ -3,15 +3,15 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
-const Ln = "  *SEND GN GM Wish With Image* "
+const Ln = "  *TREX MENU* "
 
  if (Config.WORKTYPE == 'public') {
   
-  Asena.applyCMD({ pattern: 'x', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/b61c06d757b20d1bdfcee.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════╗
 
@@ -297,11 +297,11 @@ AI chat bot අක්‍රිය කිරීමට, .switch CHAT_BOT:false ව
    }
 else if (Config.WORKTYPE == 'private') {
  
- Asena.applyCMD({ pattern: 'x', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'trex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] ==='' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/1cff5bcdec0dcd5708ff5.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: `╔═══════════════════════╗
 
