@@ -27,7 +27,7 @@ const Ln = "  *SEND GN GM Wish With Image* "
 
     }));
  
-  Asena.applyCMD({ pattern: 'gn', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'gn', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -37,7 +37,7 @@ const Ln = "  *SEND GN GM Wish With Image* "
     
     }));
  
- Asena.applyCMD({ pattern: 'gm', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'gm', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -49,7 +49,7 @@ const Ln = "  *SEND GN GM Wish With Image* "
    }
 else if (Config.WORKTYPE == 'private') {
  
- Asena.applyCMD({ pattern: 'gn', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'gn', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] ==='' ) return await message.sendMessage(ll);
 
@@ -63,7 +63,7 @@ else if (Config.WORKTYPE == 'private') {
 
  
 
- Asena.applyCMD({ pattern: 'gm', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'gm', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
