@@ -83,7 +83,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     }));
 
-  Asena.applyCMD({pattern: 'love you', fromMe: false }, (async (message, match) => {
+  Asena.applyCMD({pattern: 'miss you', fromMe: false }, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -95,7 +95,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     r_text[3] = "https://telegra.ph/file/506cbe50b126155882d2e.jpg";
 
-    r_text[4] = "https://telegra.ph/file/72ba4b1a8caf38604c18c.jpg";
+    r_text[4] = "https://telegra.ph/file/7af1f81554120ef582fa1.jpg";
 
     r_text[5] = "https://telegra.ph/file/f2c9064c9afc912d58a88.jpg";
 
@@ -105,7 +105,10 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ` })
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╔═╦═╦╦═╦═╗╔═╦╗
+║║║║╠╣═╣═╣╚╗║╠═╦╦╗
+║║║║║╠═╠═║╔╩╗║╬║║║
+╚╩═╩╩╩═╩═╝╚══╩═╩═╝` })
 
     }));
  }
