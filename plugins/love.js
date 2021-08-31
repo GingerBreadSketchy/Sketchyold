@@ -83,51 +83,29 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     }));
 
+  Asena.applyCMD({pattern: 'love you', fromMe: false }, (async (message, match) => {
 
- 
-  Asena.applyCMD({ pattern: 'sjjananajan', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    var r_text = new Array ();
 
-        if (match[1] === '') return await message.sendMessage(ll);
+    r_text[0] = "https://telegra.ph/file/420aad8a5c96b545ddf52.jpg";
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/1cff5bcdec0dcd5708ff5.jpg`, { responseType: 'arraybuffer' })
+    r_text[1] = "https://telegra.ph/file/7af1f81554120ef582fa1.jpg";
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '🌃Ꮐᝪᝪᗞ 🙈ᑎᏆᏀᕼᎢ 💫✨\n\nසුබ රත්‍රියක් ➠ හොදට නිදාගන්න හොදේ 🤭' })
-    
-    }));
- 
- Asena.applyCMD({ pattern: 'kakanaj', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    r_text[2] = "https://telegra.ph/file/f2c9064c9afc912d58a88.jpg";
 
-        if (match[1] === '' ) return await message.sendMessage(ll);
+    r_text[3] = "https://telegra.ph/file/506cbe50b126155882d2e.jpg";
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/b61c06d757b20d1bdfcee.jpg`, { responseType: 'arraybuffer' })
+    r_text[4] = "https://telegra.ph/file/72ba4b1a8caf38604c18c.jpg";
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '🍃𝙶𝚘𝚘𝚍 🌻𝚖𝚘𝚛𝚗𝚒𝚗𝚐 🥰\n\nසුබ දවසක් ➠ සතුටින් ඉන්න 😘' })
+    r_text[5] = "https://telegra.ph/file/f2c9064c9afc912d58a88.jpg";
 
-    }));
-   }
-else if (Config.WORKTYPE == 'private') {
- 
- Asena.applyCMD({ pattern: 'ajiaanna', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    r_text[6] = "https://telegra.ph/file/420aad8a5c96b545ddf52.jpg";
 
-        if (match[1] ==='' ) return await message.sendMessage(ll);
+    var i = Math.floor(8*Math.random())
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/1cff5bcdec0dcd5708ff5.jpg`, { responseType: 'arraybuffer' })
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '🌃Ꮐᝪᝪᗞ 🙈ᑎᏆᏀᕼᎢ 💫✨\n\nසුබ රත්‍රියක් ➠ හොදට නිදාගන්න හොදේ 🤭' })
-
-    
-
-    }));
-
- 
-
- Asena.applyCMD({ pattern: 'nanabbaa', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://telegra.ph/file/b61c06d757b20d1bdfcee.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '🍃𝙶𝚘𝚘𝚍 🌻𝚖𝚘𝚛𝚗𝚒𝚗𝚐 🥰\n\nසුබ දවසක් ➠ සතුටින් ඉන්න 😘' })
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ` })
 
     }));
  }
