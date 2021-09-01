@@ -312,7 +312,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ║ ❰🍁🔱  T Rex BOT  🔱🍁❱  
 ╚═════════════════════╝` })
    
-   })):
+   }));
   Asena.applyCMD({pattern: 'love you', fromMe: false }, (async (message, match) => {
 
     var r_text = new Array ();
