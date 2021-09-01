@@ -9,7 +9,7 @@ const Ln = "  *❰🍁🔱  T Rex BOT  🔱🍁❱* "
 
 if (Config.WORKTYPE == 'public') {
     
-      Asena.applyCMD({pattern: 'ffpack', fromMe: false, desc: Ln,}, (async (message, match) => {
+      Asena.applyCMD({pattern: 'jsjsnsjsjsnsbsjks', fromMe: false, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
@@ -17,7 +17,7 @@ if (Config.WORKTYPE == 'public') {
   
   }));
  
- Asena.applyCMD({ pattern: 'ff2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'ff9 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- Asena.applyCMD({ pattern: 'ff1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'ff10 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff11 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'public') {
     
     }));
  
- Asena.applyCMD({ pattern: 'ff4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'ff12 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -57,7 +57,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff5 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff13 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -67,7 +67,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff6 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff14 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -77,7 +77,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff7 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff15 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -87,7 +87,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff8 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff16 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -97,7 +97,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff9 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff17 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -107,7 +107,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff10 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff18 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -117,7 +117,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff11 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff19 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -127,7 +127,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff12 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff20 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -137,7 +137,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff13 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff21 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -147,7 +147,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff14 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff22 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -157,7 +157,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff15 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff23 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -167,7 +167,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff16 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff24 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -177,7 +177,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff17 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff25 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -187,7 +187,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff18 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff26 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -197,7 +197,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff19 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff27 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -207,7 +207,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff20 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff28 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -217,7 +217,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff21 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff29 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -227,7 +227,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff22 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff30 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -237,7 +237,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff23 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff31 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -247,7 +247,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff24 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff32 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -257,7 +257,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff25 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff33 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -267,7 +267,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff26 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff34 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -277,7 +277,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff27 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff35 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -287,7 +287,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-   Asena.applyCMD({ pattern: 'ff28 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff36 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -296,7 +296,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff29 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff37 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -305,7 +305,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff30 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff38 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -314,7 +314,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff31 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff39 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -323,7 +323,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff32 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff40 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -332,7 +332,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff33 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff41 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -341,7 +341,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff34 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff43 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -350,7 +350,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff35 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff43 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -359,7 +359,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff36 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff44 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -368,7 +368,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff37 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff45 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -377,7 +377,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff38 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff46 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -386,7 +386,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff39 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff47 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -395,7 +395,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff40 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff48 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -404,7 +404,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff41 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff49 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -413,7 +413,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff42 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff50 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -422,7 +422,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff43 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff51 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -431,7 +431,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff44 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff52 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -440,7 +440,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff45 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff53 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -449,7 +449,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff46 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff54 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -458,7 +458,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff47 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff55 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -467,7 +467,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff48 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff56 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -476,7 +476,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff49 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff57 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -485,7 +485,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff50 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff58 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
