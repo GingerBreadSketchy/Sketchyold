@@ -494,7 +494,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
- Asena.applyCMD({pattern: 'ffpack', fromMe: true, desc: Ln,}, (async (message, match) => {
+ Asena.applyCMD({pattern: 'jajnniajabaakahah', fromMe: true, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
