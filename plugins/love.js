@@ -51,7 +51,268 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 `})
 
     }));
-  
+    Asena.applyCMD({pattern:  'ffpack', fromMe: false }, (async (message, match) => {
+
+    var r_text = new Array ();
+
+    r_text[0] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[1] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[2] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[3] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[4] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[5] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[6] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    var i = Math.floor(8*Math.random())
+
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})    
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╔═════════════════════╗
+║      ❰🍁🔱  T Rex BOT  🔱🍁❱  
+║         ║🍁╚FF PACK╝🍁║
+║
+╠═➢ 🍁.ff9       ❴your text❵
+║send fiee fire logo
+╠═➢ 🍁.ff10      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff11      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff12      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff13      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff14      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff15      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff16      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff17      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff18       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff19       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff20       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff21       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff22       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff23       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff24       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff25       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff26       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff27       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff28       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff29       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff30       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff31       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff32       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff33       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff34       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff35       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff36       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff37       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff38       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff39       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff40       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff40       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff41       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff42       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff43       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff44       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff45       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff46       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff47       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff48       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff49       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff50       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff51       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff52       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff53       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff54       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff55       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff56       ❴your text❵
+║send free fire logo
+║
+║
+║▷Creator: HIRUSHA
+║
+║ ❰🍁🔱  T Rex BOT  🔱🍁❱  
+╚═════════════════════╝` })
+
+    }));
+  Asena.applyCMD({pattern:  'ffpack', fromMe: true }, (async (message, match) => {
+
+    var r_text = new Array ();
+
+    r_text[0] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[1] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[2] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[3] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[4] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[5] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    r_text[6] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+
+    var i = Math.floor(8*Math.random())
+
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})    
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╔═════════════════════╗
+║      ❰🍁🔱  T Rex BOT  🔱🍁❱  
+║         ║🍁╚FF PACK╝🍁║
+║
+╠═➢ 🍁.ff9       ❴your text❵
+║send fiee fire logo
+╠═➢ 🍁.ff10      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff11      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff12      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff13      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff14      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff15      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff16      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff17      ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff18       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff19       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff20       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff21       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff22       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff23       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff24       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff25       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff26       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff27       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff28       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff29       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff30       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff31       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff32       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff33       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff34       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff35       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff36       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff37       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff38       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff39       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff40       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff40       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff41       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff42       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff43       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff44       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff45       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff46       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff47       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff48       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff49       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff50       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff51       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff52       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff53       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff54       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff55       ❴your text❵
+║send free fire logo
+╠═➢ 🍁.ff56       ❴your text❵
+║send free fire logo
+║
+║
+║▷Creator: HIRUSHA
+║
+║ ❰🍁🔱  T Rex BOT  🔱🍁❱  
+╚═════════════════════╝` })
+   
+   })):
   Asena.applyCMD({pattern: 'love you', fromMe: false }, (async (message, match) => {
 
     var r_text = new Array ();
