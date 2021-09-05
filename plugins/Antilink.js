@@ -1,4 +1,4 @@
-const Amdi = require('../events');
+/*const Amdi = require('../events');
 
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 
@@ -223,3 +223,4 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
     }
 
 }))
+*/
