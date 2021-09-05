@@ -20,8 +20,8 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 const ADD = '94757405652,94716292396'
 
 var kickmsg = ''
-if (Config.LANG == 'SI') kickmsg = '_*⛔ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n' + Config.CAP
-if (Config.LANG == 'EN') kickmsg = '_*⛔ Bad words are forbidden by the bot owner.*_\n' + Config.CAP
+if (Config.LANG == 'SI') kickmsg = '_*❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
+if (Config.LANG == 'EN') kickmsg = '_*❌ Bad words are prohibited by the bot owner.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
     if (Config.ANTIBAD == 'true') {
