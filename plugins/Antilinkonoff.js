@@ -13,7 +13,7 @@ var l_dsc = ''
     var succ_on = ''
     var succ_off = ''
     if (config.LANG == 'SI') {
-        l_dsc = 'Activates the Antilink tool.'
+        l_dsc = 'Activates the Antilink tool..'
         alr_on = 'Antilink is already open!'
         alr_off = 'Antilink is currently closed!'
         succ_on = 'Antilink Opened Successfully!'
