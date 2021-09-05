@@ -2990,7 +2990,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1suddo, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }    
     }
