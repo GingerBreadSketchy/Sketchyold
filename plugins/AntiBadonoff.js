@@ -33,7 +33,7 @@ var l_dsc = ''
     }
 
     Amdi.applyCMD({pattern: 'antibad ?(.*)', fromMe: true,  deleteCommand: false,  desc: l_dsc, usage: '.antibad on / off', dontAddCommandList: true }, (async (message, match) => {
-        const anti_status = `${config.ANTILINK}`
+        const anti_status = `${config.ANTIBAD}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_on + '*', MessageType.text)
