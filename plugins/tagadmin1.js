@@ -36,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.applyCMD({pattern: 'tagadmin', fromMe: false, desc: Lang.CONTADMİN}, (async (message, match) => {
+    QueenSew.applyCMD({pattern: 'tagadmin', fromMe: false }, (async (message, match) => {
 
         let grup = await message.client.groupMetadata(message.jid);
 
@@ -60,7 +60,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.applyCMD({pattern: 'tagadmin', fromMe: true, desc: Lang.CONTADMİN, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.applyCMD({pattern: 'tagadmin', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
         let grup = await message.client.groupMetadata(message.jid);
 
