@@ -44,4 +44,3 @@ QueenSew.applyCMD({pattern: 'tagall ?(.*)', fromMe: true }, (async (message, mat
         await message.client.sendMessage(message.jid,message.reply_message.text, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
 }));
-}
