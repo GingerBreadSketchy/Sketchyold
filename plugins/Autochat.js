@@ -1,8 +1,7 @@
-/*const Amdi = require('../events');
-
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
-
 const Config = require('../config');
+
 
 async function checkUsAdmin(message, user = message.data.participant) {
 
@@ -42,15 +41,13 @@ if (Config.LANG == 'EN') kickmsg = '_*❌ Links are prohibited by the bot owner.
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
 
-    if (Config.ANTI_LINK == 'true') {
-
         let getword1bad = new RegExp('https://')
 
         let getword2bad = new RegExp('.com')
 
         let getword3bad = new RegExp('.lk')
 
-        let getword4bad = new RegExp('.ml')
+        let getword4bad = new RegExp('hi')
 
         let getword5bad = new RegExp('http://')
 
@@ -116,15 +113,6 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         } 
 
       else if (getword4bad.test(message.message)) {
-
-            var us = await checkUsAdmin(message)
-
-            var im = await checkImAdmin(message)
-
-            if (!im) return;
-
-            if (us) return;
-
             await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
 
             await message.client.groupRemove(message.jid, [message.data.participant]);         
@@ -220,7 +208,5 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             await message.client.groupRemove(message.jid, [message.data.participant]);         
 
         } 
-    }
 
 }))
-*/
