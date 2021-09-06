@@ -1,4 +1,4 @@
-const Amdi = require('../events');
+/*const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const config = require('../config');
 const Heroku = require('heroku-client');
@@ -56,3 +56,4 @@ var l_dsc = ''
             }
         }
     }));
+*/
