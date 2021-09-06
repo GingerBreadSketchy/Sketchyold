@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
             if (uye.isAdmin) {
 
-                mesaj += '💠 @' + uye.id.split('@')[0] + '\n▫️👑 wa.me/'+ uye.id.split('@')[0] + '  👑\n\n';
+                mesaj += '🍁 @' + uye.id.split('@')[0] + '\n➢ 👑 wa.me/'+ uye.id.split('@')[0] + '  👑\n\n';
 
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
 
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
 
         });
 
-        await message.client.sendMessage(message.jid,'◻    🔱    *👑 Group Admins 👑*    🔱    ◻\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid,'🍁    *👑 Group Admins 👑*    🍁\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
 
     }));
 
@@ -48,7 +48,7 @@ else if (Config.WORKTYPE == 'public') {
 
             if (uye.isAdmin) {
 
-                mesaj += '💠 @' + uye.id.split('@')[0] + '\n▫️👑 wa.me/' + uye.id.split('@')[0] + '  👑\n\n';
+                mesaj += '🍁 @' + uye.id.split('@')[0] + '\n➢ 👑 wa.me/' + uye.id.split('@')[0] + '  👑\n\n';
 
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
 
@@ -56,7 +56,7 @@ else if (Config.WORKTYPE == 'public') {
 
         });
 
-        await message.client.sendMessage(message.jid,'◻    🔱    *👑 Group Admins 👑*    🔱    ◻\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid,'🍁    *👑 Group Admins 👑*    🍁\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
 
     }));
 
@@ -72,7 +72,7 @@ else if (Config.WORKTYPE == 'public') {
 
             if (uye.isAdmin) {
 
-                mesaj += '💠 @' + uye.id.split('@')[0] + '\n▫️👑 wa.me/' + uye.id.split('@')[0] + '  👑\n\n';
+                mesaj += '🍁 @' + uye.id.split('@')[0] + '\n➢ 👑 wa.me/' + uye.id.split('@')[0] + '  👑\n\n';
 
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
 
@@ -80,7 +80,7 @@ else if (Config.WORKTYPE == 'public') {
 
         });
 
-        await message.client.sendMessage(message.jid,'◻    🔱    *👑 Group Admins 👑*    🔱    ◻\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid,'🍁    *👑 Group Admins 👑*    🍁\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
 
     }));
 
