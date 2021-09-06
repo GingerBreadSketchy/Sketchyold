@@ -44,7 +44,7 @@ Amdi.applyCMD({pattern: 'tagall ?(.*)', fromMe: true,  deleteCommand: false,  de
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '╠═➢ 🍁 @' + uye.id.split('@')[0] + '\n';
+                    mesaj += '╔════════════════\n║   🍁 MEMBER LIST 🍁\n║\n╠═➢ 🍁 @' + uye.id.split('@')[0] + '\n';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
