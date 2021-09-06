@@ -326,7 +326,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword297bad = new RegExp('keriyo')
         let getword298bad = new RegExp('Keriyo')
         let getword299bad = new RegExp('esawo ')
-        let getword300bad = new RegExp('.com')
+        let getword300bad = new RegExp('https')
         let getword301bad = new RegExp('www. ')
         let getword302bad = new RegExp('http://')
         let getword303bad = new RegExp('https://')
