@@ -35,20 +35,30 @@ const ADD = '94704029407,94788306130'
 
 var kickmsg = ''
 
-if (Config.LANG == 'SI') kickmsg = '_*හායි කෝමද ඔයාට\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
+if (Config.LANG == 'SI') kickmsg = '_හායි කෝමද ඔයාට 🍁😊_ '
 
 if (Config.LANG == 'EN') kickmsg = '_*❌ Links are prohibited by the bot owner.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
 
-        let getword1bad = new RegExp('hi')
+        let get1 = new RegExp('hi')
+        let get2 = new RegExp('Hi')
+        let get3 = new RegExp('Mk')
+        let get4 = new RegExp('mk')
         
         
-        
-        if (getword1bad.test(message.message)) {
-
+        if (get1.test(message.message)) {
             await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })     
 
+        } 
+    else if (get2.test(message.message)) {
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })     
+        } 
+    else if (get3.test(message.message)) {
+            await message.client.sendMessage(message.jid,'මොකුත් නෑ අනේ ඔහෙ ඉන්නවා 😊😒', MessageType.text, {quoted: message.data })     
+        } 
+    else if (get4.test(message.message)) {
+            await message.client.sendMessage(message.jid,'මොකුත් නෑ අනේ ඔහෙ ඉන්නවා 😊😒', MessageType.text, {quoted: message.data })     
         } 
 
 }))
