@@ -39,7 +39,8 @@ if (Config.LANG == 'SI') kickmsg = '_හායි කෝමද ඔයාට 🍁
 
 if (Config.LANG == 'EN') kickmsg = '_*❌ Links are prohibited by the bot owner.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
 
-Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
+Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {  
+    if (Config.CHAT_BOT == 'true') {
 
         let get1 = new RegExp('hi')
         let get2 = new RegExp('Hi')
@@ -60,5 +61,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
     else if (get4.test(message.message)) {
             await message.client.sendMessage(message.jid,'මොකුත් නෑ අනේ ඔහෙ ඉන්නවා 😊😒', MessageType.text, {quoted: message.data })     
         } 
+        
+    }
 
 }))
