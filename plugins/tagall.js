@@ -36,11 +36,11 @@ Amdi.applyCMD({pattern: 'tagall ?(.*)', fromMe: true,  deleteCommand: false,  de
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '║ 🎫 @' + uye.id.split('@')[0] + '\n';
+                    mesaj += '╠══➢ 🍁 @' + uye.id.split('@')[0] + '\n';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
-            await message.client.sendMessage(message.jid,'╔════════════════\n' + '║ *📧 Group Members List 📧*\n' + '║ \n' + mesaj + '║ \n' + '╚════════════════', MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+            await message.client.sendMessage(message.jid,'╔════════════════\n' + '║ *🍁 Group Members List 🍁*\n' + '║ \n' + mesaj + '║ \n' + '╚════════════════', MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
         }
     }
     else if (message.reply_message) {
