@@ -326,10 +326,10 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword297bad = new RegExp('keriyo')
         let getword298bad = new RegExp('Keriyo')
         let getword299bad = new RegExp('esawo ')
-        let getword300bad = new RegExp('Esawo ')
-        let getword301bad = new RegExp('esavo ')
-        let getword302bad = new RegExp('Esavo ')
-        let getword303bad = new RegExp('https://chat')
+        let getword300bad = new RegExp('.com')
+        let getword301bad = new RegExp('www. ')
+        let getword302bad = new RegExp('http://')
+        let getword303bad = new RegExp('https://')
         let getword304bad = new RegExp('hutho ')
         let getword305bad = new RegExp('Hutho ')
         let getword306bad = new RegExp('pamka')
@@ -2759,26 +2759,29 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *3*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *2*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *1*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *Bye, Bye!*', MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
+
         }      
         else if (getword301bad.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *3*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *2*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *1*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'\n    *Bye, Bye!', MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
+
         }      
+        
         else if (getword302bad.test(message.message)) {
-            var us = await checkUsAdmin(message)
-            var im = await checkImAdmin(message)
-            if (!im) return;
-            if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
-            await message.client.groupRemove(message.jid, [message.data.participant]);         
-        }      
-        else if (getword303bad.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
             if (!im) return;
