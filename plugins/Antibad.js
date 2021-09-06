@@ -2999,77 +2999,46 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }    
         else if (getword329bad.test(message.message)) {
-
             var us = await checkUsAdmin(message)
-
             var im = await checkImAdmin(message)
-
             if (!im) return;
-
             if (us) return;
-
             await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
-
             await message.client.groupRemove(message.jid, [message.data.participant]);         
 
         }    
         else if (getword330bad.test(message.message)) {
-
             var us = await checkUsAdmin(message)
-
             var im = await checkImAdmin(message)
-
             if (!im) return;
-
             if (us) return;
-
             await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
-
             await message.client.groupRemove(message.jid, [message.data.participant]);         
 
         }    
         else if (getword331bad.test(message.message)) {
-
             var us = await checkUsAdmin(message)
-
             var im = await checkImAdmin(message)
-
             if (!im) return;
-
             if (us) return;
-
             await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
-
             await message.client.groupRemove(message.jid, [message.data.participant]);         
-
         }    
         else if (getword332bad.test(message.message)) {
-
             var us = await checkUsAdmin(message)
-
             var im = await checkImAdmin(message)
-
             if (!im) return;
-
             if (us) return;
-
             await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
-
             await message.client.groupRemove(message.jid, [message.data.participant]);         
 
         }    
         else if (getword333bad.test(message.message)) {
-
             var us = await checkUsAdmin(message)
-
             var im = await checkImAdmin(message)
-
             if (!im) return;
-
             if (us) return;
-
             await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
-
             await message.client.groupRemove(message.jid, [message.data.participant]);         
 
         }    
