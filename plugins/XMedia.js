@@ -942,8 +942,9 @@ else if (Config.WORKTYPE == 'public') {
             .save('output.mp4')
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱   '
-             });
+            });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+    
     }));
 
     Amdi.applyCMD({pattern: 'x2mp4', fromMe: false, dontAddCommandList: true}, (async (message, match) => {    
