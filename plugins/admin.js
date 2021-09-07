@@ -1604,11 +1604,12 @@ Amdi.applyCMD({pattern: 'name ?(.*)', onlyGroup: true, fromMe: true,  deleteComm
     }
 ));
 
-Amdi.applyCMD({pattern: 'invite ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.INVITE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Amdi.applyCMD({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
-    await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
+    await message.client.sendMessage(message.jid,Lang.INVITE +  'https://chat.whatsapp.com/' + invite, MessageType.text);
+
 }));
 /*
 Amdi.applyCMD({pattern: 'search ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
