@@ -37,7 +37,7 @@ var kickmsg = ''
 
 if (Config.LANG == 'SI') kickmsg = '_හායි කෝමද ඔයාට 🍁😊_ '
 
-if (Config.LANG == 'EN') kickmsg = '_*❌ Links are prohibited by the bot owner.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
+if (Config.LANG == 'EN') kickmsg = '_Hi! How are you 🍁😊_ '
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {  
     if (Config.CHAT_BOT == 'true') {
