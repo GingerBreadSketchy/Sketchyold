@@ -13,7 +13,7 @@ const NO_RESULT = "*SORRY ❰🍁🔱  T Rex BOT  🔱🍁❱ can't Find Anythin
 
 if (Config.WORKTYPE == 'private') {
 
-    cobra.applyCMD({ pattern: 'vid ?(.*)', fromMe: true, desc: YTV_DESC,  deleteCommand: false}, async (message, match) => {
+    cobra.applyCMD({ pattern: 'vid2 ?(.*)', fromMe: true, desc: YTV_DESC,  deleteCommand: false}, async (message, match) => {
 
         const link = match[1]
     
@@ -39,7 +39,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    cobra.applyCMD({ pattern: 'vid ?(.*)', fromMe: false, desc: YTV_DESC}, async (message, match) => {
+    cobra.applyCMD({ pattern: 'vid2 ?(.*)', fromMe: false, desc: YTV_DESC}, async (message, match) => {
 
         const link = match[1]
     
