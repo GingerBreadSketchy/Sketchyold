@@ -924,28 +924,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Amdi.applyCMD({pattern: 'x4mp4', fromMe: false, dontAddCommandList: true}, (async (message, match) => {    
-
-        if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
-        var downloading = await message.client.sendMessage(message.jid,'```සංස්කරණය වෙමින් පවති..```',MessageType.text);
-        var location = await message.client.downloadAndSaveMediaMessage({
-            key: {
-                remoteJid: message.reply_message.jid,
-                id: message.reply_message.id
-            },
-            message: message.reply_message.data.quotedMessage
-        });
-
-        ffmpeg(location)
-            .withSize('25%')
-            .format('mp4')
-            .save('output.mp4')
-            .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱   '
-            });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     
-    }));
 
     Amdi.applyCMD({pattern: 'x2mp4', fromMe: false, dontAddCommandList: true}, (async (message, match) => {    
 
