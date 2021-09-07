@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
 
         });
 
-        await message.client.sendMessage(message.jid,'╔═════════════════════════\n║\n║ 🍁    *👑 Group Admins 👑*    🍁\n║\n║\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid,'╔═════════════════════════\n║\n║ 🍁    *👑 Group Admins 👑*    🍁\n║\n║\n' + mesaj + '╚═════════════════════════', MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
 
     }));
 
@@ -56,7 +56,7 @@ else if (Config.WORKTYPE == 'public') {
 
         });
 
-        await message.client.sendMessage(message.jid,'╔═════════════════════════\n║\n║ 🍁    *👑 Group Admins 👑*    🍁\n║\n║\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid,'╔═════════════════════════\n║\n║ 🍁    *👑 Group Admins 👑*    🍁\n║\n║\n' + mesaj'╚═════════════════════════', MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
 
     }));
 
@@ -80,7 +80,7 @@ else if (Config.WORKTYPE == 'public') {
 
         });
 
-        await message.client.sendMessage(message.jid,'╔═════════════════════════\n║\n║ 🍁    *👑 Group Admins 👑*    🍁\n║\n║\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid,'╔═════════════════════════\n║\n║ 🍁    *👑 Group Admins 👑*    🍁\n║\n║\n' + mesaj'╚═════════════════════════', MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
 
     }));
 
