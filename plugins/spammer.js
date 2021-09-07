@@ -75,6 +75,1084 @@ Amdi.applyCMD({pattern: 'spam ?(.*)', fromMe: true,  deleteCommand: false,  desc
     await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
     
     await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
+
+    
+
+    await message.client.sendMessage(message.jid, `${match[1]}`, MessageType.text);
 
 }));
 
