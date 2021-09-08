@@ -32,7 +32,7 @@ Amdi.applyCMD({pattern: 'term ?(.*)', fromMe: true,  deleteCommand: false,  desc
         return await message.client.sendMessage(message.jid,'```' + user + ':~# ' + match[1] + '\n' + stdout + '```',MessageType.text);
       });
 }));
-/*
+
 async function checkUsAdmin(message, user = message.data.participant) {
     var grup = await message.client.groupMetadata(message.jid);
     var sonuc = grup['participants'].map((member) => {     
@@ -55,8 +55,8 @@ async function antlch() {
 }
 antlch()
 var ldc = ''
-if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*Link Detected!*'
+if (Config.LANG == 'SI') ldc = '_❌ ලින්ක් බොට් අයිතිකරු විසින් තහනම් කර ඇත_'
+if (Config.LANG == 'EN') ldc = '_❌ Link Detected!_'
 Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (antilink_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
