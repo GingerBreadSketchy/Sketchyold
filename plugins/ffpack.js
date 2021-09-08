@@ -494,7 +494,11 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
- Asena.applyCMD({pattern: 'jajnniajabaakahah', fromMe: true, desc: Ln,}, (async (message, match) => {
+ 
+ }
+else if (Config.WORKTYPE == 'private') {
+ 
+ Asena.applyCMD({pattern: 'ffpack', fromMe: true, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
@@ -502,7 +506,7 @@ if (Config.WORKTYPE == 'public') {
   
   }));
  
- Asena.applyCMD({ pattern: 'ff2 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'ff9 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -512,7 +516,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- Asena.applyCMD({ pattern: 'ff1 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'ff10 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -522,7 +526,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff3 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'ff11 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -532,7 +536,7 @@ if (Config.WORKTYPE == 'public') {
     
     }));
  
- Asena.applyCMD({ pattern: 'ff4 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'ff12 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -542,91 +546,10 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Asena.applyCMD({ pattern: 'ff5 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
+  Asena.applyCMD({ pattern: 'ff13 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
         if (match[1] === '' ) return await message.sendMessage(ll);
 
         var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/33eb446f4132e76a2fd58.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff6 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/2f7de65a46ed366a63676.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff7 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/e5f8d6f2e9f9000ebe3d9.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff8 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/6090aadefff57762e8b35.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff9 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/6ad8890337f9f2ea3b92a.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff10 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/244312383300b34f99bcc.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff11 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/b670c4eca0fafdb88a7f0.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff12 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/95a088f7b0453d4d82b7a.jpg`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
-
-    }));
- 
-  Asena.applyCMD({ pattern: 'ff13 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '' ) return await message.sendMessage(ll);
-
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/fd7500684c9ae986befc3.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -636,7 +559,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/1e962653c4412f5271844.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/2f7de65a46ed366a63676.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -646,7 +569,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/24483aa07e99edad88b4c.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/e5f8d6f2e9f9000ebe3d9.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -656,7 +579,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/129a6861e1efdfd0f7bca.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/6090aadefff57762e8b35.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -666,7 +589,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/deab8459bd6d06b4f9421.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/6ad8890337f9f2ea3b92a.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -676,7 +599,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/696f93289f32687d3b4f7.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/244312383300b34f99bcc.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -686,7 +609,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/f0145f46d111ed493e62b.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/b670c4eca0fafdb88a7f0.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -696,7 +619,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/f577262bce9b3733402ea.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/95a088f7b0453d4d82b7a.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -706,7 +629,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/099f8580a45433eb6688c.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/fd7500684c9ae986befc3.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -716,7 +639,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/a1fe3fe9e295c24256ede.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/1e962653c4412f5271844.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -726,7 +649,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/2056e2cdd3a30971da0a6.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/24483aa07e99edad88b4c.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -736,7 +659,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/c730c8c57cfccb7756dc4.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/129a6861e1efdfd0f7bca.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -746,7 +669,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/d3749dfe51e3f13012e8e.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/deab8459bd6d06b4f9421.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -756,7 +679,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/f376a881b40c1e994d75d.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/696f93289f32687d3b4f7.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
@@ -766,13 +689,93 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/f0145f46d111ed493e62b.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff28 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/f577262bce9b3733402ea.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff29 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/099f8580a45433eb6688c.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff30 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/a1fe3fe9e295c24256ede.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff31 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/2056e2cdd3a30971da0a6.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff32 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/c730c8c57cfccb7756dc4.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff33 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/d3749dfe51e3f13012e8e.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff34 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/f376a881b40c1e994d75d.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
+
+    }));
+ 
+  Asena.applyCMD({ pattern: 'ff35 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
         var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/1d307457e0778ae9b0d44.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
  
-   Asena.applyCMD({ pattern: 'ff28 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff36 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -781,7 +784,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff29 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff37 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -790,7 +793,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff30 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff38 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -799,7 +802,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff31 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff39 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -808,7 +811,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff32 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff40 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -817,7 +820,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff33 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff41 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -826,7 +829,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff34 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff42 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -835,7 +838,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff35 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff43 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -844,7 +847,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff36 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff44 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -853,7 +856,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff37 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff45 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -862,7 +865,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff38 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff46 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -871,7 +874,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff39 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff47 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -880,7 +883,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff40 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff48 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -889,7 +892,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff41 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff49 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -898,7 +901,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff42 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff50 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -907,7 +910,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff43 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff51 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -916,7 +919,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff44 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff52 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -925,7 +928,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff45 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff53 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -934,7 +937,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff46 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff54 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -943,7 +946,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff47 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff55 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -952,7 +955,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff48 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff56 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -961,7 +964,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff49 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff57 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -970,7 +973,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
-   Asena.applyCMD({ pattern: 'ff50 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Asena.applyCMD({ pattern: 'ff58 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
