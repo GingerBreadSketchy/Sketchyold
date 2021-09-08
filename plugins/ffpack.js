@@ -498,7 +498,7 @@ if (Config.WORKTYPE == 'public') {
  }
 else if (Config.WORKTYPE == 'private') {
  
- Asena.applyCMD({pattern: 'ffpack', fromMe: true, desc: Ln,}, (async (message, match) => {
+ Asena.applyCMD({pattern: 'jsjabakanaianao', fromMe: true, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
