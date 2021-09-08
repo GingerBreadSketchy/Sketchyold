@@ -40,7 +40,7 @@ if (Config.LANG == 'EN') {
 
 *➢ Description:*°all commands°
 
-*🍁 Command:* °.love°
+*🍁 Command:* °.lovepack°
 
 *➢ Description:* °Send Love message to gf/bf.°
 
@@ -276,7 +276,7 @@ Example : .covid Sri Lanka°
 
 *➢ Description:* °Convert mp3 into a WA voice message°
 
-*🍁 Command:* °.vid°
+*🍁 Command:* °.vid2°
 
 *➢ Description:* °Youtube Video Downloader V2 . යූ ටියුබ් වීඩියෝ ඩව්න්ලෝඩ් කිරීමට දෙවන මග... .°
 
@@ -335,7 +335,7 @@ else if (Config.WORKTYPE == 'private') {
 
 *➢ Description:*°all commands°
 
-*🍁 Command:* °.love°
+*🍁 Command:* °.lovepack°
 
 *➢ Description:* °Send Love message to gf/bf.°
 
@@ -571,7 +571,7 @@ Example : .covid Sri Lanka°
 
 *➢ Description:* °Convert mp3 into a WA voice message°
 
-*🍁 Command:* °.vid°
+*🍁 Command:* °.vid2°
 
 *➢ Description:* °Youtube Video Downloader V2 . යූ ටියුබ් වීඩියෝ ඩව්න්ලෝඩ් කිරීමට දෙවන මග... .°
 
