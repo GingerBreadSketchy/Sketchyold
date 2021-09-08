@@ -242,9 +242,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ╚╩═╩╩╩═╩═╝╚══╩═╩═╝` })
 
     }));
- }
-
-else if (Config.WORKTYPE == 'private') {
+ 
   Asena.applyCMD({pattern:  'ffpack', fromMe: true }, (async (message, match) => {
 
     var r_text = new Array ();
