@@ -495,8 +495,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- }
-else if (Config.WORKTYPE == 'private') {
+
  
  Asena.applyCMD({pattern: 'jsjabakanaianao', fromMe: true, desc: Ln,}, (async (message, match) => {
 
