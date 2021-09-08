@@ -326,10 +326,10 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword297bad = new RegExp('keriyo')
         let getword298bad = new RegExp('Keriyo')
         let getword299bad = new RegExp('esawo ')
-        let getword300bad = new RegExp('https')
-        let getword301bad = new RegExp('www. ')
-        let getword302bad = new RegExp('http://')
-        let getword303bad = new RegExp('https://')
+        let getword300bad = new RegExp('Kamriya')
+        let getword301bad = new RegExp('kamriyaa')
+        let getword302bad = new RegExp('kamriya')
+        let getword303bad = new RegExp('utta')
         let getword304bad = new RegExp('hutho ')
         let getword305bad = new RegExp('Hutho ')
         let getword306bad = new RegExp('pamka')
@@ -354,7 +354,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword325bad = new RegExp('vulva')
         let getword326bad = new RegExp('Vulva')
         let getword327bad = new RegExp('penis')
-        let getword328bad = new RegExp('https://')
+        let getword328bad = new RegExp('paka')
         /*let getword329bad = new RegExp('.com')
         let getword330bad = new RegExp('http')
         let getword331bad = new RegExp('http://')
@@ -2759,7 +2759,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *3*', MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *2*', MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *1*', MessageType.text, {quoted: message.data })
@@ -2772,7 +2772,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *3*', MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *2*', MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *1*', MessageType.text, {quoted: message.data })
@@ -2786,7 +2786,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *3*', MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *2*', MessageType.text, {quoted: message.data })
             await message.client.sendMessage(message.jid,'\n    *1*', MessageType.text, {quoted: message.data })
@@ -2798,7 +2798,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }      
         else if (getword304bad.test(message.message)) {
@@ -2998,7 +2998,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,kickmsg1, MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,kickmsg, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }    
        /* else if (getword329bad.test(message.message)) {
