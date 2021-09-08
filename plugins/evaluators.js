@@ -86,4 +86,4 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
     }
-}));*/
+}));
