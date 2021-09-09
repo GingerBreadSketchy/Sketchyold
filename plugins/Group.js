@@ -8,7 +8,7 @@ const axios = require('axios');
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'grp', fromMe: true,  deleteCommand: true, onlyGroup: true }, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'grp', fromMe: true,  deleteCommand: true }, (async (message, match) => {
             
             var image = await axios.get ('https://telegra.ph/file/8f6b8a908ff9e67f7467e.jpg', {responseType: 'arraybuffer'})
        
@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'grp', fromMe: true,  deleteCommand: true, onlyGroup: true }, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'grp', fromMe: true,  deleteCommand: true }, (async (message, match) => {
 
           
             var image = await axios.get ('https://telegra.ph/file/8f6b8a908ff9e67f7467e.jpg', {responseType: 'arraybuffer'})
@@ -27,7 +27,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
   
-  Amdi.applyCMD({pattern: 'grp', fromMe: false,  deleteCommand: false, onlyGroup: true }, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'grp', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
           
             var image = await axios.get ('https://telegra.ph/file/8f6b8a908ff9e67f7467e.jpg', {responseType: 'arraybuffer'})
