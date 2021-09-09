@@ -92,7 +92,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: 'hiru ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'hinakaoamnaoamannajaajnru ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
