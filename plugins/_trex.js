@@ -13,6 +13,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('_trex');
 const fs = require("fs")
+const amdi = fs.readFileSync('./voice/sound30.mp3')  
 
 if (Config.WORKTYPE == 'private') {
 
@@ -91,7 +92,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: 'jajnainnnajatuaohaban ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: '2005420?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -123,6 +124,9 @@ else if (Config.WORKTYPE == 'public') {
 
                 }
             );
+                );
+        
+            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         
             await message.client.sendMessage(message.jid, '╔═══════════════════════╗\n' + ' ```❰🍁🔱  T Rex BOT  🔱🍁❱```\n' + '═════════════════════════\n\n' + CMD_HELP, MessageType.text, {quoted: message.data});   
         } else {
