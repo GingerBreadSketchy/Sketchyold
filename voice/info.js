@@ -9,7 +9,7 @@ const request = require('request');
 const Language = require('../language');
 const Lang = Language.getString('effects');
 
-if (Config.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'public') {
 
     Amdi.applyCMD({pattern: 'glitch ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
