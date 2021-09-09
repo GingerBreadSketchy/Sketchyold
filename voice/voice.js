@@ -11,5 +11,7 @@ if (Config.WORKTYPE == 'public') {
 
     Amdi.applyCMD({pattern: 'panel ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
         await message.client.sendMessage(message.jid,amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+        
+    }));
        
 }
