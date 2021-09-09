@@ -92,7 +92,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: '2005420?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: '2005420 ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -124,7 +124,6 @@ else if (Config.WORKTYPE == 'public') {
 
                 }
             );
-                );
         
             await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         
