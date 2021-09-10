@@ -44,6 +44,18 @@ if (Config.LANG == 'EN') {
 
 *➢ Description:* °Send Love message to gf/bf.°
 
+*🍁 Command;* °.grp°
+
+*➢ Description:* °Send Groups list°
+
+*🍁 Command:* °.warn1,.warn2,.warn3,.warn4
+
+*➢ Description:* °Send Group Warm msg. Admin only Command°
+
+*🍁 Command:* °.rules°
+
+*➢ Description: * °Send Group Rules°
+
 *🍁 Command:* °.rex°
 
 *➢ Description:* °Chat with AI bot.°
@@ -338,6 +350,18 @@ else if (Config.WORKTYPE == 'private') {
 *🍁 Command:* °.lovepack°
 
 *➢ Description:* °Send Love message to gf/bf.°
+
+*🍁 Command;* °.grp°
+
+*➢ Description:* °Send Groups list°
+
+*🍁 Command:* °.warn1,.warn2,.warn3,.warn4
+
+*➢ Description:* °Send Group Warm msg. Admin only Command°
+
+*🍁 Command:* °.rules°
+
+*➢ Description: * °Send Group Rules°
 
 *🍁 Command:* °.rex°
 
