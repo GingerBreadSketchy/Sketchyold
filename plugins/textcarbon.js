@@ -10,7 +10,7 @@ const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-const copy = "Copyright © 2021 | Queen Amdi"
+const copy = " ❰🍁🔱  T Rex BOT  🔱🍁❱ "
 
 const Language = require('../language');
 const Lang = Language.getString('carbon');
