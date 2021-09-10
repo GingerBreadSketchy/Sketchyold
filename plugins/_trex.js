@@ -13,7 +13,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('_trex');
 const fs = require("fs")
-const amdi = fs.readFileSync('./media/sound30.mp3')  
+const amdi = fs.readFileSync('./Voice/sound15.mp3')  
 
 if (Config.WORKTYPE == 'private') {
 
