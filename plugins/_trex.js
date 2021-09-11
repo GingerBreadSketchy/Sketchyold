@@ -29,6 +29,6 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         }
     }
-}))
+}));
 
 }
