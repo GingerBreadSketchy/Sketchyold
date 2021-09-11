@@ -1,4 +1,4 @@
-const SewQueen = require('../events');
+const Trex = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -7,13 +7,13 @@ const need = "*type some word after command 🍁"
 
 if (Config.WORKTYPE == 'public') {
 
-   SewQueen.newcmdaddtosew({pattern: 'meme1 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+   Trex.applyCMD({pattern: 'meme1 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
   
   var topText, bottomText;
-    if (match[1].includes(';')) {
-        var split = match[1].split(';');
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
         bottomText = split[1];
         topText = split[0];
 }
@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'public') {
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱  '})
 
 }));
-     SewQueen.newcmdaddtosew({ pattern: 'wetglass ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
+     Trex.applyCMD({ pattern: 'wetglass ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
