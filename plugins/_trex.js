@@ -13,13 +13,22 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('_trex');
 const fs = require("fs")
-const amdi = fs.readFileSync('./Voice/sound15.mp3')  
+const amdi = fs.readFileSync('./Voice/sound6.mp3')  
 
 
 if (Config.WORKTYPE == 'public') {
     
-    Amdi.applyCMD({pattern: '25 ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    
+Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {  
+    if (Config.CHAT_BOT == 'true') {
 
-                   await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
-    }));
+        let get1 = new RegExp('sex')
+        
+        
+        if (get1.test(message.message)) {
+            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+        }
+    }
+}))
+
 }
