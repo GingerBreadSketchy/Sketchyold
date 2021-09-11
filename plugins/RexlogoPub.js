@@ -7,7 +7,7 @@ const need = "*type some word after command 🍁"
 
 if (Config.WORKTYPE == 'public') {
 
-   Trex.applyCMD({pattern: 'meme1 ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+   Trex.applyCMD({pattern: 'gamma ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       if (match[1] === '') return await message.client.sendMessage(message.jid,need);
       var topText, bottomText;
       if (match[1].includes('/')) {
@@ -23,13 +23,13 @@ if (Config.WORKTYPE == 'public') {
    }));
    
    
-     Trex.applyCMD({ pattern: 'wetglass ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
+     Trex.applyCMD({ pattern: 'wetglass ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
-        var sewimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=eafcf901640d1c599ae71519&text=${encodeURIComponent(match[1])}&text2=manoj`, { responseType: 'arraybuffer' })
+        var sewimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=eafcf901640d1c599ae71519&text=${encodeURIComponent(match[1])}&text2=Rex`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(sewimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
+        await message.sendMessage(Buffer.from(sewimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
         
