@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.sendMessage(need);
 
-        var sewimage = await axios.get(`https://lolhuman.herokuapp.com/api/ephoto1/wetglass?apikey=eafcf901640d1c599ae71519&text=${encodeURIComponent(match[1])}&text2=Rex`, { responseType: 'arraybuffer' })
+        var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/textmaker/shadow-sky?q=${encodeURIComponent(match[1])}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(sewimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
