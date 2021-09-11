@@ -7,22 +7,22 @@ const need = "*type some word after command 🍁"
 
 if (Config.WORKTYPE == 'public') {
 
-   Trex.applyCMD({pattern: 'meme1 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,need);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var sewimage = await axios.get(`https://api.lolhuman.xyz/api/meme8?apikey=d3be4b65ca9dab633c773d66&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱  '})
-
-}));
+   Trex.applyCMD({pattern: 'meme1 ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+      if (match[1] === '') return await message.client.sendMessage(message.jid,need);
+      var topText, bottomText;
+      if (match[1].includes('/')) {
+         var split = match[1].split('/');
+         bottomText = split[1];
+         topText = split[0];
+      }
+      
+      var sewimage = await axios.get(`https://api.lolhuman.xyz/api/meme8?apikey=d3be4b65ca9dab633c773d66&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+      
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱  '})
+   
+   }));
+   
+   
      Trex.applyCMD({ pattern: 'wetglass ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
