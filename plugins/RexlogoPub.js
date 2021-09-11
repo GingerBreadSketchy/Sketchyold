@@ -27,10 +27,12 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.sendMessage(need);
 
-        var rex = await axios.get(`https://pencarikode.xyz/api/textpro/horror?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-
+        var rex = await axios.
+        get(`https://pencarikode.xyz/api/textpro/horror?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
+        
+   
         
 }
