@@ -43,7 +43,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/horror?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/horror?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -53,7 +53,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/blackpink?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/blackpink?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -63,7 +63,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/matrix?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/matrix?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -73,7 +73,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/graffiti?text=${encodeURIComponent(match[1])}&text2=Rex&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/graffiti?text=${encodeURIComponent(match[1])}&text2=Rex&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -83,7 +83,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/sand-writing?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/sand-writing?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -93,7 +93,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/beach?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/beach?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -103,7 +103,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/gradient?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/gradient?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -113,7 +113,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/luxury?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/luxury?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -123,7 +123,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/sky?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/sky?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -133,7 +133,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/winter?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/winter?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -143,7 +143,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/christmas?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/christmas?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱
     }));
       
@@ -152,7 +152,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/neon-light?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/neon-light?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -162,7 +162,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/metal-dark?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/metal-dark?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -171,7 +171,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/summery-sand?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/summery-sand?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -181,7 +181,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/sand-engraved?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/sand-engraved?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
@@ -192,7 +192,7 @@ if (Config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.sendMessage(need);
 
         var rex = await axios.
-        get(`https://pencarikode.xyz/api/textpro/glue-text?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' }
+        get(`https://pencarikode.xyz/api/textpro/glue-text?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '❰🍁🔱  T Rex BOT  🔱🍁❱ '})
 
     }));
