@@ -48,7 +48,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
 ♥ Command : need bf
 ➢ Description :  Send i need Boy friend message..
-`})
+` ,quoted: message.data})
 
     }));
     Asena.applyCMD({pattern:  'ffpack', fromMe: false }, (async (message, match) => {
@@ -179,7 +179,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ║▷Creator: HIRUSHA
 ║
 ║ ❰🍁🔱  T Rex BOT  🔱🍁❱  
-╚═════════════════════╝` })
+╚═════════════════════╝`  ,quoted: message.data})
 
     }));
 
@@ -210,7 +210,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ╔╝╚╗║╚╣║║║║╔╣
 ╚══╝╚═╩═╩═╩═╝
 
-ஜ۩۞۩ஜ YOU ஜ۩۞۩ஜ` })
+ஜ۩۞۩ஜ YOU ஜ۩۞۩ஜ`  ,quoted: message.data})
 
     }));
 
@@ -239,7 +239,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╔═╦═╦╦═╦═╗╔═╦╗
 ║║║║╠╣═╣═╣╚╗║╠═╦╦╗
 ║║║║║╠═╠═║╔╩╗║╬║║║
-╚╩═╩╩╩═╩═╝╚══╩═╩═╝` })
+╚╩═╩╩╩═╩═╝╚══╩═╩═╝`  ,quoted: message.data})
 
     }));
  
