@@ -40,6 +40,10 @@ if (Config.LANG == 'EN') {
 
 *➢ Description:*°all commands°
 
+*🍁 Command* °.rlpack°
+
+*➢ Description:* °T-REX LOGO COLLECTION 01°
+
 *🍁 Command:* °.lovepack°
 
 *➢ Description:* °Send Love message to gf/bf.°
@@ -311,7 +315,7 @@ Example : .covid Sri Lanka°
 *🍁 Command:* °.xxx°
 
 *➢ Description:* °xnxx අඩවියේ සෙක්ස් වීඩියෝ බාගත කරයි අව්නර් සදහා පමණයි..Download sex videos on xnxx site°
-`})
+` ,quoted: message.data})
 
     }));
 
@@ -346,6 +350,10 @@ else if (Config.WORKTYPE == 'private') {
 *🍁 Command:* °.trex°
 
 *➢ Description:*°all commands°
+
+*🍁 Command* °.rlpack°
+
+*➢ Description:* °T-REX LOGO COLLECTION 01°
 
 *🍁 Command:* °.lovepack°
 
