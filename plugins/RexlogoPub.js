@@ -6,6 +6,101 @@ const Config = require('../config');
 const need = "*type some word after command 🍁"
 
 if (Config.WORKTYPE == 'public') {
+   
+   
+   Asena.applyCMD({ pattern: 'rexpack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔════════════════════════
+║       ❌ 🍁 REX LOGO PACK 1🍁 ❌
+╠════════════════════════
+║
+╠═➢ 🍁Cmd: *.phub*
+╠══➢ 📛 Dec: *Send pornhub logo*
+╠═➢ 🍁 Ex: *.phub T-Rex/Hiruwa*
+║
+╠═➢ 🍁 Cmd: *.stone*
+╠══➢ 📛 Dec: *Send stone like logo*
+╠═➢ 🍁Ex: *.stone T-REX/Hiruwa*
+║
+╠═➢ 🍁Cmd: *.glitch*
+╠══➢ 📛 Dec: *Send glitch logo*
+╠═➢ 🍁 Ex: *.glitch T-Rex/Hiruwa
+║
+╠═➢ 🍁Cmd: *.space*
+╠══➢ 📛 Dec: *Send space logo*
+╠═➢ 🍁Ex: *.space T-Rex/Hiruwa*
+║
+╠═➢ 🍁Cmd: *.blood*
+╠══➢ 📛 Dec: *Send blood hor logo*
+╠═➢ 🍁Ex: *.blood T-REX*
+║
+╠═➢ 🍁Cmd: *.blackpink*
+╠══➢ 📛 Dec: *Send blackpink logo*
+╠═➢ 🍁Ex: *.blackpink T-REX*
+║
+╠═➢ 🍁Cmd: *.wall*
+╠══➢ 📛 Dec: *Send wall art logo*
+╠═➢ 🍁Ex: *.wall T-Rex*
+║
+╠═➢ 🍁Cmd: *.coding*
+╠══➢📛 Dec: *Send coding logo*
+╠═➢ 🍁 Ex: *.coding T-REX*
+║
+╠═➢ 🍁Cmd: .*.sand1*
+╠══➢ 📛  Dec: *Send sand writting*
+╠═➢ 🍁 Ex: *.sand1 T-REX*
+║
+╠═➢ 🍁Cmd: *.sand2*
+╠══➢ 📛 Dec: *Send sand writting*
+╠═➢ 🍁Ex: *.sand2 T-REX
+║
+╠═➢ 🍁Cmd: *.sand3*
+╠══➢ 📛 Dec: *Send sand writting*
+╠═➢ 🍁Ex: *.sand3 T-REX
+║
+╠═➢ 🍁Cmd: *.beach*
+╠══➢ 📛 Dec: *Send beach logo*
+╠═➢ 🍁Ex: *.beach T-REX
+║
+╠═➢ 🍁Cmd: *.gradient*
+╠══➢ 📛  Dec: *Send gradient logo*
+╠═➢ 🍁 Ex: *.gradient T-REX*
+║
+╠═➢ 🍁Cmd: *.luxury*
+╠══➢ 📛  Dec: *Send luxury logo*
+╠═➢ 🍁 Ex: *.luxury T-REX*
+║
+╠═➢ 🍁Cmd: *.sky*
+╠══➢ 📛  Dec: *Send sky logo*
+╠═➢ 🍁 Ex: *.sky T-REX*
+║
+╠═➢ 🍁Cmd: *.winter*
+╠══➢ 📛  Dec: *Send winter logo*
+╠═➢ 🍁 Ex: *.winter T-REX
+║
+╠═➢ 🍁Cmd: *.christmas*
+╠══➢ 📛  Dec: *Send christmas logo*
+╠═➢ 🍁 Ex: *.christmas T-REX*
+║
+╠═➢ 🍁Cmd: *.neon*
+╠══➢ 📛  Dec: *Send neon logo*
+╠═➢ 🍁 Ex: *.neon T-REX*
+║
+╠═➢ 🍁Cmd: *.king*
+╠══➢ 📛  Dec: *Send king logi*
+╠═➢ 🍁 Ex: *.king T-REX*
+║
+╠═➢ 🍁Cmd: *.glue*
+╠══➢ 📛  Dec: *Send Glue logo*
+╠═➢ 🍁 Ex: *.glue T-REX*
+║
+║      ╔═🍁 T-REX BOT 🍁═╗
+║       ╚ ENJOY WITH US ╝
+╚═══════════════════════`})
+
+    }));
 
    Trex.applyCMD({pattern: 'gamma ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       if (match[1] === '') return await message.client.sendMessage(message.jid,need);
@@ -123,7 +218,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
    
-   Trex.applyCMD({ pattern: 'sand ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
+   Trex.applyCMD({ pattern: 'sand1 ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -232,7 +327,7 @@ if (Config.WORKTYPE == 'public') {
     }));
       
       
-      Trex.applyCMD({ pattern: 'glue ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
+      Trex.applyCMD({ pattern: 'glue ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
