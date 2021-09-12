@@ -68,14 +68,14 @@ else if (Config.WORKTYPE == 'public') {
             
             var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```🍁 Hey There! I'm Online now. 😘```\n\n🍁 Developer: Hiruwa\n\nThank You For Using ❰🍁🔱 T Rex BOT 🔱🍁❱"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```🍁 Hey There! I'm Online now. 😘```\n\n🍁 Developer: Hiruwa\n\nThank You For Using ❰🍁🔱 T Rex BOT 🔱🍁❱" ,quoted: message.data})
 
     }
     else {
             
             var image = await axios.get ('https://telegra.ph/file/72caf817d141c24cab7cb.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🍁🔱 T Rex BOT 🔱🍁❱*'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🍁🔱 T Rex BOT 🔱🍁❱*' ,quoted: message.data})
      }
     }));
 
