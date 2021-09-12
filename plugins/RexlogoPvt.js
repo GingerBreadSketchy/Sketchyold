@@ -178,7 +178,7 @@ if (Config.WORKTYPE == 'private') {
    }));
    
    
-     Trex.applyCMD({ pattern: 'blood ?(.*)', fromMe: true,dontAdCommandListe,dontAdCommandList: true }, (async (message, match) => {
+     Trex.applyCMD({ pattern: 'blood ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
