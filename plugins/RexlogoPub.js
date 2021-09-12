@@ -22,6 +22,51 @@ if (Config.WORKTYPE == 'public') {
    
    }));
    
+   Trex.applyCMD({pattern: 'stone ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+      if (match[1] === '') return await message.client.sendMessage(message.jid,need);
+      var topText, bottomText;
+      if (match[1].includes('/')) {
+         var split = match[1].split('/');
+         bottomText = split[1];
+         topText = split[0];
+      }
+      
+      var sewimage = await axios.get(`https://pencarikode.xyz/api/textpro/stone-text?text=${topText}&text2=${bottomText}&apikey=pais`, { responseType: 'arraybuffer' })
+      
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱  '})
+   
+   }));
+   
+   Trex.applyCMD({pattern: 'glitch ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+      if (match[1] === '') return await message.client.sendMessage(message.jid,need);
+      var topText, bottomText;
+      if (match[1].includes('/')) {
+         var split = match[1].split('/');
+         bottomText = split[1];
+         topText = split[0];
+      }
+      
+      var sewimage = await axios.get(`https://pencarikode.xyz/api/textpro/glitch-text?text=${topText}&text2=${bottomText}&apikey=pais`, { responseType: 'arraybuffer' })
+      
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱  '})
+   
+   }));
+   
+   Trex.applyCMD({pattern: 'space ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+      if (match[1] === '') return await message.client.sendMessage(message.jid,need);
+      var topText, bottomText;
+      if (match[1].includes('/')) {
+         var split = match[1].split('/');
+         bottomText = split[1];
+         topText = split[0];
+      }
+      
+      var sewimage = await axios.get(`https://pencarikode.xyz/api/textpro/space-3d?text=${topText}&text2=${bottomText}&apikey=pais`, { responseType: 'arraybuffer' })
+      
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ❰🍁🔱  T Rex BOT  🔱🍁❱  '})
+   
+   }));
+   
    Trex.applyCMD({pattern: 'phub ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       if (match[1] === '') return await message.client.sendMessage(message.jid,need);
       var topText, bottomText;
