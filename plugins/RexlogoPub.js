@@ -12,9 +12,9 @@ if (Config.WORKTYPE == 'public') {
 
         var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔════════════════════════
-║       ❌ 🍁 REX LOGO PACK 1🍁 ❌
-╠════════════════════════
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════
+║*❌ 🍁 REX LOGO PACK 1🍁 ❌*
+╠═══════════════════════
 ║
 ╠═➢ 🍁Cmd: *.phub*
 ╠══➢ 📛 Dec: *Send pornhub logo*
@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'public') {
 ╠═➢ 🍁Ex: *.blood T-REX*
 ║
 ╠═➢ 🍁Cmd: *.blackpink*
-╠══➢ 📛 Dec: *Send blackpink logo*
+╠══➢ 📛 Dec: *Send bpink logo*
 ╠═➢ 🍁Ex: *.blackpink T-REX*
 ║
 ╠═➢ 🍁Cmd: *.wall*
@@ -65,7 +65,7 @@ if (Config.WORKTYPE == 'public') {
 ╠═➢ 🍁Ex: *.beach T-REX
 ║
 ╠═➢ 🍁Cmd: *.gradient*
-╠══➢ 📛  Dec: *Send gradient logo*
+╠══➢ 📛  Dec: *Send logo*
 ╠═➢ 🍁 Ex: *.gradient T-REX*
 ║
 ╠═➢ 🍁Cmd: *.luxury*
@@ -81,7 +81,7 @@ if (Config.WORKTYPE == 'public') {
 ╠═➢ 🍁 Ex: *.winter T-REX
 ║
 ╠═➢ 🍁Cmd: *.christmas*
-╠══➢ 📛  Dec: *Send christmas logo*
+╠══➢ 📛  Dec: *Send xmas logo*
 ╠═➢ 🍁 Ex: *.christmas T-REX*
 ║
 ╠═➢ 🍁Cmd: *.neon*
@@ -89,7 +89,7 @@ if (Config.WORKTYPE == 'public') {
 ╠═➢ 🍁 Ex: *.neon T-REX*
 ║
 ╠═➢ 🍁Cmd: *.king*
-╠══➢ 📛  Dec: *Send king logi*
+╠══➢ 📛  Dec: *Send king logo*
 ╠═➢ 🍁 Ex: *.king T-REX*
 ║
 ╠═➢ 🍁Cmd: *.glue*
@@ -97,8 +97,8 @@ if (Config.WORKTYPE == 'public') {
 ╠═➢ 🍁 Ex: *.glue T-REX*
 ║
 ║      ╔═🍁 T-REX BOT 🍁═╗
-║       ╚ ENJOY WITH US ╝
-╚═══════════════════════`})
+║        ╚ ENJOY WITH US ╝
+╚══════════════════════`})
 
     }));
 
