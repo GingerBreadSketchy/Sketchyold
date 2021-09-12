@@ -8,7 +8,7 @@ const need = "*type some word after command 🍁"
 if (Config.WORKTYPE == 'public') {
    
    
-   Asena.applyCMD({ pattern: 'rexpack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Trex.applyCMD({ pattern: 'rexpack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
 
