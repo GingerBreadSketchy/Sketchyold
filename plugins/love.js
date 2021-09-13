@@ -7,7 +7,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
  if (Config.WORKTYPE == 'public') {
   
-  Asena.applyCMD({ pattern: 'lovepack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+/*  Asena.applyCMD({ pattern: 'lovepack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -50,7 +50,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ➢ Description :  Send i need Boy friend message..
 ` ,quoted: message.data})
 
-    }));
+    }));*/
     Asena.applyCMD({pattern:  'ffpack', fromMe: false }, (async (message, match) => {
 
     var r_text = new Array ();
@@ -183,7 +183,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     }));
 
-  Asena.applyCMD({pattern: 'love you', fromMe: false }, (async (message, match) => {
+ /* Asena.applyCMD({pattern: 'love you', fromMe: false }, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -242,7 +242,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ╚╩═╩╩╩═╩═╝╚══╩═╩═╝`  ,quoted: message.data})
 
     }));
- 
+ */
   Asena.applyCMD({pattern:  'ffpack', fromMe: true }, (async (message, match) => {
 
     var r_text = new Array ();
