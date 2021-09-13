@@ -146,9 +146,13 @@ Example : .covid Sri Lanka°
 
 *➢ Description:* °Report someone in the group to admins.°
 
+*🍁 Command:* °.fsong°
+
+*➢ Description:* °Uploading file type songs.°
+
 *🍁 Command:* °.song°
 
-*➢ Description:* °Uploading the songs.°
+*➢ Description:* °Uploading mp3 type songs.°
 
 *🍁 Command:* °.video°
 
@@ -457,9 +461,13 @@ Example : .covid Sri Lanka°
 
 *➢ Description:* °Report someone in the group to admins.°
 
+*🍁 Command:* °.fsong°
+
+*➢ Description:* °Uploading file type songs.°
+
 *🍁 Command:* °.song°
 
-*➢ Description:* °Uploading the songs.°
+*➢ Description:* °Uploading mp3 type songs.°
 
 *🍁 Command:* °.video°
 
