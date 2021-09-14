@@ -111,10 +111,10 @@ async function queenAmdi () {
     
     setInterval(async () => { 
     if (config.AUTO_BIO == 'true') {
-        var tz_bio = await rex.timezone(rexconn.user.jid)
+        var tz_bio = await rex.timezone(conn.user.jid)
         var date = await rex.datebio(config.LANG)
         const biography = '📅'  + date + '\n⌚'  + tz_bio +'     ❰🍁🔱  T Rex BOT  🔱🍁❱   '
-        await rexconn.setStatus(biography)
+        await conn.setStatus(biography)
     }
     }, 7890);
 /*
