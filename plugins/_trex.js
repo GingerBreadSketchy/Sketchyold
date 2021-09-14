@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'public') {
     
     
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {  
-    if (Config.CHAT_BOT == 'true') {
+    if (Config.AUTOVOICE == 'true') {
 
         let get1 = new RegExp('sex')
         let get2 = new RegExp('Sex')
