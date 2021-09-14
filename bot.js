@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const axios = require('axios');
 const config = require('./config');
 const Heroku = require('heroku-client');
+const rex = require('queenamdi-public-1');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./queenamdi/');
 const { DataTypes } = require('sequelize');
@@ -107,6 +108,15 @@ async function queenAmdi () {
             }
         })
     }, 50000);
+    
+    setInterval(async () => { 
+    if (config.AUTO_BIO == 'true') {
+        var tz_bio = await rex.timezone(conn.user.jid)
+        var date = await rex.datebio(config.LANG)
+        const biography = '📅'  + date + '\n⌚'  + tz_bio +'     ❰🍁🔱  T Rex BOT  🔱🍁❱   '
+        await conn.setStatus(biography)
+    }
+    }, 7890);
 /*
 // --------------Queen Amdi verify system--------------
 if (/\[(\W*)\]/.test(config.HANDLERS)) {
