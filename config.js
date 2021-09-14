@@ -42,6 +42,7 @@ module.exports = {
     GROUPL4: process.env.GROUP_LINK_4 === undefined ? '': process.env.GROUP_LINK_4,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
     CHAT_BOT: process.env.CHAT_BOT === undefined ? 'true' : process.env.CHAT_BOT,
+    AUTOVOICE: process.env.VOICE_CHAT === undefined ? 'true' : process.env.VOICE_CHAT,
     CCLEAR_JID: process.env.CCLEAR_JID === undefined ? 'default' : process.env.CCLEAR_JID,
     WORKTYPE: process.env.WORK_TYPE === undefined ? 'public' : process.env.WORK_TYPE,
     PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
