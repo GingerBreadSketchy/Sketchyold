@@ -1,4 +1,4 @@
-/*const Amdi = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
@@ -15,13 +15,13 @@ if (Config.WORKTYPE == 'private') {
             
             var image = await axios.get ('https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "╹🔥 *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
 
 ⋱ ⋮ ⋰
-⋯ ◯ ⋯ ︵ 　　　　　　
-¸︵︵( ░░ )︵.︵.︵
-(´░░░░░░ ') ░░░' )
-`´︶´¯`︶´`︶︶
+⋯ ◯ ⋯ ︵ 　　　　　　^v^
+ ︵︵( ░░ )︵.︵.︵
+(°░░░░░░ °) ░░░° )
+°°︶°¯°︶°°︶°︶°°　^v^　　^v^
 ╔┓┏╦━━╦┓╔┓╔━━╗╔╗
 ║┗┛║┗━╣┃║┃║╯╰║║║
 ║┏┓║┏━╣┗╣┗╣╰╯║╠╣
@@ -32,8 +32,6 @@ if (Config.WORKTYPE == 'private') {
 🍁 *Developer - Hirusha Rushan ( Hiruwa )*
 
 🍁 *Language - NODE JS*
-
-🍁 *Base Bot Owner - Black Amda*
 
 🍁 *Sponser Team - PEARL Team*
 
@@ -76,9 +74,9 @@ if (Config.WORKTYPE == 'private') {
   \/
            🍒 *ᴀᴅᴍɪɴꜱ* ™🍒
 
-╹ 🔰 *Thanuj Fernando* ╹
+╹ 🔰 *Kasun Ravihara* ╹
 ╹ 🔰 *Acintha Fernando*╹
-╹ 🔰 *Kasun Ravihara*    ╹
+╹ 🔰 *Thanuj Fernando*    ╹
 
  ♥ *ʏᴛ ʟɪɴᴋ - https://youtu.be/oaSPHc78LNQ*
 
@@ -87,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
 
 
 
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰"})
+   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰`})
 
     }));
 }
@@ -102,8 +100,8 @@ else if (Config.WORKTYPE == 'public') {
 ⋱ ⋮ ⋰
 ⋯ ◯ ⋯ ︵ 　　　　　　^v^
 ¸︵︵( ░░ )︵.︵.︵
-(´░░░░░░ ') ░░░' )
-`´︶´¯`︶´`︶´︶´`　^v^　　^v^
+(°░░░░░░ °) ░░░° )
+°°︶°¯°︶°°︶°︶°°　^v^　　^v^
 ╔┓┏╦━━╦┓╔┓╔━━╗╔╗
 ║┗┛║┗━╣┃║┃║╯╰║║║
 ║┏┓║┏━╣┗╣┗╣╰╯║╠╣
@@ -114,8 +112,6 @@ else if (Config.WORKTYPE == 'public') {
 🍁 *Developer - Hirusha Rushan ( Hiruwa )*
 
 🍁 *Language - NODE JS*
-
-🍁 *Base Bot Owner - Black Amda*
 
 🍁 *Sponser Team - PEARL Team*
 
@@ -158,9 +154,9 @@ else if (Config.WORKTYPE == 'public') {
   \/
            🍒 *ᴀᴅᴍɪɴꜱ* ™🍒
 
-╹ 🔰 *Thanuj Fernando* ╹
+╹ 🔰 *Kasun Ravihara* ╹
 ╹ 🔰 *Acintha Fernando*╹
-╹ 🔰 *Kasun Ravihara*    ╹
+╹ 🔰 *Thanuj Fernando*    ╹
 
  ♥ *ʏᴛ ʟɪɴᴋ - https://youtu.be/oaSPHc78LNQ*
 
@@ -169,7 +165,7 @@ else if (Config.WORKTYPE == 'public') {
 
 
 
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰  ` })
+   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰` })
 
     }));
   
@@ -182,8 +178,8 @@ else if (Config.WORKTYPE == 'public') {
 ⋱ ⋮ ⋰
 ⋯ ◯ ⋯ ︵ 　　　　　　^v^
 ¸︵︵( ░░ )︵.︵.︵
-(´░░░░░░ ') ░░░' )
-`´︶´¯`︶´`︶´︶´`　^v^　　^v^
+(°░░░░░░ °) ░░░° )
+°°︶°¯°︶°°︶°︶°°　^v^　　^v^
 ╔┓┏╦━━╦┓╔┓╔━━╗╔╗
 ║┗┛║┗━╣┃║┃║╯╰║║║
 ║┏┓║┏━╣┗╣┗╣╰╯║╠╣
@@ -194,8 +190,6 @@ else if (Config.WORKTYPE == 'public') {
 🍁 *Developer - Hirusha Rushan ( Hiruwa )*
 
 🍁 *Language - NODE JS*
-
-🍁 *Base Bot Owner - Black Amda*
 
 🍁 *Sponser Team - PEARL Team*
 
@@ -238,9 +232,9 @@ else if (Config.WORKTYPE == 'public') {
   \/
            🍒 *ᴀᴅᴍɪɴꜱ* ™🍒
 
-╹ 🔰 *Thanuj Fernando* ╹
+╹ 🔰 *Kasun Ravihara* ╹
 ╹ 🔰 *Acintha Fernando*╹
-╹ 🔰 *Kasun Ravihara*    ╹
+╹ 🔰 *Thanuj Fernando*    ╹
 
  ♥ *ʏᴛ ʟɪɴᴋ - https://youtu.be/oaSPHc78LNQ*
 
@@ -249,7 +243,7 @@ else if (Config.WORKTYPE == 'public') {
 
 
 
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰`  ,quoted: message.data})
+   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰 `  ,quoted: message.data})
 
     }));
-}*/
+}
