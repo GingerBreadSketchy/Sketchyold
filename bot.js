@@ -108,7 +108,7 @@ async function queenAmdi () {
         })
     }, 50000);
     
-    var biography_var = ''
+   /* var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
     });
@@ -242,7 +242,7 @@ async function queenAmdi () {
             }
         }
     }, 7890);
-/*
+
 // --------------Queen Amdi verify system--------------
 if (/\[(\W*)\]/.test(config.HANDLERS)) {
     HANDLER = config.HANDLERS.match(/\[(\W*)\]/)[1][0];
