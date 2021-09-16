@@ -13,22 +13,23 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('_trex');
 const fs = require("fs")
-const amdi = fs.readFileSync('./Voice/sound6.mp3')  
-const fuck = fs.readFileSync('./Voice/sound14.mp3')  
+const amdi = fs.readFileSync('./Voice/gn.mp3')  
+const fuck = fs.readFileSync('./Voice/gm.mp3')  
 
 if (Config.WORKTYPE == 'public') {
     
     
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {  
     if (Config.AUTOVOICE == 'true') {
+    if (Config.VTYPE == 'girl') {
 
-        let get1 = new RegExp('sex')
-        let get2 = new RegExp('Sex')
-        let get3 = new RegExp('SEX')
-        let get4 = new RegExp('fuck')
-        let get5 = new RegExp('Fuck')
-        let get6 = new RegExp('FUCK')
-        let get7 = new RegExp('හුකමු')
+        let get1 = new RegExp('gm')
+        let get2 = new RegExp('Gm')
+        let get3 = new RegExp('GM')
+        let get4 = new RegExp('gn')
+        let get5 = new RegExp('Gn')
+        let get6 = new RegExp('GN')
+        let get7 = new RegExp('Good night')
         
         
         if (get1.test(message.message)) {
@@ -52,6 +53,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         else if (get7.test(message.message)) {
             await message.client.sendMessage(message.jid, fuck, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         }
+    }
     }
 }));
 
