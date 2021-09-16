@@ -30,7 +30,7 @@ var l_dsc = ''
     Amdi.applyCMD({pattern: 'work ?(.*)', fromMe: true,  deleteCommand: false,  desc: l_dsc, usage: '.antilink on / off', dontAddCommandList: true }, (async (message, match) => {
         const anti_status = `${config.WORKTYPE}`
         if (match[1] == 'public') {
-            if (anti_status == 'true') {
+            if (anti_status == 'public') {
                 return await message.client.sendMessage(message.jid, '*' + alr_on + '*', MessageType.text)
             }
             else {
@@ -43,7 +43,7 @@ var l_dsc = ''
             }
         }
         else if (match[1] == 'private') {
-            if (anti_status !== 'true') {
+            if (anti_status !== 'private') {
                 return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text)
             }
             else {
