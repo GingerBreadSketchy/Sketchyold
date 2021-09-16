@@ -21,7 +21,7 @@ if (Config.WORKTYPE == 'public') {
     
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {  
     if (Config.AUTOVOICE == 'true') {
-    if (Config.VTYPE == 'girl') {
+    
 
         let get1 = new RegExp('gm')
         let get2 = new RegExp('Gm')
@@ -54,7 +54,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             await message.client.sendMessage(message.jid, fuck, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         }
     }
-    }
+    
 }));
 
 }
