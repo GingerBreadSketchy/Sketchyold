@@ -28,6 +28,7 @@ module.exports = {
     BYE_LOGO: process.env.BYE_LOGO === undefined ? 'https://tinyurl.com/queenamdi-goodbye' : process.env.BYE_LOGO,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    VTYPE: process.env.VOICE_CHAT_TYPE === undefined ? 'girl' : process.env.VOICE_CHAT_TYPE,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     ANTIBAD: process.env.ANTIBAD === undefined ? 'false' : process.env.ANTIBAD,
     WARN1: process.env.WARN_MSG_1 === undefined ? '\n    📛 GROUP WARN 📛 \n\n🔱 NO WARNS 🔱\n\n': process.env.WARN_MSG_1,
