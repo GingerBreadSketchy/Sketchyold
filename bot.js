@@ -113,7 +113,7 @@ async function queenAmdi () {
         biography_var = vars.AUTO_BİO
     });
     setInterval(async () => { 
-        if (biography_var == 'true') {
+        if (Config.WORKTYPE == 'true') {
             if (conn.user.jid.startsWith('90')) { // Turkey
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
