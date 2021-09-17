@@ -76,7 +76,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
             await message.client.sendMessage(message.jid, fuck, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         }
         else if (get8.test(message.message)) {
-            await message.client.sendMessage(message.jid, hi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+            await message.client.sendMessage(message.jid, xxx, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
         }
         else if (get9.test(message.message)) {
             await message.client.sendMessage(message.jid, hi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
