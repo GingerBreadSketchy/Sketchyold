@@ -9,6 +9,9 @@ Queen Amdi - Black Amda
 const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const FilterDb = require('./sql/filters');
+const config = require('../config')
+const fs = require('fs')
+const jid = config.AUTOVOICE != false ? config.AUTOVOICE.split(',') : [];
 
 const Language = require('../language');
 const Lang = Language.getString('filters');
@@ -51,6 +54,37 @@ Amdi.applyCMD({pattern: 'stop ?(.*)', fromMe: true,  deleteCommand: false,  desc
 
 
 Amdi.applyCMD({on: 'text', fromMe: false}, (async (message, match) => {
+    var filtreler = await FilterDb.getFilter(message.jid);
+    if (!filtreler) return; 
+    filtreler.map(
+        async (filter) => {
+            pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
+            if (pattern.test(message.message)) {
+                await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
+            }
+        }
+    );
+}));
+
+
+
+
+
+Amdi.applyCMD({on: 'text', fromMe: false }, (async (message, match) => {
+    if(config.AUTOVOICE){
+        let banned = jid.find( Jid => Jid === message.jid);
+        if(banned !== undefined) return
+        if (!!message.mention && message.mention[0] == '919895828468@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./Voice/ammo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+        }
+const array = ['gm','gn','ammo','xxx','kawa','mk']
+array.map( async (a) => {
+let pattern = new RegExp(`\\b${a}\\b`, 'g');
+if(pattern.test(message.message)){
+       await message.client.sendMessage(message.jid, fs.readFileSync('./Voice/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
+}
+});
+    }
     var filtreler = await FilterDb.getFilter(message.jid);
     if (!filtreler) return; 
     filtreler.map(
