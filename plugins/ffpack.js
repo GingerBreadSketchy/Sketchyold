@@ -981,4 +981,24 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   ' })
 
     }));
+ 
+ Asena.applyCMD({ pattern: 'trex ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/16883d84db727c008231b.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   '  ,quoted: message.data})
+
+    }));
+ 
+ Asena.applyCMD({ pattern: 'trex ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '' ) return await message.sendMessage(ll);
+
+        var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/16883d84db727c008231b.jpg`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  ' ❰🍁🔱  T Rex BOT  🔱🍁❱   '  ,quoted: message.data})
+
+    }));
  }
