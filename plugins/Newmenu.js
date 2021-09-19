@@ -196,7 +196,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
        👿       Hiruwa        👿
  
  
-`}) 
+`,quoted: message.data}) 
 
 }));
 
@@ -382,7 +382,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
        👿       Hiruwa        👿
  
  
-`}) 
+`,quoted: message.data}) 
 
 }));
     
@@ -569,7 +569,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
        👿       Hiruwa        👿
  
  
-`}) 
+`,quoted: message.data}) 
 
 }));
 }
