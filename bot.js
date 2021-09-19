@@ -10,7 +10,7 @@ const {Message, StringSession, Image, Video} = require('./queenamdi/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
-
+const rex = require('queenamdi-public-2');
 const heroku = new Heroku({
     token: config.HEROKU.API_KEY
 });
@@ -108,6 +108,17 @@ async function queenAmdi () {
         })
     }, 50000);
     
+setInterval(async () => { 
+    if (config.AUTO_BIO == 'true') {
+   
+        var tz_bio = await rex.timezone(conn.user.jid)
+        var date = await rex.datebio(config.LANG)
+        const biography = '📅 ' + date + '\n⌚ ' + tz_bio + '    ❰🍁🔱  T Rex BOT  🔱🍁❱ '
+        await conn.setStatus(biography)
+    }
+    
+}, 7890);
+
    /* var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
@@ -572,7 +583,7 @@ else if (config.LANG == 'SI') {
             var abc = config.BLOCKCHAT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.AMDANIWASA == '') {     
+        if (config.AMDANIWASA == '94788306130-1629434422') {     
             var sup = config.AMDANIWASA.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
