@@ -13,7 +13,7 @@ if (Config.LANG == 'SI') {
    await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true,quoted: message.data})
   }));
   
-  Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'atrex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -329,7 +329,7 @@ else if (Config.WORKTYPE == 'private') {
    await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true,quoted: message.data})
   }));
  
- Asena.applyCMD({ pattern: 'trex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'atrex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] ==='' ) return await message.sendMessage(ll);
 
