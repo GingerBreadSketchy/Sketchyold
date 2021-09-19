@@ -9,8 +9,8 @@ const alive = fs.readFileSync('./Voice/alive.mp3')
 if (Config.LANG == 'SI') {
  if (Config.WORKTYPE == 'public') {
   
-  Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
-   await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+  Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true,quoted: message.data})
   }));
   
   Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
@@ -19,7 +19,6 @@ if (Config.LANG == 'SI') {
 
         var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
         
-        await message.client.sendMessage(message.jid, alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true},{quoted: message.data})
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════╗
 
@@ -325,6 +324,10 @@ AI chat bot අක්‍රිය කිරීමට, .switch CHAT_BOT:false ව
    }
  
 else if (Config.WORKTYPE == 'private') {
+ 
+ Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true,quoted: message.data})
+  }));
  
  Asena.applyCMD({ pattern: 'trex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
