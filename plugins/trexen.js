@@ -7,6 +7,7 @@ const fs = require('fs');
 const axios = require('axios');
 
 const Config = require('../config');
+const alive = fs.readFileSync('./Voice/alive.mp3')
 
 const Ln = "  *TREX MENU* "
 
@@ -14,6 +15,9 @@ if (Config.LANG == 'EN') {
 
  if (Config.WORKTYPE == 'public') {
 
+  Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true, quoted: message.data})
+  }));
   
 
   Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
@@ -328,7 +332,11 @@ Example : .covid Sri Lanka°
  
 
 else if (Config.WORKTYPE == 'private') {
-
+ 
+ 
+Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true, quoted: message.data})
+  }));
  
 
  Asena.applyCMD({ pattern: 'trex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
