@@ -10,6 +10,10 @@ if (Config.LANG == 'SI') {
  if (Config.WORKTYPE == 'public') {
   
   Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+  }));
+  
+  Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
