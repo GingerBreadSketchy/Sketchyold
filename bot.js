@@ -415,7 +415,7 @@ if (config.LANG == 'EN') {
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Public Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.setvar WORK_TYPE=private``` _command._\n\n🍁Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱ *', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Public Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.private``` _command._\n\n🍁Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱ *', MessageType.text);
                 }
 
             }
@@ -440,7 +440,7 @@ if (config.LANG == 'EN') {
                 }
                 else {
 
-                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Private Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.setvar WORK_TYPE=public``` _command._\n\n🍁 Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Private Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.public``` _command._\n\n🍁 Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱*', MessageType.text);
                 }
             }
         
@@ -506,7 +506,7 @@ else if (config.LANG == 'SI') {
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ public ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.setvar WORK_TYPE=private``` _විධානය භාවිතා කරන්න._\n\n*🍁 Developer : Hiruwa* \n\n *❰🍁🔱  T Rex BOT  🔱🍁❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ public ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.private``` _විධානය භාවිතා කරන්න._\n\n*🍁 Developer : Hiruwa* \n\n *❰🍁🔱  T Rex BOT  🔱🍁❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
                 }
             }
         
@@ -530,7 +530,7 @@ else if (config.LANG == 'SI') {
                 }
                 else {
 
-                await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ private ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot private ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.setvar WORK_TYPE=public``` _විධානය භාවිතා කරන්න._\n\n🍁 Developer : Hiruwa\n\n *❰🍁🔱  T Rex BOT  🔱🍁❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ private ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot private ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.public``` _විධානය භාවිතා කරන්න._\n\n🍁 Developer : Hiruwa\n\n *❰🍁🔱  T Rex BOT  🔱🍁❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
                 }
             }
         
