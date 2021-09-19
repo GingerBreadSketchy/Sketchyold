@@ -4,6 +4,7 @@ const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
 const Ln = "  *TREX MENU* "
+const alive = fs.readFileSync('./Voice/alive.mp3')
 
 if (Config.LANG == 'SI') {
  if (Config.WORKTYPE == 'public') {
@@ -13,6 +14,8 @@ if (Config.LANG == 'SI') {
         if (match[1] === '' ) return await message.sendMessage(ll);
 
         var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
+        
+        await message.client.sendMessage(message.jid, alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true,quoted: message.data})
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════╗
 
@@ -324,6 +327,8 @@ else if (Config.WORKTYPE == 'private') {
         if (match[1] ==='' ) return await message.sendMessage(ll);
 
         var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
+        
+        await message.client.sendMessage(message.jid, alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true, quoted: message.data})
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: `╔═══════════════════════╗
 
