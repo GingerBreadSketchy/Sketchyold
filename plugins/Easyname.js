@@ -14,3 +14,25 @@ Amdi.applyCMD({pattern: 'public', fromMe: true,  deleteCommand: true,  desc: 'sh
         await message.client.sendMessage(message.jid,'YOUR BOT SET ON PUBLIC 👿👿',MessageType.text);
             
         }));
+
+Amdi.applyCMD({pattern: 'private', fromMe: true,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
+    
+        await message.client.sendMessage(message.jid,'.setvar WORK_TYPE=private', MessageType.text);
+        await message.client.sendMessage(message.jid,'YOUR BOT SET ON PUBLIC 👿👿',MessageType.text);
+            
+        }));
+
+Amdi.applyCMD({pattern: 'voice on', fromMe: true,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
+    
+        await message.client.sendMessage(message.jid,'.setvar VOICE_CHAT=true', MessageType.text);
+        await message.client.sendMessage(message.jid,'ACTIVATED VOICE CHAT 👿👿',MessageType.text);
+            
+        }));
+
+
+Amdi.applyCMD({pattern: 'voice off', fromMe: true,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
+    
+        await message.client.sendMessage(message.jid,'.setvar VOICE_CHAT=false', MessageType.text);
+        await message.client.sendMessage(message.jid,'DEACTIVATED VOICE CHAT 👿👿',MessageType.text);
+            
+        }));
