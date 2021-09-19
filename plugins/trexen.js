@@ -20,7 +20,7 @@ if (Config.LANG == 'EN') {
   }));
   
 
-  Asena.applyCMD({ pattern: 'trex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'atrex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -339,7 +339,7 @@ Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (a
   }));
  
 
- Asena.applyCMD({ pattern: 'trex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'atrex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
