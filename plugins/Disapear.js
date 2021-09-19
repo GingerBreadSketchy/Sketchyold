@@ -34,7 +34,32 @@ Trex.applyCMD({pattern: 'dis off ?(.*)', fromMe: true, desc: DDO,dontAddCMDList:
 
         if (match[1] == '') {
             await message.client.toggleDisappearingMessages(message.jid, 0);
+            await message.client.sendMessage(message.jid,'👿 Disapearing off 👿',MessageType.text);
+        }
+        else {
+            return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
+        }
+
+}));
+
+Trex.applyCMD({pattern: 'dis on ?(.*)', fromMe: true,onlyGroup: true, desc: DDO,dontAddCMDList: true }, (async (message, match) => {    
+
+        if (match[1] == '') {
+            await message.client.toggleDisappearingMessages(message.jid, 604800);
             await message.client.sendMessage(message.jid,ONO,MessageType.text);
+        }
+        else {
+            return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
+        }
+
+}));
+
+
+Trex.applyCMD({pattern: 'dis off ?(.*)', fromMe: true, onlyGroup: true, desc: DDO,dontAddCMDList: true }, (async (message, match) => {   
+
+        if (match[1] == '') {
+            await message.client.toggleDisappearingMessages(message.jid, 0);
+            await message.client.sendMessage(message.jid,'👿 Disapearing off 👿',MessageType.text);
         }
         else {
             return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
