@@ -982,7 +982,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- Asena.applyCMD({ pattern: 'trex ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'otrex ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -992,7 +992,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- Asena.applyCMD({ pattern: 'trex ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'otrex ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
