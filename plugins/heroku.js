@@ -49,8 +49,8 @@ Amdi.applyCMD({pattern: 'shutdown', fromMe: true,  deleteCommand: false,  desc: 
 
 
 if (Config.WORKTYPE == 'private') {
-
-    Amdi.applyCMD({pattern: 'dyno', fromMe: true,  deleteCommand: false,  desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
+    
+Amdi.applyCMD({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -83,7 +83,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'dyno', fromMe: true,  deleteCommand: false,  desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
