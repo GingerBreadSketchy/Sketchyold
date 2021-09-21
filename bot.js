@@ -417,6 +417,7 @@ if (config.LANG == 'EN') {
                 }
                 else {
                     await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Public Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.private``` _command._\n\n🍁Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱ *', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '       👿 WELCOME TO T-REX 👿 \n\n\nHellow dear Thanks for use our bot 😘\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help up 🤭😘👿',MessageType.text);
                 }
 
             }
@@ -442,6 +443,7 @@ if (config.LANG == 'EN') {
                 else {
 
                     await conn.sendMessage(conn.user.jid, '*❰🍁🔱  T Rex BOT  🔱🍁❱ started in Private Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.public``` _command._\n\n🍁 Developer : Hiruwa\n\n *Thank you for using ❰🍁🔱  T Rex BOT  🔱🍁❱*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '       👿 WELCOME TO T-REX 👿 \n\n\nHellow dear Thanks for use our bot 😘\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help up 🤭😘👿',MessageType.text);
                 }
             }
         
