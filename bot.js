@@ -108,16 +108,6 @@ async function queenAmdi () {
         })
     }, 50000);
     
-setInterval(async () => { 
-    if (config.AUTO_BIO == 'true') {
-   
-        var tz_bio = await rex.timezone(conn.user.jid)
-        var date = await rex.datebio(config.LANG)
-        const biography = '📅 ' + date + '\n⌚ ' + tz_bio + '    ❰🍁🔱  T Rex BOT  🔱🍁❱ '
-        await conn.setStatus(biography)
-    }
-    
-}, 7890);
 
    /* var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
