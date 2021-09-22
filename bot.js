@@ -109,12 +109,12 @@ async function queenAmdi () {
     }, 50000);
     
 
-   /* var biography_var = ''
+    var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
     });
     setInterval(async () => { 
-        if (config.WORKTYPE == 'true') {
+        if (config.AUTO_BIO == 'true') {
             if (conn.user.jid.startsWith('90')) { // Turkey
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -244,7 +244,7 @@ async function queenAmdi () {
         }
     }, 7890);
 
-// --------------Queen Amdi verify system--------------
+/*/// --------------Queen Amdi verify system--------------
 if (/\[(\W*)\]/.test(config.HANDLERS)) {
     HANDLER = config.HANDLERS.match(/\[(\W*)\]/)[1][0];
 } else {
@@ -306,6 +306,9 @@ if (/\[(\W*)\]/.test(config.HANDLERS)) {
 
 // --------------End of verify system coding--------------
 */    
+    
+    
+    
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
 
