@@ -44,6 +44,18 @@ if (Config.LANG == 'EN') {
 
 *➢ Description:*°all commands°
 
+ 🍁 Command:  .dis on/off
+ 
+ ▷ Description;  Turn on/off Disapearing
+ 
+🍁 Command:   .play
+ 
+ ▷ Description;  Download songs new
+ 
+ 🍁 Commans:  .afk
+ 
+ ▷ Description;  Bot is online message
+ 
 *🍁 Command* °.rlpack°
 
 *➢ Description:* °T-REX LOGO COLLECTION 01°
@@ -362,6 +374,18 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
 *🍁 Command:* °.trex°
 
 *➢ Description:*°all commands°
+
+ 🍁 Command:  .dis on/off
+ 
+ ▷ Description;  Turn on/off Disapearing
+ 
+🍁 Command:   .play
+ 
+ ▷ Description;  Download songs new
+ 
+ 🍁 Commans:  .afk
+ 
+ ▷ Description;  Bot is online message
 
 *🍁 Command* °.rlpack°
 
