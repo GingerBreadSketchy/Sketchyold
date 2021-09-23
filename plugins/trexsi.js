@@ -8,9 +8,12 @@ const alive = fs.readFileSync('./Voice/alive.mp3')
 
 if (Config.LANG == 'SI') {
  if (Config.WORKTYPE == 'public') {
+ 
   
   Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   if (Config.AUTOVOICE == 'true') {
    await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true,quoted: message.data})
+   }
   }));
   
   Asena.applyCMD({ pattern: 'atrex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
