@@ -11,7 +11,6 @@ var AFK = {
     lastseen: 0
 };
 
-// https://stackoverflow.com/a/37096512
 function secondsToHms(d) {
     d = Number(d);
     var h = Math.floor(d / 3600);
@@ -76,7 +75,7 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
     }
 }));
 
-Amdi.applyCMD({on: 'online', fromMe: true,  deleteCommand: false,  deleteCommand: false}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'online ?(.*)', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
     if (AFK.isAfk && !message.id.startsWith('3EB0')) {
         AFK.lastseen = 0;
         AFK.reason = false;
@@ -86,7 +85,8 @@ Amdi.applyCMD({on: 'online', fromMe: true,  deleteCommand: false,  deleteCommand
     }
 }));
 
-Amdi.applyCMD({pattern: 'afk ?(.*)', fromMe: true,  deleteCommand: false,  deleteCommand: false, desc: Lang.AFK_DESC, dontAddCommandList: true}, (async (message, match) => {     
+
+Amdi.applyCMD({pattern: 'afk ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.AFK_DESC, dontAddCommandList: true}, (async (message, match) => {     
     if (!AFK.isAfk) {
         AFK.lastseen = Math.round((new Date()).getTime() / 1000);
         if (match[1] !== '') { AFK.reason = match[1]; }
