@@ -112,6 +112,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .info
  │▷ .tagadmin
  │▷ .report
+ │▷ .dis on { disapearing }
+ │▷ .dis off { for owner }
  │▷ .warn1 [ for owner ]
  │▷ .warn2 [ for owner ]
  │▷ .warn3 [ for owner ]
@@ -299,6 +301,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .info
  │▷ .tagadmin
  │▷ .report
+ │▷ .dis on { disapearing }
+ │▷ .dis off { for owner }
  │▷ .warn1 [ for owner ]
  │▷ .warn2 [ for owner ]
  │▷ .warn3 [ for owner ]
@@ -487,6 +491,8 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .info
  │▷ .tagadmin
  │▷ .report
+ │▷ .dis on { disapearing }
+ │▷ .dis off { for owner }
  │▷ .warn1 [ for owner ]
  │▷ .warn2 [ for owner ]
  │▷ .warn3 [ for owner ]
