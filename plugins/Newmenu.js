@@ -96,6 +96,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .vid2 { vid link }
  │▷ .song { song name }
  │▷ .fsong { song name }
+ │▷ .play { song name }
  │▷ .img { name }
  │▷ .fb { link }
  │▷ .tiktok { link }
@@ -282,6 +283,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .vid2 { vid link }
  │▷ .song { song name }
  │▷ .fsong { song name }
+ │▷ .play { song name }
  │▷ .img { name }
  │▷ .fb { link }
  │▷ .tiktok { link }
@@ -469,6 +471,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .vid2 { vid link }
  │▷ .song { song name }
  │▷ .fsong { song name }
+ │▷ .play { song name }
  │▷ .img { name }
  │▷ .fb { link }
  │▷ .tiktok { link }
