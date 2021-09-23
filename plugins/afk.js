@@ -76,7 +76,7 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
     }
 }));
 
-Amdi.applyCMD({on: 'text', fromMe: true,  deleteCommand: false,  deleteCommand: false}, (async (message, match) => {
+Amdi.applyCMD({on: 'online', fromMe: true,  deleteCommand: false,  deleteCommand: false}, (async (message, match) => {
     if (AFK.isAfk && !message.id.startsWith('3EB0')) {
         AFK.lastseen = 0;
         AFK.reason = false;
