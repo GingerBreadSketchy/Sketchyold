@@ -15,7 +15,7 @@ if (Config.LANG == 'EN') {
 
  if (Config.WORKTYPE == 'public') {
 
-  Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'jajananajaj', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
    await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true, quoted: message.data})
   }));
   
@@ -334,7 +334,7 @@ Example : .covid Sri Lanka°
 else if (Config.WORKTYPE == 'private') {
  
  
-Asena.applyCMD({ pattern: 'alive', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
    await message.client.sendMessage(message.jid,alive, MessageType.audio, {mimetype: 'audio/mp4', ptt:true, quoted: message.data})
   }));
  
