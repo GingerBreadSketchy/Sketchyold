@@ -183,6 +183,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │      🍁👿 Other 👿🍁
  │
  │▷ .ss { link }
+ │▷ .afk { bot is online }
  │▷ .short { link }
  │▷ .wame { get user link }
  │▷ .currency
@@ -372,6 +373,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │      🍁👿 Other 👿🍁
  │
  │▷ .ss { link }
+ │▷ .afk { bot is online }
  │▷ .short { link }
  │▷ .wame { get user link }
  │▷ .currency
@@ -562,6 +564,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │      🍁👿 Other 👿🍁
  │
  │▷ .ss { link }
+ │▷ .afk { bot is online }
  │▷ .short { link }
  │▷ .wame { get user link }
  │▷ .currency
