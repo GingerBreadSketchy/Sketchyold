@@ -79,6 +79,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │ 🍁👿 Text To Img 👿🍁
  │
  │▷ .rlpack
+ │▷ .tlpack
  │▷ .ffpack
  │▷ .ttp { text }
  │▷ .dttp { text }
@@ -269,6 +270,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │ 🍁👿 Text To Img 👿🍁
  │
  │▷ .rlpack
+ │▷ .tlpack
  │▷ .ffpack
  │▷ .ttp { text }
  │▷ .dttp { text }
@@ -460,6 +462,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │ 🍁👿 Text To Img 👿🍁
  │
  │▷ .rlpack
+ │▷ .tlpack
  │▷ .ffpack
  │▷ .ttp { text }
  │▷ .dttp { text }
