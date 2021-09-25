@@ -9,7 +9,7 @@ const axios = require('axios');
 const Config = require('../config');
 const need = "*type some word after command 🍁"
 
-if (Config.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'public') {
    
    
    Trex.applyCMD({ pattern: 'tlpack', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
