@@ -2,7 +2,7 @@
 වැඩ නොකර පාඩුවෙ වැඩක් බලාගනින් පකා*/
 
 
-const Amdi = require('../events');
+const Trex = require('../events');
 const Config = require('../config');
 const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
 
@@ -11,7 +11,7 @@ const Lang = Language.getString('_trex');
 const fs = require("fs")
 const kawa = fs.readFileSync('./Voice/kawa.mp3')
 
-Amdi.applyCMD({pattern: 'bio ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+Trex.applyCMD({pattern: 'bio ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
  
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,'Need Bio 👿');
