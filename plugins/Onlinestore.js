@@ -4,11 +4,10 @@ const {spawnSync} = require('child_process');
 const Config = require('../config');
 const chalk = require('chalk');
 const axios = require('axios');
-let LOL = Config.WORKTYPE == 'public' ? false : true
 
 if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'online store', fromMe: LOL,  deleteCommand: true }, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'online store', fromMe: false,  deleteCommand: true }, (async (message, match) => {
             
             var image = await axios.get ('https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg', {responseType: 'arraybuffer'})
        
@@ -34,7 +33,7 @@ if (Config.WORKTYPE == 'public') {
     }));
   
 
-    Amdi.applyCMD({pattern: 'ladies', fromMe: LOL,  deleteCommand: true }, (async (message, match) => {
+    Amdi.applyCMD({pattern: 'ladies', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
           
             var image = await axios.get ('https://telegra.ph/file/e7c7eed8746345d71f33f.jpg', {responseType: 'arraybuffer'})
@@ -52,11 +51,11 @@ if (Config.WORKTYPE == 'public') {
 
     }));
   
-  Amdi.applyCMD({pattern: 'mens', fromMe: LOL,  deleteCommand: true }, (async (message, match) => {
+  Amdi.applyCMD({pattern: 'mens', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
           
             var image = await axios.get ('https://telegra.ph/file/b260087f89c4f5cfd5bdd.jpg', {responseType: 'arraybuffer'})
-        await message.client.sendMessage (message.jid, Buffer.from (image4.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
 
     }));
  
