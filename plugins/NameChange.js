@@ -10,7 +10,6 @@ const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = re
 const Language = require('../language');
 const Lang = Language.getString('_trex');
 const fs = require("fs")
-const kawa = fs.readFileSync('./Voice/name.mp3')
 
 Trex.applyCMD({pattern: 'name ?(.*)', fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
  
