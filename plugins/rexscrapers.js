@@ -160,7 +160,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
   
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, quoted:message.data, caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
         });
     }));
 
@@ -622,7 +622,7 @@ else if (config.WORKTYPE == 'public') {
   
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, quoted:message.data ,caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
         });
     }));
 
