@@ -36,21 +36,47 @@ if (Config.WORKTYPE == 'public') {
     Amdi.applyCMD({pattern: 'ladies', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
           
-            var image = await axios.get ('https://telegra.ph/file/e7c7eed8746345d71f33f.jpg', {responseType: 'arraybuffer'})
-            var image1 = await axios.get ('https://telegra.ph/file/702275a2775de05ea9d6f.jpg', {responseType: 'arraybuffer'})
-            var image2 = await axios.get ('https://telegra.ph/file/bb408a4bec780fd3811d3.jpg', {responseType: 'arraybuffer'})
-            var image3 = await axios.get ('https://telegra.ph/file/2d3be7fd4bd981dcb14d6.jpg', {responseType: 'arraybuffer'})
-            var image4 = await axios.get ('https://telegra.ph/file/8e5adbcc948812fa5d61d.jpg.', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/873e00ec90306f5180f19.jpg', {responseType: 'arraybuffer'})
+            
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
-        await message.client.sendMessage (message.jid, Buffer.from (image1.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
-        await message.client.sendMessage (message.jid, Buffer.from (image2.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
-        await message.client.sendMessage (message.jid, Buffer.from (image3.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
-        await message.client.sendMessage (message.jid, Buffer.from (image4.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
-
+        
         
 
     }));
+    
+  Amdi.applyCMD({pattern: 'ladies', fromMe: false,  deleteCommand: true }, (async (message, match) => {
+
+          
+            var image = await axios.get ('https://telegra.ph/file/60cd76df9eeab865aeb50.jpg', {responseType: 'arraybuffer'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
+
+  }));
+    
+  Amdi.applyCMD({pattern: 'ladies', fromMe: false,  deleteCommand: true }, (async (message, match) => {
+
+          
+            var image = await axios.get ('https://telegra.ph/file/7639b67f052f3d4b34236.jpg', {responseType: 'arraybuffer'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
+
+    }));
   
+  Amdi.applyCMD({pattern: 'ladies', fromMe: false,  deleteCommand: true }, (async (message, match) => {
+
+          
+            var image = await axios.get ('https://telegra.ph/file/db29720b4ac93686826c0.jpg', {responseType: 'arraybuffer'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
+
+    }));
+    Amdi.applyCMD({pattern: 'ladies', fromMe: false,  deleteCommand: true }, (async (message, match) => {
+
+          
+            var image = await axios.get ('https://telegra.ph/file/2b5b8437d28720d6f2d79.jpg', {responseType: 'arraybuffer'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: '\n🍁 RS.1000.00\n\n🍁 Dilivary available \n🍁Charge RS.300.00\n\n🍁 More details call 0775849690\n\n 👿 POWERD BY T REX 👿',quoted: message.data})
+
+    }));
+  
+  
+  // MENS TYPE
   Amdi.applyCMD({pattern: 'mens', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
           
