@@ -113,6 +113,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .info
  │▷ .tagadmin
  │▷ .report
+ │▷ .gname {change group n}
  │▷ .dis on { disapearing }
  │▷ .dis off { for owner }
  │▷ .warn1 [ for owner ]
@@ -130,6 +131,19 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │    use .admin Cmd for
  │      other commands
  │
+ ╰────────────────
+ ╭────────────────
+ │  🍁👿 For owner 👿🍁
+ │
+ │▷ .name { change name }
+ │▷ .pp { cha profilr pic}
+ │▷ .bio { change bio }
+ │
+ │  Now you can change 
+ │    your whatsapp 
+ │ name,profile pic,bio
+ │      easy with
+ │      T-REX BOT
  ╰────────────────
  ╭────────────────
  │    🍁👿 Search 👿🍁
@@ -304,6 +318,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .info
  │▷ .tagadmin
  │▷ .report
+ │▷ .gname {change grp name}
  │▷ .dis on { disapearing }
  │▷ .dis off { for owner }
  │▷ .warn1 [ for owner ]
@@ -321,6 +336,19 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │    use .admin Cmd for
  │      other commands
  │
+ ╰────────────────
+ ╭────────────────
+ │  🍁👿 For owner 👿🍁
+ │
+ │▷ .name { change name }
+ │▷ .pp { cha profilr pic}
+ │▷ .bio { change bio }
+ │
+ │  Now you can change 
+ │    your whatsapp 
+ │ name,profile pic,bio
+ │      easy with
+ │      T-REX BOT
  ╰────────────────
  ╭────────────────
  │    🍁👿 Search 👿🍁
@@ -496,6 +524,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │▷ .info
  │▷ .tagadmin
  │▷ .report
+ │▷ .gname {change grp name}
  │▷ .dis on { disapearing }
  │▷ .dis off { for owner }
  │▷ .warn1 [ for owner ]
@@ -513,6 +542,19 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │    use .admin Cmd for
  │      other commands
  │
+ ╰────────────────
+ ╭────────────────
+ │  🍁👿 For owner 👿🍁
+ │
+ │▷ .name { change name }
+ │▷ .pp { cha profilr pic}
+ │▷ .bio { change bio }
+ │
+ │  Now you can change 
+ │    your whatsapp 
+ │ name,profile pic,bio
+ │      easy with
+ │      T-REX BOT
  ╰────────────────
  ╭────────────────
  │    🍁👿 Search 👿🍁
