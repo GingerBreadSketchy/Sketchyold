@@ -1593,7 +1593,7 @@ Amdi.applyCMD({pattern: 'clear', fromMe: true,  deleteCommand: false,  desc: Lan
     await message.sendMessage('```🍁 ➢ All Chat cleared```');
 }));
 
-Amdi.applyCMD({pattern: 'name ?(.*)', onlyGroup: true, fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'gname ?(.*)', onlyGroup: true, fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
