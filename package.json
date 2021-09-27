@@ -1,6 +1,6 @@
 {
   "name": "t-rex",
-  "version": "V1.0",
+  "version": "V 2.0",
   "description": "❰🍁🔱  T Rex BOT  🔱🍁❱ Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./T-REX/bot.js",
   "scripts": {
