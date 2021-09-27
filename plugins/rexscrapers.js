@@ -74,7 +74,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
     
     Amdi.applyCMD({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
@@ -104,6 +104,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
     }));
+         
     Amdi.applyCMD({pattern: 'fsong ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text  , {quoted: message.data});
