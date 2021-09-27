@@ -40,11 +40,11 @@ if (config.WORKTYPE == 'private') {
     
 Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text  , {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text);
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -67,18 +67,18 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+Lang.UPLOADING_SONG+'\n' });
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1, isForwarded: false }, quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1, isForwarded: false }});
             });
     }));
     
     
     Amdi.applyCMD({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -100,7 +100,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
     }));
@@ -109,8 +109,8 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text  , {quoted: message.data});
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -132,14 +132,14 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'});
             });
     }));
   
       Amdi.applyCMD({ pattern: 'video ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.VIDEO_DESC}, (async (message, match) => {
   
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
       
         var VID = '';
         try {
@@ -151,16 +151,16 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                 VID = match[1].split('/')[3]
             }
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
+            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         }
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
   
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
   
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, quoted:message.data, caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
+            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"});
         });
     }));
 
@@ -168,7 +168,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
 
         const userName = match[1]
 
-        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
+        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
         await axios
           .get(`https://api.lolhuman.xyz/api/instagram?apikey=${config.ZONE}&url=${userName}`)
@@ -182,16 +182,16 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
 
             const msg = `${status}`
 
-      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text, {quoted: message.data})}
+      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text)}
           
       if (msg === '200') {
-        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
-        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
         }
           })
           .catch(
-            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text),
           )
     }));
 
@@ -199,10 +199,10 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
 
         const userName = match[1]
 
-        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
+        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text);
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/facebook?apikey=${config.ZONE}&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook?apikey=d3be4b65ca9dab633c773d66&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -213,16 +213,16 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
 
             const msg = `${status}`
 
-      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NOT_FOUNDFB,MessageType.text, {quoted: message.data})}
+      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NOT_FOUNDFB,MessageType.text)}
           
       if (msg === '200') {
-        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
-        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text);
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: "❰🍁🔱  T Rex BOT  🔱🍁❱"}) 
         }
           })
           .catch(
-            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text),
           )
     }));
 
@@ -234,7 +234,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         }
 
         if (!message.reply_message) {
-            return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text, {quoted: message.data});
+            return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text);
         }
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
@@ -243,7 +243,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
-            return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
+            return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text)
         }
     }));
 
@@ -267,7 +267,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         }
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
-            return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text, {quoted: message.data});
+            return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text);
         }
         let opts = {
             amount: parseFloat(match[1]).toFixed(2).replace(/\.0+$/,''),
@@ -281,7 +281,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         }
         catch(err) {
             if (err instanceof ExchangeRatesError) 
-                await message.client.sendMessage(message.jid,Lang.INVALID_CURRENCY,MessageType.text, {quoted: message.data})
+                await message.client.sendMessage(message.jid,Lang.INVALID_CURRENCY,MessageType.text)
             else {
                 await message.client.sendMessage(message.jid,Lang.UNKNOWN_ERROR,MessageType.text)
                 console.log(err)
@@ -317,7 +317,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             text: ttsMessage,
             voice: LANG
         });
-        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true, quoted: message.data});
+        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true);
     }));
 
     Amdi.applyCMD({pattern: 'yt ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.YT_DESC}, (async (message, match) => { 
@@ -327,13 +327,13 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             return;
         }
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
 
         try {
             var arama = await yts(match[1]);
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text, {quoted: message.data});
+            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
         }
     
         var mesaj = '';
@@ -341,7 +341,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid,mesaj,MessageType.text);
         await reply.delete();
     }));
 
@@ -352,27 +352,27 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             return;
         }
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text, {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text);
 
         var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
-        await message.client.sendMessage(message.jid, info, MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid, info, MessageType.text);
         await reply.delete();
     }));
 
     Amdi.applyCMD({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
             for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
                 stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image, {quoted: message.data});
+                    await message.client.sendMessage(message.jid,image, MessageType.image);
                 });
             }
 
@@ -386,9 +386,9 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             const response = await got(url);
             const json = JSON.parse(response.body);
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*➢  ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text, {quoted: message.data});
+            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text, {quoted: message.data});
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
     });
 
@@ -404,7 +404,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                 }); 
             });
         } else {
-            await message.client.sendMessage(message.jid, Lang.NEED_UWONG, MessageType.text, {quoted: message.data});
+            await message.client.sendMessage(message.jid, Lang.NEED_UWONG, MessageType.text);
         }
     }));
 
@@ -422,7 +422,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=${config.ZONE}`)
+          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=d3be4b65ca9dab633c773d66`)
           .then(async (response) => {
 
             const {
@@ -633,7 +633,7 @@ else if (config.WORKTYPE == 'public') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/instagram?apikey=${config.ZONE}&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/instagram?apikey=d3be4b65ca9dab633c773d66&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -664,7 +664,7 @@ else if (config.WORKTYPE == 'public') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_WORD,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/facebook?apikey=${config.ZONE}&url=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/facebook?apikey=d3be4b65ca9dab633c773d66&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -885,7 +885,7 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=${config.ZONE}`)
+          .get(`https://api.lolhuman.xyz/api/github/${userName}?apikey=d3be4b65ca9dab633c773d66`)
           .then(async (response) => {
 
             const {
