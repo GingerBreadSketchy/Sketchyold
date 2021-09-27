@@ -101,7 +101,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data});
             });
     }));
          
