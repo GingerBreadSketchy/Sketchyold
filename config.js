@@ -11,7 +11,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './queenamdi.db' : proce
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: '❰🍁🔱  T Rex BOT v1.0 🔱🍁❱ - Public Stable',
+    VERSION: '❰🐼🧭Sketchy🧭🐼❱- Public Stable',
     SESSION: process.env.TREX_SESSION === undefined ? '' : process.env.TREX_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'si' : process.env.LANGUAGE.toUpperCase(),
@@ -20,7 +20,7 @@ module.exports = {
     RULES: process.env.GROUP_RULES === undefined ? 'No Rules' : process.env.GROUP_RULES,
     ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? 'false': process.env.BLOCK_CHAT,
-    CAPTION: process.env.CAPTION === undefined ? ' ❰🍁🔱  T Rex BOT  🔱🍁❱ ' : process.env.CAPTION,
+    CAPTION: process.env.CAPTION === undefined ? ' ❰🐼🧭Sketchy🧭🐼❱ ' : process.env.CAPTION,
     MENU: process.env.MENU === undefined ? 'trex' : process.env.MENU,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg' : process.env.ALIVE_LOGO,
@@ -35,10 +35,10 @@ module.exports = {
     WARN2: process.env.WARN_MSG_2 === undefined ? '\n    📛 GROUP WARN 📛 \n\n🔱 NO WARNA 🔱\n\n': process.env.WARN_MSG_2,
     WARN3: process.env.WARN_MSG_3 === undefined ? '\n    📛 GROUP WARN 📛 \n\n🔱 NO WARNA 🔱\n\n': process.env.WARN_MSG_3,
     WARN4: process.env.WARN_MSG_4 === undefined ? '\n    📛 GROUP WARN 📛 \n\n🔱 NO WARNA 🔱\n\n': process.env.WARN_MSG_4,
-    GROUPN1: process.env.GROUP_NAME_1 === undefined ? 'T-REX OFFICIAL SUPPORT': process.env.GROUP_NAME_1,
-    GROUPL1: process.env.GROUP_LINK_1 === undefined ? 'https://chat.whatsapp.com/GT5V8RakkftB7DAKWMeQML': process.env.GROUP_LINK_1,
-    GROUPN2: process.env.GROUP_NAME_2 === undefined ? 'T-REX OFFICIAL TEST': process.env.GROUP_NAME_2,
-    GROUPL2: process.env.GROUP_LINK_2 === undefined ? 'https://chat.whatsapp.com/LtXba8cXnFjLZw0QAaiPau': process.env.GROUP_LINK_2,
+    GROUPN1: process.env.GROUP_NAME_1 === undefined ? 'SKETCHY OFFICIAL SUPPORT': process.env.GROUP_NAME_1,
+    GROUPL1: process.env.GROUP_LINK_1 === undefined ? 'https://chat.whatsapp.com/Ej9CCj2PUSoKhkoc0mbBTR': process.env.GROUP_LINK_1,
+    GROUPN2: process.env.GROUP_NAME_2 === undefined ? ' SKETCHY OFFICIAL TEST': process.env.GROUP_NAME_2,
+    GROUPL2: process.env.GROUP_LINK_2 === undefined ? 'https://chat.whatsapp.com/Ej9CCj2PUSoKhkoc0mbBTR': process.env.GROUP_LINK_2,
     GROUPN3: process.env.GROUP_NAME_3 === undefined ? '': process.env.GROUP_NAME_3,
     GROUPL3: process.env.GROUP_LINK_3 === undefined ? '': process.env.GROUP_LINK_3,
     GROUPN4: process.env.GROUP_NAME_4 === undefined ? '': process.env.GROUP_NAME_4,
