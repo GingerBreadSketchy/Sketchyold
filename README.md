@@ -55,7 +55,8 @@ Chat Me on Whatsapp Now👇
 <br>
 <br > 
 ### ⚠️ Warning! 
-CREATED BY GingerBreadSketchy
+MODED BY GingerBreadSketchy
+ 🥵Rights by Dark-Knight-Hiruwa🥵
 ## License
 This project is protected by `GNU General Public Licence v3.0` license.
 ### Disclaimer
