@@ -32,7 +32,7 @@ Amdi.applyCMD({pattern: 'up$', fromMe: true,  deleteCommand: false,  desc: Lang.
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🍁 ➢ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "Hiruwa" + '>\n\n';
+                degisiklikler += '🔷 ➢ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "Ginger" + '>\n\n';
             }
         );
         
@@ -43,7 +43,7 @@ Amdi.applyCMD({pattern: 'up$', fromMe: true,  deleteCommand: false,  desc: Lang.
     }
 }));
 
-Amdi.applyCMD({pattern: 'uptrex$', fromMe: true,  deleteCommand: false,  desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.applyCMD({pattern: 'upsketchy$', fromMe: true,  deleteCommand: false,  desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
