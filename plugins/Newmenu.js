@@ -1,4 +1,3 @@
-
 /* DEVELOPER HIRUWA
 Don't copy this i take action for you
 ðŸ‘¿ðŸ‘¿ðŸ‘¿ðŸ‘¿ðŸ‘¿ðŸ‘¿ðŸ‘¿
@@ -13,8 +12,10 @@ const axios = require('axios');
 const hrs = new Date().getHours({ timeZone: 'Africa/Nairobi' })
 
 if (config.WORKTYPE == 'public') {
+  
+if (config.BTN == 'txt') {
 
-Trex.applyCMD({pattern: 'sketchy', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
+Trex.addrex({pattern: 'sketchy', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
 
     var r_text = new Array ();
     
@@ -44,7 +45,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: {mentionedJid: message.mention}, caption: `
  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
- â”‚â°ðŸðŸ”±  SKETCHY BOT ðŸ”±ðŸâ±
+ â”‚â°ðŸðŸ”±  SKETCHY BOT  ðŸ”±ðŸâ±
  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  â”‚ Hello â–· Dear
@@ -137,7 +138,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
  â”‚
  â”‚â–· .online store
  â”‚ 
- â”‚ ðŸ‘¿ SKETCHY BOT ðŸ‘¿
+ â”‚ ðŸ‘¿ T-REX ONLINE ðŸ‘¿
  â”‚     SHOPPING
  â”‚
  â”‚ ONLY SRI LANKAN 
@@ -222,16 +223,16 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  
          ðŸ‘¿ POWERD BY ðŸ‘¿
-  â°ðŸðŸ”±  Sketchy  ðŸ”±ðŸâ±
+  â°ðŸðŸ”±  SKETCHY BOT  ðŸ”±ðŸâ±
   
-       ðŸ‘¿       GinGeR        ðŸ‘¿
+       ðŸ‘¿       GINGER        ðŸ‘¿
  
  
 `,quoted: message.data}) 
 
 }));
 
-Trex.applyCMD({pattern: 'sketchy', fromMe: true, desc: 'it send bot menu'}, (async (message, match) => {
+Trex.addrex({pattern: 'sketchy', fromMe: true, desc: 'it send bot menu'}, (async (message, match) => {
 
     var r_text = new Array ();
     
@@ -261,7 +262,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: {mentionedJid: message.mention}, caption: `
  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
- â”‚â°ðŸðŸ”±  SKETCHY BOT ðŸ”±ðŸâ±
+ â”‚â°ðŸðŸ”±  SKETCHY BOT  ðŸ”±ðŸâ±
  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  â”‚ Hello â–· Dear
@@ -354,7 +355,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
  â”‚
  â”‚â–· .online store
  â”‚ 
- â”‚ ðŸ‘¿ SKETCHY BOT ðŸ‘¿
+ â”‚ ðŸ‘¿ T-REX ONLINE ðŸ‘¿
  â”‚     SHOPPING
  â”‚
  â”‚ ONLY SRI LANKAN 
@@ -439,9 +440,9 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  
          ðŸ‘¿ POWERD BY ðŸ‘¿
-  â°ðŸðŸ”±  Sketchy  ðŸ”±ðŸâ±
+  â°ðŸðŸ”±  SKETCHY BOT  ðŸ”±ðŸâ±
   
-       ðŸ‘¿       GinGeR        ðŸ‘¿
+       ðŸ‘¿       GINGER        ðŸ‘¿
  
  
 `,quoted: message.data}) 
@@ -452,7 +453,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
 
 else if (config.WORKTYPE == 'private' ) {
     
-    Trex.applyCMD({pattern: 'sketchy', fromMe: true, desc: 'it send bot menu'}, (async (message, match) => {
+    Trex.addrex({pattern: 'sketchy', fromMe: true, desc: 'it send bot menu'}, (async (message, match) => {
 
     var r_text = new Array ();
     
@@ -479,7 +480,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: {mentionedJid: message.mention}, caption: `
  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
- â”‚â°ðŸðŸ”±  SKETCHY BOT ðŸ”±ðŸâ±
+ â”‚â°ðŸðŸ”±  SKETCHY BOT  ðŸ”±ðŸâ±
  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  â”‚ Hello â–· Dear
@@ -572,7 +573,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
  â”‚
  â”‚â–· .online store
  â”‚ 
- â”‚ ðŸ‘¿ SKETCHY BOT ðŸ‘¿
+ â”‚ ðŸ‘¿ T-REX ONLINE ðŸ‘¿
  â”‚     SHOPPING
  â”‚
  â”‚ ONLY SRI LANKAN 
@@ -657,12 +658,14 @@ if (hrs >= 19 && hrs <= 24) wish = '*É¢á´á´á´… É´ÉªÉ¢Êœá�
  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  
          ðŸ‘¿ POWERD BY ðŸ‘¿
-  â°ðŸðŸ”±  Sketchy  ðŸ”±ðŸâ±
+  â°ðŸðŸ”±  SKETCHY BOT  ðŸ”±ðŸâ±
   
-       ðŸ‘¿       GinGeR        ðŸ‘¿
+       ðŸ‘¿       GINGER        ðŸ‘¿
  
  
 `,quoted: message.data}) 
 
 }));
+}
+  
 }
