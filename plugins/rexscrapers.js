@@ -1,4 +1,4 @@
-const Trex = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
@@ -40,17 +40,11 @@ if (config.WORKTYPE == 'private') {
     
 Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🐼',MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text);
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -72,13 +66,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+`╭──────•◈•──────╮ 
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`+'\n' });
+                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+Lang.UPLOADING_SONG+'\n' });
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1, isForwarded: false }});
             });
     }));
@@ -90,13 +78,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -118,13 +100,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮ 
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data});
             });
     }));
@@ -135,13 +111,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -163,13 +133,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮ 
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'});
             });
     }));
@@ -190,25 +154,13 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
         } catch {
             return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         }
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-   sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
   
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
   
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text);
+            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
             await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, caption: "❰🐼🧭Sketchy🧭🐼❱"});
         });
     }));
@@ -288,8 +240,8 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
-            return await message.reply('*🐼 ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*🎧 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            return await message.reply('*🍁 ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
+            + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text)
@@ -387,7 +339,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '🐼 *' + video.title + '* - ' + video.url + '\n\n'
+            mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -435,7 +387,7 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
             const response = await got(url);
             const json = JSON.parse(response.body);
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*➢  ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*🐼' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
+            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text);
         }
@@ -551,17 +503,11 @@ else if (config.WORKTYPE == 'public') {
     
     Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: false, desc: Lang.PLAY_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🐼',MessageType.text, {quoted: message.data});
+        if (match[1] === '') return await message.client.sendMessage(message.jid,'NEED WORD 🍁',MessageType.text, {quoted: message.data});
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -583,13 +529,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+`╭──────•◈•──────╮ 
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`+'\n' });
+                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+Lang.UPLOADING_SONG+'\n' });
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1, isForwarded: false }, quoted: message.data});
             });
     }));
@@ -601,13 +541,7 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -629,13 +563,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮ 
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   『Sketchy Whatsapp Bot』`,MessageType.text, {quoted: message.data});
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
     }));
@@ -645,13 +573,7 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-     𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐬𝐨𝐧𝐠♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   ⦉𝙎𝙠𝙚𝙩𝙘𝙝𝙮 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝘽𝙤𝙩⦊`,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -673,13 +595,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
   
-                reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-    𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐬𝐨𝐧𝐠♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-   ⦉𝙎𝙠𝙚𝙩𝙘𝙝𝙮 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝘽𝙤𝙩⦊`,MessageType.text, {quoted: message.data});
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'});
             });
     }));
@@ -700,25 +616,13 @@ else if (config.WORKTYPE == 'public') {
         } catch {
             return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
         }
-        var reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-   sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ♪
-     ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ 
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-    ⦉𝙎𝙠𝙚𝙩𝙘𝙝𝙮 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝘽𝙤𝙩⦊`,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text, {quoted: message.data});
   
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
   
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,`╭──────•◈•──────╮
-   ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ♫
-       ılı.lıllılı.ıllı.ılı.lıllılı.ıllı.
-      ━━━━━ •♬• ━━━━━
- ╰──────•◈•──────╯
-﹏﹏﹏﹏﹏✪✭✪﹏﹏﹏﹏﹏
-    ⦉𝙎𝙠𝙚𝙩𝙘𝙝𝙮 𝙒𝙝𝙖𝙩𝙨𝙖𝙥𝙥 𝘽𝙤𝙩⦊`,MessageType.text, {quoted: message.data});
+            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text, {quoted: message.data});
             await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, quoted:message.data ,caption: "❰🐼🧭Sketchy🧭🐼❱"});
         });
     }));
@@ -799,7 +703,7 @@ else if (config.WORKTYPE == 'public') {
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
             return await message.reply('*➢  ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*🎧 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            + '*🔱 ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text, {quoted: message.data})
@@ -824,8 +728,8 @@ else if (config.WORKTYPE == 'public') {
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🎧 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-            '*🐼' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text, {quoted: message.data});
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🔱 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
+            '*🍁' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text, {quoted: message.data});
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDA, MessageType.text, {quoted: message.data});
         }
@@ -910,7 +814,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '🐼 *' + video.title + '* - ' + video.url + '\n\n'
+            mesaj += '🍁 *' + video.title + '* - ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
