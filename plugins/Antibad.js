@@ -20,10 +20,10 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 const ADD = '94757405652,94716292396'
 
 var kickmsg = ''
-if (Config.LANG == 'SI') kickmsg = '_❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
-if (Config.LANG == 'EN') kickmsg = '_❌ Bad words are prohibited by the bot owner.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱  '
-if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱   '
-if (Config.LANG == 'EN') kickmsg1 = '_❌ Links are prohibited by the bot owner.*_\n\n ❰🍁🔱  T Rex BOT  🔱🍁❱   '
+if (Config.LANG == 'SI') kickmsg = '_❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
+if (Config.LANG == 'EN') kickmsg = '_❌ Bad words are prohibited by the bot owner.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
+if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
+if (Config.LANG == 'EN') kickmsg1 = '_❌ Links are prohibited by the bot owner.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
     if (Config.ANTIBAD == 'true') {
