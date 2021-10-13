@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
             .fromFormat('webp_pipe')
             .save('Trex.jpg')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.jpg'), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.jpg , Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱'});
+                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.jpg'), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.jpg , Caption : '❰🐼🧭Sketchy🧭🐼❱'});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -120,7 +120,7 @@ else if (Config.WORKTYPE == 'public') {
             .fromFormat('webp_pipe')
             .save('Trex.jpg')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.jpg'), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.jpg, Caption : '❰🍁🔱  T Rex BOT  🔱🍁❱'});
+                await message.client.sendMessage(message.jid, fs.readFileSync('Trex.jpg'), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.jpg, Caption : '❰🐼🧭Sketchy🧭🐼❱'});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
