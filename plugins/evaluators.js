@@ -56,7 +56,7 @@ async function antlch() {
 antlch()
 var ldc = ''
 if (Config.LANG == 'SI') ldc = '_❌ ලින්ක් බොට් අයිතිකරු විසින් තහනම් කර ඇත_'
-if (Config.LANG == 'EN') ldc = '_❌ Link Detected!_'
+if (Config.LANG == 'EN') ldc = '_👿📛Attention!!!Link Detected Taking Action📛👿!_'
 Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (antilink_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
@@ -66,10 +66,10 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,'_❌ Link Detected_', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*3*', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*2*', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*1*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'_👿📛Attention!!!Link Detected Taking Action📛👿_', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛PREPARING📛👿', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛TRYING REMOVAL📛👿', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛BANNED BY SKETCHY📛👿', MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         } 
@@ -78,10 +78,10 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,'_❌ Link Detected_', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*3*', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*2*', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*1*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'_👿📛Attention!!!Link Detected Taking Action📛👿_', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛PREPARING📛👿', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛TRYING REMOVAL📛👿', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛BANNED BY SKETCHY📛👿', MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
@@ -90,10 +90,10 @@ Amdi.applyCMD({on: 'text', fromMe: false, deleteCommand: false}, (async (message
             var im = await checkImAdmin(message)
             if (!im) return;
             if (us) return;
-            await message.client.sendMessage(message.jid,'_❌ Link Detected_', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*3*', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*2*', MessageType.text, {quoted: message.data })
-            await message.client.sendMessage(message.jid,'*1*', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'_👿📛Attention!!!Link Detected Taking Action📛👿_', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛PREPARING📛👿', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛TRYING REMOVAL📛👿', MessageType.text, {quoted: message.data })
+            await message.client.sendMessage(message.jid,'👿📛BANNED BY SKETCHY📛👿', MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
