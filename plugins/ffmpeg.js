@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('Trex.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('Trex.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱'});
+                    await message.sendMessage(fs.readFileSync('Trex.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '❰🐼🧭Sketchy🧭🐼❱'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -63,7 +63,7 @@ if (Config.WORKTYPE == 'private') {
                 .videoFilters(`${match[1]}`)
                 .save('Trex.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('Trex.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱'});
+                    await message.sendMessage(fs.readFileSync('Trex.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '❰🐼🧭Sketchy🧭🐼❱'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -114,7 +114,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('Trex.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('Trex.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱'});
+                    await message.sendMessage(fs.readFileSync('Trex.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '❰🐼🧭Sketchy🧭🐼❱'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -133,7 +133,7 @@ else if (Config.WORKTYPE == 'public') {
                 .videoFilters(`${match[1]}`)
                 .save('Trex.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('Trex.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '❰🍁🔱  T Rex BOT  🔱🍁❱ '});
+                    await message.sendMessage(fs.readFileSync('Trex.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '❰🐼🧭Sketchy🧭🐼❱ '});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
