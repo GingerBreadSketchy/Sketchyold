@@ -6,7 +6,7 @@ if (Config.WORKTYPE == 'private') {
 
     Trex.applyCMD({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '254792893310-1607527190@g.us') {
+        if (message.jid === '905524317852-1612300121@g.us') {
 
             return;
         }
@@ -24,7 +24,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Trex.applyCMD({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '254792893310-1607527190@g.us') {
+        if (message.jid === '905524317852-1612300121@g.us') {
 
             return;
         }
