@@ -10,7 +10,7 @@ if (Config.WORKTYPE == 'public') {
    
    Trex.applyCMD({ pattern: 'tlpack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔══════════════════════
 ║❌ 🎈*SKETCHY LOGO PACK 1*🎈 ❌
@@ -117,7 +117,7 @@ if (Config.WORKTYPE == 'public') {
          topText = split[0];
       }
       
-      var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/welcome?name=${topText}&group=${bottomText}&profile=https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg&apikey=dappakntlll`, { responseType: 'arraybuffer' })
+      var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/welcome?name=${topText}&group=${bottomText}&profile=https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg&apikey=dappakntlll`, { responseType: 'arraybuffer' })
       
       await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🐼🧭Sketchy🧭🐼❱  ',quoted: message.data})
    
@@ -132,7 +132,7 @@ if (Config.WORKTYPE == 'public') {
          topText = split[0];
       }
       
-      var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/leave?name=${topText}&group=${bottomText}&profile=https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg&apikey=dappakntlll`, { responseType: 'arraybuffer' })
+      var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/leave?name=${topText}&group=${bottomText}&profile=https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg&apikey=dappakntlll`, { responseType: 'arraybuffer' })
       
       await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🐼🧭Sketchy🧭🐼❱  ',quoted: message.data})
    
