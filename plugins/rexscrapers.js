@@ -104,6 +104,17 @@ Amdi.applyCMD({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (asyn
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio,  {mimetype: Mimetype.mp4Audio, quoted: message.data});
             });
     }));
+   Amdi.applyCMD({ pattern: 'owner ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+
+
+    const vcard = 'BEGIN:VCARD\n' // saidali said
+            + 'VERSION:3.0\n' 
+            + 'FN:╩Ь╩Пс┤Шс┤З╩А\n' //coded by saidali   not copy this
+            + 'ORG:╔кс┤Ыs-с┤Нс┤З ═втБи╩Ь╩Пс┤Шс┤Зс╖л╩Ат╖ж┬╣;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=917025967090:918129624395\n' //created saidali
+            + 'END:VCARD'
+    await message.client.sendMessage(message.jid,{displayname: "╔кс┤Ыs-с┤Нс┤З ═втБи╩Ь╩Пс┤Шс┤Зс╖л╩Ат╖ж┬╣", vcard: vcard}, MessageType.contact)
+}));
          
     Amdi.applyCMD({pattern: 'fsong ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
