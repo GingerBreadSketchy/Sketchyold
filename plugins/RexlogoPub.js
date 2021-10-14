@@ -10,7 +10,7 @@ if (Config.WORKTYPE == 'public') {
    
    Trex.applyCMD({ pattern: 'rlpack', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔══════════════════════
 ║❌ 🐼*SKETCHY LOGO PACK 1*🐼 ❌
