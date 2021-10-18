@@ -20,11 +20,11 @@ if (Config.LANG == 'EN') {
   }));
   
 
-  Asena.applyCMD({ pattern: 'atrex', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  Asena.applyCMD({ pattern: 'help', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer'})
+        var ttinullimage = await axios.get(`https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg`, { responseType: 'arraybuffer'})
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════╗
 
@@ -40,7 +40,7 @@ if (Config.LANG == 'EN') {
 
 *➢ Description:* °To get the admin command list°
 
-*🎈 Command:* °.trex°
+*🎈 Command:* °.Sketchy°
 
 *➢ Description:*°all commands°
 
@@ -58,7 +58,7 @@ if (Config.LANG == 'EN') {
  
 *🎈 Command* °.rlpack°
 
-*➢ Description:* °T-REX LOGO COLLECTION 01°
+*➢ Description:* °SKETCHY LOGO COLLECTION 01°
 
 *🎈 Command:* °.lovepack°
 
@@ -136,7 +136,7 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.movie°
 
-*➢ Description:* °Movies වල විස්තර ලබාදීම.°
+*➢ Description:* °Movies °Sketchy Movie Searches.°
 
 *🎈 Command:* °.notes°
 
@@ -334,7 +334,9 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.xxx°
 
-*➢ Description:* °xnxx අඩවියේ සෙක්ස් වීඩියෝ බාගත කරයි අව්නර් සදහා පමණයි..Download sex videos on xnxx site°
+*➢ Description:* °xnxx .Download sex videos on xnxx site°
+*❰🐼🧭🇰🇪Sketchy Was Made in kenya🇰🇪🧭🐼❱*
+*➢Created By ♐ 👿GingerBreadSketchy*
 ` ,quoted: message.data})
 
     }));
@@ -351,11 +353,11 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
   }));
  
 
- Asena.applyCMD({ pattern: 'atrex', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
+ Asena.applyCMD({ pattern: 'help', fromMe: true, dontAddCommandList: false }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg`, { responseType: 'arraybuffer'})
+        var ttinullimage = await axios.get(`https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg`, { responseType: 'arraybuffer'})
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: `╔═══════════════════════╗
 
@@ -371,7 +373,7 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
 
 *➢ Description:* °To get the admin command list°
 
-*🎈 Command:* °.trex°
+*🎈 Command:* °.sketchy°
 
 *➢ Description:*°all commands°
 
@@ -389,7 +391,7 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
 
 *🎈 Command* °.rlpack°
 
-*➢ Description:* °T-REX LOGO COLLECTION 01°
+*➢ Description:* °SKETCHY LOGO COLLECTION 01°
 
 *🎈 Command:* °.lovepack°
 
@@ -467,7 +469,7 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.movie°
 
-*➢ Description:* °Movies වල විස්තර ලබාදීම.°
+*➢ Description:* °Movies °Sketchy Movie Searches.°
 
 *🎈 Command:* °.notes°
 
@@ -665,7 +667,9 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.xxx°
 
-*➢ Description:* °xnxx අඩවියේ සෙක්ස් වීඩියෝ බාගත කරයි අව්නර් සදහා පමණයි..Download sex videos on xnxx site°
+*➢ Description:* °xnxx ..Download sex videos on xnxx site°
+*❰🐼🧭🇰🇪Sketchy Was Made in kenya🇰🇪🧭🐼❱*
+*➢Created By ♐ 👿GingerBreadSketchy*
 ` })
 
     
