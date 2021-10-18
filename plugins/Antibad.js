@@ -21,9 +21,9 @@ const ADD = '94757405652,94716292396'
 
 var kickmsg = ''
 if (Config.LANG == 'SI') kickmsg = '_❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
-if (Config.LANG == 'EN') kickmsg = '_❌ Bad words are prohibited by the bot owner.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
+if (Config.LANG == 'EN') kickmsg = '_❌ STUPID WORDS DETECTED..TOAAA MAFI HUKU!!!🤬🤬.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
 if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
-if (Config.LANG == 'EN') kickmsg1 = '_❌ Links are prohibited by the bot owner.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
+if (Config.LANG == 'EN') kickmsg1 = '_❌ BYE BYEE KUMBAFUUUU WEWE!!!!.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
     if (Config.ANTIBAD == 'true') {
@@ -90,14 +90,14 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword61bad = new RegExp('pinnaya')
         let getword62bad = new RegExp('Pinnaya')
         let getword63bad = new RegExp('බඩුව')
-        let getword64bad = new RegExp('වේසාවා')
+        let getword64bad = new RegExp('asshole')
         let getword65bad = new RegExp('වේසි')
         let getword66bad = new RegExp('පයිය')
         let getword67bad = new RegExp('පයියා')
         let getword68bad = new RegExp('esawa ')
         let getword69bad = new RegExp(' esi ')
         let getword70bad = new RegExp('uddika ')
-        let getword71bad = new RegExp('Uddika ')
+        let getword71bad = new RegExp('pussy')
         let getword72bad = new RegExp('උද්දික ')
         let getword73bad = new RegExp('ඒසාවා ')
         let getword74bad = new RegExp('ඒසි')
@@ -156,11 +156,11 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword127bad = new RegExp('ponnayata')
         let getword128bad = new RegExp('Ponnayata')
         let getword129bad = new RegExp('Huththata')
-        let getword130bad = new RegExp('huththata')
+        let getword130bad = new RegExp('cunt')
         let getword131bad = new RegExp('හුත්තට')
         let getword132bad = new RegExp('පොන්නයට')
         let getword133bad = new RegExp('පයියට')
-        let getword134bad = new RegExp('payyata')
+        let getword134bad = new RegExp('malaya'')
         let getword135bad = new RegExp('Payyata')
         let getword136bad = new RegExp('vesita')
         let getword137bad = new RegExp('Vesita')
@@ -173,8 +173,8 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword144bad = new RegExp('vesiyek')
         let getword145bad = new RegExp('වේසියෙක්')
         let getword146bad = new RegExp('හුත්තියෙක්')
-        let getword147bad = new RegExp('huththiyek')
-        let getword148bad = new RegExp('Huththiyek')
+        let getword147bad = new RegExp('mbwa')
+        let getword148bad = new RegExp('dinywa')
         let getword149bad = new RegExp('huttiyek')
         let getword150bad = new RegExp('Huttiyek')
         let getword151bad = new RegExp('huttek')
