@@ -55,19 +55,19 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     var r_text = new Array ();
 
-    r_text[0] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[0] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[1] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[1] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[2] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[2] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[3] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[3] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[4] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[4] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[5] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[5] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[6] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[6] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
     var i = Math.floor(8*Math.random())
 
@@ -176,7 +176,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ║send free fire logo
 ║
 ║
-║▷Creator: HIRUSHA
+║▷Creator: GingerBreadSketchy
 ║
 ║ ❰🐼🧭Sketchy🧭🐼❱  
 ╚═════════════════════╝`  ,quoted: message.data})
@@ -247,19 +247,19 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     var r_text = new Array ();
 
-    r_text[0] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[0] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[1] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[1] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[2] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[2] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[3] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[3] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[4] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[4] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[5] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[5] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
-    r_text[6] = "https://telegra.ph/file/60ed08a879ef94dcf8e35.jpg";
+    r_text[6] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
 
     var i = Math.floor(8*Math.random())
 
