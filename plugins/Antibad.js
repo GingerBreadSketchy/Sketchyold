@@ -160,7 +160,7 @@ Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (messag
         let getword131bad = new RegExp('හුත්තට')
         let getword132bad = new RegExp('පොන්නයට')
         let getword133bad = new RegExp('පයියට')
-        let getword134bad = new RegExp('malaya'')
+        let getword134bad = new RegExp('malaya')
         let getword135bad = new RegExp('Payyata')
         let getword136bad = new RegExp('vesita')
         let getword137bad = new RegExp('Vesita')
