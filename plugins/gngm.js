@@ -23,7 +23,7 @@ const Ln = "  *SEND GN GM Wish With Image* "
 
         var ttinullimage = await axios.get(`https://telegra.ph/file/1cff5bcdec0dcd5708ff5.jpg`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '🌃Ꮐᝪᝪᗞ 🙈ᑎᏆᏀᕼᎢ 💫✨\n\nසුබ රාත්‍රියක් ➠ හොදට නිදාගන්න හොදේ 🤭'  ,quoted: message.data})
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  '🌃Ꮐᝪᝪᗞ 🙈ᑎᏆᏀᕼᎢ 💫✨\n\n❰Laleni Salama Watu Mbwakni❱🤭'  ,quoted: message.data})
 
     }));
  
