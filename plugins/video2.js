@@ -5,10 +5,10 @@ const { errorMessage, infoMessage } = require('../helpers');
 const Config = require('../config');
 const Language = require('../language');
 const YTV_DESC = "Youtube Video Downloader V2 . යූ ටියුබ් වීඩියෝ ඩව්න්ලෝඩ් කිරීමට දෙවන මග... ."
-const YT_NEED = "* ❰🐼🧭Sketchy🧭🐼❱  need word!.*"
-const DWLOAD_VID = "* ❰🐼🧭Sketchy🧭🐼❱  SERCHING YOUR SONG PLEASE WAIT....*"
-const YTV_UP = "* ❰🐼🧭Sketchy🧭🐼❱  UPLOADING YOUR VIDEO PLEASE WAIT...*"
-const NO_RESULT = "*SORRY ❰🐼🧭Sketchy🧭🐼❱ can't Find Anything...*"
+const YT_NEED = "* ❰🇰🇪DREADED🇰🇪❱  need word!.*"
+const DWLOAD_VID = "* ❰🇰🇪DREADED2🇰🇪❱  SERCHING YOUR SONG PLEASE WAIT....*"
+const YTV_UP = "* ❰🇰🇪DREADED2🇰🇪❱  UPLOADING YOUR VIDEO PLEASE WAIT...*"
+const NO_RESULT = "*SORRY ❰🇰🇪DREADED2🇰🇪❱ can't Find Anything...*"
 
 
 if (Config.WORKTYPE == 'private') {
