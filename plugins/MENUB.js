@@ -1,3 +1,4 @@
+
   
 /* Copyright (C) 2021 T REX
 Licensed under the  GPL-3.0 License;
@@ -43,7 +44,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
     const rows = [
         {title: '👻 ALL MENU 👻', description: `▷▷▷▷▷▷\n\n\n
  ╭────────────────
- │❰🐼🧭Sketchy🧭🐼❱
+ │❰🇰🇪🧭DREADED2🧭🇰🇪❱
  ╰────────────────
  ╭────────────────
  │ Hello ▷ Dear
@@ -59,7 +60,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │     🎈👻 BOT 👻🏅
  │        ──────────
  │
- │▷ .sketchy
+ │▷ .DREADED2
  │▷ .alive
  │▷ .askechy [ advance menu ]
  │▷ .admin [ for owner ]
@@ -156,7 +157,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │    your whatsapp 
  │ name,profile pic,bio
  │      easy with
- │      Sketchy Bot
+ │      DREADED2 Bot
  ╰────────────────
  ╭────────────────
  │  🎈👻 Search 👻🏅
@@ -223,19 +224,19 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  ╰────────────────
  
        👻 POWERD BY 👻
-  ❰🐼🧭Sketchy🧭🐼❱
+  ❰🇰🇪🧭DREADED2🧭🇰🇪❱
   
-     👻       Ginger     👻
+     👻       Fortunatus     👻
 ` , rowId:"rowid1"},
         {title: '👻 ADVANCE MENU 👻', description:`▷▷▷▷▷▷\n\n\n
 ╔═══════════════════════╗
-           ❰🐼🧭Sketchy🧭🐼❱
+           ❰🇰🇪🧭DREADED2🧭🇰🇪❱
 ═════════════════════════
 *🏅 Command:* °.xmedia°
 *🧧 Description:* °A plugin that have 25 media tools.°
 *🏅 Command:* °.admin°
 *🧧 Description:* °To get the admin command list°
-*🏅 Command:* °.sketchy°
+*🏅 Command:* °.DREADED2°
 *🧧 Description:*°all commands°
 *🏅 Command* °.rlpack°
 *🧧 Description:* °T-REX LOGO COLLECTION 01°
@@ -297,9 +298,9 @@ Example : .covid Sri Lanka°
 *🏅 Command:* °.video°
 *🧧 Description:* °Downloading videos from YouTube°
 *🏅 Command:* °.insta°
-*🧧 Description:* °🏅🧧 ❰🐼🧭Sketchy🧭🐼❱ Download instagram videos.°
+*🧧 Description:* °🏅🧧 ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download instagram videos.°
 *🏅 Command:* °.fb°
-*🧧 Description:* °🏅🧧 ❰🐼🧭Sketchy🧭🐼❱ Download Facebook videos.°
+*🧧 Description:* °🏅🧧 ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download Facebook videos.°
 *🏅 Command:* °.trt°
 *🧧 Description:* °It translates with Google Translator. You must mention any message.°
 *⌨️ Example:* °.trt en si (From English to Sinhala)°
@@ -378,46 +379,46 @@ Example : .covid Sri Lanka°
 `, rowId:"rowid3"},
         {title: '👻 LOGO PACK 01 👻', description: `▷▷▷▷▷▷\n\n\n
 ╔══════════════════════
-║❌ 🏅*SKETCHY LOGO PACK 1*🏅 ❌
+║❌ 🏅*DREADED2 LOGO PACK 1*🏅 ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
 ║
 ╠═🧧 🏅Cmd: *.phub*
 ╠══🧧 📛 Dec: *Send pornhub logo*
-╠═🧧 🏅 Ex: *.phub Ginger/Bread*
+╠═🧧 🏅 Ex: *.phub Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅 Cmd: *.stone*
 ╠══🧧 📛 Dec: *Send stone like logo*
-╠═🧧 🏅Ex: *.stone Ginger/Bread*
+╠═🧧 🏅Ex: *.stone Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.glitch*
 ╠══🧧 📛 Dec: *Send glitch logo*
-╠═🧧 🏅 Ex: *.glitch Ginger/Bread*
+╠═🧧 🏅 Ex: *.glitch Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.space*
 ╠══🧧 📛 Dec: *Send space logo*
-╠═🧧 🏅Ex: *.space Ginger/Bread*
+╠═🧧 🏅Ex: *.space Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.blood*
 ╠══🧧 📛 Dec: *Send blood hor logo*
-╠═🧧 🏅Ex: *.blood Sketchy*
+╠═🧧 🏅Ex: *.blood DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.blackpink*
 ╠══🧧 📛 Dec: *Send bpink logo*
-╠═🧧 🏅Ex: *.blackpink Sketchy*
+╠═🧧 🏅Ex: *.blackpink DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.wall*
 ╠══🧧 📛 Dec: *Send wall art logo*
-╠═🧧 🏅Ex: *.wall Sketchy*
+╠═🧧 🏅Ex: *.wall DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.coding*
 ╠══🧧📛 Dec: *Send coding logo*
-╠═🧧 🏅 Ex: *.coding Sketchy*
+╠═🧧 🏅 Ex: *.coding DREADED2*
 ║
 ╠═🧧 🏅Cmd: .*.sand1*
 ╠══🧧 📛  Dec: *Send sand writting*
-╠═🧧 🏅 Ex: *.sand1 Sketchy*
+╠═🧧 🏅 Ex: *.sand1 DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.sand2*
 ╠══🧧 📛 Dec: *Send sand writting*
@@ -433,15 +434,15 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.gradient*
 ╠══🧧 📛  Dec: *Send logo*
-╠═🧧 🏅 Ex: *.gradient Sketchy*
+╠═🧧 🏅 Ex: *.gradient DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.luxury*
 ╠══🧧 📛  Dec: *Send luxury logo*
-╠═🧧 🏅 Ex: *.luxury Sketchy*
+╠═🧧 🏅 Ex: *.luxury DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.sky*
 ╠══🧧 📛  Dec: *Send sky logo*
-╠═🧧 🏅 Ex: *.sky Sketchy*
+╠═🧧 🏅 Ex: *.sky DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.winter*
 ╠══🧧 📛  Dec: *Send winter logo*
@@ -449,27 +450,27 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.christmas*
 ╠══🧧 📛  Dec: *Send xmas logo*
-╠═🧧 🏅 Ex: *.christmas Sketchy*
+╠═🧧 🏅 Ex: *.christmas DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.neon*
 ╠══🧧 📛  Dec: *Send neon logo*
-╠═🧧 🏅 Ex: *.neon Sketchy*
+╠═🧧 🏅 Ex: *.neon DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.king*
 ╠══🧧 📛  Dec: *Send king logo*
-╠═🧧 🏅 Ex: *.king Sketchy*
+╠═🧧 🏅 Ex: *.king DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.glue*
 ╠══🧧 📛  Dec: *Send Glue logo*
-╠═🧧 🏅 Ex: *.glue Sketchy*
+╠═🧧 🏅 Ex: *.glue DREADED2*
 ║
-║      ╔═🏅 Sketchy Bot 🏅═╗
+║      ╔═🏅 DREADED2 Bot 🏅═╗
 ║        ╚ ENJOY WITH US ╝
 ╚══════════════════════
 `, rowId:"rowid4"},
         {title: '👻 FF PACK 👻', description:`▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ║         ║🏅╚FF PACK╝🏅║
 ║
 ╠═🧧 🏅.ff9       ❴your text❵
@@ -572,45 +573,45 @@ Example : .covid Sri Lanka°
 ║send free fire logo
 ║
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: FortunatusMokayaDREADED2
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ╚═════════════════════╝
 `, rowId:"rowid5"},
         {title: '👻 LOGO PACK 02 👻', description: `▷▷▷▷▷▷\n\n\n
 ╔══════════════════════
-║❌ 🏅*SKETCHY LOGO PACK 2*🏅 ❌
+║❌ 🏅*DREADED2 LOGO PACK 2*🏅 ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
 ║
 ╠═🧧 🏅Cmd: *.wel*
 ╠══🧧 📛 Dec: *Send welcome logo*
-╠═🧧 🏅 Ex: *.wel Ginger/Bread*
+╠═🧧 🏅 Ex: *.wel Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅 Cmd: *.bye*
 ╠══🧧 📛 Dec: *Send bye logo*
-╠═🧧 🏅Ex: *.bye Ginger/Bread*
+╠═🧧 🏅Ex: *.bye Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.marvel*
 ╠══🧧 📛 Dec: *Send marve logo*
-╠═🧧 🏅 Ex: *.marvel Ginger/Bread*
+╠═🧧 🏅 Ex: *.marvel Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.2marvel*
 ╠══🧧 📛 Dec: *Send marvel logo*
-╠═🧧 🏅Ex: *.2marvel Ginger/Bread*
+╠═🧧 🏅Ex: *.2marvel Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.wolf*
 ╠══🧧 📛 Dec: *Send wolf logo*
-╠═🧧 🏅Ex: *.wolf Ginger/Bread*
+╠═🧧 🏅Ex: *.wolf Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.lava*
 ╠══🧧 📛 Dec: *Send lava logo*
-╠═🧧 🏅Ex: *.lava Sketchy*
+╠═🧧 🏅Ex: *.lava DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.xmas*
 ╠══🧧 📛 Dec: *Send xmas logo*
-╠═🧧 🏅Ex: *.xmas Sketchy*
+╠═🧧 🏅Ex: *.xmas DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.round*
 ╠══🧧📛 Dec: *Send round logo*
@@ -618,7 +619,7 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: .*.quot*
 ╠══🧧 📛  Dec: *Send quote logo*
-╠═🧧 🏅 Ex: *.quot Sketchy*
+╠═🧧 🏅 Ex: *.quot DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.harta*
 ╠══🧧 📛 Dec: *Send harta logo*
@@ -634,15 +635,15 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.holo*
 ╠══🧧 📛  Dec: *Send holo logo*
-╠═🧧 🏅 Ex: *.holo Sketchy*
+╠═🧧 🏅 Ex: *.holo DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.metalp*
 ╠══🧧 📛  Dec: *Send metalp logo*
-╠═🧧 🏅 Ex: *.metalp Sketchy*
+╠═🧧 🏅 Ex: *.metalp DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.avengers*
 ╠══🧧 📛  Dec: *Send avengers logo*
-╠═🧧 🏅 Ex: *.avengers Sketchy*
+╠═🧧 🏅 Ex: *.avengers DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.halloween*
 ╠══🧧 📛  Dec: *Send halloween logo*
@@ -650,31 +651,31 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.horror*
 ╠══🧧 📛  Dec: *Send horror logo*
-╠═🧧 🏅 Ex: *.horror Sketchy*
+╠═🧧 🏅 Ex: *.horror DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.glossyc*
 ╠══🧧 📛  Dec: *Send glossy logo*
-╠═🧧 🏅 Ex: *.glossyc Sketchy*
+╠═🧧 🏅 Ex: *.glossyc DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.deluxe*
 ╠══🧧 📛  Dec: *Send deluxe logo*
-╠═🧧 🏅 Ex: *.deluxe Sketchy*
+╠═🧧 🏅 Ex: *.deluxe DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.glossyb*
 ╠══🧧 📛  Dec: *Send glossy logo*
-╠═🧧 🏅 Ex: *.glossyb Sketchy*
+╠═🧧 🏅 Ex: *.glossyb DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.joker*
 ╠══🧧 📛  Dec: *Send joker logo*
-╠═🧧 🏅 Ex: *.joker Sketchy*
+╠═🧧 🏅 Ex: *.joker DREADED2*
 ║
-║      ╔═🏅 Sketchy Bot 🏅═╗
+║      ╔═🏅 DREADED2 Bot 🏅═╗
 ║        ╚ ENJOY WITH US ╝
 ╚══════════════════════
 `, rowId:"rowid6"},
         {title: '👻 ATTP PACK 👻', description: `▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ║        ║🏅╚ATTP PACK╝🏅║
 ║
 ╠═🧧 🏅.01attp      ❴your text❵
@@ -758,9 +759,9 @@ Example : .covid Sri Lanka°
 ╠═🧧 🏅.40attp       ❴your text❵
 ║send Text logo
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: Fortunatus Mokaya
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ╚═════════════════════╝
 `, rowId:"rowid20"},
         {title: '👻 DOWNLOADER 👻', description: `▷▷▷▷▷▷\n\n\n
@@ -781,21 +782,21 @@ Example : .covid Sri Lanka°
  │
  ╰────────────────
 `, rowId:"rowid9"},
-        {title: '👻 ABOUT Sketchy Bot 👻', description:`▷▷▷▷▷▷\n\n\n
-🎈 Developer : GingerBreadSketchy
-🎈 Bot : Sketchy v1..0.0 
+        {title: '👻 ABOUT DREADED2 Bot 👻', description:`▷▷▷▷▷▷\n\n\n
+🎈 Developer : Fortunatus Mokaya
+🎈 Bot : DREADED2 v1..0.0 
 🎈 Language : Sinhala & English
 🎈 BaseBot Team : Hiruwa T-Rex
 🎈 Develop language : Node js
-🎈 Developer no : wa.me/+254792893310
+🎈 Developer no : wa.me/+254114018035
 `, rowId:"rowid2"}
        ]
        
-       const sections = [{title: "👻 SKETCHY Command Panel 👻", rows: rows}]
+       const sections = [{title: "👻 DREADED2 Command Panel 👻", rows: rows}]
        
        const button = {
         buttonText: 'Click Me▷',
-        description: "👻 SKETCHY ALL COMMAND 👻",
+        description: "👻 DREADED2 ALL COMMAND 👻",
         sections: sections,
         listType: 1
        }
@@ -833,7 +834,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
     const rows = [
         {title: '👻 ALL MENU 👻', description: `▷▷▷▷▷▷\n\n\n
  ╭────────────────
- │❰🐼🧭Sketchy🧭🐼❱
+ │❰🇰🇪🧭DREADED2🧭🇰🇪❱
  ╰────────────────
  ╭────────────────
  │ Hello ▷ Dear
@@ -849,7 +850,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │     🎈👻 BOT 👻🏅
  │        ──────────
  │
- │▷ .sketchy
+ │▷ .DREADED2
  │▷ .alive
  │▷ .askechy [ advance menu ]
  │▷ .admin [ for owner ]
@@ -946,7 +947,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │    your whatsapp 
  │ name,profile pic,bio
  │      easy with
- │      Sketchy Bot
+ │      DREADED2 Bot
  ╰────────────────
  ╭────────────────
  │  🎈👻 Search 👻🏅
@@ -1013,19 +1014,19 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  ╰────────────────
  
        👻 POWERD BY 👻
-  ❰🐼🧭Sketchy🧭🐼❱
+  ❰🇰🇪🧭DREADED2🧭🇰🇪❱
   
-     👻       Ginger     👻
+     👻       Fortunatus     👻
 ` , rowId:"rowid1"},
         {title: '👻 ADVANCE MENU 👻', description:`▷▷▷▷▷▷\n\n\n
 ╔═══════════════════════╗
-           ❰🐼🧭Sketchy🧭🐼❱
+           ❰🇰🇪🧭DREADED2🧭🇰🇪❱
 ═════════════════════════
 *🏅 Command:* °.xmedia°
 *🧧 Description:* °A plugin that have 25 media tools.°
 *🏅 Command:* °.admin°
 *🧧 Description:* °To get the admin command list°
-*🏅 Command:* °.sketchy°
+*🏅 Command:* °.help°
 *🧧 Description:*°all commands°
 *🏅 Command* °.rlpack°
 *🧧 Description:* °T-REX LOGO COLLECTION 01°
@@ -1087,9 +1088,9 @@ Example : .covid Sri Lanka°
 *🏅 Command:* °.video°
 *🧧 Description:* °Downloading videos from YouTube°
 *🏅 Command:* °.insta°
-*🧧 Description:* °🏅🧧 ❰🐼🧭Sketchy🧭🐼❱ Download instagram videos.°
+*🧧 Description:* °🏅🧧 ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download instagram videos.°
 *🏅 Command:* °.fb°
-*🧧 Description:* °🏅🧧 ❰🐼🧭Sketchy🧭🐼❱ Download Facebook videos.°
+*🧧 Description:* °🏅🧧 ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download Facebook videos.°
 *🏅 Command:* °.trt°
 *🧧 Description:* °It translates with Google Translator. You must mention any message.°
 *⌨️ Example:* °.trt en si (From English to Sinhala)°
@@ -1168,46 +1169,46 @@ Example : .covid Sri Lanka°
 `, rowId:"rowid3"},
         {title: '👻 LOGO PACK 01 👻', description: `▷▷▷▷▷▷\n\n\n
 ╔══════════════════════
-║❌ 🏅*SKETCHY LOGO PACK 1*🏅 ❌
+║❌ 🏅*DREADED2 LOGO PACK 1*🏅 ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
 ║
 ╠═🧧 🏅Cmd: *.phub*
 ╠══🧧 📛 Dec: *Send pornhub logo*
-╠═🧧 🏅 Ex: *.phub Ginger/Bread*
+╠═🧧 🏅 Ex: *.phub Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅 Cmd: *.stone*
 ╠══🧧 📛 Dec: *Send stone like logo*
-╠═🧧 🏅Ex: *.stone Ginger/Bread*
+╠═🧧 🏅Ex: *.stone Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.glitch*
 ╠══🧧 📛 Dec: *Send glitch logo*
-╠═🧧 🏅 Ex: *.glitch Ginger/Bread*
+╠═🧧 🏅 Ex: *.glitch Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.space*
 ╠══🧧 📛 Dec: *Send space logo*
-╠═🧧 🏅Ex: *.space Ginger/Bread*
+╠═🧧 🏅Ex: *.space Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.blood*
 ╠══🧧 📛 Dec: *Send blood hor logo*
-╠═🧧 🏅Ex: *.blood Sketchy*
+╠═🧧 🏅Ex: *.blood DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.blackpink*
 ╠══🧧 📛 Dec: *Send bpink logo*
-╠═🧧 🏅Ex: *.blackpink Sketchy*
+╠═🧧 🏅Ex: *.blackpink DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.wall*
 ╠══🧧 📛 Dec: *Send wall art logo*
-╠═🧧 🏅Ex: *.wall Sketchy*
+╠═🧧 🏅Ex: *.wall DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.coding*
 ╠══🧧📛 Dec: *Send coding logo*
-╠═🧧 🏅 Ex: *.coding Sketchy*
+╠═🧧 🏅 Ex: *.coding DREADED2*
 ║
 ╠═🧧 🏅Cmd: .*.sand1*
 ╠══🧧 📛  Dec: *Send sand writting*
-╠═🧧 🏅 Ex: *.sand1 Sketchy*
+╠═🧧 🏅 Ex: *.sand1 DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.sand2*
 ╠══🧧 📛 Dec: *Send sand writting*
@@ -1223,15 +1224,15 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.gradient*
 ╠══🧧 📛  Dec: *Send logo*
-╠═🧧 🏅 Ex: *.gradient Sketchy*
+╠═🧧 🏅 Ex: *.gradient DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.luxury*
 ╠══🧧 📛  Dec: *Send luxury logo*
-╠═🧧 🏅 Ex: *.luxury Sketchy*
+╠═🧧 🏅 Ex: *.luxury DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.sky*
 ╠══🧧 📛  Dec: *Send sky logo*
-╠═🧧 🏅 Ex: *.sky Sketchy*
+╠═🧧 🏅 Ex: *.sky DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.winter*
 ╠══🧧 📛  Dec: *Send winter logo*
@@ -1239,27 +1240,27 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.christmas*
 ╠══🧧 📛  Dec: *Send xmas logo*
-╠═🧧 🏅 Ex: *.christmas Sketchy*
+╠═🧧 🏅 Ex: *.christmas DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.neon*
 ╠══🧧 📛  Dec: *Send neon logo*
-╠═🧧 🏅 Ex: *.neon Sketchy*
+╠═🧧 🏅 Ex: *.neon DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.king*
 ╠══🧧 📛  Dec: *Send king logo*
-╠═🧧 🏅 Ex: *.king Sketchy*
+╠═🧧 🏅 Ex: *.king DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.glue*
 ╠══🧧 📛  Dec: *Send Glue logo*
-╠═🧧 🏅 Ex: *.glue Sketchy*
+╠═🧧 🏅 Ex: *.glue DREADED2*
 ║
-║      ╔═🏅 Sketchy Bot 🏅═╗
+║      ╔═🏅 DREADED2 Bot 🏅═╗
 ║        ╚ ENJOY WITH US ╝
 ╚══════════════════════
 `, rowId:"rowid4"},
         {title: '👻 FF PACK 👻', description:`▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ║         ║🏅╚FF PACK╝🏅║
 ║
 ╠═🧧 🏅.ff9       ❴your text❵
@@ -1362,45 +1363,45 @@ Example : .covid Sri Lanka°
 ║send free fire logo
 ║
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: Fortunatus Mokaya
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ╚═════════════════════╝
 `, rowId:"rowid5"},
         {title: '👻 LOGO PACK 02 👻', description: `▷▷▷▷▷▷\n\n\n
 ╔══════════════════════
-║❌ 🏅*SKETCHY LOGO PACK 2*🏅 ❌
+║❌ 🏅*DREADED2 LOGO PACK 2*🏅 ❌
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
 ║
 ╠═🧧 🏅Cmd: *.wel*
 ╠══🧧 📛 Dec: *Send welcome logo*
-╠═🧧 🏅 Ex: *.wel Ginger/Bread*
+╠═🧧 🏅 Ex: *.wel Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅 Cmd: *.bye*
 ╠══🧧 📛 Dec: *Send bye logo*
-╠═🧧 🏅Ex: *.bye Ginger/Bread*
+╠═🧧 🏅Ex: *.bye Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.marvel*
 ╠══🧧 📛 Dec: *Send marve logo*
-╠═🧧 🏅 Ex: *.marvel Ginger/Bread*
+╠═🧧 🏅 Ex: *.marvel Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.2marvel*
 ╠══🧧 📛 Dec: *Send marvel logo*
-╠═🧧 🏅Ex: *.2marvel Ginger/Bread*
+╠═🧧 🏅Ex: *.2marvel Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.wolf*
 ╠══🧧 📛 Dec: *Send wolf logo*
-╠═🧧 🏅Ex: *.wolf Ginger/Bread*
+╠═🧧 🏅Ex: *.wolf Fortunatus/Mokaya*
 ║
 ╠═🧧 🏅Cmd: *.lava*
 ╠══🧧 📛 Dec: *Send lava logo*
-╠═🧧 🏅Ex: *.lava Sketchy*
+╠═🧧 🏅Ex: *.lava DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.xmas*
 ╠══🧧 📛 Dec: *Send xmas logo*
-╠═🧧 🏅Ex: *.xmas Sketchy*
+╠═🧧 🏅Ex: *.xmas DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.round*
 ╠══🧧📛 Dec: *Send round logo*
@@ -1408,7 +1409,7 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: .*.quot*
 ╠══🧧 📛  Dec: *Send quote logo*
-╠═🧧 🏅 Ex: *.quot Sketchy*
+╠═🧧 🏅 Ex: *.quot DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.harta*
 ╠══🧧 📛 Dec: *Send harta logo*
@@ -1424,15 +1425,15 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.holo*
 ╠══🧧 📛  Dec: *Send holo logo*
-╠═🧧 🏅 Ex: *.holo Sketchy*
+╠═🧧 🏅 Ex: *.holo DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.metalp*
 ╠══🧧 📛  Dec: *Send metalp logo*
-╠═🧧 🏅 Ex: *.metalp Sketchy*
+╠═🧧 🏅 Ex: *.metalp DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.avengers*
 ╠══🧧 📛  Dec: *Send avengers logo*
-╠═🧧 🏅 Ex: *.avengers Sketchy*
+╠═🧧 🏅 Ex: *.avengers DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.halloween*
 ╠══🧧 📛  Dec: *Send halloween logo*
@@ -1440,31 +1441,31 @@ Example : .covid Sri Lanka°
 ║
 ╠═🧧 🏅Cmd: *.horror*
 ╠══🧧 📛  Dec: *Send horror logo*
-╠═🧧 🏅 Ex: *.horror Sketchy*
+╠═🧧 🏅 Ex: *.horror DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.glossyc*
 ╠══🧧 📛  Dec: *Send glossy logo*
-╠═🧧 🏅 Ex: *.glossyc Sketchy*
+╠═🧧 🏅 Ex: *.glossyc DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.deluxe*
 ╠══🧧 📛  Dec: *Send deluxe logo*
-╠═🧧 🏅 Ex: *.deluxe Sketchy*
+╠═🧧 🏅 Ex: *.deluxe DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.glossyb*
 ╠══🧧 📛  Dec: *Send glossy logo*
-╠═🧧 🏅 Ex: *.glossyb Sketchy*
+╠═🧧 🏅 Ex: *.glossyb DREADED2*
 ║
 ╠═🧧 🏅Cmd: *.joker*
 ╠══🧧 📛  Dec: *Send joker logo*
-╠═🧧 🏅 Ex: *.joker Sketchy*
+╠═🧧 🏅 Ex: *.joker DREADED2*
 ║
-║      ╔═🏅 Sketchy Bot 🏅═╗
+║      ╔═🏅 DREADED2 Bot 🏅═╗
 ║        ╚ ENJOY WITH US ╝
 ╚══════════════════════
 `, rowId:"rowid6"},
         {title: '👻 ATTP PACK 👻', description: `▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ║        ║🏅╚ATTP PACK╝🏅║
 ║
 ╠═🧧 🏅.01attp      ❴your text❵
@@ -1548,9 +1549,9 @@ Example : .covid Sri Lanka°
 ╠═🧧 🏅.40attp       ❴your text❵
 ║send Text logo
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: MOKAYA
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ╚═════════════════════╝
 `, rowId:"rowid20"},
         {title: '👻 DOWNLOADER 👻', description: `▷▷▷▷▷▷\n\n\n
@@ -1571,21 +1572,21 @@ Example : .covid Sri Lanka°
  │
  ╰────────────────
 `, rowId:"rowid9"},
-        {title: '👻 ABOUT Sketchy Bot 👻', description:`▷▷▷▷▷▷\n\n\n
-🎈 Developer : GingerBreadSketchy
-🎈 Bot : Sketchy v1..0.0 
+        {title: '👻 ABOUT DREADED2 Bot 👻', description:`▷▷▷▷▷▷\n\n\n
+🎈 Developer : Fortunatus Mokaya
+🎈 Bot : Dreaded2 v1..0.0 
 🎈 Language : Sinhala & English
 🎈 BaseBot Team : Hiruwa T-Rex
 🎈 Develop language : Node js
-🎈 Developer no : wa.me/+254792893310
+🎈 Developer no : wa.me/+254114018035
 `, rowId:"rowid2"}
        ]
        
-       const sections = [{title: "👻 SKETCHY Command Panel 👻", rows: rows}]
+       const sections = [{title: "👻 DREADED2 Command Panel 👻", rows: rows}]
        
        const button = {
         buttonText: 'Click Me▷',
-        description: "👻 SKETCHY ALL COMMAND 👻",
+        description: "👻 DREADED2 ALL COMMAND 👻",
         sections: sections,
         listType: 1
        }

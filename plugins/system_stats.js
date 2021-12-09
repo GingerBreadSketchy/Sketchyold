@@ -1,3 +1,4 @@
+
 /* Copyright (C) 2021 Queen Amdi.
 
 Licensed under the  GPL-3.0 License;
@@ -23,16 +24,16 @@ if (Config.WORKTYPE == 'private') {
 
         if (Config.ALIVEMSG == 'default') {
             
-            var image = await axios.get ('https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('IMG-20211209-WA0037.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```Hey There! I'm Online now. 🍁```\n\n🍁 My name : ❰🍁🔱 T Rex BOT 🔱🍁❱\n\n🍁 Developer: HIRUWA\n\n🍁Thank You For Using ❰🐼🧭Sketchy🧭🐼❱"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```Hey There! I'm Online now. 🍁```\n\n🍁 My name : ❰🍁 DREADED2 🍁❱\n\n🍁 Developer: MOKAYA\n\n🍁Thank You For Using ❰🇰🇪🧭DREADED2🧭🇰🇪❱"})
 
     }
     else {
             
-            var image = await axios.get ('https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('IMG-20211209-WA0037.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🐼🧭Sketchy🧭🐼❱*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🇰🇪🧭DREADED2🧭🇰🇪❱*' })
      }
     }));
 
@@ -52,7 +53,7 @@ if (Config.WORKTYPE == 'private') {
     Amdi.applyCMD({pattern: 'version', fromMe: true,  deleteCommand: false,  desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
-                `*❰🐼🧭Sketchy🧭🐼❱*\n\n` + 
+                `*❰🇰🇪🧭DREADED2🧭🇰🇪❱*\n\n` + 
                 '```Installed version :```\n' +
                 Lang.version + 
                 `\n\n🍁 Check github for bot: https://github.com/Dark-Knight-Hiruwa/T-REX`
@@ -66,14 +67,14 @@ else if (Config.WORKTYPE == 'public') {
 
         if (Config.ALIVEMSG == 'default') {
             
-            var image = await axios.get ('https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('IMG-20211209-WA0037.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```🍁 Hey There! I'm Online now. 😘```\n\n🍁 Developer: Hiruwa\n\nThank You For Using ❰🍁🔱 T Rex BOT 🔱🍁❱" ,quoted: message.data})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```🍁 Hey There! I'm Online now. 😘```\n\n🍁 Developer: MOKAYA\n\nThank You For Using ❰🍁DREADED2 🍁❱" ,quoted: message.data})
 
     }
     else {
             
-            var image = await axios.get ('https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('IMG-20211209-WA0037.jpg', {responseType: 'arraybuffer'})
        
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*❰🍁🔱 T Rex BOT 🔱🍁❱*' ,quoted: message.data})
      }
@@ -95,7 +96,7 @@ else if (Config.WORKTYPE == 'public') {
     Amdi.applyCMD({pattern: 'version', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
-                `*❰🐼🧭Sketchy🧭🐼❱*\n\n` + 
+                `*❰🇰🇪🧭DREADED2🧭🇰🇪❱*\n\n` + 
                 '```Installed version :```\n' +
                 Lang.version + 
                 `\n\n🍁 Check github for bot:  https://github.com/Dark-Knight-Hiruwa/T-REX`

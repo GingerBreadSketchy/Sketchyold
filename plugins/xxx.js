@@ -14,11 +14,11 @@ const XN_DESC = "xnxx අඩවියේ සෙක්ස් වීඩියෝ �
 
 const XN_NEED = "*xnxx Link අවශ්‍යයි! . Need Link Xnxx*\n\nEx. http://www.xnxx.com/video-xbs65be/que_loucura_acabei_transando_com_socio_do_meu_marido_e_pior_de_tudo_que_ele_estava_ali_do_lado_julia_mattos_e_sensacao_na_pele_"
 
-const XN_D = "* ❰🍁🔱  NOTY REX  🔞 🔱🍁❱ Downloading Your XNXX Video*"
+const XN_D = "* ❰😋  DREADED2  🔞 😋❱ Downloading Your XNXX Video*"
 
-const XN_UP = "* ❰🍁🔱  NOTY REX  🔞 🔱🍁❱ Uploading Your XNXX Video*"
+const XN_UP = "* ❰😋  DREADED2  🔞 😋❱ Uploading Your XNXX Video*"
 
-const XN_NO = "*කණගාටුයි හමු නොවීය...SORRI I CAN'T FIND*"
+const XN_NO = "*කණගාටුයි හමු නොවීය... SORRY CAN'T FIND*"
 
 if (Config.WORKTYPE == 'private') {
 

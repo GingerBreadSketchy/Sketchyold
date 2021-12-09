@@ -1,3 +1,4 @@
+
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
@@ -78,12 +79,12 @@ async function queenAmdi () {
             const { infoen, infosi} = ann.data.announcements          
             if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 08 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🐼⌚Sketchy⌚🐼❱ Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🦄🇰🇪Dreaded2🇰🇪🦄❱ Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infosi !== '' && config.LANG == 'SI') {
                 while (getGMTh == 08 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🐼⌚Sketchy⌚🐼❱ නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🦄🇰🇪Dreaded2🇰🇪🦄❱ නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
         })
@@ -96,12 +97,12 @@ async function queenAmdi () {
             const { infoen, infosi} = ann.data.announcements          
             if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 18 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🐼⌚Sketchy⌚🐼❱ Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🦄🇰🇪Dreaded2🇰🇪🦄❱ Announcements🔔``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infosi !== '' && config.LANG == 'SI') {
                 while (getGMTh == 18 && getGMTm == 00) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🐼⌚Sketchy⌚🐼❱ නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🔔❰🦄🇰🇪Dreaded2🇰🇪🦄❱ නිවේදන🔔``` ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
         })
@@ -118,133 +119,133 @@ async function queenAmdi () {
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('994')) { // Azerbayjan
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('94')) { // Sri Lanka
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '📅දිනය ' + utch + '\n⌚වේලාව ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅දිනය ' + utch + '\n🇰🇪වේලාව ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
                 var ov_time = new Date().toLocaleString('PT', { timeZone: 'Europe/Lisbon' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('75')) { // Russia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Indian
                 var ov_time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('62')) { // Indonesia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('254')) { // Kenya
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Africa/Nairobi' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('49')) { // Germany
                 var ov_time = new Date().toLocaleString('DE', { timeZone: 'Europe/Berlin' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('61')) { // Australia 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('AU', { timeZone: 'Australia/Lord_Howe' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('55')) { // Brazil
                 var ov_time = new Date().toLocaleString('BR', { timeZone: 'America/Noronha' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('33')) { // France
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('FR', { timeZone: 'Europe/Paris' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('34')) { // Spain
                 var ov_time = new Date().toLocaleString('ES', { timeZone: 'Europe/Madrid' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('44')) { // UK
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('GB', { timeZone: 'Europe/London' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('39')) { // Italy 
                 var ov_time = new Date().toLocaleString('IT', { timeZone: 'Europe/Rome' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Kazakhistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('KZ', { timeZone: 'Asia/Almaty' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('998')) { // Uzbekistan 
                 var ov_time = new Date().toLocaleString('UZ', { timeZone: 'Asia/Samarkand' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time + '\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('993')) { // Turkmenistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('TM', { timeZone: 'Asia/Ashgabat' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
             else {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('EN', { timeZone: 'America/New_York' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n❰🐼⌚Sketchy⌚🐼❱ '
+                const biography = '📅 ' + utch + '\n🇰🇪 ' + ov_time +'\n\n❰🦄🇰🇪Dreaded2🇰🇪🦄❱ '
                 await conn.setStatus(biography)
             }
         }
@@ -425,7 +426,7 @@ if (config.LANG == 'EN') {
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '*❰🐼⌚Sketchy⌚🐼❱ started in Public Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.private``` _command._\n\n🍁Developer : Ginger\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help us 🤭😘👿\n\n *Thank you for using ❰🐼⌚Sketchy⌚🐼❱ *', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🦄🇰🇪Dreaded2🇰🇪🦄❱ started in Public Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Public Mode. To change, use_ ```.private``` _command._\n\n🍁Developer : Mokaya\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help us 🤭😘👿\n\n *Thank you for using ❰🦄🇰🇪Dreaded2🇰🇪🦄❱ *', MessageType.text);
                    
                 }
 
@@ -451,7 +452,7 @@ if (config.LANG == 'EN') {
                 }
                 else {
 
-                    await conn.sendMessage(conn.user.jid, '*❰🐼⌚Sketchy⌚🐼❱ started in Private Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.public``` _command._\n\n🍁 Developer : Ginger\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help us 🤭😘👿\n\n *Thank you for using ❰🐼⌚Sketchy⌚🐼❱*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🦄🇰🇪Dreaded2🇰🇪🦄❱ started in Private Mode 🍁➢*\n\n_Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.trex* _to get your full command list._\n\n_Your bot in Private Mode. To change, use_ ```.public``` _command._\n\n🍁 Developer : Mokaya\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help us 🤭😘👿\n\n *Thank you for using ❰🦄🇰🇪Dreaded2🇰🇪🦄❱*', MessageType.text);
                    
                 }
             }
@@ -518,7 +519,7 @@ else if (config.LANG == 'SI') {
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '*❰🐼⌚Sketchy⌚🐼❱ public ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.private``` _විධානය භාවිතා කරන්න._\n\n*🍁 Developer : Ginger* \n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help up 🤭😘👿\n\n *❰🐼⌚Sketchy⌚🐼❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*❰🦄🇰🇪Dreaded2🇰🇪🦄❱ public ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.private``` _විධානය භාවිතා කරන්න._\n\n*🍁 Developer : Mokaya* \n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help up 🤭😘👿\n\n *❰🦄🇰🇪Dreaded2🇰🇪🦄❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
                 }
             }
         
@@ -542,7 +543,7 @@ else if (config.LANG == 'SI') {
                 }
                 else {
 
-                await conn.sendMessage(conn.user.jid, '*❰🐼⌚Sketchy⌚🐼❱ private ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot private ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.public``` _විධානය භාවිතා කරන්න._\n\n🍁 Developer : Ginger\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help up 🤭😘👿\n\n *❰🐼⌚Sketchy⌚🐼❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
+                await conn.sendMessage(conn.user.jid, '*❰🦄🇰🇪Dreaded2🇰🇪🦄❱ private ආකාරයට ක්‍රියාකිරිම ආරම්භ විය.🍁➢*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n_ඔබේ command list එක ලබාගැනීමට_ *.trex* _command එක භාවිතා කරන්න._\n\n_ඔබේ bot private ක්‍රියාත්මක වේ. වෙනස් කිරීමට_ ```.public``` _විධානය භාවිතා කරන්න._\n\n🍁 Developer : Mokaya\n\n Please subscribe our youtube channel\n\nhttps://youtube.com/channel/UCIKjhk7X4vOQWbeY9oTD7oQ\n\nHow to make T-Rex bot 👿\n\nhttps://youtu.be/oaSPHc78LNQ\n\nHow to make heroku account 👿\n\nhttps://youtu.be/fvKNJlfrfuI\n\nHow to fix bot errors 👿\n\nhttps://youtu.be/VuXI3smjsNc\n\nJoin with us Share our bot and help up 🤭😘👿\n\n *❰🦄🇰🇪Dreaded2🇰🇪🦄❱ භාවිතා කිරීම ගැන ස්තූතියි .*', MessageType.text);
                 }
             }
         
@@ -664,17 +665,17 @@ else if (config.LANG == 'SI') {
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'SI') {
-                                await conn.sendMessage(conn.user.jid, '*-- දෝෂ වාර්තාව [❰🐼⌚Sketchy⌚🐼❱] --*' + 
-                                    '\n\n*❰🐼⌚Sketchy⌚🐼❱ Bot දෝෂයක් සිදුවී ඇත!*'+
+                                await conn.sendMessage(conn.user.jid, '*-- දෝෂ වාර්තාව [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] --*' + 
+                                    '\n\n*❰🦄🇰🇪Dreaded2🇰🇪🦄❱ Bot දෝෂයක් සිදුවී ඇත!*'+
                                     '\n\n_මෙම දෝෂ logs ඔබගේ අංකය හෝ ප්‍රති පාර්ශ්වයේ අංකය අඩංගු විය හැකිය. කරුණාකර එය සමග සැලකිලිමත් වන්න!_' +
                                     '\n\n_උදව් සඳහා ඔබට අපගේ whatsapp support කණ්ඩායමට ලිවිය හැකිය_' +
-                                    '\n_Support Group 01:_ https://chat.whatsapp.com/GT5V8RakkftB7DAKWMeQML' +
+                                    '\n_Support Group 01:_https://chat.whatsapp.com/BnD02fZasqA9lXkXBHNKpP' +
                                     '\n\n_මෙම පණිවිඩය ඔබගේ අංකයට ගොස් තිබිය යුතුය (සුරකින ලද පණිවිඩ)._\n\n' +
                                     '*සිදු වූ දෝෂය:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _මාධ්‍යන් සකසා ගත නොහැකි වීම._' +
                                         '\n\n\n*හේතුව:* _LOG අංකය තුළ මාධ්‍ය මෙවලම් (xmedia, sticker..) භාවිතය._' +
@@ -683,7 +684,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Split සොයා ගත නොහැක_' +
                                         '\n\n*හේතුව:* _කණ්ඩායම් admin භාවිතා කළ හැකි විධානයන් සමහර විට split ක්‍රියාවලිය නොදකි._ ' +
@@ -692,7 +693,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Ookla Server Connection_' +
                                         '\n\n*හේතුව:* _සේවාදායකයට වේගවත්ම දත්ත සම්ප්‍රේෂණය කළ නොහැක._' +
@@ -701,7 +702,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Audio Params වැරදි වීම._' +
                                         '\n\n*හේතුව:* _හෝඩියේ පිටත TTS විධානය භාවිතා කිරීම._' +
@@ -710,7 +711,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```දෝෂ නිරාකරණය කර ඇත``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _එවැනි folders නැත_' +
                                         '\n\n*හේතුව:* _Pluginයේ වැරදි කේතීකරණය._' +
@@ -719,7 +720,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Error 404 HTTPS_' +
                                         '\n\n*හේතුව:* _Heroku plugins යටතේ ඇති විධානයන් භාවිතා කිරීම හේතුවෙන් සේවාදායකයා සමඟ සන්නිවේදනය කිරීමට නොහැකි වීම._' +
@@ -728,7 +729,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Reply.delete function නොමැති වීම සහ දෙවරක් පිළිතුරු දීම_' +
                                         '\n\n*හේතුව:* _IMG හෝ Wiki විධානයන් භාවිතා කිරීම. (Official වට්ස්ඇප් භාවිතය.)_' +
@@ -737,7 +738,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
                                         '\n\n*හේතුව:* _IMG හෝ Wiki විධානයන් භාවිතා කිරීම. (Official වට්ස්ඇප් භාවිතය.)_' +
@@ -746,7 +747,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Bailyes Action Error_ ' +
                                         '\n\n*හේතුව:* _නිශ්චිත හේතුව නොදනී. විකල්ප එකකට වඩා මෙම දෝෂය ඇති වීමට හේතු විය හැක._' +
@@ -755,7 +756,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Text හෝ මාධ්‍ය විකේතනය කළ නොහැක_' +
                                         '\n\n*හේතුව:* _වැරදි ලෙස භාවිතා කිරීම._' +
@@ -764,7 +765,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('500')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Media downloading error_' +
                                         '\n\n*හේතුව:* _වෙබ් අඩවිය අතර සම්බන්ධතාවය විසන්ධි විය._' +
@@ -773,7 +774,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('503')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Media downloading error_' +
                                         '\n\n*හේතුව:* _වෙබ් අඩවිය අතර සම්බන්ධතාවය විසන්ධි විය._' +
@@ -782,7 +783,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ දෝෂ විශ්ලේෂණය [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n==== ```දෝෂ නිරාකරණය කර ඇත!``` ====' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _වචන භාවිතය_' +
                                         '\n\n*හේතුව:* _English හෝඩියේ පිටත TTP, ATTP වැනි විධානයන් භාවිතා කිරීම._' +
@@ -797,17 +798,17 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [❰🐼⌚Sketchy⌚🐼❱] --*' + 
-                                    '\n\n*❰🐼⌚Sketchy⌚🐼❱ an error has occurred!*'+
+                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] --*' + 
+                                    '\n\n*❰🦄🇰🇪Dreaded2🇰🇪🦄❱ an error has occurred!*'+
                                     '\n\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
                                     '\n\n_Aslo you can join our support group:_' +
-                                    '\n_Support Group 01:_ https://chat.whatsapp.com/GT5V8RakkftB7DAKWMeQML' +
+                                    '\n_Support Group 01:_ https://chat.whatsapp.com/BnD02fZasqA9lXkXBHNKpP' +
                                     '\n\n_This message should have gone to your number (saved messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Only Absolutely URLs Supported_' +
                                         '\n\n*Reason:* _The usage of media tools (xmedia, sticker..) in the LOG number._' +
@@ -816,7 +817,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Split of Undefined_' +
                                         '\n\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
@@ -825,7 +826,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Ookla Server Connection_' +
                                         '\n\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
@@ -834,7 +835,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Requested Audio Params_' +
                                         '\n\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
@@ -843,7 +844,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved``` ==========' +
                                         '\n\n*Main Error:* _No Such File or Directory_' +
                                         '\n\n*Reason:* _Incorrect coding of the plugin._' +
@@ -852,7 +853,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Error 404 HTTPS_' +
                                         '\n\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
@@ -861,7 +862,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function. And Double replying_' +
                                         '\n\n*Reason:* _Using IMG or Wiki commands. (May be using official Whatsapp)_' +
@@ -870,7 +871,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱I] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱I] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n\n*Reason:* _Using IMG or Wiki commands._' +
@@ -879,7 +880,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Bailyes Action Error_ ' +
                                         '\n\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
@@ -888,7 +889,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Cannot Decode Text or Media_' +
                                         '\n\n*Reason:* _Incorrect use of the plug._' +
@@ -897,7 +898,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('500')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Media downloading error_' +
                                         '\n\n*Reason:* _Connection between site disconnected._' +
@@ -906,7 +907,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('503')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Media downloading error_' +
                                         '\n\n*Reason:* _Connection between site disconnected._' +
@@ -915,7 +916,7 @@ else if (config.LANG == 'SI') {
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🐼⌚Sketchy⌚🐼❱] ⚜️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚜️ ERROR ANALYSIS [❰🦄🇰🇪Dreaded2🇰🇪🦄❱] ⚜️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Word Character Usage_' +
                                         '\n\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +

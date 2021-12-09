@@ -1,18 +1,19 @@
 
+
 <div align="center">
-  <h1>🇰🇪🏅SKETCHY BOT OFFICIAL🏅🇰🇪</h1>
+  <h1>🇰🇪🦄Dreaded2 OFFICIAL BOT🦄🇰🇪</h1>
 </div>
 <div align="center">
-  <img border-radius: 15px src="https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg" width="400" height="400"/>
+  <img border-radius: 15px src="IMG-20211208-WA0237.jpg" width="400" height="400"/>
   <p align="center">
-<a href="#"><img title="White" src="https://img.shields.io/badge/SKETCHY PUBLIC-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="White" src="https://img.shields.io/badge/DREADED2 PUBLIC-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
   <p align="center">
-<a href="https://github.com/GingerBreadSketchy"><img title="White Dragon" src="https://img.shields.io/badge/Created💥by💥 GINGER-dqz/JulieMwol?color=red&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/Fortunatusmokaya"><img title="White Dragon" src="https://img.shields.io/badge/Created💥by💥 MOKAYA-dqz/JulieMwol?color=red&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/GingerBreadSketchy"> Ginger</a> This project may be free
+Project created by <a href="https://github.com/Fortunatusmokaya"> MOKAYA FORTUNATUS</a> This project is entirely  free and open
     <br
        | © |
         owner |
@@ -22,25 +23,25 @@ Project created by <a href="https://github.com/GingerBreadSketchy"> Ginger</a> T
 ----
 
   <p align="center">
-  <a href="https://GingerBreadSketchy">
-    <img src="https://img.shields.io/github/repo-size/GingerBreadSketchy/Sketchy?color=green&label=Repo%20total%20size&style=plastic">
+  <a href="https://Fortunatusmokaya">
+    <img src="https://img.shields.io/github/repo-size/Fortunatusmokaya/Dreaded2?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
-<a href="https://github.com/GingerBreadSketchy/followers"><img title="Followers" src="https://img.shields.io/github/followers/Dark-Knight-Hiruwa?color=blue&style=flat-square"></a>
-<a href="https://github.com/GingerBreadSketchy/Sketchy/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/GingerBreadSketchy/Sketchy?color=blue&style=flat-square"></a>
-<a href="https://github.com/GingerBreadSketchy/Sketchy/network/members"><img title="Forks" src="https://img.shields.io/github/forks/GingerBreadSketchy/Sketchy?color=blue&style=flat-square"></a>
-<a href="https://github.com/GingerBreadSketchy/Sketchy/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/GingerBreadSketchy/Sketchy?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Fortunatusmokaya/followers"><img title="Followers" src="https://img.shields.io/github/followers/Dark-Knight-Hiruwa?color=blue&style=flat-square"></a>
+<a href="https://github.com/Fortunatusmokaya/Dreaded2/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/Fortunatusmokaya/Dreaded2?color=blue&style=flat-square"></a>
+<a href="https://github.com/Fortunatusmokaya/Dreaded2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fortunatusmokaya/Dreaded2?color=blue&style=flat-square"></a>
+<a href="https://github.com/Fortunatusmokaya/Dreaded2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Fortunatusmokaya/Dreaded2?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED-YES-yellow.svg" src="https://img.shields.io/badge/UNMAINTENED-NO-blue.svg"</a>
 </p>
   
 
 ## 📢 Guide
-Chat Me on Whatsapp Now👇
+Chat with Mokaya on Whatsapp Now👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://wa.me/+254792893310)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://wa.me/+254114018035)
   <div align="center">
        
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=GingerBreadSketchy&repo=Sketchy&theme=nightowl)](https://github.com/GingerBreadSketchy/Sketchy)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Fortunatusmokaya&repo=Dreaded2&theme=nightowl)](https://github.com/Fortunatusmokaya/Dreaded2)
   </div>
     
 ## Setup
@@ -50,13 +51,15 @@ Chat Me on Whatsapp Now👇
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@TRexWa/T-REX-QR-SESSION)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](http://heroku.com/deploy?template=https://github.com/GingerBreadSketchy/Sketchy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](http://heroku.com/deploy?template=https://github.com/Fortunatusmokaya/Dreaded2)
      </div>
 <br>
 <br > 
-### ⚠️ Warning! 
-MODED BY GingerBreadSketchy
- 🥵Rights by Dark-Knight-Hiruwa🥵
+### 💀Warning! 
+MODED and RECODDED BY Fortunatusmokaya!
+Neither does Mokaya nor Dreaded2 bot has access to your account!
+Any insecurities about your account feel free to logout WhatsApp web in linked devices 🤞
+ 👿Rights to mod by Dark-Knight-Hiruwa👿
 ## License
 This project is protected by `GNU General Public Licence v3.0` license.
 ### Disclaimer

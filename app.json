@@ -1,11 +1,12 @@
+
 {
-    "name": "Sketchy v1.0.0",
-    "description": "❰🧭Sketchy🧭❱ is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
-    "logo": "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg",
-    "keywords": ["whatsapp", "userbot", "bot", "api", "aii", "T-Rex","sketchy"],
+    "name": "Dreaded2 v1.0.0",
+    "description": "❰🧭DREADED🧭❱ is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
+    "logo": "IMG-20211208-WA0237.jpg",
+    "keywords": ["whatsapp", "userbot", "bot", "api", "aii", "T-Rex","dreaded2"],
     "repository": "https://cutt.ly/www-t-rex-official-com",
-    "website":   "https://giveit.link/gingerbreadsketchy",
-    "success_url": "https://giveit.link/gingerbreadsketchy",
+    "website":   "https://giveit.link/fortunatusmokaya",
+    "success_url": "https://giveit.link/fortunatusmokaya",
     "stack": "container",
     "env": {
         "TREX_SESSION": {
@@ -240,7 +241,7 @@
         "CAPTION": {
             "description": "LOGO MAKER CAPTION",
             "required": true,
-            "value": "   ▷ ᴹᴬᴰᴱ 🄱🅈 Sketchy Bot │"
+            "value": "   ▷ ᴹᴬᴰᴱ 🄱🅈 DREADED Bot │"
         },
         "COFFEEHOUSE_API_KEY": {
             "description": "Give it up. We give you this.",

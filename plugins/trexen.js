@@ -1,3 +1,4 @@
+
 const Asena = require('../events');
 
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
@@ -9,7 +10,7 @@ const axios = require('axios');
 const Config = require('../config');
 const alive = fs.readFileSync('./Voice/alive.mp3')
 
-const Ln = "  *SKETCHY MENU* "
+const Ln = "  *DREADED2 MENU* "
 
 if (Config.LANG == 'EN') {
 
@@ -28,7 +29,7 @@ if (Config.LANG == 'EN') {
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════╗
 
-           ❰🐼🧭Sketchy🧭🐼❱
+           ❰🇰🇪⌚DREADED2🧭🇰🇪❱
 
 ═════════════════════════
 
@@ -40,7 +41,7 @@ if (Config.LANG == 'EN') {
 
 *➢ Description:* °To get the admin command list°
 
-*🎈 Command:* °.Sketchy°
+*🎈 Command:* °.DREADED2°
 
 *➢ Description:*°all commands°
 
@@ -58,7 +59,7 @@ if (Config.LANG == 'EN') {
  
 *🎈 Command* °.rlpack°
 
-*➢ Description:* °SKETCHY LOGO COLLECTION 01°
+*➢ Description:* °DREADED2 LOGO COLLECTION 01°
 
 *🎈 Command:* °.lovepack°
 
@@ -136,7 +137,7 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.movie°
 
-*➢ Description:* °Movies °Sketchy Movie Searches.°
+*➢ Description:* °Movies °DREADED2 Movie Searches.°
 
 *🎈 Command:* °.notes°
 
@@ -176,11 +177,11 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.insta°
 
-*➢ Description:* °🎈➢ ❰🐼🧭Sketchy🧭🐼❱ Download instagram videos.°
+*➢ Description:* °🎈➢ ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download instagram videos.°
 
 *🎈 Command:* °.fb°
 
-*➢ Description:* °🎈➢ ❰🐼🧭Sketchy🧭🐼❱ Download Facebook videos.°
+*➢ Description:* °🎈➢ ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download Facebook videos.°
 
 *🎈 Command:* °.trt°
 
@@ -335,8 +336,8 @@ Example : .covid Sri Lanka°
 *🎈 Command:* °.xxx°
 
 *➢ Description:* °xnxx .Download sex videos on xnxx site°
-*❰🐼🧭🇰🇪Sketchy Was Made in kenya🇰🇪🧭🐼❱*
-*➢Created By ♐ 👿GingerBreadSketchy*
+*❰🇰🇪DREADED2🇰🇪 Was proudly made in Kenya❱*
+*➢Created By FORTUNATUS MOKAYA*
 ` ,quoted: message.data})
 
     }));
@@ -361,7 +362,7 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: `╔═══════════════════════╗
 
-           ❰🐼🧭Sketchy🧭🐼❱
+           ❰🇰🇪🧭DREADED2🧭🇰🇪❱
 
 ═════════════════════════
 
@@ -373,7 +374,7 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
 
 *➢ Description:* °To get the admin command list°
 
-*🎈 Command:* °.sketchy°
+*🎈 Command:* °.DREADED2°
 
 *➢ Description:*°all commands°
 
@@ -391,7 +392,7 @@ Asena.applyCMD({ pattern: 'jsssnssnsnsn', fromMe: true, dontAddCommandList: true
 
 *🎈 Command* °.rlpack°
 
-*➢ Description:* °SKETCHY LOGO COLLECTION 01°
+*➢ Description:* °DREADED2 LOGO COLLECTION 01°
 
 *🎈 Command:* °.lovepack°
 
@@ -469,7 +470,7 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.movie°
 
-*➢ Description:* °Movies °Sketchy Movie Searches.°
+*➢ Description:* °Movies °DREADED2 Movie Searches.°
 
 *🎈 Command:* °.notes°
 
@@ -509,11 +510,11 @@ Example : .covid Sri Lanka°
 
 *🎈 Command:* °.insta°
 
-*➢ Description:* °🎈➢ ❰🐼🧭Sketchy🧭🐼❱ Download instagram videos.°
+*➢ Description:* °🎈➢ ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download instagram videos.°
 
 *🎈 Command:* °.fb°
 
-*➢ Description:* °🎈➢ ❰🐼🧭Sketchy🧭🐼❱ Download Facebook videos.°
+*➢ Description:* °🎈➢ ❰🇰🇪🧭DREADED2🧭🇰🇪❱ Download Facebook videos.°
 
 *🎈 Command:* °.trt°
 
@@ -668,8 +669,8 @@ Example : .covid Sri Lanka°
 *🎈 Command:* °.xxx°
 
 *➢ Description:* °xnxx ..Download sex videos on xnxx site°
-*❰🐼🧭🇰🇪Sketchy Was Made in kenya🇰🇪🧭🐼❱*
-*➢Created By ♐ 👿GingerBreadSketchy*
+*❰🇰🇪DREADED2🇰🇪 is  Made in Kenya❱*
+*➢Created By FORTUNATUS MOKAYA*
 ` })
 
     

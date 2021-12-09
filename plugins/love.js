@@ -1,3 +1,4 @@
+
 const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -15,7 +16,7 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═══════════════════════╗
 
-           ❰🐼🧭Sketchy🧭🐼❱
+           ❰🇰🇪🧭DREADED2🧭🇰🇪❱
 
 ═════════════════════════
 
@@ -55,25 +56,25 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     var r_text = new Array ();
 
-    r_text[0] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[0] = "IMG-20211209-WA0037.jpg";
 
-    r_text[1] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[1] = "IMG-20211209-WA0037.jpg";
 
-    r_text[2] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[2] = "IMG-20211209-WA0037.jpg";
 
-    r_text[3] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[3] = "IMG-20211209-WA0037.jpg";
 
-    r_text[4] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[4] = "IMG-20211209-WA0037.jpg";
 
-    r_text[5] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[5] = "IMG-20211209-WA0037.jpg";
 
-    r_text[6] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[6] = "IMG-20211209-WA0037.jpg";
 
     var i = Math.floor(8*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})    
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ║         ║🎈╚FF PACK╝🎈║
 ║
 ╠═➢ 🎈.ff9       ❴your text❵
@@ -176,9 +177,9 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ║send free fire logo
 ║
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: Fortunatus Mokaya
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ╚═════════════════════╝`  ,quoted: message.data})
 
     }));
@@ -218,19 +219,19 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     var r_text = new Array ();
 
-    r_text[0] = "https://telegra.ph/file/420aad8a5c96b545ddf52.jpg";
+    r_text[0] = "IMG-20211209-WA0037.jpg";
 
-    r_text[1] = "https://telegra.ph/file/7af1f81554120ef582fa1.jpg";
+    r_text[1] = "IMG-20211209-WA0037.jpg";
 
-    r_text[2] = "https://telegra.ph/file/f2c9064c9afc912d58a88.jpg";
+    r_text[2] = "IMG-20211209-WA0037.jpg";
 
-    r_text[3] = "https://telegra.ph/file/506cbe50b126155882d2e.jpg";
+    r_text[3] = "IMG-20211209-WA0037.jpg";
 
-    r_text[4] = "https://telegra.ph/file/7af1f81554120ef582fa1.jpg";
+    r_text[4] = "IMG-20211209-WA0037.jpg";
 
-    r_text[5] = "https://telegra.ph/file/f2c9064c9afc912d58a88.jpg";
+    r_text[5] = "IMG-20211209-WA0037.jpg";
 
-    r_text[6] = "https://telegra.ph/file/420aad8a5c96b545ddf52.jpg";
+    r_text[6] = "IMG-20211209-WA0037.jpg";
 
     var i = Math.floor(8*Math.random())
 
@@ -247,25 +248,25 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 
     var r_text = new Array ();
 
-    r_text[0] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[0] = "IMG-20211209-WA0037.jpg";
 
-    r_text[1] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[1] = "IMG-20211209-WA0037.jpg";
 
-    r_text[2] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[2] = "IMG-20211209-WA0037.jpg";
 
-    r_text[3] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[3] = "IMG-20211209-WA0037.jpg";
 
-    r_text[4] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[4] = "IMG-20211209-WA0037.jpg";
 
-    r_text[5] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[5] = "IMG-20211209-WA0037.jpg";
 
-    r_text[6] = "https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg";
+    r_text[6] = "IMG-20211209-WA0037.jpg";
 
     var i = Math.floor(8*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer'})    
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪🧭DREADED2🧭🇰🇪❱  
 ║         ║🎈╚FF PACK╝🎈║
 ║
 ╠═➢ 🎈.ff9       ❴your text❵
@@ -368,9 +369,9 @@ const Ln = "  *Send Love Messages.. , ආදර පණිවිඩ යැවී�
 ║send free fire logo
 ║
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: Fortunatus Mokaya
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪DREADED🇰🇪❱  
 ╚═════════════════════╝` })
    
    }));

@@ -1,3 +1,4 @@
+
 const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const Config = require('../config');
@@ -20,10 +21,10 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 const ADD = '94757405652,94716292396'
 
 var kickmsg = ''
-if (Config.LANG == 'SI') kickmsg = '_❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
-if (Config.LANG == 'EN') kickmsg = '_❌ STUPID WORDS DETECTED..TOAAA MAFI HUKU!!!🤬🤬.*_\n\n ❰🐼🧭Sketchy🧭🐼❱  '
-if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
-if (Config.LANG == 'EN') kickmsg1 = '_❌ BYE BYEE KUMBAFUUUU WEWE!!!!.*_\n\n ❰🐼🧭Sketchy🧭🐼❱   '
+if (Config.LANG == 'SI') kickmsg = '_❌ නරක වචන bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🇰🇪 DREADED2🇰🇪❱  '
+if (Config.LANG == 'EN') kickmsg = '_❌ BAD WORDS NOT ALLOWED!!!🖕🖕.*_\n\n ❰🇰🇪DREADED2🇰🇪❱  '
+if (Config.LANG == 'SI') kickmsg1 = '_❌ ලින්ක් bot අයිතිකරු විසින් තහනම් කර ඇත.*_\n\n ❰🇰🇪 DREADED2🐼❱   '
+if (Config.LANG == 'EN') kickmsg1 = '_❌ BYE BYEE YOU WERE REMOVED!!.*_\n\n ❰🇰🇪DREADED2🇰🇪❱   '
 
 Amdi.applyCMD({on: 'text', fromMe: false,  deleteCommand: false}, (async (message, match) => {    
     if (Config.ANTIBAD == 'true') {
