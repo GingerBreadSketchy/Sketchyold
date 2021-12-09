@@ -13,7 +13,7 @@
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/Fortunatusmokaya"> MOKAYA</a> This project is entirely  free and open
+Project created by <a href="https://github.com/Fortunatusmokaya"> MOKAYA FORTUNATUS</a> This project is entirely  free and open
     <br
        | © |
         owner |
@@ -35,10 +35,10 @@ Project created by <a href="https://github.com/Fortunatusmokaya"> MOKAYA</a> Thi
   
 
 ## 📢 Guide
-Chat Me on Whatsapp Now👇
+Chat with Mokaya on Whatsapp Now👇
     <br>
 <br>
-  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://wa.me/+254787758078)
+  [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://wa.me/+254114018035)
   <div align="center">
        
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Fortunatusmokaya&repo=Dreaded2&theme=nightowl)](https://github.com/Fortunatusmokaya/Dreaded2)
@@ -56,8 +56,10 @@ Chat Me on Whatsapp Now👇
 <br>
 <br > 
 ### 💀Warning! 
-MODED and RECODDED BY Fortunatusmokaya
- 🥵Rights by Dark-Knight-Hiruwa👿
+MODED and RECODDED BY Fortunatusmokaya!
+Neither does Mokaya nor Dreaded2 bot has access to your account!
+Any insecurities about your account feel free to logout WhatsApp web in linked devices 🤞
+ 👿Rights to mod by Dark-Knight-Hiruwa👿
 ## License
 This project is protected by `GNU General Public Licence v3.0` license.
 ### Disclaimer
