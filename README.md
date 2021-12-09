@@ -4,7 +4,7 @@
   <h1>🇰🇪🦄Dreaded2 OFFICIAL BOT🦄🇰🇪</h1>
 </div>
 <div align="center">
-  <img border-radius: 15px src="https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg" width="400" height="400"/>
+  <img border-radius: 15px src="IMG-20211208-WA0237.jpg" width="400" height="400"/>
   <p align="center">
 <a href="#"><img title="White" src="https://img.shields.io/badge/DREADED2 PUBLIC-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
