@@ -10,10 +10,10 @@ if (Config.WORKTYPE == 'private') {
    
    Trex.applyCMD({ pattern: 'attppack', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-        var ttinullimage = await axios.get(`https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`IMG-20211209-WA0037.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔═════════════════════╗
-║      ❰🐼🧭Sketchy🧭🐼❱  
+║      ❰🇰🇪DREADED2🇰🇪❱  
 ║        ║🏅╚ATTP PACK╝🏅║
 ║
 ╠═🐼 🏅.01attp      ❴your text❵
@@ -97,9 +97,9 @@ if (Config.WORKTYPE == 'private') {
 ╠═🐼 🏅.40attp       ❴your text❵
 ║send Text logo
 ║
-║▷Creator: GingerBreadSketchy
+║▷Creator: Fortunatus Mokaya
 ║
-║ ❰🐼🧭Sketchy🧭🐼❱  
+║ ❰🇰🇪DREADED🇰🇪❱  
 ╚═════════════════════╝
 `,quoted: message.data})
 
