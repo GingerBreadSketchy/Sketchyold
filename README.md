@@ -3,7 +3,7 @@
   <h1>🇰🇪🏅SKETCHY BOT OFFICIAL🏅🇰🇪</h1>
 </div>
 <div align="center">
-  <img border-radius: 15px src="https://telegra.ph/file/8fe0170c4d32c889b3cd6.jpg" width="400" height="400"/>
+  <img src="https://telegra.ph/file/21c73425e6700f5735ff6.png" />
   <p align="center">
 <a href="#"><img title="White" src="https://img.shields.io/badge/SKETCHY PUBLIC-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
