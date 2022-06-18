@@ -12,6 +12,10 @@
 </p>
 </div>
 <p align="center">
+  
+  <B> THIS PROJECT IS NO LONGER MAINTAINED FORK WITH CAUTION!!</B>
+  
+  
 Project created by <a href="https://github.com/GingerBreadSketchy"> Ginger</a> This project may be free
     <br
        | © |
@@ -29,7 +33,7 @@ Project created by <a href="https://github.com/GingerBreadSketchy"> Ginger</a> T
 <a href="https://github.com/GingerBreadSketchy/Sketchy/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/GingerBreadSketchy/Sketchy?color=blue&style=flat-square"></a>
 <a href="https://github.com/GingerBreadSketchy/Sketchy/network/members"><img title="Forks" src="https://img.shields.io/github/forks/GingerBreadSketchy/Sketchy?color=blue&style=flat-square"></a>
 <a href="https://github.com/GingerBreadSketchy/Sketchy/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/GingerBreadSketchy/Sketchy?label=Watchers&color=blue&style=flat-square"></a>
-<a href="#"><img title="MAINTENED-YES-yellow.svg" src="https://img.shields.io/badge/UNMAINTENED-NO-blue.svg"</a>
+<a href="#"><img title="MAINTENED-YES-yellow.svg" src="https://img.shields.io/badge/MAINTENED-NOO-blue.svg"</a>
 </p>
   
 
